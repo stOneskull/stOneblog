@@ -3977,13 +3977,13 @@ function create_fragment$5(ctx) {
 	component_1 = new Component$2({
 			props: {
 				logo: {
-					"title": "stOne",
 					"image": {
 						"alt": "me",
 						"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/5bd848e7-6942-4bef-8606-839024a21da1/1253624985000PC181016.jpg",
 						"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/5bd848e7-6942-4bef-8606-839024a21da1/1253624985000PC181016.jpg",
 						"size": 46
-					}
+					},
+					"title": "stOne"
 				},
 				site_nav: [
 					{
@@ -3993,19 +3993,16 @@ function create_fragment$5(ctx) {
 							"active": false
 						}
 					},
-					{
-						"link": { "url": "/about", "label": "abOut" }
-					},
+					{ "link": { "url": "/", "label": "abOut" } },
 					{
 						"link": { "url": "/", "label": "cOntact" }
 					},
 					{
 						"link": {
-							"label": "stOneskull.xyz",
-							"url": "/stoneskull.xyz"
+							"url": "https://stoneskull.xyz",
+							"label": "stOneskull.xyz"
 						}
-					},
-					{ "link": { "label": "duis", "url": "/" } }
+					}
 				]
 			}
 		});
@@ -4013,8 +4010,8 @@ function create_fragment$5(ctx) {
 	component_2 = new Component$3({
 			props: {
 				content: {
-					"html": "<h1>Welcome 👋</h1><p>Hi there, feel free to delete these blocks and create your own by clicking the \"+\" button in the side panel. Click the code button in the corner of this block to change its styling. Check out the <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link link\" href=\"https://docs.primocms.org/development\">docs</a> to learn more about how to develop your sites.</p><h2>Heading 2</h2><p>A simple paragraph. You can use markdown in this block. <strong>Duis aute</strong> irure dolor in reprehenderit in voluptate velit esse cillum dolore <em>eu fugiat</em> nulla pariatur. Excepteur sint <strong>occaecat cupidatat</strong> non proident, sunt in culpa qui officia <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link link link link link link\" href=\"/\">deserunt mollit</a> anim id est laborum.</p><h3>Heading 3</h3><p>Enjoy :)</p>",
-					"markdown": "# Welcome 👋\n\nHi there, feel free to delete these blocks and create your own by clicking the \"+\" button in the side panel. Click the code button in the corner of this block to change its styling. Check out the [docs](<https://docs.primocms.org/development>) to learn more about how to develop your sites.\n\n## Heading 2\n\nA simple paragraph. You can use markdown in this block. **Duis aute** irure dolor in reprehenderit in voluptate velit esse cillum dolore *eu fugiat* nulla pariatur. Excepteur sint **occaecat cupidatat** non proident, sunt in culpa qui officia [deserunt mollit](</>) anim id est laborum.\n\n### Heading 3\n\nEnjoy :)\n\n"
+					"html": "<h1>Welcome 👋</h1><p>Hi there, this is my blog.</p><h2>stOne</h2><p>I live in the Blue Mountains, Australia.</p><h3>work in motion..</h3><p>cheers :)</p>",
+					"markdown": "# Welcome 👋\n\nHi there, this is my blog.\n\n## stOne\n\nI live in the Blue Mountains, Australia.\n\n### work in motion..\n\ncheers :)\n\n"
 				}
 			}
 		});
