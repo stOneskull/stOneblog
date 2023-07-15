@@ -1,3 +1,0 @@
-## stOne
-
-blog.stoneskull.xyz
