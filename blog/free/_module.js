@@ -5149,7 +5149,7 @@ function create_fragment$7(ctx) {
 					{
 						"icon": "mdi:mastodon",
 						"link": {
-							"url": "fosstodon.org/@stOneskull",
+							"url": "https://fosstodon.org/@stOneskull",
 							"label": "mastodon"
 						}
 					},
@@ -5163,7 +5163,7 @@ function create_fragment$7(ctx) {
 					{
 						"icon": "mdi:language-python",
 						"link": {
-							"url": "programming.dev/u/stOneskull",
+							"url": "https://programming.dev/u/stOneskull",
 							"label": "lemmy"
 						}
 					},
