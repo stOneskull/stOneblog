@@ -4015,8 +4015,8 @@ function create_fragment$5(ctx) {
 	component_2 = new Component$3({
 			props: {
 				content: {
-					"html": "<h1>high 👋</h1><p>this is my blog.</p><h2>i am stOneskull</h2><p>at Blue Mountains, Australia.</p><h3>learning each day and appreciating the time alive</h3><p>cheers :)</p>",
-					"markdown": "# high 👋\n\nthis is my blog.\n\n## i am stOneskull\n\nat Blue Mountains, Australia.\n\n### learning each day and appreciating the time alive\n\ncheers :)\n\n"
+					"html": "<h1>high 👋</h1><p></p><h2>i am stOneskull</h2><p>at Blue Mountains, Australia.</p><h3>learning each day and appreciating the time alive</h3><p>cheers :)</p>",
+					"markdown": "# high 👋\n\n\n\n## i am stOneskull\n\nat Blue Mountains, Australia.\n\n### learning each day and appreciating the time alive\n\ncheers :)\n\n"
 				}
 			}
 		});
