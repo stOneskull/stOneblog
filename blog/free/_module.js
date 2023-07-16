@@ -3385,7 +3385,7 @@ function create_fragment$2(ctx) {
 			attr(div1, "class", "mobile-nav svelte-1grguq5");
 			attr(header, "class", "section-container svelte-1grguq5");
 			attr(div2, "class", "section");
-			attr(div2, "id", "section-1291870c");
+			attr(div2, "id", "section-f6e45c16");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
@@ -3575,7 +3575,7 @@ function create_fragment$3(ctx) {
 			attr(div0, "class", "section-container content svelte-z64qd0");
 			attr(div1, "class", "section");
 			attr(div2, "class", "section");
-			attr(div2, "id", "section-69753748");
+			attr(div2, "id", "section-0353fe67");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
@@ -4287,7 +4287,7 @@ function create_fragment$4(ctx) {
 			attr(div1, "class", "section-container svelte-6vjs4t");
 			attr(header, "class", "svelte-6vjs4t");
 			attr(div2, "class", "section");
-			attr(div2, "id", "section-ad254c54");
+			attr(div2, "id", "section-e00e0859");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
@@ -4503,7 +4503,7 @@ function create_fragment$5(ctx) {
 			attr(span, "class", "attribution");
 			attr(aside, "class", "section-container svelte-1rprab5");
 			attr(div, "class", "section");
-			attr(div, "id", "section-81bcf9ce");
+			attr(div, "id", "section-14f8e6cf");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div, anchor);
@@ -4745,7 +4745,7 @@ function create_fragment$6(ctx) {
 			attr(div0, "class", "social-links svelte-i9k4w2");
 			attr(footer, "class", "section-container svelte-i9k4w2");
 			attr(div1, "class", "section");
-			attr(div1, "id", "section-40891ac3");
+			attr(div1, "id", "section-4c32f3b5");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div1, anchor);
@@ -4927,8 +4927,8 @@ function create_fragment$7(ctx) {
 	component_2 = new Component$3({
 			props: {
 				content: {
-					"html": "<h1>stOneblog </h1><p>first!</p><p>lol</p><p></p>",
-					"markdown": "# stOneblog \n\nfirst!\n\nlol\n\n\n\n"
+					"html": "<h1>free</h1><p><em>2 things</em></p><p></p><h2>De-</h2><h3>• Googolizize</h3><h3>• Windowsizize</h3><p></p><p>start and quicknote, don't hate either.</p><p>google maps is great. vs code is great.</p><p>lot of great stuff. just want to be independent.</p><p></p><h3>phase 1:</h3><p></p><p>G:</p><p>1. start slow</p><p>2. one by one account</p><p>3. update password manager synchronistically</p><p>4. don't delete email addresses, keep them and use them</p><p></p><p>W:</p><p>1. back up</p><p>2. list possible problems</p><p>3. go through software and check for 1 and 2 above</p><p>4. double check</p><p></p><p>let's spend a good week slowly starting and documenting.</p><p>and then we will expand.</p><p>in the meantime some background.</p><p></p><p>google has been the heart of my email and online stuff since gmail</p><p>hotmail was my first, and yahoo, and 2 or 3 from <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link\" href=\"http://mail.com\">mail.com</a></p><p>there was spymac which messed up.. they promised a gig</p><p>but yeah, hotmail, msn messenger, yahoo, yahoo messenger, forums, chats</p><p>then gmail.. google was like a rock star</p><p></p><p>plan:</p><p>laptop - pop os</p><p>desktop - ubuntu studio</p><p>i've stayed with windows too long for convenience</p><p>moving to bitwarden for passwords and more*</p><p>*authentication</p>",
+					"markdown": "# free\n\n*2 things*\n\n\n\n## De-\n\n### • Googolizize\n\n### • Windowsizize\n\n\n\nstart and quicknote, don't hate either.\n\ngoogle maps is great. vs code is great.\n\nlot of great stuff. just want to be independent.\n\n\n\n### phase 1:\n\n\n\nG:\n\n1\\. start slow\n\n2\\. one by one account\n\n3\\. update password manager synchronistically\n\n4\\. don't delete email addresses, keep them and use them\n\n\n\nW:\n\n1\\. back up\n\n2\\. list possible problems\n\n3\\. go through software and check for 1 and 2 above\n\n4\\. double check\n\n\n\nlet's spend a good week slowly starting and documenting.\n\nand then we will expand.\n\nin the meantime some background.\n\n\n\ngoogle has been the heart of my email and online stuff since gmail\n\nhotmail was my first, and yahoo, and 2 or 3 from [mail.com](<http://mail.com>)\n\nthere was spymac which messed up.. they promised a gig\n\nbut yeah, hotmail, msn messenger, yahoo, yahoo messenger, forums, chats\n\nthen gmail.. google was like a rock star\n\n\n\nplan:\n\nlaptop - pop os\n\ndesktop - ubuntu studio\n\ni've stayed with windows too long for convenience\n\nmoving to bitwarden for passwords and more\\*\n\n\\*authentication\n\n"
 				}
 			}
 		});
@@ -4960,10 +4960,10 @@ function create_fragment$7(ctx) {
 	component_4 = new Component$5({
 			props: {
 				quote: {
-					"html": "<p>\"Between thought and expression lies a lifetime.\"</p>",
-					"markdown": "\"Between thought and expression lies a lifetime.\""
+					"html": "<p>\"To be without trees would, in the most literal way, to be without our roots.\"</p>",
+					"markdown": "\"To be without trees would, in the most literal way, to be without our roots.\""
 				},
-				attribution: "- Lou Reed"
+				attribution: "-somebody somewhere"
 			}
 		});
 

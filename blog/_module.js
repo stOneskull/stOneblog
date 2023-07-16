@@ -4946,7 +4946,7 @@ function create_fragment$7(ctx) {
 				},
 				site_nav: [
 					{
-						"link": { "url": "/blog/first", "label": "first" }
+						"link": { "url": "/blog/first", "label": "prev" }
 					}
 				],
 				cta: [
