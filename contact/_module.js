@@ -4215,8 +4215,8 @@ function create_fragment$5(ctx) {
 				title: "Blog",
 				description: "",
 				content: {
-					"html": "<h1>contact me<strong> 👋</strong></h1><p></p><p>twitter is probably easiest - <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link link\" href=\"http://twitter.com/stOneskull\">twitter.com/stOneskull</a></p><p>mastodon might be quicker - <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link link\" href=\"http://fosstodon.org/@stOneskull\">fosstodon.org/@stOneskull</a></p><p>you can write to stone \\ at \\ 23bay \\ com too</p><p>send egld to @stone on multiversx</p>",
-					"markdown": "# contact me** 👋**\n\n\n\ntwitter is probably easiest - [twitter.com/stOneskull](<http://twitter.com/stOneskull>)\n\nmastodon might be quicker - [fosstodon.org/@stOneskull](<http://fosstodon.org/@stOneskull>)\n\nyou can write to stone \\ at \\ 23bay \\ com too\n\nsend egld to @stone on multiversx\n\n"
+					"html": "<h1>contact me<strong> 👋</strong></h1><p></p><p>twitter is probably easiest - <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link link link\" href=\"http://twitter.com/stOneskull\">twitter.com/stOneskull</a></p><p>mastodon might be quicker - <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link link link\" href=\"http://fosstodon.org/@stOneskull\">fosstodon.org/@stOneskull</a></p><p>you can write to stone \\ at \\ 23bay \\ com too</p><p>send egld to @stone on <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link\" href=\"https://xport.ai/referral/wjg5320ap6\">multiversx</a></p>",
+					"markdown": "# contact me** 👋**\n\n\n\ntwitter is probably easiest - [twitter.com/stOneskull](<http://twitter.com/stOneskull>)\n\nmastodon might be quicker - [fosstodon.org/@stOneskull](<http://fosstodon.org/@stOneskull>)\n\nyou can write to stone \\ at \\ 23bay \\ com too\n\nsend egld to @stone on [multiversx](<https://xport.ai/referral/wjg5320ap6>)\n\n"
 				}
 			}
 		});
