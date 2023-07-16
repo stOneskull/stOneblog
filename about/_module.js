@@ -3987,13 +3987,6 @@ function create_fragment$5(ctx) {
 				},
 				site_nav: [
 					{
-						"link": {
-							"url": "/",
-							"label": "stOne",
-							"active": false
-						}
-					},
-					{
 						"link": { "label": "blOg", "url": "/blog" }
 					},
 					{
