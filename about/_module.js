@@ -4320,7 +4320,7 @@ function create_fragment$5(ctx) {
 					{
 						"icon": "mdi:twitter",
 						"link": {
-							"url": "https://twitter.com/stOneskull",
+							"url": "https://twitter.com",
 							"label": "Twitter",
 							"active": false
 						}
@@ -4328,16 +4328,30 @@ function create_fragment$5(ctx) {
 					{
 						"icon": "mdi:github",
 						"link": {
-							"url": "https://github.com/stOneskull",
+							"url": "https://github.com",
 							"label": "Github",
 							"active": false
 						}
 					},
 					{
+						"icon": "mdi:reddit",
+						"link": {
+							"url": "https://www.reddit.com/u/stOneskull",
+							"label": "reddit"
+						}
+					},
+					{
 						"icon": "mdi:mastodon",
 						"link": {
-							"url": "https://fosstodon.org/@stOneskull",
-							"label": "Mastodon"
+							"url": "fosstodon.org/@stOneskull",
+							"label": "mastodon"
+						}
+					},
+					{
+						"icon": "mdi:floppy",
+						"link": {
+							"url": "programming.dev/u/stOneskull",
+							"label": "lemmy"
 						}
 					}
 				]
