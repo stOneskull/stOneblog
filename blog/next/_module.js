@@ -5037,7 +5037,7 @@ function create_fragment$6(ctx) {
 					{
 						"icon": "mdi:twitter",
 						"link": {
-							"url": "https://twitter.com",
+							"url": "https://twitter.com/stOneskull",
 							"label": "Twitter",
 							"active": false
 						}
