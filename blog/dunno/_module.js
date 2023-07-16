@@ -5171,8 +5171,8 @@ function create_fragment$8(ctx) {
 				title: "Article",
 				description: "This is an article discussing the merits of something or another.",
 				content: {
-					"html": "<h1>We shall see</h1><p></p><p><em>Some more text that's italicized to make an impact.</em></p><p><em>Dan Brown sux. Holy Blood, Holy Grail was at least original (although incorrect)</em></p><p><em>I worked these out before DaVinci Code was even a blank Word file</em></p><p></p><p><em>have a look at cancer on the zodiac wheel here:</em></p><p></p>",
-					"markdown": "# We shall see\n\n\n\n*Some more text that's italicized to make an impact.*\n\n*Dan Brown sux. Holy Blood, Holy Grail was at least original (although incorrect)*\n\n*I worked these out before DaVinci Code was even a blank Word file*\n\n\n\n*have a look at cancer on the zodiac wheel here:*\n\n\n\n"
+					"html": "<h1>We shall see</h1><p></p><p><em>Some more text that's italicized to make an impact.</em></p><p><em>Dan Brown sux. Holy Blood, Holy Grail was at least original fiction</em></p><p><em>I worked these out before DaVinci Code was even a blank Word file</em></p><p></p><p><em>have a look at cancer on the zodiac wheel here:</em></p><p></p>",
+					"markdown": "# We shall see\n\n\n\n*Some more text that's italicized to make an impact.*\n\n*Dan Brown sux. Holy Blood, Holy Grail was at least original fiction*\n\n*I worked these out before DaVinci Code was even a blank Word file*\n\n\n\n*have a look at cancer on the zodiac wheel here:*\n\n\n\n"
 				}
 			}
 		});
