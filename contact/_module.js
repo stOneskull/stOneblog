@@ -4008,8 +4008,8 @@ function create_fragment$5(ctx) {
 	component_2 = new Component$3({
 			props: {
 				content: {
-					"html": "<h1>Contact Me 👋</h1><p>twitter is probably easiest - twitter.com/stOneskull</p><p>mastodon might be a bit quicker - fosstodon.org/@stOneskull</p><p>you can email me at 23baycom</p>",
-					"markdown": "# Contact Me 👋\n\ntwitter is probably easiest - twitter.com/stOneskull\n\nmastodon might be a bit quicker - fosstodon.org/@stOneskull\n\nyou can email me at 23baycom\n\n"
+					"html": "<h1>Contact Me 👋</h1><p>twitter is probably easiest - twitter.com/stOneskull</p><p>mastodon might be a bit quicker - fosstodon.org/@stOneskull</p><p>you can write to stone \\ at \\ 23bay \\ com too</p>",
+					"markdown": "# Contact Me 👋\n\ntwitter is probably easiest - twitter.com/stOneskull\n\nmastodon might be a bit quicker - fosstodon.org/@stOneskull\n\nyou can write to stone \\ at \\ 23bay \\ com too\n\n"
 				}
 			}
 		});
