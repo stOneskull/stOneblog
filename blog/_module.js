@@ -4430,7 +4430,6 @@ function create_fragment$5(ctx) {
 					"title": "stOne"
 				},
 				site_nav: [
-					{ "link": { "url": "/", "label": "hOme" } },
 					{
 						"link": { "url": "/blog", "label": "blOg" }
 					},
