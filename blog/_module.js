@@ -5242,7 +5242,7 @@ function create_fragment$6(ctx) {
 					{
 						"icon": "mdi:github",
 						"link": {
-							"url": "https://github.com",
+							"url": "https://github.com/stOneskull",
 							"label": "Github",
 							"active": false
 						}
