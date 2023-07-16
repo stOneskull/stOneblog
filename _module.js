@@ -3732,12 +3732,7 @@ function create_fragment$4(ctx) {
 	let div1;
 	let footer;
 	let nav_1;
-	let t0;
-	let span;
-	let a;
-	let t1;
-	let t2;
-	let t3;
+	let t;
 	let div0;
 	let current;
 	let each_value_1 = /*nav*/ ctx[0];
@@ -3768,12 +3763,7 @@ function create_fragment$4(ctx) {
 				each_blocks_1[i].c();
 			}
 
-			t0 = space();
-			span = element("span");
-			a = element("a");
-			t1 = text("Primo");
-			t2 = text(" Powered");
-			t3 = space();
+			t = space();
 			div0 = element("div");
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -3795,16 +3785,7 @@ function create_fragment$4(ctx) {
 			}
 
 			nav_1_nodes.forEach(detach);
-			t0 = claim_space(footer_nodes);
-			span = claim_element(footer_nodes, "SPAN", { class: true });
-			var span_nodes = children(span);
-			a = claim_element(span_nodes, "A", { href: true, class: true });
-			var a_nodes = children(a);
-			t1 = claim_text(a_nodes, "Primo");
-			a_nodes.forEach(detach);
-			t2 = claim_text(span_nodes, " Powered");
-			span_nodes.forEach(detach);
-			t3 = claim_space(footer_nodes);
+			t = claim_space(footer_nodes);
 			div0 = claim_element(footer_nodes, "DIV", { class: true });
 			var div0_nodes = children(div0);
 
@@ -3819,9 +3800,6 @@ function create_fragment$4(ctx) {
 		},
 		h() {
 			attr(nav_1, "class", "svelte-i9k4w2");
-			attr(a, "href", "https://primo.so");
-			attr(a, "class", "svelte-i9k4w2");
-			attr(span, "class", "primo svelte-i9k4w2");
 			attr(div0, "class", "social-links svelte-i9k4w2");
 			attr(footer, "class", "section-container svelte-i9k4w2");
 			attr(div1, "class", "section");
@@ -3838,12 +3816,7 @@ function create_fragment$4(ctx) {
 				}
 			}
 
-			append_hydration(footer, t0);
-			append_hydration(footer, span);
-			append_hydration(span, a);
-			append_hydration(a, t1);
-			append_hydration(span, t2);
-			append_hydration(footer, t3);
+			append_hydration(footer, t);
 			append_hydration(footer, div0);
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -4023,7 +3996,7 @@ function create_fragment$5(ctx) {
 				nav: [
 					{
 						"link": {
-							"url": "https://dang.guru",
+							"url": "/",
 							"label": "(c) 2023 stOneskull"
 						}
 					}
