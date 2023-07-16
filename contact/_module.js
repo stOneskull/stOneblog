@@ -3987,15 +3987,13 @@ function create_fragment$5(ctx) {
 				},
 				site_nav: [
 					{
-						"link": {
-							"url": "",
-							"label": "stOneblog",
-							"active": false
-						}
+						"link": { "url": "/blog", "label": "blOg" }
 					},
-					{ "link": { "url": "/", "label": "abOut" } },
 					{
-						"link": { "url": "/", "label": "cOntact" }
+						"link": { "url": "/about", "label": "abOut" }
+					},
+					{
+						"link": { "url": "/contact", "label": "cOntact" }
 					},
 					{
 						"link": {
@@ -4010,8 +4008,8 @@ function create_fragment$5(ctx) {
 	component_2 = new Component$3({
 			props: {
 				content: {
-					"html": "<h1>Contact Me 👋</h1><p>twitter is probably easiest - twitter.com/stOneskull</p><p>mastodon might be a bit quicker - <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link\" href=\"https://fosstodon.org/@stOneskull\">stOneskull (@</a><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link\" href=\"mailto:stOneskull@fosstodon.org\">stOneskull@fosstodon.org</a><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link\" href=\"https://fosstodon.org/@stOneskull\">) - Fosstodon</a></p><p>you can email me at 23baycom</p>",
-					"markdown": "# Contact Me 👋\n\ntwitter is probably easiest - twitter.com/stOneskull\n\nmastodon might be a bit quicker - [stOneskull (@](<https://fosstodon.org/@stOneskull>)[stOneskull@fosstodon.org](<mailto:stOneskull@fosstodon.org>)[) - Fosstodon](<https://fosstodon.org/@stOneskull>)\n\nyou can email me at 23baycom\n\n"
+					"html": "<h1>Contact Me 👋</h1><p>twitter is probably easiest - twitter.com/stOneskull</p><p>mastodon might be a bit quicker - fosstodon.org/@stOneskull</p><p>you can email me at 23baycom</p>",
+					"markdown": "# Contact Me 👋\n\ntwitter is probably easiest - twitter.com/stOneskull\n\nmastodon might be a bit quicker - fosstodon.org/@stOneskull\n\nyou can email me at 23baycom\n\n"
 				}
 			}
 		});
@@ -4021,8 +4019,8 @@ function create_fragment$5(ctx) {
 				nav: [
 					{
 						"link": {
-							"url": "https://primosites.vercel.app/theme-minimal",
-							"label": "Copyright 2023"
+							"url": "https://dang.guru",
+							"label": "(c) 2023 stOneskull"
 						}
 					}
 				],
@@ -4031,7 +4029,14 @@ function create_fragment$5(ctx) {
 						"icon": "mdi:twitter",
 						"link": {
 							"url": "https://twitter.com/stOneskull",
-							"label": "stOneskull"
+							"label": "@stOneskull"
+						}
+					},
+					{
+						"icon": "mdi:mastodon",
+						"link": {
+							"url": "https://fosstodon.org/@stOneskull",
+							"label": "@stOneskull@fosstodon.org"
 						}
 					}
 				]

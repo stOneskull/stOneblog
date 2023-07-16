@@ -3987,15 +3987,13 @@ function create_fragment$5(ctx) {
 				},
 				site_nav: [
 					{
-						"link": {
-							"url": "",
-							"label": "stOneblog",
-							"active": false
-						}
+						"link": { "url": "/blog", "label": "blOg" }
 					},
-					{ "link": { "url": "/", "label": "abOut" } },
 					{
-						"link": { "url": "/", "label": "cOntact" }
+						"link": { "url": "/about", "label": "abOut" }
+					},
+					{
+						"link": { "url": "/contact", "label": "cOntact" }
 					},
 					{
 						"link": {
@@ -4021,8 +4019,8 @@ function create_fragment$5(ctx) {
 				nav: [
 					{
 						"link": {
-							"url": "https://primosites.vercel.app/theme-minimal",
-							"label": "Copyright 2023"
+							"url": "https://dang.guru",
+							"label": "(c) 2023 stOneskull"
 						}
 					}
 				],
@@ -4031,7 +4029,14 @@ function create_fragment$5(ctx) {
 						"icon": "mdi:twitter",
 						"link": {
 							"url": "https://twitter.com/stOneskull",
-							"label": "stOneskull"
+							"label": "@stOneskull"
+						}
+					},
+					{
+						"icon": "mdi:mastodon",
+						"link": {
+							"url": "https://fosstodon.org/@stOneskull",
+							"label": "@stOneskull@fosstodon.org"
 						}
 					}
 				]
