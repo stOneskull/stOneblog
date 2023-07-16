@@ -3377,7 +3377,7 @@ function create_fragment$2(ctx) {
 			attr(div1, "class", "mobile-nav svelte-1grguq5");
 			attr(header, "class", "section-container svelte-1grguq5");
 			attr(div2, "class", "section");
-			attr(div2, "id", "section-f3266214");
+			attr(div2, "id", "section-19cf904f");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
@@ -3567,7 +3567,7 @@ function create_fragment$3(ctx) {
 			attr(div0, "class", "section-container content svelte-z64qd0");
 			attr(div1, "class", "section");
 			attr(div2, "class", "section");
-			attr(div2, "id", "section-ce10611e");
+			attr(div2, "id", "section-26abe6b1");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
@@ -3825,7 +3825,7 @@ function create_fragment$4(ctx) {
 			attr(div0, "class", "social-links svelte-i9k4w2");
 			attr(footer, "class", "section-container svelte-i9k4w2");
 			attr(div1, "class", "section");
-			attr(div1, "id", "section-cca41014");
+			attr(div1, "id", "section-afc582a8");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div1, anchor);
@@ -4015,8 +4015,8 @@ function create_fragment$5(ctx) {
 	component_2 = new Component$3({
 			props: {
 				content: {
-					"html": "<h1>Welcome 👋</h1><p>Hi there, this is my blog.</p><h2>stOneskull</h2><p>I live in the Blue Mountains, Australia.</p><h3>work in motion..</h3><p>cheers :)</p>",
-					"markdown": "# Welcome 👋\n\nHi there, this is my blog.\n\n## stOneskull\n\nI live in the Blue Mountains, Australia.\n\n### work in motion..\n\ncheers :)\n\n"
+					"html": "<h1>Contact Me 👋</h1><p>twitter is probably easiest but i might not be there for a week</p><p>mastodon might be a bit quicker</p><p>you can email me at 23baycom </p>",
+					"markdown": "# Contact Me 👋\n\ntwitter is probably easiest but i might not be there for a week\n\nmastodon might be a bit quicker\n\nyou can email me at 23baycom\n\n"
 				}
 			}
 		});

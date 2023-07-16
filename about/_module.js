@@ -3377,7 +3377,7 @@ function create_fragment$2(ctx) {
 			attr(div1, "class", "mobile-nav svelte-1grguq5");
 			attr(header, "class", "section-container svelte-1grguq5");
 			attr(div2, "class", "section");
-			attr(div2, "id", "section-f3266214");
+			attr(div2, "id", "section-75bed97d");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
@@ -3567,7 +3567,7 @@ function create_fragment$3(ctx) {
 			attr(div0, "class", "section-container content svelte-z64qd0");
 			attr(div1, "class", "section");
 			attr(div2, "class", "section");
-			attr(div2, "id", "section-ce10611e");
+			attr(div2, "id", "section-c6f401cb");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
@@ -3825,7 +3825,7 @@ function create_fragment$4(ctx) {
 			attr(div0, "class", "social-links svelte-i9k4w2");
 			attr(footer, "class", "section-container svelte-i9k4w2");
 			attr(div1, "class", "section");
-			attr(div1, "id", "section-cca41014");
+			attr(div1, "id", "section-9bb45f70");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div1, anchor);
