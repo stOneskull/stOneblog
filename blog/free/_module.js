@@ -5139,41 +5139,41 @@ function create_fragment$7(ctx) {
 				email: "",
 				social_links: [
 					{
-						"icon": "mdi:twitter",
 						"link": {
 							"url": "https://twitter.com",
 							"label": "Twitter",
 							"active": false
-						}
+						},
+						"icon": "mdi:twitter"
 					},
 					{
-						"icon": "mdi:github",
+						"link": {
+							"url": "fosstodon.org/@stOneskull",
+							"label": "mastodon"
+						},
+						"icon": "mdi:mastodon"
+					},
+					{
+						"link": {
+							"url": "https://www.reddit.com/u/stOneskull",
+							"label": "reddit"
+						},
+						"icon": "mdi:reddit"
+					},
+					{
+						"link": {
+							"url": "programming.dev/u/stOneskull",
+							"label": "lemmy"
+						},
+						"icon": "mdi:floppy"
+					},
+					{
 						"link": {
 							"url": "https://github.com",
 							"label": "Github",
 							"active": false
-						}
-					},
-					{
-						"icon": "mdi:reddit",
-						"link": {
-							"url": "https://www.reddit.com/u/stOneskull",
-							"label": "reddit"
-						}
-					},
-					{
-						"icon": "mdi:mastodon",
-						"link": {
-							"url": "fosstodon.org/@stOneskull",
-							"label": "mastodon"
-						}
-					},
-					{
-						"icon": "mdi:floppy",
-						"link": {
-							"url": "programming.dev/u/stOneskull",
-							"label": "lemmy"
-						}
+						},
+						"icon": "mdi:github"
 					}
 				]
 			}
