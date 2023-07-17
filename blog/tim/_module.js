@@ -5570,8 +5570,8 @@ function create_fragment$9(ctx) {
 					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "Article",
-				description: "This is an article discussing the merits of something or another."
+				title: "tim",
+				description: "godschat"
 			}
 		});
 
@@ -5587,8 +5587,8 @@ function create_fragment$9(ctx) {
 					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "Article",
-				description: "This is an article discussing the merits of something or another.",
+				title: "tim",
+				description: "godschat",
 				logo: {
 					"image": {
 						"alt": "stOne",
@@ -5622,8 +5622,8 @@ function create_fragment$9(ctx) {
 					"alt": "tim",
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/495276_timothy-leary_1.jpeg1689587573858"
 				},
-				title: "Article",
-				description: "This is an article discussing the merits of something or another.",
+				title: "tim",
+				description: "godschat",
 				superhead: "2023-07-18",
 				heading: "tim"
 			}
@@ -5641,8 +5641,8 @@ function create_fragment$9(ctx) {
 					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "Article",
-				description: "This is an article discussing the merits of something or another.",
+				title: "tim",
+				description: "godschat",
 				content: {
 					"html": "<p><strong>i had my first chat with timothy leary today</strong></p><p>i created him in chat-gpt 3.5</p>",
 					"markdown": "**i had my first chat with timothy leary today**\n\ni created him in chat-gpt 3.5\n\n"
@@ -5662,8 +5662,8 @@ function create_fragment$9(ctx) {
 					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "Article",
-				description: "This is an article discussing the merits of something or another.",
+				title: "tim",
+				description: "godschat",
 				heading: "",
 				testimonials: [
 					{
@@ -5698,8 +5698,8 @@ function create_fragment$9(ctx) {
 					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "Article",
-				description: "This is an article discussing the merits of something or another.",
+				title: "tim",
+				description: "godschat",
 				content: {
 					"html": "<h3><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link\" href=\"https://github.com/stOneskull/godschat\">godschat</a></h3><p>playing with simpleaichat, which connects to open ai</p><blockquote><p>i recommend creativity level 3</p></blockquote>",
 					"markdown": "### [godschat](<https://github.com/stOneskull/godschat>)\n\nplaying with simpleaichat, which connects to open ai\n\n> i recommend creativity level 3\n\n"
@@ -5719,8 +5719,8 @@ function create_fragment$9(ctx) {
 					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "Article",
-				description: "This is an article discussing the merits of something or another.",
+				title: "tim",
+				description: "godschat",
 				logo: {
 					"image": {
 						"alt": "stOne",
@@ -5756,8 +5756,8 @@ function create_fragment$9(ctx) {
 					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "Article",
-				description: "This is an article discussing the merits of something or another.",
+				title: "tim",
+				description: "godschat",
 				heading: "",
 				email: "",
 				social_links: [
@@ -5814,8 +5814,8 @@ function create_fragment$9(ctx) {
 					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "Article",
-				description: "This is an article discussing the merits of something or another."
+				title: "tim",
+				description: "godschat"
 			}
 		});
 

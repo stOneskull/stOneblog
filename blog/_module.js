@@ -5066,7 +5066,7 @@ function create_fragment$6(ctx) {
 					"url": "https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "Blog Posts",
+				title: "blOgs",
 				description: "These are my blog posts and they are wonderful."
 			}
 		});
@@ -5083,7 +5083,7 @@ function create_fragment$6(ctx) {
 					"url": "https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "Blog Posts",
+				title: "blOgs",
 				description: "These are my blog posts and they are wonderful.",
 				logo: {
 					"image": {
@@ -5120,7 +5120,7 @@ function create_fragment$6(ctx) {
 					"url": "https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "Blog Posts",
+				title: "blOgs",
 				description: "These are my blog posts and they are wonderful.",
 				heading: "blOgs",
 				items: [
@@ -5182,7 +5182,7 @@ function create_fragment$6(ctx) {
 					"url": "https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "Blog Posts",
+				title: "blOgs",
 				description: "These are my blog posts and they are wonderful.",
 				logo: {
 					"image": {
@@ -5219,7 +5219,7 @@ function create_fragment$6(ctx) {
 					"url": "https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "Blog Posts",
+				title: "blOgs",
 				description: "These are my blog posts and they are wonderful.",
 				heading: "",
 				email: "",
@@ -5277,7 +5277,7 @@ function create_fragment$6(ctx) {
 					"url": "https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "Blog Posts",
+				title: "blOgs",
 				description: "These are my blog posts and they are wonderful."
 			}
 		});

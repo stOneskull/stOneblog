@@ -5002,8 +5002,8 @@ function create_fragment$7(ctx) {
 					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "Article",
-				description: "This is an article discussing the merits of something or another."
+				title: "free",
+				description: "step by step"
 			}
 		});
 
@@ -5019,8 +5019,8 @@ function create_fragment$7(ctx) {
 					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "Article",
-				description: "This is an article discussing the merits of something or another.",
+				title: "free",
+				description: "step by step",
 				logo: {
 					"image": {
 						"alt": "stOne",
@@ -5056,8 +5056,8 @@ function create_fragment$7(ctx) {
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1092769150000stoneskull.jpg",
 					"size": 8
 				},
-				title: "Article",
-				description: "This is an article discussing the merits of something or another.",
+				title: "free",
+				description: "step by step",
 				superhead: "2023-07-16 ",
 				heading: "free"
 			}
@@ -5075,8 +5075,8 @@ function create_fragment$7(ctx) {
 					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "Article",
-				description: "This is an article discussing the merits of something or another.",
+				title: "free",
+				description: "step by step",
 				content: {
 					"html": "<p><em>2 things</em></p><p></p><h2><strong>De-</strong></h2><h3><strong>• Googolizize</strong></h3><h3><strong>• Windowsizize</strong></h3><p></p><p>start and quick, don't hate either.</p><p>google maps is great. vs code is great.</p><p>lot of great stuff. just want to be independent.</p><p></p><h3><strong>phase 1:</strong></h3><p></p><p>G:</p><p>1. start slow</p><p>2. one by one account</p><p>3. update password manager synchronistically</p><p>4. don't delete email addresses, keep them and use them</p><p></p><p>W:</p><p>1. back up</p><p>2. list possible problems</p><p>3. go through software and check for 1 and 2 above</p><p>4. double check</p><p></p><p>let's spend a good week slowly starting and documenting.</p><p>and then we will expand.</p><p>in the meantime some background.</p><p></p><p>google has been the heart of my email and online stuff since gmail</p><p>hotmail was my first, and yahoo, and 2 or 3 from <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link\" href=\"http://mail.com\">mail.com</a></p><p>there was spymac which messed up.. they promised a gig</p><p>but yeah, hotmail, msn messenger, yahoo, yahoo messenger, forums, chats</p><p>then gmail.. google was like a rock star</p><p></p><p>plan:</p><p>laptop - pop os</p><p>desktop - ubuntu studio</p><p>i've stayed with windows too long for convenience</p><p>moving to bitwarden for passwords and more*</p><p>*authentication</p>",
 					"markdown": "*2 things*\n\n\n\n## **De-**\n\n### **• Googolizize**\n\n### **• Windowsizize**\n\n\n\nstart and quick, don't hate either.\n\ngoogle maps is great. vs code is great.\n\nlot of great stuff. just want to be independent.\n\n\n\n### **phase 1:**\n\n\n\nG:\n\n1\\. start slow\n\n2\\. one by one account\n\n3\\. update password manager synchronistically\n\n4\\. don't delete email addresses, keep them and use them\n\n\n\nW:\n\n1\\. back up\n\n2\\. list possible problems\n\n3\\. go through software and check for 1 and 2 above\n\n4\\. double check\n\n\n\nlet's spend a good week slowly starting and documenting.\n\nand then we will expand.\n\nin the meantime some background.\n\n\n\ngoogle has been the heart of my email and online stuff since gmail\n\nhotmail was my first, and yahoo, and 2 or 3 from [mail.com](<http://mail.com>)\n\nthere was spymac which messed up.. they promised a gig\n\nbut yeah, hotmail, msn messenger, yahoo, yahoo messenger, forums, chats\n\nthen gmail.. google was like a rock star\n\n\n\nplan:\n\nlaptop - pop os\n\ndesktop - ubuntu studio\n\ni've stayed with windows too long for convenience\n\nmoving to bitwarden for passwords and more\\*\n\n\\*authentication\n\n"
@@ -5096,8 +5096,8 @@ function create_fragment$7(ctx) {
 					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "Article",
-				description: "This is an article discussing the merits of something or another.",
+				title: "free",
+				description: "step by step",
 				logo: {
 					"image": {
 						"alt": "stOne",
@@ -5133,8 +5133,8 @@ function create_fragment$7(ctx) {
 					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "Article",
-				description: "This is an article discussing the merits of something or another.",
+				title: "free",
+				description: "step by step",
 				heading: "",
 				email: "",
 				social_links: [
@@ -5191,8 +5191,8 @@ function create_fragment$7(ctx) {
 					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "Article",
-				description: "This is an article discussing the merits of something or another."
+				title: "free",
+				description: "step by step"
 			}
 		});
 

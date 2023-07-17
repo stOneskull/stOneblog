@@ -4238,8 +4238,8 @@ function create_fragment$5(ctx) {
 					"url": "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "About my Blog",
-				description: "I'm a developer, designer, founder and everything in-between."
+				title: "abOut",
+				description: "high :)"
 			}
 		});
 
@@ -4255,8 +4255,8 @@ function create_fragment$5(ctx) {
 					"url": "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "About my Blog",
-				description: "I'm a developer, designer, founder and everything in-between.",
+				title: "abOut",
+				description: "high :)",
 				logo: {
 					"image": {
 						"alt": "stOne",
@@ -4290,8 +4290,8 @@ function create_fragment$5(ctx) {
 					"alt": "stOne",
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/shades.jpg1118544548000"
 				},
-				title: "About my Blog",
-				description: "I'm a developer, designer, founder and everything in-between.",
+				title: "abOut",
+				description: "high :)",
 				heading: "high :)",
 				content: {
 					"html": "<p>blue mountains, australia</p>",
@@ -4312,8 +4312,8 @@ function create_fragment$5(ctx) {
 					"url": "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "About my Blog",
-				description: "I'm a developer, designer, founder and everything in-between.",
+				title: "abOut",
+				description: "high :)",
 				heading: "",
 				email: "",
 				social_links: [
@@ -4370,8 +4370,8 @@ function create_fragment$5(ctx) {
 					"url": "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "About my Blog",
-				description: "I'm a developer, designer, founder and everything in-between."
+				title: "abOut",
+				description: "high :)"
 			}
 		});
 
