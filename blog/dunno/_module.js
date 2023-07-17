@@ -5144,10 +5144,8 @@ function create_fragment$8(ctx) {
 					"url": "https://github.com/primocms/primo/blob/master/static/primologo.png?raw=true"
 				},
 				image: {
-					"alt": "",
-					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1093415396000last-supper-signs.jpg",
-					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1093415396000last-supper-signs.jpg",
-					"size": 101
+					"alt": "supper signs",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/supper-signs.webp1689589269635"
 				},
 				title: "Article",
 				description: "This is an article discussing the merits of something or another.",
