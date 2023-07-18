@@ -5004,7 +5004,7 @@ function create_fragment$7(ctx) {
 					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "free",
+				title: "free week 1",
 				description: "step by step"
 			}
 		});
@@ -5023,7 +5023,7 @@ function create_fragment$7(ctx) {
 					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "free",
+				title: "free week 1",
 				description: "step by step",
 				logo: {
 					"image": {
@@ -5068,7 +5068,7 @@ function create_fragment$7(ctx) {
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1092769150000stoneskull.jpg",
 					"size": 8
 				},
-				title: "free",
+				title: "free week 1",
 				description: "step by step",
 				superhead: "2023-07-23 ",
 				heading: "free: week 1"
@@ -5089,11 +5089,11 @@ function create_fragment$7(ctx) {
 					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "free",
+				title: "free week 1",
 				description: "step by step",
 				content: {
-					"html": "<p><em>2 things</em></p><p></p><h2><strong>De-</strong></h2><h3><strong>• Googolizize</strong></h3><h3><strong>• Windowsizize</strong></h3><p></p><p>don't hate either.</p><p>google maps is great. vs code is great.</p><p>lot of great stuff.</p><p>just want to be independent.</p><p></p><h3><strong>phase 1:</strong></h3><p></p><p>G:</p><p>1. start slow</p><p>2. one by one account</p><p>3. update password manager synchronistical-like</p><p>4. don't delete email addresses, keep them and use them</p><blockquote><p>keep them for email.</p><p>the idea is changing log-ins to websites using your own email addresses.</p><p>eg. you could sign into twitter with mytwitter@your_domain</p><p>i recommend the micro plan on <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link link link link link\" href=\"http://migadu.com\">migadu.com</a> for hosting your email. you pay a very reasonable flat fee per year and can use more than one domain. it has served me well for years.</p></blockquote><p></p><p>W:</p><p>1. back up</p><p>2. list possible problems</p><p>3. go through software and check for 1 and 2 above</p><p>4. double check</p><p></p><p>let's spend a good week slowly starting and documenting.</p><p>and then we will expand..</p><p></p><h3><strong>phase 2:.</strong></h3><p></p><p>G:</p><p>i'll start with the biggest uses of me logging in with gmail..</p><ul><li><p>twitter</p></li><li><p>github</p></li></ul><p>then where i log in <em>with</em> these</p><p>i can think of 1 for each right now..</p><blockquote><p>google has been the heart of my email and online stuff since gmail</p><p>hotmail was my first, and yahoo, and 2 or 3 from mail dot com</p><p>there was spymac which messed up.. they promised a gig then disappeared</p><p>hotmail, yahoo, forums, chats</p><p>then gmail.. google was like a rock star at the time</p><p>at first it was invite only. i had fun selling invites for 99c on ebay.</p><p>i registered a few. and from then til now almost all sign-ups to websites have been using them.</p><p>not too long ago, i lost an account. it was mainly my fault, and i learned a lesson. i had a simple password i'd had on there for years. one day, i was locked out of it. goodle said they couldn't tell who owned the account, and as i didn't have any personal info on the account or proof it was mine, it was gone. i had that account as a sign-in to a domain registrar! i was able to sign in, and change my email address but it could've been so much worse.</p><p>so pro-actively..</p></blockquote><p></p><p>W:</p><p>plan:</p><p>laptop - pop os</p><p>desktop - ubuntu studio</p><blockquote><p>i've stayed with windows too long for convenience</p><p>and i use wsl a lot. i don't know if moving from stuff from wsl to a proper l is easy.</p><p>i was thinking about debian, especially mx-linux which i like. and i thought about debian servers.. i guess ubuntu is easy.</p><p>i don't want any snaps or whatever installed, which is what standard ubuntu does, and so looked at distros without.</p><p>i love mint, i've used it a lot but i haven't tried pop os yet and heard and read good things about it. i think it'll be good for my laptop.</p><p>i think ubuntu studio looks cool. i can try and make some music!</p></blockquote><p></p><p>bitwarden for passwords and authentication</p><p>um..</p>",
-					"markdown": "*2 things*\n\n\n\n## **De-**\n\n### **• Googolizize**\n\n### **• Windowsizize**\n\n\n\ndon't hate either.\n\ngoogle maps is great. vs code is great.\n\nlot of great stuff.\n\njust want to be independent.\n\n\n\n### **phase 1:**\n\n\n\nG:\n\n1\\. start slow\n\n2\\. one by one account\n\n3\\. update password manager synchronistical-like\n\n4\\. don't delete email addresses, keep them and use them\n\n> keep them for email.\n> \n> the idea is changing log-ins to websites using your own email addresses.\n> \n> eg. you could sign into twitter with mytwitter@your\\_domain\n> \n> i recommend the micro plan on [migadu.com](<http://migadu.com>) for hosting your email. you pay a very reasonable flat fee per year and can use more than one domain. it has served me well for years.\n\n\n\nW:\n\n1\\. back up\n\n2\\. list possible problems\n\n3\\. go through software and check for 1 and 2 above\n\n4\\. double check\n\n\n\nlet's spend a good week slowly starting and documenting.\n\nand then we will expand..\n\n\n\n### **phase 2:.**\n\n\n\nG:\n\ni'll start with the biggest uses of me logging in with gmail..\n\n- twitter\n\n- github\n\n\n<!-- -->\n\nthen where i log in *with* these\n\ni can think of 1 for each right now..\n\n> google has been the heart of my email and online stuff since gmail\n> \n> hotmail was my first, and yahoo, and 2 or 3 from mail dot com\n> \n> there was spymac which messed up.. they promised a gig then disappeared\n> \n> hotmail, yahoo, forums, chats\n> \n> then gmail.. google was like a rock star at the time\n> \n> at first it was invite only. i had fun selling invites for 99c on ebay.\n> \n> i registered a few. and from then til now almost all sign-ups to websites have been using them.\n> \n> not too long ago, i lost an account. it was mainly my fault, and i learned a lesson. i had a simple password i'd had on there for years. one day, i was locked out of it. goodle said they couldn't tell who owned the account, and as i didn't have any personal info on the account or proof it was mine, it was gone. i had that account as a sign-in to a domain registrar! i was able to sign in, and change my email address but it could've been so much worse.\n> \n> so pro-actively..\n\n\n\nW:\n\nplan:\n\nlaptop - pop os\n\ndesktop - ubuntu studio\n\n> i've stayed with windows too long for convenience\n> \n> and i use wsl a lot. i don't know if moving from stuff from wsl to a proper l is easy.\n> \n> i was thinking about debian, especially mx-linux which i like. and i thought about debian servers.. i guess ubuntu is easy.\n> \n> i don't want any snaps or whatever installed, which is what standard ubuntu does, and so looked at distros without.\n> \n> i love mint, i've used it a lot but i haven't tried pop os yet and heard and read good things about it. i think it'll be good for my laptop.\n> \n> i think ubuntu studio looks cool. i can try and make some music!\n\n\n\nbitwarden for passwords and authentication\n\num..\n\n"
+					"html": "<p><em>2 things</em></p><h2><strong>De-</strong></h2><h3><strong>• Googolizize</strong></h3><h3><strong>• Windowsizize</strong></h3><p></p><h3><strong>phase 1:</strong></h3><p>G:</p><p>1. start slow</p><p>2. one by one account</p><p>3. update password manager synchronistical-like</p><p>4. don't delete email addresses, keep them and use them</p><p>W:</p><p>1. back up</p><p>2. list possible problems</p><p>3. go through software and check for 1 and 2 above</p><p>4. double check</p><p>a week now..</p><p>expand..</p><p></p><h3><strong>phase 2:.</strong></h3><p>G:</p><p>i'll start with the biggest uses of me logging in with gmail..</p><ul><li><p>twitter</p></li><li><p>github</p></li></ul><p>then where i log in <em>with</em> these</p><p>i can think of 1 for each right now..</p><p></p><p>W:</p><p>plan:</p><p>laptop - pop os</p><p>desktop - ubuntu studio</p><p></p><p>bitwarden for passwords and authentication</p><p>um..</p><p></p><p>again, another post in a week, on the 30th</p>",
+					"markdown": "*2 things*\n\n## **De-**\n\n### **• Googolizize**\n\n### **• Windowsizize**\n\n\n\n### **phase 1:**\n\nG:\n\n1\\. start slow\n\n2\\. one by one account\n\n3\\. update password manager synchronistical-like\n\n4\\. don't delete email addresses, keep them and use them\n\nW:\n\n1\\. back up\n\n2\\. list possible problems\n\n3\\. go through software and check for 1 and 2 above\n\n4\\. double check\n\na week now..\n\nexpand..\n\n\n\n### **phase 2:.**\n\nG:\n\ni'll start with the biggest uses of me logging in with gmail..\n\n- twitter\n\n- github\n\n\n<!-- -->\n\nthen where i log in *with* these\n\ni can think of 1 for each right now..\n\n\n\nW:\n\nplan:\n\nlaptop - pop os\n\ndesktop - ubuntu studio\n\n\n\nbitwarden for passwords and authentication\n\num..\n\n\n\nagain, another post in a week, on the 30th\n\n"
 				}
 			}
 		});
@@ -5112,7 +5112,7 @@ function create_fragment$7(ctx) {
 					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "free",
+				title: "free week 1",
 				description: "step by step",
 				logo: {
 					"image": {
@@ -5157,7 +5157,7 @@ function create_fragment$7(ctx) {
 					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "free",
+				title: "free week 1",
 				description: "step by step",
 				heading: "",
 				email: "",
@@ -5217,7 +5217,7 @@ function create_fragment$7(ctx) {
 					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "free",
+				title: "free week 1",
 				description: "step by step"
 			}
 		});
