@@ -4000,12 +4000,6 @@ function create_fragment$5(ctx) {
 	let img;
 	let img_src_value;
 	let img_alt_value;
-	let t0;
-	let style;
-	let t1;
-	let t2;
-	let p;
-	let t3;
 
 	return {
 		c() {
@@ -4013,12 +4007,6 @@ function create_fragment$5(ctx) {
 			div0 = element("div");
 			feature = element("feature");
 			img = element("img");
-			t0 = space();
-			style = element("style");
-			t1 = text("p {text-align: center;\n       font-size: 12px;\n      }");
-			t2 = space();
-			p = element("p");
-			t3 = text("rembrandt stone bridge");
 			this.h();
 		},
 		l(nodes) {
@@ -4030,16 +4018,6 @@ function create_fragment$5(ctx) {
 			var feature_nodes = children(feature);
 			img = claim_element(feature_nodes, "IMG", { class: true, src: true, alt: true });
 			feature_nodes.forEach(detach);
-			t0 = claim_space(div0_nodes);
-			style = claim_element(div0_nodes, "STYLE", {});
-			var style_nodes = children(style);
-			t1 = claim_text(style_nodes, "p {text-align: center;\n       font-size: 12px;\n      }");
-			style_nodes.forEach(detach);
-			t2 = claim_space(div0_nodes);
-			p = claim_element(div0_nodes, "P", {});
-			var p_nodes = children(p);
-			t3 = claim_text(p_nodes, "rembrandt stone bridge");
-			p_nodes.forEach(detach);
 			div0_nodes.forEach(detach);
 			div1_nodes.forEach(detach);
 			this.h();
@@ -4057,12 +4035,6 @@ function create_fragment$5(ctx) {
 			append_hydration(div1, div0);
 			append_hydration(div0, feature);
 			append_hydration(feature, img);
-			append_hydration(div0, t0);
-			append_hydration(div0, style);
-			append_hydration(style, t1);
-			append_hydration(div0, t2);
-			append_hydration(div0, p);
-			append_hydration(p, t3);
 		},
 		p(ctx, [dirty]) {
 			if (dirty & /*image*/ 1 && !src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) {
@@ -4119,12 +4091,6 @@ function create_fragment$6(ctx) {
 	let img;
 	let img_src_value;
 	let img_alt_value;
-	let t0;
-	let style;
-	let t1;
-	let t2;
-	let p;
-	let t3;
 
 	return {
 		c() {
@@ -4132,12 +4098,6 @@ function create_fragment$6(ctx) {
 			div0 = element("div");
 			feature = element("feature");
 			img = element("img");
-			t0 = space();
-			style = element("style");
-			t1 = text("p {text-align: center;\n       font-size: 12px;\n      }");
-			t2 = space();
-			p = element("p");
-			t3 = text("rembrandt stone bridge");
 			this.h();
 		},
 		l(nodes) {
@@ -4149,16 +4109,6 @@ function create_fragment$6(ctx) {
 			var feature_nodes = children(feature);
 			img = claim_element(feature_nodes, "IMG", { class: true, src: true, alt: true });
 			feature_nodes.forEach(detach);
-			t0 = claim_space(div0_nodes);
-			style = claim_element(div0_nodes, "STYLE", {});
-			var style_nodes = children(style);
-			t1 = claim_text(style_nodes, "p {text-align: center;\n       font-size: 12px;\n      }");
-			style_nodes.forEach(detach);
-			t2 = claim_space(div0_nodes);
-			p = claim_element(div0_nodes, "P", {});
-			var p_nodes = children(p);
-			t3 = claim_text(p_nodes, "rembrandt stone bridge");
-			p_nodes.forEach(detach);
 			div0_nodes.forEach(detach);
 			div1_nodes.forEach(detach);
 			this.h();
@@ -4176,12 +4126,6 @@ function create_fragment$6(ctx) {
 			append_hydration(div1, div0);
 			append_hydration(div0, feature);
 			append_hydration(feature, img);
-			append_hydration(div0, t0);
-			append_hydration(div0, style);
-			append_hydration(style, t1);
-			append_hydration(div0, t2);
-			append_hydration(div0, p);
-			append_hydration(p, t3);
 		},
 		p(ctx, [dirty]) {
 			if (dirty & /*image*/ 1 && !src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) {
@@ -4238,12 +4182,6 @@ function create_fragment$7(ctx) {
 	let img;
 	let img_src_value;
 	let img_alt_value;
-	let t0;
-	let style;
-	let t1;
-	let t2;
-	let p;
-	let t3;
 
 	return {
 		c() {
@@ -4251,12 +4189,6 @@ function create_fragment$7(ctx) {
 			div0 = element("div");
 			feature = element("feature");
 			img = element("img");
-			t0 = space();
-			style = element("style");
-			t1 = text("p {text-align: center;\n       font-size: 12px;\n      }");
-			t2 = space();
-			p = element("p");
-			t3 = text("rembrandt stone bridge");
 			this.h();
 		},
 		l(nodes) {
@@ -4268,16 +4200,6 @@ function create_fragment$7(ctx) {
 			var feature_nodes = children(feature);
 			img = claim_element(feature_nodes, "IMG", { class: true, src: true, alt: true });
 			feature_nodes.forEach(detach);
-			t0 = claim_space(div0_nodes);
-			style = claim_element(div0_nodes, "STYLE", {});
-			var style_nodes = children(style);
-			t1 = claim_text(style_nodes, "p {text-align: center;\n       font-size: 12px;\n      }");
-			style_nodes.forEach(detach);
-			t2 = claim_space(div0_nodes);
-			p = claim_element(div0_nodes, "P", {});
-			var p_nodes = children(p);
-			t3 = claim_text(p_nodes, "rembrandt stone bridge");
-			p_nodes.forEach(detach);
 			div0_nodes.forEach(detach);
 			div1_nodes.forEach(detach);
 			this.h();
@@ -4295,12 +4217,6 @@ function create_fragment$7(ctx) {
 			append_hydration(div1, div0);
 			append_hydration(div0, feature);
 			append_hydration(feature, img);
-			append_hydration(div0, t0);
-			append_hydration(div0, style);
-			append_hydration(style, t1);
-			append_hydration(div0, t2);
-			append_hydration(div0, p);
-			append_hydration(p, t3);
 		},
 		p(ctx, [dirty]) {
 			if (dirty & /*image*/ 1 && !src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) {
@@ -4438,12 +4354,6 @@ function create_fragment$9(ctx) {
 	let img;
 	let img_src_value;
 	let img_alt_value;
-	let t0;
-	let style;
-	let t1;
-	let t2;
-	let p;
-	let t3;
 
 	return {
 		c() {
@@ -4451,12 +4361,6 @@ function create_fragment$9(ctx) {
 			div0 = element("div");
 			feature = element("feature");
 			img = element("img");
-			t0 = space();
-			style = element("style");
-			t1 = text("p {text-align: center;\n       font-size: 12px;\n      }");
-			t2 = space();
-			p = element("p");
-			t3 = text("rembrandt stone bridge");
 			this.h();
 		},
 		l(nodes) {
@@ -4468,16 +4372,6 @@ function create_fragment$9(ctx) {
 			var feature_nodes = children(feature);
 			img = claim_element(feature_nodes, "IMG", { class: true, src: true, alt: true });
 			feature_nodes.forEach(detach);
-			t0 = claim_space(div0_nodes);
-			style = claim_element(div0_nodes, "STYLE", {});
-			var style_nodes = children(style);
-			t1 = claim_text(style_nodes, "p {text-align: center;\n       font-size: 12px;\n      }");
-			style_nodes.forEach(detach);
-			t2 = claim_space(div0_nodes);
-			p = claim_element(div0_nodes, "P", {});
-			var p_nodes = children(p);
-			t3 = claim_text(p_nodes, "rembrandt stone bridge");
-			p_nodes.forEach(detach);
 			div0_nodes.forEach(detach);
 			div1_nodes.forEach(detach);
 			this.h();
@@ -4495,12 +4389,6 @@ function create_fragment$9(ctx) {
 			append_hydration(div1, div0);
 			append_hydration(div0, feature);
 			append_hydration(feature, img);
-			append_hydration(div0, t0);
-			append_hydration(div0, style);
-			append_hydration(style, t1);
-			append_hydration(div0, t2);
-			append_hydration(div0, p);
-			append_hydration(p, t3);
 		},
 		p(ctx, [dirty]) {
 			if (dirty & /*image*/ 1 && !src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) {
@@ -4557,12 +4445,6 @@ function create_fragment$a(ctx) {
 	let img;
 	let img_src_value;
 	let img_alt_value;
-	let t0;
-	let style;
-	let t1;
-	let t2;
-	let p;
-	let t3;
 
 	return {
 		c() {
@@ -4570,12 +4452,6 @@ function create_fragment$a(ctx) {
 			div0 = element("div");
 			feature = element("feature");
 			img = element("img");
-			t0 = space();
-			style = element("style");
-			t1 = text("p {text-align: center;\n       font-size: 12px;\n      }");
-			t2 = space();
-			p = element("p");
-			t3 = text("rembrandt stone bridge");
 			this.h();
 		},
 		l(nodes) {
@@ -4587,16 +4463,6 @@ function create_fragment$a(ctx) {
 			var feature_nodes = children(feature);
 			img = claim_element(feature_nodes, "IMG", { class: true, src: true, alt: true });
 			feature_nodes.forEach(detach);
-			t0 = claim_space(div0_nodes);
-			style = claim_element(div0_nodes, "STYLE", {});
-			var style_nodes = children(style);
-			t1 = claim_text(style_nodes, "p {text-align: center;\n       font-size: 12px;\n      }");
-			style_nodes.forEach(detach);
-			t2 = claim_space(div0_nodes);
-			p = claim_element(div0_nodes, "P", {});
-			var p_nodes = children(p);
-			t3 = claim_text(p_nodes, "rembrandt stone bridge");
-			p_nodes.forEach(detach);
 			div0_nodes.forEach(detach);
 			div1_nodes.forEach(detach);
 			this.h();
@@ -4614,12 +4480,6 @@ function create_fragment$a(ctx) {
 			append_hydration(div1, div0);
 			append_hydration(div0, feature);
 			append_hydration(feature, img);
-			append_hydration(div0, t0);
-			append_hydration(div0, style);
-			append_hydration(style, t1);
-			append_hydration(div0, t2);
-			append_hydration(div0, p);
-			append_hydration(p, t3);
 		},
 		p(ctx, [dirty]) {
 			if (dirty & /*image*/ 1 && !src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) {
@@ -4676,12 +4536,6 @@ function create_fragment$b(ctx) {
 	let img;
 	let img_src_value;
 	let img_alt_value;
-	let t0;
-	let style;
-	let t1;
-	let t2;
-	let p;
-	let t3;
 
 	return {
 		c() {
@@ -4689,12 +4543,6 @@ function create_fragment$b(ctx) {
 			div0 = element("div");
 			feature = element("feature");
 			img = element("img");
-			t0 = space();
-			style = element("style");
-			t1 = text("p {text-align: center;\n       font-size: 12px;\n      }");
-			t2 = space();
-			p = element("p");
-			t3 = text("rembrandt stone bridge");
 			this.h();
 		},
 		l(nodes) {
@@ -4706,16 +4554,6 @@ function create_fragment$b(ctx) {
 			var feature_nodes = children(feature);
 			img = claim_element(feature_nodes, "IMG", { class: true, src: true, alt: true });
 			feature_nodes.forEach(detach);
-			t0 = claim_space(div0_nodes);
-			style = claim_element(div0_nodes, "STYLE", {});
-			var style_nodes = children(style);
-			t1 = claim_text(style_nodes, "p {text-align: center;\n       font-size: 12px;\n      }");
-			style_nodes.forEach(detach);
-			t2 = claim_space(div0_nodes);
-			p = claim_element(div0_nodes, "P", {});
-			var p_nodes = children(p);
-			t3 = claim_text(p_nodes, "rembrandt stone bridge");
-			p_nodes.forEach(detach);
 			div0_nodes.forEach(detach);
 			div1_nodes.forEach(detach);
 			this.h();
@@ -4733,12 +4571,6 @@ function create_fragment$b(ctx) {
 			append_hydration(div1, div0);
 			append_hydration(div0, feature);
 			append_hydration(feature, img);
-			append_hydration(div0, t0);
-			append_hydration(div0, style);
-			append_hydration(style, t1);
-			append_hydration(div0, t2);
-			append_hydration(div0, p);
-			append_hydration(p, t3);
 		},
 		p(ctx, [dirty]) {
 			if (dirty & /*image*/ 1 && !src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) {
@@ -4876,12 +4708,6 @@ function create_fragment$d(ctx) {
 	let img;
 	let img_src_value;
 	let img_alt_value;
-	let t0;
-	let style;
-	let t1;
-	let t2;
-	let p;
-	let t3;
 
 	return {
 		c() {
@@ -4889,12 +4715,6 @@ function create_fragment$d(ctx) {
 			div0 = element("div");
 			feature = element("feature");
 			img = element("img");
-			t0 = space();
-			style = element("style");
-			t1 = text("p {text-align: center;\n       font-size: 12px;\n      }");
-			t2 = space();
-			p = element("p");
-			t3 = text("rembrandt stone bridge");
 			this.h();
 		},
 		l(nodes) {
@@ -4906,16 +4726,6 @@ function create_fragment$d(ctx) {
 			var feature_nodes = children(feature);
 			img = claim_element(feature_nodes, "IMG", { class: true, src: true, alt: true });
 			feature_nodes.forEach(detach);
-			t0 = claim_space(div0_nodes);
-			style = claim_element(div0_nodes, "STYLE", {});
-			var style_nodes = children(style);
-			t1 = claim_text(style_nodes, "p {text-align: center;\n       font-size: 12px;\n      }");
-			style_nodes.forEach(detach);
-			t2 = claim_space(div0_nodes);
-			p = claim_element(div0_nodes, "P", {});
-			var p_nodes = children(p);
-			t3 = claim_text(p_nodes, "rembrandt stone bridge");
-			p_nodes.forEach(detach);
 			div0_nodes.forEach(detach);
 			div1_nodes.forEach(detach);
 			this.h();
@@ -4933,12 +4743,6 @@ function create_fragment$d(ctx) {
 			append_hydration(div1, div0);
 			append_hydration(div0, feature);
 			append_hydration(feature, img);
-			append_hydration(div0, t0);
-			append_hydration(div0, style);
-			append_hydration(style, t1);
-			append_hydration(div0, t2);
-			append_hydration(div0, p);
-			append_hydration(p, t3);
 		},
 		p(ctx, [dirty]) {
 			if (dirty & /*image*/ 1 && !src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) {
@@ -4995,12 +4799,6 @@ function create_fragment$e(ctx) {
 	let img;
 	let img_src_value;
 	let img_alt_value;
-	let t0;
-	let style;
-	let t1;
-	let t2;
-	let p;
-	let t3;
 
 	return {
 		c() {
@@ -5008,12 +4806,6 @@ function create_fragment$e(ctx) {
 			div0 = element("div");
 			feature = element("feature");
 			img = element("img");
-			t0 = space();
-			style = element("style");
-			t1 = text("p {text-align: center;\n       font-size: 12px;\n      }");
-			t2 = space();
-			p = element("p");
-			t3 = text("rembrandt stone bridge");
 			this.h();
 		},
 		l(nodes) {
@@ -5025,16 +4817,6 @@ function create_fragment$e(ctx) {
 			var feature_nodes = children(feature);
 			img = claim_element(feature_nodes, "IMG", { class: true, src: true, alt: true });
 			feature_nodes.forEach(detach);
-			t0 = claim_space(div0_nodes);
-			style = claim_element(div0_nodes, "STYLE", {});
-			var style_nodes = children(style);
-			t1 = claim_text(style_nodes, "p {text-align: center;\n       font-size: 12px;\n      }");
-			style_nodes.forEach(detach);
-			t2 = claim_space(div0_nodes);
-			p = claim_element(div0_nodes, "P", {});
-			var p_nodes = children(p);
-			t3 = claim_text(p_nodes, "rembrandt stone bridge");
-			p_nodes.forEach(detach);
 			div0_nodes.forEach(detach);
 			div1_nodes.forEach(detach);
 			this.h();
@@ -5052,12 +4834,6 @@ function create_fragment$e(ctx) {
 			append_hydration(div1, div0);
 			append_hydration(div0, feature);
 			append_hydration(feature, img);
-			append_hydration(div0, t0);
-			append_hydration(div0, style);
-			append_hydration(style, t1);
-			append_hydration(div0, t2);
-			append_hydration(div0, p);
-			append_hydration(p, t3);
 		},
 		p(ctx, [dirty]) {
 			if (dirty & /*image*/ 1 && !src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) {
@@ -5114,12 +4890,6 @@ function create_fragment$f(ctx) {
 	let img;
 	let img_src_value;
 	let img_alt_value;
-	let t0;
-	let style;
-	let t1;
-	let t2;
-	let p;
-	let t3;
 
 	return {
 		c() {
@@ -5127,12 +4897,6 @@ function create_fragment$f(ctx) {
 			div0 = element("div");
 			feature = element("feature");
 			img = element("img");
-			t0 = space();
-			style = element("style");
-			t1 = text("p {text-align: center;\n       font-size: 12px;\n      }");
-			t2 = space();
-			p = element("p");
-			t3 = text("rembrandt stone bridge");
 			this.h();
 		},
 		l(nodes) {
@@ -5144,16 +4908,6 @@ function create_fragment$f(ctx) {
 			var feature_nodes = children(feature);
 			img = claim_element(feature_nodes, "IMG", { class: true, src: true, alt: true });
 			feature_nodes.forEach(detach);
-			t0 = claim_space(div0_nodes);
-			style = claim_element(div0_nodes, "STYLE", {});
-			var style_nodes = children(style);
-			t1 = claim_text(style_nodes, "p {text-align: center;\n       font-size: 12px;\n      }");
-			style_nodes.forEach(detach);
-			t2 = claim_space(div0_nodes);
-			p = claim_element(div0_nodes, "P", {});
-			var p_nodes = children(p);
-			t3 = claim_text(p_nodes, "rembrandt stone bridge");
-			p_nodes.forEach(detach);
 			div0_nodes.forEach(detach);
 			div1_nodes.forEach(detach);
 			this.h();
@@ -5171,12 +4925,6 @@ function create_fragment$f(ctx) {
 			append_hydration(div1, div0);
 			append_hydration(div0, feature);
 			append_hydration(feature, img);
-			append_hydration(div0, t0);
-			append_hydration(div0, style);
-			append_hydration(style, t1);
-			append_hydration(div0, t2);
-			append_hydration(div0, p);
-			append_hydration(p, t3);
 		},
 		p(ctx, [dirty]) {
 			if (dirty & /*image*/ 1 && !src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) {
@@ -5314,12 +5062,6 @@ function create_fragment$h(ctx) {
 	let img;
 	let img_src_value;
 	let img_alt_value;
-	let t0;
-	let style;
-	let t1;
-	let t2;
-	let p;
-	let t3;
 
 	return {
 		c() {
@@ -5327,12 +5069,6 @@ function create_fragment$h(ctx) {
 			div0 = element("div");
 			feature = element("feature");
 			img = element("img");
-			t0 = space();
-			style = element("style");
-			t1 = text("p {text-align: center;\n       font-size: 12px;\n      }");
-			t2 = space();
-			p = element("p");
-			t3 = text("rembrandt stone bridge");
 			this.h();
 		},
 		l(nodes) {
@@ -5344,16 +5080,6 @@ function create_fragment$h(ctx) {
 			var feature_nodes = children(feature);
 			img = claim_element(feature_nodes, "IMG", { class: true, src: true, alt: true });
 			feature_nodes.forEach(detach);
-			t0 = claim_space(div0_nodes);
-			style = claim_element(div0_nodes, "STYLE", {});
-			var style_nodes = children(style);
-			t1 = claim_text(style_nodes, "p {text-align: center;\n       font-size: 12px;\n      }");
-			style_nodes.forEach(detach);
-			t2 = claim_space(div0_nodes);
-			p = claim_element(div0_nodes, "P", {});
-			var p_nodes = children(p);
-			t3 = claim_text(p_nodes, "rembrandt stone bridge");
-			p_nodes.forEach(detach);
 			div0_nodes.forEach(detach);
 			div1_nodes.forEach(detach);
 			this.h();
@@ -5371,12 +5097,6 @@ function create_fragment$h(ctx) {
 			append_hydration(div1, div0);
 			append_hydration(div0, feature);
 			append_hydration(feature, img);
-			append_hydration(div0, t0);
-			append_hydration(div0, style);
-			append_hydration(style, t1);
-			append_hydration(div0, t2);
-			append_hydration(div0, p);
-			append_hydration(p, t3);
 		},
 		p(ctx, [dirty]) {
 			if (dirty & /*image*/ 1 && !src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) {
@@ -5433,12 +5153,6 @@ function create_fragment$i(ctx) {
 	let img;
 	let img_src_value;
 	let img_alt_value;
-	let t0;
-	let style;
-	let t1;
-	let t2;
-	let p;
-	let t3;
 
 	return {
 		c() {
@@ -5446,12 +5160,6 @@ function create_fragment$i(ctx) {
 			div0 = element("div");
 			feature = element("feature");
 			img = element("img");
-			t0 = space();
-			style = element("style");
-			t1 = text("p {text-align: center;\n       font-size: 12px;\n      }");
-			t2 = space();
-			p = element("p");
-			t3 = text("rembrandt stone bridge");
 			this.h();
 		},
 		l(nodes) {
@@ -5463,16 +5171,6 @@ function create_fragment$i(ctx) {
 			var feature_nodes = children(feature);
 			img = claim_element(feature_nodes, "IMG", { class: true, src: true, alt: true });
 			feature_nodes.forEach(detach);
-			t0 = claim_space(div0_nodes);
-			style = claim_element(div0_nodes, "STYLE", {});
-			var style_nodes = children(style);
-			t1 = claim_text(style_nodes, "p {text-align: center;\n       font-size: 12px;\n      }");
-			style_nodes.forEach(detach);
-			t2 = claim_space(div0_nodes);
-			p = claim_element(div0_nodes, "P", {});
-			var p_nodes = children(p);
-			t3 = claim_text(p_nodes, "rembrandt stone bridge");
-			p_nodes.forEach(detach);
 			div0_nodes.forEach(detach);
 			div1_nodes.forEach(detach);
 			this.h();
@@ -5490,12 +5188,6 @@ function create_fragment$i(ctx) {
 			append_hydration(div1, div0);
 			append_hydration(div0, feature);
 			append_hydration(feature, img);
-			append_hydration(div0, t0);
-			append_hydration(div0, style);
-			append_hydration(style, t1);
-			append_hydration(div0, t2);
-			append_hydration(div0, p);
-			append_hydration(p, t3);
 		},
 		p(ctx, [dirty]) {
 			if (dirty & /*image*/ 1 && !src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) {
@@ -5552,12 +5244,6 @@ function create_fragment$j(ctx) {
 	let img;
 	let img_src_value;
 	let img_alt_value;
-	let t0;
-	let style;
-	let t1;
-	let t2;
-	let p;
-	let t3;
 
 	return {
 		c() {
@@ -5565,12 +5251,6 @@ function create_fragment$j(ctx) {
 			div0 = element("div");
 			feature = element("feature");
 			img = element("img");
-			t0 = space();
-			style = element("style");
-			t1 = text("p {text-align: center;\n       font-size: 12px;\n      }");
-			t2 = space();
-			p = element("p");
-			t3 = text("rembrandt stone bridge");
 			this.h();
 		},
 		l(nodes) {
@@ -5582,16 +5262,6 @@ function create_fragment$j(ctx) {
 			var feature_nodes = children(feature);
 			img = claim_element(feature_nodes, "IMG", { class: true, src: true, alt: true });
 			feature_nodes.forEach(detach);
-			t0 = claim_space(div0_nodes);
-			style = claim_element(div0_nodes, "STYLE", {});
-			var style_nodes = children(style);
-			t1 = claim_text(style_nodes, "p {text-align: center;\n       font-size: 12px;\n      }");
-			style_nodes.forEach(detach);
-			t2 = claim_space(div0_nodes);
-			p = claim_element(div0_nodes, "P", {});
-			var p_nodes = children(p);
-			t3 = claim_text(p_nodes, "rembrandt stone bridge");
-			p_nodes.forEach(detach);
 			div0_nodes.forEach(detach);
 			div1_nodes.forEach(detach);
 			this.h();
@@ -5609,12 +5279,6 @@ function create_fragment$j(ctx) {
 			append_hydration(div1, div0);
 			append_hydration(div0, feature);
 			append_hydration(feature, img);
-			append_hydration(div0, t0);
-			append_hydration(div0, style);
-			append_hydration(style, t1);
-			append_hydration(div0, t2);
-			append_hydration(div0, p);
-			append_hydration(p, t3);
 		},
 		p(ctx, [dirty]) {
 			if (dirty & /*image*/ 1 && !src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) {
@@ -5671,12 +5335,6 @@ function create_fragment$k(ctx) {
 	let img;
 	let img_src_value;
 	let img_alt_value;
-	let t0;
-	let style;
-	let t1;
-	let t2;
-	let p;
-	let t3;
 
 	return {
 		c() {
@@ -5684,12 +5342,6 @@ function create_fragment$k(ctx) {
 			div0 = element("div");
 			feature = element("feature");
 			img = element("img");
-			t0 = space();
-			style = element("style");
-			t1 = text("p {text-align: center;\n       font-size: 12px;\n      }");
-			t2 = space();
-			p = element("p");
-			t3 = text("rembrandt stone bridge");
 			this.h();
 		},
 		l(nodes) {
@@ -5701,16 +5353,6 @@ function create_fragment$k(ctx) {
 			var feature_nodes = children(feature);
 			img = claim_element(feature_nodes, "IMG", { class: true, src: true, alt: true });
 			feature_nodes.forEach(detach);
-			t0 = claim_space(div0_nodes);
-			style = claim_element(div0_nodes, "STYLE", {});
-			var style_nodes = children(style);
-			t1 = claim_text(style_nodes, "p {text-align: center;\n       font-size: 12px;\n      }");
-			style_nodes.forEach(detach);
-			t2 = claim_space(div0_nodes);
-			p = claim_element(div0_nodes, "P", {});
-			var p_nodes = children(p);
-			t3 = claim_text(p_nodes, "rembrandt stone bridge");
-			p_nodes.forEach(detach);
 			div0_nodes.forEach(detach);
 			div1_nodes.forEach(detach);
 			this.h();
@@ -5728,12 +5370,6 @@ function create_fragment$k(ctx) {
 			append_hydration(div1, div0);
 			append_hydration(div0, feature);
 			append_hydration(feature, img);
-			append_hydration(div0, t0);
-			append_hydration(div0, style);
-			append_hydration(style, t1);
-			append_hydration(div0, t2);
-			append_hydration(div0, p);
-			append_hydration(p, t3);
 		},
 		p(ctx, [dirty]) {
 			if (dirty & /*image*/ 1 && !src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) {
@@ -5871,12 +5507,6 @@ function create_fragment$m(ctx) {
 	let img;
 	let img_src_value;
 	let img_alt_value;
-	let t0;
-	let style;
-	let t1;
-	let t2;
-	let p;
-	let t3;
 
 	return {
 		c() {
@@ -5884,12 +5514,6 @@ function create_fragment$m(ctx) {
 			div0 = element("div");
 			feature = element("feature");
 			img = element("img");
-			t0 = space();
-			style = element("style");
-			t1 = text("p {text-align: center;\n       font-size: 12px;\n      }");
-			t2 = space();
-			p = element("p");
-			t3 = text("rembrandt stone bridge");
 			this.h();
 		},
 		l(nodes) {
@@ -5901,16 +5525,6 @@ function create_fragment$m(ctx) {
 			var feature_nodes = children(feature);
 			img = claim_element(feature_nodes, "IMG", { class: true, src: true, alt: true });
 			feature_nodes.forEach(detach);
-			t0 = claim_space(div0_nodes);
-			style = claim_element(div0_nodes, "STYLE", {});
-			var style_nodes = children(style);
-			t1 = claim_text(style_nodes, "p {text-align: center;\n       font-size: 12px;\n      }");
-			style_nodes.forEach(detach);
-			t2 = claim_space(div0_nodes);
-			p = claim_element(div0_nodes, "P", {});
-			var p_nodes = children(p);
-			t3 = claim_text(p_nodes, "rembrandt stone bridge");
-			p_nodes.forEach(detach);
 			div0_nodes.forEach(detach);
 			div1_nodes.forEach(detach);
 			this.h();
@@ -5928,12 +5542,6 @@ function create_fragment$m(ctx) {
 			append_hydration(div1, div0);
 			append_hydration(div0, feature);
 			append_hydration(feature, img);
-			append_hydration(div0, t0);
-			append_hydration(div0, style);
-			append_hydration(style, t1);
-			append_hydration(div0, t2);
-			append_hydration(div0, p);
-			append_hydration(p, t3);
 		},
 		p(ctx, [dirty]) {
 			if (dirty & /*image*/ 1 && !src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) {
@@ -5990,12 +5598,6 @@ function create_fragment$n(ctx) {
 	let img;
 	let img_src_value;
 	let img_alt_value;
-	let t0;
-	let style;
-	let t1;
-	let t2;
-	let p;
-	let t3;
 
 	return {
 		c() {
@@ -6003,12 +5605,6 @@ function create_fragment$n(ctx) {
 			div0 = element("div");
 			feature = element("feature");
 			img = element("img");
-			t0 = space();
-			style = element("style");
-			t1 = text("p {text-align: center;\n       font-size: 12px;\n      }");
-			t2 = space();
-			p = element("p");
-			t3 = text("rembrandt stone bridge");
 			this.h();
 		},
 		l(nodes) {
@@ -6020,16 +5616,6 @@ function create_fragment$n(ctx) {
 			var feature_nodes = children(feature);
 			img = claim_element(feature_nodes, "IMG", { class: true, src: true, alt: true });
 			feature_nodes.forEach(detach);
-			t0 = claim_space(div0_nodes);
-			style = claim_element(div0_nodes, "STYLE", {});
-			var style_nodes = children(style);
-			t1 = claim_text(style_nodes, "p {text-align: center;\n       font-size: 12px;\n      }");
-			style_nodes.forEach(detach);
-			t2 = claim_space(div0_nodes);
-			p = claim_element(div0_nodes, "P", {});
-			var p_nodes = children(p);
-			t3 = claim_text(p_nodes, "rembrandt stone bridge");
-			p_nodes.forEach(detach);
 			div0_nodes.forEach(detach);
 			div1_nodes.forEach(detach);
 			this.h();
@@ -6047,12 +5633,6 @@ function create_fragment$n(ctx) {
 			append_hydration(div1, div0);
 			append_hydration(div0, feature);
 			append_hydration(feature, img);
-			append_hydration(div0, t0);
-			append_hydration(div0, style);
-			append_hydration(style, t1);
-			append_hydration(div0, t2);
-			append_hydration(div0, p);
-			append_hydration(p, t3);
 		},
 		p(ctx, [dirty]) {
 			if (dirty & /*image*/ 1 && !src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) {
@@ -6109,12 +5689,6 @@ function create_fragment$o(ctx) {
 	let img;
 	let img_src_value;
 	let img_alt_value;
-	let t0;
-	let style;
-	let t1;
-	let t2;
-	let p;
-	let t3;
 
 	return {
 		c() {
@@ -6122,12 +5696,6 @@ function create_fragment$o(ctx) {
 			div0 = element("div");
 			feature = element("feature");
 			img = element("img");
-			t0 = space();
-			style = element("style");
-			t1 = text("p {text-align: center;\n       font-size: 12px;\n      }");
-			t2 = space();
-			p = element("p");
-			t3 = text("rembrandt stone bridge");
 			this.h();
 		},
 		l(nodes) {
@@ -6139,16 +5707,6 @@ function create_fragment$o(ctx) {
 			var feature_nodes = children(feature);
 			img = claim_element(feature_nodes, "IMG", { class: true, src: true, alt: true });
 			feature_nodes.forEach(detach);
-			t0 = claim_space(div0_nodes);
-			style = claim_element(div0_nodes, "STYLE", {});
-			var style_nodes = children(style);
-			t1 = claim_text(style_nodes, "p {text-align: center;\n       font-size: 12px;\n      }");
-			style_nodes.forEach(detach);
-			t2 = claim_space(div0_nodes);
-			p = claim_element(div0_nodes, "P", {});
-			var p_nodes = children(p);
-			t3 = claim_text(p_nodes, "rembrandt stone bridge");
-			p_nodes.forEach(detach);
 			div0_nodes.forEach(detach);
 			div1_nodes.forEach(detach);
 			this.h();
@@ -6166,12 +5724,6 @@ function create_fragment$o(ctx) {
 			append_hydration(div1, div0);
 			append_hydration(div0, feature);
 			append_hydration(feature, img);
-			append_hydration(div0, t0);
-			append_hydration(div0, style);
-			append_hydration(style, t1);
-			append_hydration(div0, t2);
-			append_hydration(div0, p);
-			append_hydration(p, t3);
 		},
 		p(ctx, [dirty]) {
 			if (dirty & /*image*/ 1 && !src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) {
@@ -6228,12 +5780,6 @@ function create_fragment$p(ctx) {
 	let img;
 	let img_src_value;
 	let img_alt_value;
-	let t0;
-	let style;
-	let t1;
-	let t2;
-	let p;
-	let t3;
 
 	return {
 		c() {
@@ -6241,12 +5787,6 @@ function create_fragment$p(ctx) {
 			div0 = element("div");
 			feature = element("feature");
 			img = element("img");
-			t0 = space();
-			style = element("style");
-			t1 = text("p {text-align: center;\n       font-size: 12px;\n      }");
-			t2 = space();
-			p = element("p");
-			t3 = text("rembrandt stone bridge");
 			this.h();
 		},
 		l(nodes) {
@@ -6258,16 +5798,6 @@ function create_fragment$p(ctx) {
 			var feature_nodes = children(feature);
 			img = claim_element(feature_nodes, "IMG", { class: true, src: true, alt: true });
 			feature_nodes.forEach(detach);
-			t0 = claim_space(div0_nodes);
-			style = claim_element(div0_nodes, "STYLE", {});
-			var style_nodes = children(style);
-			t1 = claim_text(style_nodes, "p {text-align: center;\n       font-size: 12px;\n      }");
-			style_nodes.forEach(detach);
-			t2 = claim_space(div0_nodes);
-			p = claim_element(div0_nodes, "P", {});
-			var p_nodes = children(p);
-			t3 = claim_text(p_nodes, "rembrandt stone bridge");
-			p_nodes.forEach(detach);
 			div0_nodes.forEach(detach);
 			div1_nodes.forEach(detach);
 			this.h();
@@ -6285,12 +5815,6 @@ function create_fragment$p(ctx) {
 			append_hydration(div1, div0);
 			append_hydration(div0, feature);
 			append_hydration(feature, img);
-			append_hydration(div0, t0);
-			append_hydration(div0, style);
-			append_hydration(style, t1);
-			append_hydration(div0, t2);
-			append_hydration(div0, p);
-			append_hydration(p, t3);
 		},
 		p(ctx, [dirty]) {
 			if (dirty & /*image*/ 1 && !src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) {
@@ -6347,12 +5871,6 @@ function create_fragment$q(ctx) {
 	let img;
 	let img_src_value;
 	let img_alt_value;
-	let t0;
-	let style;
-	let t1;
-	let t2;
-	let p;
-	let t3;
 
 	return {
 		c() {
@@ -6360,12 +5878,6 @@ function create_fragment$q(ctx) {
 			div0 = element("div");
 			feature = element("feature");
 			img = element("img");
-			t0 = space();
-			style = element("style");
-			t1 = text("p {text-align: center;\n       font-size: 12px;\n      }");
-			t2 = space();
-			p = element("p");
-			t3 = text("rembrandt stone bridge");
 			this.h();
 		},
 		l(nodes) {
@@ -6377,16 +5889,6 @@ function create_fragment$q(ctx) {
 			var feature_nodes = children(feature);
 			img = claim_element(feature_nodes, "IMG", { class: true, src: true, alt: true });
 			feature_nodes.forEach(detach);
-			t0 = claim_space(div0_nodes);
-			style = claim_element(div0_nodes, "STYLE", {});
-			var style_nodes = children(style);
-			t1 = claim_text(style_nodes, "p {text-align: center;\n       font-size: 12px;\n      }");
-			style_nodes.forEach(detach);
-			t2 = claim_space(div0_nodes);
-			p = claim_element(div0_nodes, "P", {});
-			var p_nodes = children(p);
-			t3 = claim_text(p_nodes, "rembrandt stone bridge");
-			p_nodes.forEach(detach);
 			div0_nodes.forEach(detach);
 			div1_nodes.forEach(detach);
 			this.h();
@@ -6404,12 +5906,6 @@ function create_fragment$q(ctx) {
 			append_hydration(div1, div0);
 			append_hydration(div0, feature);
 			append_hydration(feature, img);
-			append_hydration(div0, t0);
-			append_hydration(div0, style);
-			append_hydration(style, t1);
-			append_hydration(div0, t2);
-			append_hydration(div0, p);
-			append_hydration(p, t3);
 		},
 		p(ctx, [dirty]) {
 			if (dirty & /*image*/ 1 && !src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) {
