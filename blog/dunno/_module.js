@@ -5087,7 +5087,9 @@ function create_fragment$8(ctx) {
 			props: {
 				favicon: {
 					"alt": "",
-					"url": "https://github.com/primocms/primo/blob/master/static/primologo.png?raw=true"
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"size": 8
 				},
 				image: {
 					"alt": "",
@@ -5104,7 +5106,9 @@ function create_fragment$8(ctx) {
 			props: {
 				favicon: {
 					"alt": "",
-					"url": "https://github.com/primocms/primo/blob/master/static/primologo.png?raw=true"
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"size": 8
 				},
 				image: {
 					"alt": "",
@@ -5141,7 +5145,9 @@ function create_fragment$8(ctx) {
 			props: {
 				favicon: {
 					"alt": "",
-					"url": "https://github.com/primocms/primo/blob/master/static/primologo.png?raw=true"
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"size": 8
 				},
 				image: {
 					"alt": "supper signs",
@@ -5158,7 +5164,9 @@ function create_fragment$8(ctx) {
 			props: {
 				favicon: {
 					"alt": "",
-					"url": "https://github.com/primocms/primo/blob/master/static/primologo.png?raw=true"
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"size": 8
 				},
 				image: {
 					"alt": "",
@@ -5179,7 +5187,9 @@ function create_fragment$8(ctx) {
 			props: {
 				favicon: {
 					"alt": "",
-					"url": "https://github.com/primocms/primo/blob/master/static/primologo.png?raw=true"
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"size": 8
 				},
 				image: {
 					"alt": "zodiac",
@@ -5194,7 +5204,9 @@ function create_fragment$8(ctx) {
 			props: {
 				favicon: {
 					"alt": "",
-					"url": "https://github.com/primocms/primo/blob/master/static/primologo.png?raw=true"
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"size": 8
 				},
 				image: {
 					"alt": "",
@@ -5231,7 +5243,9 @@ function create_fragment$8(ctx) {
 			props: {
 				favicon: {
 					"alt": "",
-					"url": "https://github.com/primocms/primo/blob/master/static/primologo.png?raw=true"
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"size": 8
 				},
 				image: {
 					"alt": "",
@@ -5289,7 +5303,9 @@ function create_fragment$8(ctx) {
 			props: {
 				favicon: {
 					"alt": "",
-					"url": "https://github.com/primocms/primo/blob/master/static/primologo.png?raw=true"
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"size": 8
 				},
 				image: {
 					"alt": "",
