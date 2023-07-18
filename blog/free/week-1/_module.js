@@ -5070,8 +5070,8 @@ function create_fragment$7(ctx) {
 				},
 				title: "free",
 				description: "step by step",
-				superhead: "2023-07-16 ",
-				heading: "free"
+				superhead: "2023-07-23 ",
+				heading: "free: week 1"
 			}
 		});
 
