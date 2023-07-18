@@ -4279,6 +4279,12 @@ function create_fragment$5(ctx) {
 					},
 					{
 						"link": { "url": "/contact", "label": "cOntact" }
+					},
+					{
+						"link": {
+							"url": "https://stOneskull.xyz",
+							"label": "stOneskull"
+						}
 					}
 				]
 			}
