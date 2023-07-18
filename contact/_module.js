@@ -5200,7 +5200,7 @@ function create_fragment$8(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "rembrandt landscape",
+					"alt": "stone bridge rembrandt landscape",
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/landscape.webp1689612828598"
 				},
 				title: "cOntact",
