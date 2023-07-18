@@ -4000,6 +4000,12 @@ function create_fragment$5(ctx) {
 	let img;
 	let img_src_value;
 	let img_alt_value;
+	let t0;
+	let style;
+	let t1;
+	let t2;
+	let p;
+	let t3;
 
 	return {
 		c() {
@@ -4007,6 +4013,12 @@ function create_fragment$5(ctx) {
 			div0 = element("div");
 			feature = element("feature");
 			img = element("img");
+			t0 = space();
+			style = element("style");
+			t1 = text("p {text-align: center;\n       font-size: 12px;\n      }");
+			t2 = space();
+			p = element("p");
+			t3 = text("rembrandt stone bridge");
 			this.h();
 		},
 		l(nodes) {
@@ -4018,6 +4030,16 @@ function create_fragment$5(ctx) {
 			var feature_nodes = children(feature);
 			img = claim_element(feature_nodes, "IMG", { class: true, src: true, alt: true });
 			feature_nodes.forEach(detach);
+			t0 = claim_space(div0_nodes);
+			style = claim_element(div0_nodes, "STYLE", {});
+			var style_nodes = children(style);
+			t1 = claim_text(style_nodes, "p {text-align: center;\n       font-size: 12px;\n      }");
+			style_nodes.forEach(detach);
+			t2 = claim_space(div0_nodes);
+			p = claim_element(div0_nodes, "P", {});
+			var p_nodes = children(p);
+			t3 = claim_text(p_nodes, "rembrandt stone bridge");
+			p_nodes.forEach(detach);
 			div0_nodes.forEach(detach);
 			div1_nodes.forEach(detach);
 			this.h();
@@ -4035,6 +4057,12 @@ function create_fragment$5(ctx) {
 			append_hydration(div1, div0);
 			append_hydration(div0, feature);
 			append_hydration(feature, img);
+			append_hydration(div0, t0);
+			append_hydration(div0, style);
+			append_hydration(style, t1);
+			append_hydration(div0, t2);
+			append_hydration(div0, p);
+			append_hydration(p, t3);
 		},
 		p(ctx, [dirty]) {
 			if (dirty & /*image*/ 1 && !src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) {
