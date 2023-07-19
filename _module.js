@@ -4985,8 +4985,8 @@ function create_fragment$7(ctx) {
 				title: "blOg",
 				description: "bit of fun and expression",
 				content: {
-					"html": "<h1>welcome 👋</h1><p>hi there, this is my blog.<br><br>cheers :)</p><p></p><h2>stOneblog</h2><h4><em>a work in motion..</em></h4><p></p><p>is it a blog or a website with articles..?</p><p>maybe i'll have a blog like a changelog.. in monotype..</p><p>maybe i'll write about maybe logic..</p>",
-					"markdown": "# welcome 👋\n\nhi there, this is my blog.<br>\n\n<br>\n\ncheers :)\n\n\n\n## stOneblog\n\n#### *a work in motion..*\n\n\n\nis it a blog or a website with articles..?\n\nmaybe i'll have a blog like a changelog.. in monotype..\n\nmaybe i'll write about maybe logic..\n\n"
+					"html": "<h1>welcome 👋</h1><p>hi there, this is my blog.<br><br>cheers :)</p><p></p><h2>stOneblog</h2><h4><em>a work in motion..</em></h4><p></p><p>is it a blog or a website with articles..?</p><p>maybe i'll have a blog like a changelog in monospace..</p><p>maybe i'll write about maybe logic..</p>",
+					"markdown": "# welcome 👋\n\nhi there, this is my blog.<br>\n\n<br>\n\ncheers :)\n\n\n\n## stOneblog\n\n#### *a work in motion..*\n\n\n\nis it a blog or a website with articles..?\n\nmaybe i'll have a blog like a changelog in monospace..\n\nmaybe i'll write about maybe logic..\n\n"
 				}
 			}
 		});
