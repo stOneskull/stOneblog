@@ -4985,8 +4985,8 @@ function create_fragment$7(ctx) {
 				title: "blOg",
 				description: "bit of fun and expression",
 				content: {
-					"html": "<h1>welcome 👋</h1><p>hi there, this is my blog.</p><h2>stOneblog</h2><h4><em>a work in motion..</em></h4><p></p><p>cheers :)</p>",
-					"markdown": "# welcome 👋\n\nhi there, this is my blog.\n\n## stOneblog\n\n#### *a work in motion..*\n\n\n\ncheers :)\n\n"
+					"html": "<h1>welcome 👋</h1><p>hi there, this is my blog.</p><p></p><h2>stOneblog</h2><h4><em>a work in motion..</em></h4><p></p><p>cheers :)</p>",
+					"markdown": "# welcome 👋\n\nhi there, this is my blog.\n\n\n\n## stOneblog\n\n#### *a work in motion..*\n\n\n\ncheers :)\n\n"
 				}
 			}
 		});
