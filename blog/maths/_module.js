@@ -6168,8 +6168,8 @@ function create_fragment$h(ctx) {
 				title: "maths",
 				description: "tree",
 				content: {
-					"html": "<p><em>i'm not sure where i'm going with this.. what is a decimal place in binary?</em></p><p></p>",
-					"markdown": "*i'm not sure where i'm going with this.. what is a decimal place in binary?*\n\n\n\n"
+					"html": "<p><em>i'm not sure where i'm going with this.. what is a decimal place in binary?</em></p>\n<p><em>anyhoo, i'll write more on this next week.. july 27</em></p>\n<p><code>columns = list(zip(*matrix))</code></p>",
+					"markdown": "*i'm not sure where i'm going with this.. what is a decimal place in binary?*\n\n*anyhoo, i'll write more on this next week.. july 27*\n\n\n`columns = list(zip(*matrix))`\n"
 				}
 			}
 		});
