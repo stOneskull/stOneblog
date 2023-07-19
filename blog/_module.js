@@ -5191,6 +5191,20 @@ function create_fragment$6(ctx) {
 							"html": "<h1 id=\"guru\">guru</h1>",
 							"markdown": "# guru"
 						}
+					},
+					{
+						"date": "2023-07-20",
+						"link": { "url": "/blog/maths", "label": "maths" },
+						"thumbnail": {
+							"alt": "",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689751910605base-3-step-4.webp",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689751910605base-3-step-4.webp",
+							"size": 19
+						},
+						"description": {
+							"html": "<h1 id=\"based\">based</h1>",
+							"markdown": "# based"
+						}
 					}
 				]
 			}

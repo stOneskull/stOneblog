@@ -5542,8 +5542,8 @@ function create_fragment$d(ctx) {
 					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "dunno",
-				description: "in the aether"
+				title: "maths",
+				description: "tree"
 			}
 		});
 
@@ -5561,8 +5561,8 @@ function create_fragment$d(ctx) {
 					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "dunno",
-				description: "in the aether",
+				title: "maths",
+				description: "tree",
 				logo: {
 					"image": {
 						"alt": "stOne",
@@ -5606,8 +5606,8 @@ function create_fragment$d(ctx) {
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689697253616PosPO2EndingDigits.jpg",
 					"size": 107
 				},
-				title: "dunno",
-				description: "in the aether",
+				title: "maths",
+				description: "tree",
 				superhead: "2023-07-20",
 				heading: "maths"
 			}
@@ -5627,8 +5627,8 @@ function create_fragment$d(ctx) {
 					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "dunno",
-				description: "in the aether",
+				title: "maths",
+				description: "tree",
 				content: {
 					"html": "<h1>been studying nodes and trees and binary</h1><p></p><p><em>for a game i'm making, i want the map to be a tree, and each room in the map is a node.</em></p><p><em>i've been thinking about it for quite a while..</em></p><p></p>",
 					"markdown": "# been studying nodes and trees and binary\n\n\n\n*for a game i'm making, i want the map to be a tree, and each room in the map is a node.*\n\n*i've been thinking about it for quite a while..*\n\n\n\n"
@@ -5648,8 +5648,8 @@ function create_fragment$d(ctx) {
 					"alt": "2 power",
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/5s.jpg1689750902315"
 				},
-				title: "dunno",
-				description: "in the aether"
+				title: "maths",
+				description: "tree"
 			}
 		});
 
@@ -5667,8 +5667,8 @@ function create_fragment$d(ctx) {
 					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "dunno",
-				description: "in the aether",
+				title: "maths",
+				description: "tree",
 				content: {
 					"html": "<p></p><p><em>i'm kinda tired of trying to learn the right way of doing it..</em></p><p><em>so i'm going to try my way.</em></p><p></p><p><em>and i want a node to have six outputs.. </em></p><p><em>n, e, s, w.. up and down</em></p><p></p>",
 					"markdown": "\n\n*i'm kinda tired of trying to learn the right way of doing it..*\n\n*so i'm going to try my way.*\n\n\n\n*and i want a node to have six outputs.. *\n\n*n, e, s, w.. up and down*\n\n\n\n"
@@ -5688,8 +5688,8 @@ function create_fragment$d(ctx) {
 					"alt": "cube",
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/node.jpg1689751023002"
 				},
-				title: "dunno",
-				description: "in the aether"
+				title: "maths",
+				description: "tree"
 			}
 		});
 
@@ -5707,8 +5707,8 @@ function create_fragment$d(ctx) {
 					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "dunno",
-				description: "in the aether",
+				title: "maths",
+				description: "tree",
 				content: {
 					"html": "<h1>maybe</h1><p></p><p><em>maybe i won't have it great like a computer scientist should</em></p><p><em>but i will enjoy trying..</em></p><p><em>stay tuned..</em></p><p><em>i'll be scribbling...</em></p><p></p>",
 					"markdown": "# maybe\n\n\n\n*maybe i won't have it great like a computer scientist should*\n\n*but i will enjoy trying..*\n\n*stay tuned..*\n\n*i'll be scribbling...*\n\n\n\n"
@@ -5728,8 +5728,8 @@ function create_fragment$d(ctx) {
 					"alt": "2 power",
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/2power.jpg1689751277538"
 				},
-				title: "dunno",
-				description: "in the aether"
+				title: "maths",
+				description: "tree"
 			}
 		});
 
@@ -5745,8 +5745,8 @@ function create_fragment$d(ctx) {
 					"alt": "2 way",
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/2way.jpg1689751302922"
 				},
-				title: "dunno",
-				description: "in the aether"
+				title: "maths",
+				description: "tree"
 			}
 		});
 
@@ -5764,8 +5764,8 @@ function create_fragment$d(ctx) {
 					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "dunno",
-				description: "in the aether",
+				title: "maths",
+				description: "tree",
 				logo: {
 					"image": {
 						"alt": "stOne",
@@ -5809,8 +5809,8 @@ function create_fragment$d(ctx) {
 					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "dunno",
-				description: "in the aether",
+				title: "maths",
+				description: "tree",
 				heading: "",
 				email: "",
 				social_links: [
@@ -5869,8 +5869,8 @@ function create_fragment$d(ctx) {
 					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "dunno",
-				description: "in the aether"
+				title: "maths",
+				description: "tree"
 			}
 		});
 
