@@ -6065,8 +6065,8 @@ function create_fragment$h(ctx) {
 				title: "maths",
 				description: "tree",
 				content: {
-					"html": "<p><em>if i make it that a room can have a maximum of three exits, then it will be easier.</em></p><p><em>so even though a room can have possible six exits, it'll never have them all..</em></p><p></p>",
-					"markdown": "*if i make it that a room can have a maximum of three exits, then it will be easier.*\n\n*so even though a room can have possible six exits, it'll never have them all..*\n\n\n\n"
+					"html": "<p><em>if i make it that a room can have a maximum of three exits, then it will be easier.</em></p><p><em>so even though a room can have possible six exits, it'll never have them all..</em></p><p><em>i thought maybe it needs a minimum of 2.. but nah.</em></p><p><em>a node can't have 0 exits. 1 is sure a minimum.</em></p><p><em>1 exit rooms could be the root room, or special rooms that you don't travel through, you just visit. there can also be extra dimension travel available. but that applies to any node anyway.. </em></p><p></p>",
+					"markdown": "*if i make it that a room can have a maximum of three exits, then it will be easier.*\n\n*so even though a room can have possible six exits, it'll never have them all..*\n\n*i thought maybe it needs a minimum of 2.. but nah.*\n\n*a node can't have 0 exits. 1 is sure a minimum.*\n\n*1 exit rooms could be the root room, or special rooms that you don't travel through, you just visit. there can also be extra dimension travel available. but that applies to any node anyway.. *\n\n\n\n"
 				}
 			}
 		});
