@@ -5630,8 +5630,8 @@ function create_fragment$d(ctx) {
 				title: "maths",
 				description: "tree",
 				content: {
-					"html": "<h1>been studying nodes and trees and binary</h1><p></p><p><em>for a game i'm making, i want the map to be a tree, and each room in the map is a node.</em></p><p><em>i've been thinking about it for quite a while..</em></p><p></p>",
-					"markdown": "# been studying nodes and trees and binary\n\n\n\n*for a game i'm making, i want the map to be a tree, and each room in the map is a node.*\n\n*i've been thinking about it for quite a while..*\n\n\n\n"
+					"html": "<h1>nodes and trees and binary and 3s</h1><p></p><p><em>for a game i'm making, i want the map to be a tree, and each room in the map is a node.</em></p><p><em>i've been thinking about it for quite a while..</em></p><p></p>",
+					"markdown": "# nodes and trees and binary and 3s\n\n\n\n*for a game i'm making, i want the map to be a tree, and each room in the map is a node.*\n\n*i've been thinking about it for quite a while..*\n\n\n\n"
 				}
 			}
 		});
