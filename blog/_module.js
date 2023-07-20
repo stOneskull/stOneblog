@@ -5211,9 +5211,7 @@ function create_fragment$6(ctx) {
 						"link": { "url": "/blog/time", "label": "time" },
 						"thumbnail": {
 							"alt": "time",
-							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689868509953051555a600f8436c.webp",
-							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689868509953051555a600f8436c.webp",
-							"size": 33
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/Time%20Wave%20Zero.webp1689868575547"
 						},
 						"description": {
 							"html": "<h1 id=\"wave\">wave</h1>",
