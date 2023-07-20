@@ -5219,6 +5219,20 @@ function create_fragment$6(ctx) {
 							"html": "<h1 id=\"wave\">wave</h1>",
 							"markdown": "# wave"
 						}
+					},
+					{
+						"date": "2023-07-22",
+						"link": { "url": "/blog/web", "label": "web" },
+						"thumbnail": {
+							"alt": "web",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689875533962R.webp",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689875533962R.webp",
+							"size": 82
+						},
+						"description": {
+							"html": "<h1 id=\"cycles\">cycles</h1>",
+							"markdown": "# cycles"
+						}
 					}
 				]
 			}
