@@ -5216,8 +5216,8 @@ function create_fragment$6(ctx) {
 							"size": 33
 						},
 						"description": {
-							"html": "<h1 id=\"timewave\">time wave</h1>",
-							"markdown": "# time wave"
+							"html": "<h1 id=\"wave\">wave</h1>",
+							"markdown": "# wave"
 						}
 					}
 				]
