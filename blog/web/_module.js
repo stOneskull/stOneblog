@@ -5176,8 +5176,8 @@ function create_fragment$9(ctx) {
 				title: "web",
 				description: "flask vs django",
 				content: {
-					"html": "<h2>flask vs django</h2><h4><em>hey what..</em></h4><p></p><p>i was going to call the headline 'clickbait' and then talk about the title.. </p><p>but that's what clickbait is. just having this title will bring in some traffic.</p><p>even though this this article doesn't really answer the stupid question.</p><p>they are both good and there a pros and cons about both.</p>",
-					"markdown": "## flask vs django\n\n#### *hey what..*\n\n\n\ni was going to call the headline 'clickbait' and then talk about the title..\n\nbut that's what clickbait is. just having this title will bring in some traffic.\n\neven though this this article doesn't really answer the stupid question.\n\nthey are both good and there a pros and cons about both.\n\n"
+					"html": "<h2>flask vs django</h2><h4><em>hey what..</em></h4><p></p><p>i was going to call the headline 'clickbait' and then talk about the title.. </p><p>but that's what clickbait is. just having this title will bring in some traffic.</p><p>even though this article doesn't really answer the stupid question.</p><p>they are both good and there a pros and cons about both.</p>",
+					"markdown": "## flask vs django\n\n#### *hey what..*\n\n\n\ni was going to call the headline 'clickbait' and then talk about the title..\n\nbut that's what clickbait is. just having this title will bring in some traffic.\n\neven though this article doesn't really answer the stupid question.\n\nthey are both good and there a pros and cons about both.\n\n"
 				}
 			}
 		});
