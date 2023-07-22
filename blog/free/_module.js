@@ -5198,8 +5198,8 @@ function create_fragment$8(ctx) {
 				title: "free",
 				description: "step by step",
 				content: {
-					"html": "<p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link\" href=\"https://stOneskull.me/blOg/free/week-1\">23 day! ... week 1</a></p>",
-					"markdown": "[23 day! ... week 1](<https://stOneskull.me/blOg/free/week-1>)\n\n"
+					"html": "<p><a href=\"https://stOneskull.me/blog/free/week-1\">23 day! … week 1</a></p>",
+					"markdown": "[23 day! ... week 1](https://stOneskull.me/blog/free/week-1)\n\n"
 				}
 			}
 		});
