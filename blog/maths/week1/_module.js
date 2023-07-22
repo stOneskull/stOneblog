@@ -3563,7 +3563,7 @@ function create_fragment$2(ctx) {
 			attr(div1, "class", "mobile-nav svelte-ngjace");
 			attr(header, "class", "section-container svelte-ngjace");
 			attr(div2, "class", "section");
-			attr(div2, "id", "section-3562d85e");
+			attr(div2, "id", "section-56917810");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
@@ -3836,7 +3836,7 @@ function create_fragment$3(ctx) {
 			attr(h1, "class", "heading svelte-1b2zbzi");
 			attr(header, "class", "section-container svelte-1b2zbzi");
 			attr(div, "class", "section");
-			attr(div, "id", "section-e4caee40");
+			attr(div, "id", "section-8cc67800");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div, anchor);
@@ -3941,7 +3941,7 @@ function create_fragment$4(ctx) {
 			attr(div0, "class", "section-container content svelte-1lugy4n");
 			attr(div1, "class", "section");
 			attr(div2, "class", "section");
-			attr(div2, "id", "section-d9bb1e42");
+			attr(div2, "id", "section-9297417b");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
@@ -4022,7 +4022,7 @@ function create_fragment$5(ctx) {
 			attr(div0, "class", "section-container content svelte-1lugy4n");
 			attr(div1, "class", "section");
 			attr(div2, "class", "section");
-			attr(div2, "id", "section-58eea164");
+			attr(div2, "id", "section-ee156be4");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
@@ -4109,7 +4109,7 @@ function create_fragment$6(ctx) {
 			attr(img, "alt", img_alt_value = /*image*/ ctx[0].alt);
 			attr(div0, "class", "section-container svelte-sk9zb4");
 			attr(div1, "class", "section");
-			attr(div1, "id", "section-a7ba6f9a");
+			attr(div1, "id", "section-e96d2777");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div1, anchor);
@@ -4194,7 +4194,7 @@ function create_fragment$7(ctx) {
 			attr(div0, "class", "section-container content svelte-1lugy4n");
 			attr(div1, "class", "section");
 			attr(div2, "class", "section");
-			attr(div2, "id", "section-31b5e9fd");
+			attr(div2, "id", "section-0b063bae");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
@@ -4281,7 +4281,7 @@ function create_fragment$8(ctx) {
 			attr(img, "alt", img_alt_value = /*image*/ ctx[0].alt);
 			attr(div0, "class", "section-container svelte-sk9zb4");
 			attr(div1, "class", "section");
-			attr(div1, "id", "section-c3e9e5a9");
+			attr(div1, "id", "section-5012f914");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div1, anchor);
@@ -4366,7 +4366,7 @@ function create_fragment$9(ctx) {
 			attr(div0, "class", "section-container content svelte-1lugy4n");
 			attr(div1, "class", "section");
 			attr(div2, "class", "section");
-			attr(div2, "id", "section-ae917eaa");
+			attr(div2, "id", "section-5b774c9c");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
@@ -4447,7 +4447,7 @@ function create_fragment$a(ctx) {
 			attr(div0, "class", "section-container content svelte-1lugy4n");
 			attr(div1, "class", "section");
 			attr(div2, "class", "section");
-			attr(div2, "id", "section-435d9d4c");
+			attr(div2, "id", "section-68ccdd4c");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
@@ -4534,7 +4534,7 @@ function create_fragment$b(ctx) {
 			attr(img, "alt", img_alt_value = /*image*/ ctx[0].alt);
 			attr(div0, "class", "section-container svelte-sk9zb4");
 			attr(div1, "class", "section");
-			attr(div1, "id", "section-e16b0436");
+			attr(div1, "id", "section-7805bb52");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div1, anchor);
@@ -4619,7 +4619,7 @@ function create_fragment$c(ctx) {
 			attr(div0, "class", "section-container content svelte-1lugy4n");
 			attr(div1, "class", "section");
 			attr(div2, "class", "section");
-			attr(div2, "id", "section-b79bb357");
+			attr(div2, "id", "section-de2a6a4e");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
@@ -4706,7 +4706,7 @@ function create_fragment$d(ctx) {
 			attr(img, "alt", img_alt_value = /*image*/ ctx[0].alt);
 			attr(div0, "class", "section-container svelte-sk9zb4");
 			attr(div1, "class", "section");
-			attr(div1, "id", "section-3c8906fb");
+			attr(div1, "id", "section-1f573cff");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div1, anchor);
@@ -4791,7 +4791,7 @@ function create_fragment$e(ctx) {
 			attr(div0, "class", "section-container content svelte-1lugy4n");
 			attr(div1, "class", "section");
 			attr(div2, "class", "section");
-			attr(div2, "id", "section-f7e2763b");
+			attr(div2, "id", "section-c4fee98d");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
@@ -5319,7 +5319,7 @@ function create_fragment$f(ctx) {
 			attr(div1, "class", "mobile-nav svelte-ngjace");
 			attr(header, "class", "section-container svelte-ngjace");
 			attr(div2, "class", "section");
-			attr(div2, "id", "section-7f35a2f1");
+			attr(div2, "id", "section-0a0d1f92");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
@@ -5676,7 +5676,7 @@ function create_fragment$g(ctx) {
 			attr(div0, "class", "footer svelte-1excgdw");
 			attr(div1, "class", "section-container svelte-1excgdw");
 			attr(div2, "class", "section");
-			attr(div2, "id", "section-45f693f5");
+			attr(div2, "id", "section-a42c48d3");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
@@ -5869,13 +5869,13 @@ function create_fragment$h(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "unit circle",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690069312339main-qimg-589e7dad2b6c5f658e26048a27f0c609.webp",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690069312339main-qimg-589e7dad2b6c5f658e26048a27f0c609.webp",
+					"size": 2
 				},
-				title: "maths",
-				description: "tree"
+				title: "maths - week 1",
+				description: "triangles in circle"
 			}
 		});
 
@@ -5888,13 +5888,13 @@ function create_fragment$h(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "unit circle",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690069312339main-qimg-589e7dad2b6c5f658e26048a27f0c609.webp",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690069312339main-qimg-589e7dad2b6c5f658e26048a27f0c609.webp",
+					"size": 2
 				},
-				title: "maths",
-				description: "tree",
+				title: "maths - week 1",
+				description: "triangles in circle",
 				logo: {
 					"image": {
 						"alt": "stOne",
@@ -5933,15 +5933,15 @@ function create_fragment$h(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "hmm",
-					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689697253616PosPO2EndingDigits.jpg",
-					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689697253616PosPO2EndingDigits.jpg",
-					"size": 107
+					"alt": "triangles in circle",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690069312339main-qimg-589e7dad2b6c5f658e26048a27f0c609.webp",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690069312339main-qimg-589e7dad2b6c5f658e26048a27f0c609.webp",
+					"size": 2
 				},
-				title: "maths",
-				description: "tree",
-				superhead: "2023-07-20",
-				heading: "maths"
+				title: "maths - week 1",
+				description: "triangles in circle",
+				superhead: "2023-07-27",
+				heading: "maths - week 1"
 			}
 		});
 
@@ -5954,16 +5954,16 @@ function create_fragment$h(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "unit circle",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690069312339main-qimg-589e7dad2b6c5f658e26048a27f0c609.webp",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690069312339main-qimg-589e7dad2b6c5f658e26048a27f0c609.webp",
+					"size": 2
 				},
-				title: "maths",
-				description: "tree",
+				title: "maths - week 1",
+				description: "triangles in circle",
 				content: {
-					"html": "<h1>nodes and trees and binary and 3s</h1><p></p><p><em>for a game i'm making, i want the map to be a tree, and each room in the map is a node.</em></p><p><em>i've been thinking about it for quite a while..</em></p><p><em>i've written it different ways and stopped. now i'm gonna solve it.</em></p><p></p>",
-					"markdown": "# nodes and trees and binary and 3s\n\n\n\n*for a game i'm making, i want the map to be a tree, and each room in the map is a node.*\n\n*i've been thinking about it for quite a while..*\n\n*i've written it different ways and stopped. now i'm gonna solve it.*\n\n\n\n"
+					"html": "<h1>vectors, triangles, the circle, sin and cos</h1><p></p><p><em>another thing going on in my head for quite a while. </em></p><p></p>",
+					"markdown": "# vectors, triangles, the circle, sin and cos\n\n\n\n*another thing going on in my head for quite a while. *\n\n\n\n"
 				}
 			}
 		});
@@ -5977,16 +5977,16 @@ function create_fragment$h(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "unit circle",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690069312339main-qimg-589e7dad2b6c5f658e26048a27f0c609.webp",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690069312339main-qimg-589e7dad2b6c5f658e26048a27f0c609.webp",
+					"size": 2
 				},
-				title: "maths",
-				description: "tree",
+				title: "maths - week 1",
+				description: "triangles in circle",
 				content: {
-					"html": "<p><em>in a binary tree, there are 2 paths forward and one path back..</em></p><p></p>",
-					"markdown": "*in a binary tree, there are 2 paths forward and one path back..*\n\n\n\n"
+					"html": "<p><em>pi and radians and degrees.</em></p><p></p>",
+					"markdown": "*pi and radians and degrees.*\n\n\n\n"
 				}
 			}
 		});
@@ -6003,8 +6003,8 @@ function create_fragment$h(ctx) {
 					"alt": "2 power",
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/5s.jpg1689750902315"
 				},
-				title: "maths",
-				description: "tree"
+				title: "maths - week 1",
+				description: "triangles in circle"
 			}
 		});
 
@@ -6017,13 +6017,13 @@ function create_fragment$h(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "unit circle",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690069312339main-qimg-589e7dad2b6c5f658e26048a27f0c609.webp",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690069312339main-qimg-589e7dad2b6c5f658e26048a27f0c609.webp",
+					"size": 2
 				},
-				title: "maths",
-				description: "tree",
+				title: "maths - week 1",
+				description: "triangles in circle",
 				content: {
 					"html": "<p></p><p><em>i'm kinda tired of trying to learn the right way of doing it..</em></p><p><em>so i'm going to try my way.</em></p><p></p><p><em>and i want a node to have six outputs.. </em></p><p><em>n, e, s, w.. up and down</em></p><p></p>",
 					"markdown": "\n\n*i'm kinda tired of trying to learn the right way of doing it..*\n\n*so i'm going to try my way.*\n\n\n\n*and i want a node to have six outputs.. *\n\n*n, e, s, w.. up and down*\n\n\n\n"
@@ -6043,8 +6043,8 @@ function create_fragment$h(ctx) {
 					"alt": "cube",
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/node.jpg1689751023002"
 				},
-				title: "maths",
-				description: "tree"
+				title: "maths - week 1",
+				description: "triangles in circle"
 			}
 		});
 
@@ -6057,13 +6057,13 @@ function create_fragment$h(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "unit circle",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690069312339main-qimg-589e7dad2b6c5f658e26048a27f0c609.webp",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690069312339main-qimg-589e7dad2b6c5f658e26048a27f0c609.webp",
+					"size": 2
 				},
-				title: "maths",
-				description: "tree",
+				title: "maths - week 1",
+				description: "triangles in circle",
 				content: {
 					"html": "<p><em>if i make it that a room can have a maximum of three exits, then it will be easier.</em></p><p><em>so even though a room can have possible six exits, it'll never have them all..</em></p><p><em>i thought maybe it needs a minimum of 2.. but nah.</em></p><p><em>a node can't have 0 exits unless there is at least 1 path there thru an extra dimension. this counts as a path. and maybe there are nodes but with no way of commuting there. well, they can exist in a different way. maybe a communication path is something to think about. maybe there is infinity in zero.</em></p><p><em>1-exit rooms could be the root room, or special rooms that you don't travel through, you just visit. there can also be extra dimension travel available. but that applies to any node anyway..</em></p><p><em>i'm imagining a room that has an attic. the attic is considered another room in the game. another node. but anyway, the room exit to the attic, and the attic exit to the room. the attic will likely have just that 1 exit..</em></p><p><em>as the game/map gets generated differently each game, i might have to think about exit contexts. what exits are more likely based on the room type..</em></p><p></p>",
 					"markdown": "*if i make it that a room can have a maximum of three exits, then it will be easier.*\n\n*so even though a room can have possible six exits, it'll never have them all..*\n\n*i thought maybe it needs a minimum of 2.. but nah.*\n\n*a node can't have 0 exits unless there is at least 1 path there thru an extra dimension. this counts as a path. and maybe there are nodes but with no way of commuting there. well, they can exist in a different way. maybe a communication path is something to think about. maybe there is infinity in zero.*\n\n*1-exit rooms could be the root room, or special rooms that you don't travel through, you just visit. there can also be extra dimension travel available. but that applies to any node anyway..*\n\n*i'm imagining a room that has an attic. the attic is considered another room in the game. another node. but anyway, the room exit to the attic, and the attic exit to the room. the attic will likely have just that 1 exit..*\n\n*as the game/map gets generated differently each game, i might have to think about exit contexts. what exits are more likely based on the room type..*\n\n\n\n"
@@ -6080,13 +6080,13 @@ function create_fragment$h(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "unit circle",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690069312339main-qimg-589e7dad2b6c5f658e26048a27f0c609.webp",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690069312339main-qimg-589e7dad2b6c5f658e26048a27f0c609.webp",
+					"size": 2
 				},
-				title: "maths",
-				description: "tree",
+				title: "maths - week 1",
+				description: "triangles in circle",
 				content: {
 					"html": "<h1>maybe</h1><p></p><p><em>and maybe i won't have it great like a computer scientist should</em></p><p><em>but i will enjoy trying..</em></p><p><em>stay tuned..</em></p><p><em>i'll be scribbling...</em></p><p></p>",
 					"markdown": "# maybe\n\n\n\n*and maybe i won't have it great like a computer scientist should*\n\n*but i will enjoy trying..*\n\n*stay tuned..*\n\n*i'll be scribbling...*\n\n\n\n"
@@ -6106,8 +6106,8 @@ function create_fragment$h(ctx) {
 					"alt": "2 power",
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/2power.jpg1689751277538"
 				},
-				title: "maths",
-				description: "tree"
+				title: "maths - week 1",
+				description: "triangles in circle"
 			}
 		});
 
@@ -6120,13 +6120,13 @@ function create_fragment$h(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "unit circle",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690069312339main-qimg-589e7dad2b6c5f658e26048a27f0c609.webp",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690069312339main-qimg-589e7dad2b6c5f658e26048a27f0c609.webp",
+					"size": 2
 				},
-				title: "maths",
-				description: "tree",
+				title: "maths - week 1",
+				description: "triangles in circle",
 				content: {
 					"html": "<p><em>and i gotta remember to talk about taxis.</em></p><p><em>that'll be here soon.</em></p><p><em>taxis are shortcuts..</em></p><p></p>",
 					"markdown": "*and i gotta remember to talk about taxis.*\n\n*that'll be here soon.*\n\n*taxis are shortcuts..*\n\n\n\n"
@@ -6146,8 +6146,8 @@ function create_fragment$h(ctx) {
 					"alt": "2 way",
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/2way.jpg1689751302922"
 				},
-				title: "maths",
-				description: "tree"
+				title: "maths - week 1",
+				description: "triangles in circle"
 			}
 		});
 
@@ -6160,13 +6160,13 @@ function create_fragment$h(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "unit circle",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690069312339main-qimg-589e7dad2b6c5f658e26048a27f0c609.webp",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690069312339main-qimg-589e7dad2b6c5f658e26048a27f0c609.webp",
+					"size": 2
 				},
-				title: "maths",
-				description: "tree",
+				title: "maths - week 1",
+				description: "triangles in circle",
 				content: {
 					"html": "<p><em>i'm not sure where i'm going with this.. what is a decimal place in binary?</em></p><p><em>anyhoo, i'll write more on this next thursday</em></p><p><code>columns = list(zip(*matrix))</code></p>",
 					"markdown": "*i'm not sure where i'm going with this.. what is a decimal place in binary?*\n\n*anyhoo, i'll write more on this next thursday*\n\n`columns = list(zip(*matrix))`\n\n"
@@ -6183,13 +6183,13 @@ function create_fragment$h(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "unit circle",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690069312339main-qimg-589e7dad2b6c5f658e26048a27f0c609.webp",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690069312339main-qimg-589e7dad2b6c5f658e26048a27f0c609.webp",
+					"size": 2
 				},
-				title: "maths",
-				description: "tree",
+				title: "maths - week 1",
+				description: "triangles in circle",
 				logo: {
 					"image": {
 						"alt": "stOne",
@@ -6228,13 +6228,13 @@ function create_fragment$h(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "unit circle",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690069312339main-qimg-589e7dad2b6c5f658e26048a27f0c609.webp",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690069312339main-qimg-589e7dad2b6c5f658e26048a27f0c609.webp",
+					"size": 2
 				},
-				title: "maths",
-				description: "tree",
+				title: "maths - week 1",
+				description: "triangles in circle",
 				heading: "",
 				email: "",
 				social_links: [
@@ -6288,13 +6288,13 @@ function create_fragment$h(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "unit circle",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690069312339main-qimg-589e7dad2b6c5f658e26048a27f0c609.webp",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690069312339main-qimg-589e7dad2b6c5f658e26048a27f0c609.webp",
+					"size": 2
 				},
-				title: "maths",
-				description: "tree"
+				title: "maths - week 1",
+				description: "triangles in circle"
 			}
 		});
 
