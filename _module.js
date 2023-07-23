@@ -3861,10 +3861,10 @@ function create_fragment$4(ctx) {
 			this.h();
 		},
 		h() {
-			attr(img, "class", "image svelte-sk9zb4");
+			attr(img, "class", "image svelte-y3e6jm");
 			if (!src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*image*/ ctx[0].alt);
-			attr(div0, "class", "section-container svelte-sk9zb4");
+			attr(div0, "class", "section-container svelte-y3e6jm");
 			attr(div1, "class", "section");
 			attr(div1, "id", "section-503c86cf");
 		},
