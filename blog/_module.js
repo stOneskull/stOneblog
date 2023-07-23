@@ -5231,6 +5231,20 @@ function create_fragment$6(ctx) {
 							"html": "<h1 id=\"cycles\">cycles</h1>",
 							"markdown": "# cycles"
 						}
+					},
+					{
+						"date": "2023-07-24",
+						"link": { "url": "/blog/code", "label": "code" },
+						"thumbnail": {
+							"alt": "lemonade",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690098197371lemonade.png",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690098197371lemonade.png",
+							"size": 3
+						},
+						"description": {
+							"html": "<h1 id=\"myclichelilhistory\">my cliche lil history</h1>",
+							"markdown": "# my cliche lil history"
+						}
 					}
 				]
 			}
