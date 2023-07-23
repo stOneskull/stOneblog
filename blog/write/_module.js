@@ -5381,8 +5381,8 @@ function create_fragment$9(ctx) {
 				title: "write",
 				description: "way",
 				content: {
-					"html": "<p></p><p><strong>write</strong></p><p></p><p><em>and write</em></p><p></p>",
-					"markdown": "\n\n**write**\n\n\n\n*and write*\n\n\n\n"
+					"html": "<p></p><p><strong>write</strong></p><p><em>i don't mind if nobody reads it. i don't mind if there are more people writing blogs than reading them. i don't mind if i never publish my book. it's more like the process. although, later on, if there is something good i wrote that helped someone, i'd be chuffed.</em></p><p></p>",
+					"markdown": "\n\n**write**\n\n*i don't mind if nobody reads it. i don't mind if there are more people writing blogs than reading them. i don't mind if i never publish my book. it's more like the process. although, later on, if there is something good i wrote that helped someone, i'd be chuffed.*\n\n\n\n"
 				}
 			}
 		});
