@@ -5004,7 +5004,7 @@ function create_fragment$7(ctx) {
 					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "free",
+				title: "code",
 				description: "step by step"
 			}
 		});
@@ -5023,7 +5023,7 @@ function create_fragment$7(ctx) {
 					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "free",
+				title: "code",
 				description: "step by step",
 				logo: {
 					"image": {
@@ -5066,7 +5066,7 @@ function create_fragment$7(ctx) {
 					"alt": "python language",
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/OIP.jpeg1690080525978"
 				},
-				title: "free",
+				title: "code",
 				description: "step by step",
 				superhead: "2023-07-24",
 				heading: "code"
@@ -5087,11 +5087,11 @@ function create_fragment$7(ctx) {
 					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "free",
+				title: "code",
 				description: "step by step",
 				content: {
-					"html": "<p><em>2 things</em></p><p></p><h2><strong>De-</strong></h2><h3><strong>• Googolizize</strong></h3><h3><strong>• Windowsizize</strong></h3><p></p><p>um..</p><p>i'll make another post in a week.. </p>",
-					"markdown": "*2 things*\n\n\n\n## **De-**\n\n### **• Googolizize**\n\n### **• Windowsizize**\n\n\n\num..\n\ni'll make another post in a week..\n\n"
+					"html": "<p><em>my favourite computer language..</em></p>\n<p><strong>Python</strong></p>\n<p>3.12 is coming out soon.</p>\n<p>i like to use the latest but i have been using 3.10 rather than 3.11</p>\n<p>there was a program i downloaded from github that wouldn't work with 3.11. some dependency problem or something. 3.11 was too new. so i started using 3.10. it's nice.</p>\n<p>i don't really know the difference in the very latest editions. i haven't used the walrus operator yet. or data classes. i want to, just haven't yet.</p>\n<p>i started using conda for some things. it's good you can choose the python version to put in the environment. venv just uses the latest python you have. but i'm kinda new to it all. bit of this, bit of that. i often just install into the base conda environment. i'm a bit messy.</p>\n<p><strong>BASIC</strong></p>\n<p><em>my first computer language</em></p>",
+					"markdown": "*my favourite computer language..*\n\n**Python**\n\n3\\.12 is coming out soon.\n\ni like to use the latest but i have been using 3.10 rather than 3.11\n\nthere was a program i downloaded from github that wouldn't work with 3.11. some dependency problem or something. 3.11 was too new. so i started using 3.10. it's nice.\n\ni don't really know the difference in the very latest editions. i haven't used the walrus operator yet. or data classes. i want to, just haven't yet.\n\ni started using conda for some things. it's good you can choose the python version to put in the environment. venv just uses the latest python you have. but i'm kinda new to it all. bit of this, bit of that. i often just install into the base conda environment. i'm a bit messy.\n\n**BASIC**\n\n*my first computer language*\n\n\n\n"
 				}
 			}
 		});
@@ -5110,7 +5110,7 @@ function create_fragment$7(ctx) {
 					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "free",
+				title: "code",
 				description: "step by step",
 				logo: {
 					"image": {
@@ -5155,7 +5155,7 @@ function create_fragment$7(ctx) {
 					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "free",
+				title: "code",
 				description: "step by step",
 				heading: "",
 				email: "",
@@ -5215,7 +5215,7 @@ function create_fragment$7(ctx) {
 					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "free",
+				title: "code",
 				description: "step by step"
 			}
 		});
