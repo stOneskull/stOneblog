@@ -5242,8 +5242,20 @@ function create_fragment$6(ctx) {
 							"size": 3
 						},
 						"description": {
-							"html": "<h1 id=\"myclichelilhistory\">my cliche lil history</h1>",
-							"markdown": "# my cliche lil history"
+							"html": "<h1 id=\"cliche\">cliche</h1>",
+							"markdown": "# cliche"
+						}
+					},
+					{
+						"date": "2023-07-25",
+						"link": { "url": "/blog/write", "label": "write" },
+						"thumbnail": {
+							"alt": "book up",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/nothb.png1654873892000"
+						},
+						"description": {
+							"html": "<h1 id=\"way\">way</h1>",
+							"markdown": "# way"
 						}
 					}
 				]
