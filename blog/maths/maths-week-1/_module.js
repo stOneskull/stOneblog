@@ -5962,8 +5962,8 @@ function create_fragment$h(ctx) {
 				title: "maths - week 1",
 				description: "triangles in circle",
 				content: {
-					"html": "<h1>vectors, triangles, the circle, sin and cos</h1><p></p><p><em>another thing going on in my head for quite a while. </em></p><p></p>",
-					"markdown": "# vectors, triangles, the circle, sin and cos\n\n\n\n*another thing going on in my head for quite a while. *\n\n\n\n"
+					"html": "<h1>vectors, triangles, the circle, sin and cos</h1><p></p><p><em>another thing going on in my head for quite a while.</em></p><p><em>i get sin and cos mixed up if i'm not actively looking and thinking about it.</em></p><p><em>then i go back to soh cah toa </em></p><p></p><p></p>",
+					"markdown": "# vectors, triangles, the circle, sin and cos\n\n\n\n*another thing going on in my head for quite a while.*\n\n*i get sin and cos mixed up if i'm not actively looking and thinking about it.*\n\n*then i go back to soh cah toa *\n\n\n\n\n\n"
 				}
 			}
 		});
@@ -5985,8 +5985,8 @@ function create_fragment$h(ctx) {
 				title: "maths - week 1",
 				description: "triangles in circle",
 				content: {
-					"html": "<p><em>pi and radians and degrees.</em></p><p></p>",
-					"markdown": "*pi and radians and degrees.*\n\n\n\n"
+					"html": "<p><em>pi and radians and degrees.</em></p><p>there is a unit circle. it has a radius of 1.</p><p>a unit vector. radius length, kinda rotates.. at least in this stuff i'm thinking.</p><p>when the vector points straight up, it is sin (90) or 1</p><p>when it points down, it is sin(270) or -1</p><p>the 90 is like the vector rotated anti-clockwise 90 degrees</p><p>180 degrees is pi radians. a whole unit circle is 2*pi circumference</p><p>then cosine.. cos..</p><p>sin is the y value!</p><p>wherever the vector is 'pointing', is an x and y co-ordinate</p><p>if it is pointing straight up, y is 1, the whole radius length, the vector length,<br>and the x value is 0, cos(90) is 0</p><p>before 45 degrees, let's look at 30 degrees</p><p>i think the vector will be 'pointing' at x = sin(30), y = cos(30)</p><p>the vector is also the hypotenuse of a triangle. and remember it is 1</p><p>sin is opposite over hypotenuse. the right angle is a vertical line from the point<br>meeting the x line (the line where y==0)</p><p>the y line, where x == 0, can have a horizontal line to the point, making the right angle for the triangle when look at cosine. cosine is adjacent over hypotenuse.</p><p>the 2 'lines', the vertical and horizontal lines, make up a rectangle</p><p>the triangle is half that rectangle</p><p>a squared + b squared = c squared</p><p>a squared + b squared = 1</p><p></p><p>sin(30) .. 30 == opposite / hypotenuse and since hypotenuse is 1, just opposite</p><p></p><p>we want the length of y, </p><p> </p>",
+					"markdown": "*pi and radians and degrees.*\n\nthere is a unit circle. it has a radius of 1.\n\na unit vector. radius length, kinda rotates.. at least in this stuff i'm thinking.\n\nwhen the vector points straight up, it is sin (90) or 1\n\nwhen it points down, it is sin(270) or -1\n\nthe 90 is like the vector rotated anti-clockwise 90 degrees\n\n180 degrees is pi radians. a whole unit circle is 2\\*pi circumference\n\nthen cosine.. cos..\n\nsin is the y value!\n\nwherever the vector is 'pointing', is an x and y co-ordinate\n\nif it is pointing straight up, y is 1, the whole radius length, the vector length,<br>\n\nand the x value is 0, cos(90) is 0\n\nbefore 45 degrees, let's look at 30 degrees\n\ni think the vector will be 'pointing' at x = sin(30), y = cos(30)\n\nthe vector is also the hypotenuse of a triangle. and remember it is 1\n\nsin is opposite over hypotenuse. the right angle is a vertical line from the point<br>\n\nmeeting the x line (the line where y==0)\n\nthe y line, where x == 0, can have a horizontal line to the point, making the right angle for the triangle when look at cosine. cosine is adjacent over hypotenuse.\n\nthe 2 'lines', the vertical and horizontal lines, make up a rectangle\n\nthe triangle is half that rectangle\n\na squared + b squared = c squared\n\na squared + b squared = 1\n\n\n\nsin(30) .. 30 == opposite / hypotenuse and since hypotenuse is 1, just opposite\n\n\n\nwe want the length of y,\n\n\n\n"
 				}
 			}
 		});
