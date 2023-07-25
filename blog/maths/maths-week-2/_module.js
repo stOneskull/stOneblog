@@ -6748,8 +6748,8 @@ function create_fragment$k(ctx) {
 				title: "maths - week 2",
 				description: "matrices",
 				content: {
-					"html": "<p><em>points, vectors, scalars..</em></p><p><code>columns = list(zip(*matrix))</code></p>",
-					"markdown": "*points, vectors, scalars..*\n\n`columns = list(zip(*matrix))`\n\n"
+					"html": "<p><em>points, vectors, scalars..</em></p>",
+					"markdown": "*points, vectors, scalars..*\n\n"
 				}
 			}
 		});
