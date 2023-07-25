@@ -5262,7 +5262,7 @@ function create_fragment$6(ctx) {
 						"date": "2023-07-26",
 						"link": { "url": "/blog/x", "label": "X" },
 						"thumbnail": {
-							"alt": "X",
+							"alt": "x",
 							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690249269994text-1690249269700.png",
 							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690249269994text-1690249269700.png",
 							"size": 2
