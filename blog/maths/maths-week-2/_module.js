@@ -6490,8 +6490,8 @@ function create_fragment$k(ctx) {
 				title: "maths - week 2",
 				description: "matrices",
 				content: {
-					"html": "<h1>matrices</h1><p><em>this is where my submarine head is about half-way down to the titanic.. <br>i can hear the fibres crackling.. but onward..</em></p><p><em>note: i don't know what i'm talking about. don't put this in your schoolwork.</em></p><p></p><p>1 can be represented as a 1x1 matrix [1] - that's interesting in itself! </p><p>[23] is 23</p><p></p><p>a matrix is a set of numbers, in rows and columns, in a rectangular array.</p><p>you can have a square matrix, like 2x2, or 3x3.. an nxn matrix.. <br>a square matrix to the order n</p><p>or if there are two rows and three columns, then it is a 2x3 matrix.</p><p>and m is used. it's an mxn matrix. m is the rows and n is the columns.</p><p>[ 3 5 6]<br>[ 2 1 0 ] ... a 2x3 matrix of some numbers.</p><p>a combination of vectors apparently.</p>",
-					"markdown": "# matrices\n\n*this is where my submarine head is about half-way down to the titanic.. <br>\n\ni can hear the fibres crackling.. but onward..*\n\n*note: i don't know what i'm talking about. don't put this in your schoolwork.*\n\n\n\n1 can be represented as a 1x1 matrix [1] - that's interesting in itself!\n\n[23] is 23\n\n\n\na matrix is a set of numbers, in rows and columns, in a rectangular array.\n\nyou can have a square matrix, like 2x2, or 3x3.. an nxn matrix.. <br>\n\na square matrix to the order n\n\nor if there are two rows and three columns, then it is a 2x3 matrix.\n\nand m is used. it's an mxn matrix. m is the rows and n is the columns.\n\n[ 3 5 6]<br>\n\n[ 2 1 0 ] ... a 2x3 matrix of some numbers.\n\na combination of vectors apparently.\n\n"
+					"html": "<h1>matrices</h1><p><em>this is where my submarine head is about half-way down to the titanic.. <br>i can hear the fibres crackling.. but onward..</em></p><p><em>note: i don't know what i'm talking about. don't put this in your schoolwork.</em></p><p></p><p>1 can be represented as a 1x1 matrix [1] - that's interesting in itself!</p><p>[23] is 23</p><p>and a number by itself when interacting with the matrix is a scalar</p><p></p><p>a matrix is a set of numbers, in rows and columns, in a rectangular array.</p><p>you can have a square matrix, like 2x2, or 3x3.. an nxn matrix.. <br>a square matrix to the order n</p><p>or if there are two rows and three columns, then it is a 2x3 matrix.</p><p>and m is used. it's an mxn matrix. m is the rows and n is the columns.</p><p>[ 3 5 6]<br>[ 2 1 0 ] ... a 2x3 matrix of some numbers.</p><p>a combination of vectors apparently.</p>",
+					"markdown": "# matrices\n\n*this is where my submarine head is about half-way down to the titanic.. <br>\n\ni can hear the fibres crackling.. but onward..*\n\n*note: i don't know what i'm talking about. don't put this in your schoolwork.*\n\n\n\n1 can be represented as a 1x1 matrix [1] - that's interesting in itself!\n\n[23] is 23\n\nand a number by itself when interacting with the matrix is a scalar\n\n\n\na matrix is a set of numbers, in rows and columns, in a rectangular array.\n\nyou can have a square matrix, like 2x2, or 3x3.. an nxn matrix.. <br>\n\na square matrix to the order n\n\nor if there are two rows and three columns, then it is a 2x3 matrix.\n\nand m is used. it's an mxn matrix. m is the rows and n is the columns.\n\n[ 3 5 6]<br>\n\n[ 2 1 0 ] ... a 2x3 matrix of some numbers.\n\na combination of vectors apparently.\n\n"
 				}
 			}
 		});
@@ -6763,12 +6763,12 @@ function create_fragment$k(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "la pieta",
-					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/R.webp1690314973317"
+					"alt": "what the",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/matrix-inverse-2x2-ex2.webp1690317066550"
 				},
 				title: "maths - week 2",
 				description: "matrices",
-				superhead: "la pieta",
+				superhead: "what the..",
 				heading: ""
 			}
 		});
