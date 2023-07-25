@@ -6246,8 +6246,8 @@ function create_fragment$h(ctx) {
 				title: "maths - week 1",
 				description: "triangles in circle",
 				content: {
-					"html": "<h1>vectors, triangles, the circle, sin and cos</h1><p></p><p><em>another thing going on in my head for quite a while.</em></p><p><em>i get sin and cos mixed up if i'm not actively looking and thinking about it.</em></p><p><em>then i go back to soh cah toa </em></p><p></p><p></p>",
-					"markdown": "# vectors, triangles, the circle, sin and cos\n\n\n\n*another thing going on in my head for quite a while.*\n\n*i get sin and cos mixed up if i'm not actively looking and thinking about it.*\n\n*then i go back to soh cah toa *\n\n\n\n\n\n"
+					"html": "<h1>vectors, triangles, the circle, sin and cos</h1><p></p><p><em>another thing going on in my head for quite a while.</em></p><p><em>i get sin and cos mixed up if i'm not actively looking and thinking about it.</em></p><p><em>then i go back to soh cah toa</em></p><p>note: i have no idea what i'm talking about</p><p></p>",
+					"markdown": "# vectors, triangles, the circle, sin and cos\n\n\n\n*another thing going on in my head for quite a while.*\n\n*i get sin and cos mixed up if i'm not actively looking and thinking about it.*\n\n*then i go back to soh cah toa*\n\nnote: i have no idea what i'm talking about\n\n\n\n"
 				}
 			}
 		});
@@ -6441,8 +6441,8 @@ function create_fragment$h(ctx) {
 				title: "maths - week 1",
 				description: "triangles in circle",
 				content: {
-					"html": "<p><em>i'm not sure where i'm going with this.. what is a matrix?</em></p><p><em>anyhoo, i'll write more on this next thursday</em></p><p><code>columns = list(zip(*matrix))</code></p>",
-					"markdown": "*i'm not sure where i'm going with this.. what is a matrix?*\n\n*anyhoo, i'll write more on this next thursday*\n\n`columns = list(zip(*matrix))`\n\n"
+					"html": "<p><em>i'm not sure where i'm going with this.. what is a matrix?</em></p><p><em>0,0 origin .. [0 0] to 0,1.. [0 1] .. [0 0][0 1] ?</em></p><p><em>anyhoo, i'll write more on this next thursday</em></p><p><code>columns = list(zip(*matrix))</code></p>",
+					"markdown": "*i'm not sure where i'm going with this.. what is a matrix?*\n\n*0,0 origin .. [0 0] to 0,1.. [0 1] .. [0 0][0 1] ?*\n\n*anyhoo, i'll write more on this next thursday*\n\n`columns = list(zip(*matrix))`\n\n"
 				}
 			}
 		});
