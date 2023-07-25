@@ -6441,8 +6441,8 @@ function create_fragment$h(ctx) {
 				title: "maths - week 1",
 				description: "triangles in circle",
 				content: {
-					"html": "<p><em>i'm not sure where i'm going with this.. what is a matrix?</em></p><p><em>0,0 origin .. [0 0] to 0,1.. [0 1] .. [0 0][0 1] ?</em></p><p><em>anyhoo, i'll write more on this next thursday</em></p><p><code>columns = list(zip(*matrix))</code></p>",
-					"markdown": "*i'm not sure where i'm going with this.. what is a matrix?*\n\n*0,0 origin .. [0 0] to 0,1.. [0 1] .. [0 0][0 1] ?*\n\n*anyhoo, i'll write more on this next thursday*\n\n`columns = list(zip(*matrix))`\n\n"
+					"html": "<p><code>columns = list(zip(*matrix))</code></p>\n<p><em>i'm not sure where i'm going with this.. what is a matrix?</em></p>\n<p><em>0,0 origin .. [0 0] to 0,1.. [0 1] .. [0 0][0 1] ?</em></p>\n<h4 id=\"2matriceshttpsabcstoneskullxyzblogxblogmathsmathsweek220230803\"><em><a href=\"https://abc.stoneskull.xyz/blogx/blog/maths/maths-week-2\">2 - matrices</a> 2023-08-03</em></h4>",
+					"markdown": "`columns = list(zip(*matrix))`\n\n*i'm not sure where i'm going with this.. what is a matrix?*\n\n*0,0 origin .. [0 0] to 0,1.. [0 1] .. [0 0][0 1] ?*\n\n####*[2 - matrices](<https://abc.stoneskull.xyz/blogx/blog/maths/maths-week-2) 2023-08-03*\n\n\n\n"
 				}
 			}
 		});
