@@ -4272,8 +4272,8 @@ function create_fragment$7(ctx) {
 			this.h();
 		},
 		h() {
-			attr(iframe, "width", "560");
-			attr(iframe, "height", "500");
+			attr(iframe, "width", "36");
+			attr(iframe, "height", "400");
 			if (!src_url_equal(iframe.src, iframe_src_value = "https://www.youtube.com/embed/" + /*video_id*/ ctx[0])) attr(iframe, "src", iframe_src_value);
 			attr(iframe, "title", "YouTube video player");
 			attr(iframe, "frameborder", "0");
