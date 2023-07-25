@@ -3,7 +3,7 @@
 
 <head>
     <meta name="generator" content="Primo" />
-    <title>X</title><!-- HEAD_svelte-1pww12a_START -->
+    <title>maths - week 1</title><!-- HEAD_svelte-1pww12a_START -->
     <link rel="shortcut icon" type="image/jpg" sizes="32x32" href="https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg">
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=inter:100,200,300,400,500,600,700,800,900" rel="stylesheet">
@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/themes/light.css">
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/shoelace-autoloader.js"></script>
     <link rel="shortcut icon" type="image/jpg" sizes="32x32" href="https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg">
-    <meta name="description" content="blackboard">
-    <meta property="og:image" content="https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690249269994text-1690249269700.png">
-    <meta name="twitter:image" content="https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690249269994text-1690249269700.png">
+    <meta name="description" content="triangles in circle">
+    <meta property="og:image" content="https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690069312339main-qimg-589e7dad2b6c5f658e26048a27f0c609.webp">
+    <meta name="twitter:image" content="https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690069312339main-qimg-589e7dad2b6c5f658e26048a27f0c609.webp">
     <style>
         /* Reset & standardize default styles */
         @import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css") layer;
@@ -327,6 +327,29 @@
             border-radius: var(--border-radius)
         }
 
+        .section-container.svelte-1b2zbzi {
+            display: grid;
+            place-items: center;
+            padding: 2rem 2rem 1rem 2rem
+        }
+
+        .superhead.svelte-1b2zbzi {
+            font-size: 1rem;
+            color: var(--color-accent2);
+            font-weight: 500;
+            margin-bottom: 0.5rem
+        }
+
+        .heading.svelte-1b2zbzi {
+            margin-bottom: 2rem
+        }
+
+        @media(min-width:700px) {
+            img.svelte-1b2zbzi {
+                max-width: 750px
+            }
+        }
+
         .section-container.svelte-1lugy4n {
             max-width: var(--inner-max-width, 800px);
             padding: 2rem
@@ -392,6 +415,343 @@
             padding: 2rem;
             box-shadow: var(--box-shadow);
             border-radius: var(--border-radius)
+        }
+
+        .section-container.svelte-1b2zbzi {
+            display: grid;
+            place-items: center;
+            padding: 2rem 2rem 1rem 2rem
+        }
+
+        .superhead.svelte-1b2zbzi {
+            font-size: 1rem;
+            color: var(--color-accent2);
+            font-weight: 500;
+            margin-bottom: 0.5rem
+        }
+
+        .heading.svelte-1b2zbzi {
+            margin-bottom: 2rem
+        }
+
+        @media(min-width:700px) {
+            img.svelte-1b2zbzi {
+                max-width: 750px
+            }
+        }
+
+        .section-container.svelte-1lugy4n {
+            max-width: var(--inner-max-width, 800px);
+            padding: 2rem
+        }
+
+        .content.svelte-1lugy4n img {
+            width: 100%;
+            margin: 2rem 0;
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius)
+        }
+
+        .content.svelte-1lugy4n p {
+            padding: 0.25rem 0;
+            line-height: 1.5;
+            font-family: var(--body-font);
+            font-weight: 300;
+            margin-bottom: 1rem;
+            color: #2d3339
+        }
+
+        .content.svelte-1lugy4n a {
+            text-decoration: underline
+        }
+
+        .content.svelte-1lugy4n h1 {
+            font-size: clamp(1.75rem, 10vw, 2.25rem);
+            font-weight: 600;
+            letter-spacing: -0.08rem;
+            margin-bottom: 1rem;
+            line-height: 1.1
+        }
+
+        .content.svelte-1lugy4n h2 {
+            font-size: clamp(1.5rem, 10vw, 2.125rem);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            letter-spacing: -0.06rem;
+            line-height: 1.1
+        }
+
+        .content.svelte-1lugy4n h3 {
+            font-size: clamp(1.25rem, 10vw, 1.75rem);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.05rem;
+            line-height: 1.1
+        }
+
+        .content.svelte-1lugy4n ul {
+            list-style: disc;
+            padding: 0.25rem 0;
+            padding-left: 1.25rem
+        }
+
+        .content.svelte-1lugy4n ol {
+            list-style: decimal;
+            padding-left: 1.25rem;
+            margin-bottom: 2rem
+        }
+
+        .content.svelte-1lugy4n blockquote {
+            padding: 2rem;
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius)
+        }
+
+        .section-container.svelte-1b2zbzi {
+            display: grid;
+            place-items: center;
+            padding: 2rem 2rem 1rem 2rem
+        }
+
+        .superhead.svelte-1b2zbzi {
+            font-size: 1rem;
+            color: var(--color-accent2);
+            font-weight: 500;
+            margin-bottom: 0.5rem
+        }
+
+        .heading.svelte-1b2zbzi {
+            margin-bottom: 2rem
+        }
+
+        @media(min-width:700px) {
+            img.svelte-1b2zbzi {
+                max-width: 750px
+            }
+        }
+
+        .section-container.svelte-1lugy4n {
+            max-width: var(--inner-max-width, 800px);
+            padding: 2rem
+        }
+
+        .content.svelte-1lugy4n img {
+            width: 100%;
+            margin: 2rem 0;
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius)
+        }
+
+        .content.svelte-1lugy4n p {
+            padding: 0.25rem 0;
+            line-height: 1.5;
+            font-family: var(--body-font);
+            font-weight: 300;
+            margin-bottom: 1rem;
+            color: #2d3339
+        }
+
+        .content.svelte-1lugy4n a {
+            text-decoration: underline
+        }
+
+        .content.svelte-1lugy4n h1 {
+            font-size: clamp(1.75rem, 10vw, 2.25rem);
+            font-weight: 600;
+            letter-spacing: -0.08rem;
+            margin-bottom: 1rem;
+            line-height: 1.1
+        }
+
+        .content.svelte-1lugy4n h2 {
+            font-size: clamp(1.5rem, 10vw, 2.125rem);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            letter-spacing: -0.06rem;
+            line-height: 1.1
+        }
+
+        .content.svelte-1lugy4n h3 {
+            font-size: clamp(1.25rem, 10vw, 1.75rem);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.05rem;
+            line-height: 1.1
+        }
+
+        .content.svelte-1lugy4n ul {
+            list-style: disc;
+            padding: 0.25rem 0;
+            padding-left: 1.25rem
+        }
+
+        .content.svelte-1lugy4n ol {
+            list-style: decimal;
+            padding-left: 1.25rem;
+            margin-bottom: 2rem
+        }
+
+        .content.svelte-1lugy4n blockquote {
+            padding: 2rem;
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius)
+        }
+
+        .section-container.svelte-1lugy4n {
+            max-width: var(--inner-max-width, 800px);
+            padding: 2rem
+        }
+
+        .content.svelte-1lugy4n img {
+            width: 100%;
+            margin: 2rem 0;
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius)
+        }
+
+        .content.svelte-1lugy4n p {
+            padding: 0.25rem 0;
+            line-height: 1.5;
+            font-family: var(--body-font);
+            font-weight: 300;
+            margin-bottom: 1rem;
+            color: #2d3339
+        }
+
+        .content.svelte-1lugy4n a {
+            text-decoration: underline
+        }
+
+        .content.svelte-1lugy4n h1 {
+            font-size: clamp(1.75rem, 10vw, 2.25rem);
+            font-weight: 600;
+            letter-spacing: -0.08rem;
+            margin-bottom: 1rem;
+            line-height: 1.1
+        }
+
+        .content.svelte-1lugy4n h2 {
+            font-size: clamp(1.5rem, 10vw, 2.125rem);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            letter-spacing: -0.06rem;
+            line-height: 1.1
+        }
+
+        .content.svelte-1lugy4n h3 {
+            font-size: clamp(1.25rem, 10vw, 1.75rem);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.05rem;
+            line-height: 1.1
+        }
+
+        .content.svelte-1lugy4n ul {
+            list-style: disc;
+            padding: 0.25rem 0;
+            padding-left: 1.25rem
+        }
+
+        .content.svelte-1lugy4n ol {
+            list-style: decimal;
+            padding-left: 1.25rem;
+            margin-bottom: 2rem
+        }
+
+        .content.svelte-1lugy4n blockquote {
+            padding: 2rem;
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius)
+        }
+
+        .section-container.svelte-1lugy4n {
+            max-width: var(--inner-max-width, 800px);
+            padding: 2rem
+        }
+
+        .content.svelte-1lugy4n img {
+            width: 100%;
+            margin: 2rem 0;
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius)
+        }
+
+        .content.svelte-1lugy4n p {
+            padding: 0.25rem 0;
+            line-height: 1.5;
+            font-family: var(--body-font);
+            font-weight: 300;
+            margin-bottom: 1rem;
+            color: #2d3339
+        }
+
+        .content.svelte-1lugy4n a {
+            text-decoration: underline
+        }
+
+        .content.svelte-1lugy4n h1 {
+            font-size: clamp(1.75rem, 10vw, 2.25rem);
+            font-weight: 600;
+            letter-spacing: -0.08rem;
+            margin-bottom: 1rem;
+            line-height: 1.1
+        }
+
+        .content.svelte-1lugy4n h2 {
+            font-size: clamp(1.5rem, 10vw, 2.125rem);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            letter-spacing: -0.06rem;
+            line-height: 1.1
+        }
+
+        .content.svelte-1lugy4n h3 {
+            font-size: clamp(1.25rem, 10vw, 1.75rem);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.05rem;
+            line-height: 1.1
+        }
+
+        .content.svelte-1lugy4n ul {
+            list-style: disc;
+            padding: 0.25rem 0;
+            padding-left: 1.25rem
+        }
+
+        .content.svelte-1lugy4n ol {
+            list-style: decimal;
+            padding-left: 1.25rem;
+            margin-bottom: 2rem
+        }
+
+        .content.svelte-1lugy4n blockquote {
+            padding: 2rem;
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius)
+        }
+
+        .section-container.svelte-1b2zbzi {
+            display: grid;
+            place-items: center;
+            padding: 2rem 2rem 1rem 2rem
+        }
+
+        .superhead.svelte-1b2zbzi {
+            font-size: 1rem;
+            color: var(--color-accent2);
+            font-weight: 500;
+            margin-bottom: 0.5rem
+        }
+
+        .heading.svelte-1b2zbzi {
+            margin-bottom: 2rem
+        }
+
+        @media(min-width:700px) {
+            img.svelte-1b2zbzi {
+                max-width: 750px
+            }
         }
 
         .section-container.svelte-ngjace.svelte-ngjace {
@@ -519,7 +879,7 @@
 
 <body id="page">
 
-    <div class="section" id="section-c984bd99">
+    <div class="section" id="section-9b8754ec">
         <header class="section-container svelte-ngjace">
             <div class="desktop-nav svelte-ngjace"><a href="/" class="logo svelte-ngjace">stOne</a>
                 <nav class="svelte-ngjace"><a class="link svelte-ngjace" href="/blog">blOg</a><a class="link svelte-ngjace" href="/about">abOut</a><a class="link svelte-ngjace" href="/contact">cOntact</a><a class="link svelte-ngjace" href="https://stOneskull.xyz">stOneskull</a></nav>
@@ -539,50 +899,141 @@
             </div>
         </header>
     </div>
-    <div class="section" id="section-33d6d4d8">
-        <header class="section-container svelte-1b2zbzi"><span class="superhead svelte-1b2zbzi">2023-07-26</span>
-            <h1 class="heading svelte-1b2zbzi"></h1>
-            <img src="https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690249269994text-1690249269700.png" alt="X" class="svelte-1b2zbzi">
+    <div class="section" id="section-2cfd35f3">
+        <header class="section-container svelte-1b2zbzi"><span class="superhead svelte-1b2zbzi">2023-08-03</span>
+            <h1 class="heading svelte-1b2zbzi">maths - week 2</h1>
+            <img src="https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690069312339main-qimg-589e7dad2b6c5f658e26048a27f0c609.webp" alt="triangles in circle" class="svelte-1b2zbzi">
         </header>
     </div>
-    <div class="section" id="section-6431083d">
+    <div class="section" id="section-f45c56f9">
         <div class="section">
             <div class="section-container content svelte-1lugy4n"><!-- HTML_TAG_START -->
-                <p><em>Some more text that's italicized to make an impact.</em></p>
-                <p>Or just write in normal text.</p>
-                <p>Twitter is a part of X Corp and <a target="_blank" rel="noopener noreferrer nofollow" class="link link" href="http://x.com">x.com</a> goes to Twitter.</p>
-                <p>The new logo is X written in what's called 'double-stroked', 'double-struck' or 'blackboard bold' as it is the way mathematics teachers write in big letters as representations of number sets. </p>
-                <p>For example, the real numbers set is written ℝ with the teacher writing with the long side of the chalk. </p>
-                <p>Apparently 𝕏 is sometimes used to denote an arbitrary <a target="_blank" rel="noopener noreferrer nofollow" class="link link" href="https://en.wikipedia.org/wiki/Metric_space">metric space</a>, whatever that means.</p>
-                <p>The X window system that is at <a target="_blank" rel="noopener noreferrer nofollow" class="link link" href="http://x.org">x.org</a> has a similar use of the blackboard X as a logo.</p>
+                <h1>matrices</h1>
+                <p><em>this is where my submarine head is about half-way down to the titanic.. <br>i can hear the fibres crackling.. but onward..</em></p>
+                <p>1 can be represented as a 1x1 matrix [1] - that's interesting in itself!</p>
+                <p>a matrix is a set of numbers, in rows and columns, in a rectangular array.</p>
+                <p>you can have a square matrix, like 2x2, or 3x3.. an nxn matrix.. a square matrix to the order n</p>
+                <p>or if there are two rows and three columns, then it is a 2x3 matrix.</p>
+                <p>and m is used. it's an mxn matrix. m is the rows and n is the columns.</p><!-- HTML_TAG_END -->
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section-004d7096">
+        <div class="section">
+            <div class="section-container content svelte-1lugy4n"><!-- HTML_TAG_START -->
+                <p><em>pi and radians and degrees.</em></p>
+                <p>there is a unit circle. it has a radius of 1.</p>
+                <p>a unit vector. radius length, kinda rotates.. at least in this stuff i'm thinking.</p>
+                <p>when the vector points straight up, it is sin (90) or 1</p>
+                <p>when it points down, it is sin(270) or -1</p>
+                <p>the 90 is like the vector rotated anti-clockwise 90 degrees</p>
+                <p>180 degrees is pi radians. a whole unit circle is 2*pi circumference</p>
+                <p>then cosine.. cos..</p>
+                <p>sin is the y value!</p>
+                <p>wherever the vector is 'pointing', is an x and y co-ordinate</p>
+                <p>if it is pointing straight up, y is 1, the whole radius length, the vector length,<br>and the x value is 0, cos(90) is 0</p>
+                <p>before 45 degrees, <br>let's look at 30 degrees</p>
                 <p></p><!-- HTML_TAG_END -->
             </div>
         </div>
     </div>
-    <div class="section" id="section-6684a4c0">
+    <div class="section" id="section-b640efda">
+        <header class="section-container svelte-1b2zbzi"><span class="superhead svelte-1b2zbzi"></span>
+            <h1 class="heading svelte-1b2zbzi"></h1>
+            <img src="https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/30degree.webp1690078997969" alt="30degree" class="svelte-1b2zbzi">
+        </header>
+    </div>
+    <div class="section" id="section-b9743106">
         <div class="section">
             <div class="section-container content svelte-1lugy4n"><!-- HTML_TAG_START -->
-                <p><em>Didn't really have a topic for today.</em></p>
-                <p>I'm working on a controversial post and really not sure if I should post it. I don't really want to get much into politics or religion on my site here. But I think this topic is important..</p>
-                <p> Tomorrow I think is a continuation of another post.. A 'weekly update' post I'm doing inside some posts.</p>
-                <p>So today I thought I'd mention 𝕏 </p>
-                <p>This is all the buzz, in the news.. I wonder if someone reads this in the future far away. I wonder what happens with all this... </p>
-                <p>I think Elon Musk planned to make twitter into <a target="_blank" rel="noopener noreferrer nofollow" class="link link link link" href="http://x.com">x.com</a> since before he bought it. The domain is his baby, he made sure to keep it when splitting up from Paypal. I kinda like it. A new change.</p>
-                <p>But anyway, clogging along..</p>
-                <p>I wonder what happens when I die.. on a few different levels. And topics..</p><!-- HTML_TAG_END -->
+                <p></p>
+                <p>the vector will be 'pointing' at x = cos(30), y = sin(30)</p>
+                <p>the vector is also the hypotenuse of a triangle. and remember it is length 1</p>
+                <p>sin is opposite over hypotenuse. the right angle is a vertical line from the point<br>meeting the x line (the line where y==0)</p>
+                <p>the y line, where x == 0, can have a horizontal line to the point, making the right angle for the triangle when look at cosine. cosine is adjacent over hypotenuse.</p>
+                <p>the 2 'lines', the vertical and horizontal lines, make up a rectangle</p>
+                <p>the triangle is half that rectangle</p>
+                <p></p>
+                <p>here we are supposed to think about how an equilateral triangle with side lengths 1 has three 60 degrees angles..</p>
+                <p>and if you chop it in half you get a triangle with a right angle, a 30 degree angle and a 60 degree angle</p>
+                <p>so the y value becomes a half.. 1/2</p>
+                <p>sin(30) == 1/2 or 0.5</p>
+                <p>a squared + b squared = c squared</p>
+                <p>a squared + b squared = 1</p>
+                <p>sin(30) .. 30 == opposite / hypotenuse and since hypotenuse is 1, just opposite = 1/2</p>
+                <p>cos(30) = adjacent / hypotenuse =</p>
+                <p>a squared = c squared - b squared</p>
+                <p>adjacent squared == 1 - 1/2 squared = 1 - 1/4 = 3/4</p>
+                <p>adjacent == square root of (3/4) = square root of 3 / square root of 4 <br>= (square root of 3) / 2</p>
+                <p>this is about 0.866</p>
+                <p>angle is 30.. x (horizontal) is root 3 over 2.. y (vertical) is 1/2.... (+0.866, +0.5)</p>
+                <p>angle is 60.. x is 1/2.. y is root 3 over 2.... (+0.5, +0.866)</p>
+                <p></p>
+                <p></p>
+                <p></p><!-- HTML_TAG_END -->
             </div>
         </div>
     </div>
-    <div class="section" id="section-38812b9e">
+    <div class="section" id="section-fda64033">
+        <header class="section-container svelte-1b2zbzi"><span class="superhead svelte-1b2zbzi"></span>
+            <h1 class="heading svelte-1b2zbzi"></h1>
+            <img src="https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/R.webp1690078598113" alt="60degree" class="svelte-1b2zbzi">
+        </header>
+    </div>
+    <div class="section" id="section-29263c60">
         <div class="section">
             <div class="section-container content svelte-1lugy4n"><!-- HTML_TAG_START -->
-                <p><em>oh shit, i forgot to mention..</em></p>
-                <p>the lovely X at the top of the page is from the super swell font:</p>
-                <p><a target="_blank" rel="noopener noreferrer nofollow" class="link link" href="https://www.fontspace.com/transatlantic-cruise-font-f22974">transatlantic cruise</a></p><!-- HTML_TAG_END -->
+                <p></p>
+                <p>now 45 degrees means the other angle must be 45 degrees as there is the right angle too. and the side lengths, a and b, are equal.</p>
+                <p>if you have a unit square, all sides are 1, and cut it diagonally in half, the hypotenuse is the square root of (1 squared + 1 squared), or square root of 2</p>
+                <p>sin 45 is square root of 2, and cos 45 is square root of 2</p>
+                <p>x, y = 0.707, 0.707</p>
+                <p></p>
+                <p></p>
+                <p></p><!-- HTML_TAG_END -->
             </div>
         </div>
     </div>
-    <div class="section" id="section-196a8ce0">
+    <div class="section" id="section-d6fcdcd1">
+        <header class="section-container svelte-1b2zbzi"><span class="superhead svelte-1b2zbzi"></span>
+            <h1 class="heading svelte-1b2zbzi"></h1>
+            <img src="https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/trigonometric_circle_sine_cosine.webp1690078608162" alt="wheel" class="svelte-1b2zbzi">
+        </header>
+    </div>
+    <div class="section" id="section-5d0037ec">
+        <div class="section">
+            <div class="section-container content svelte-1lugy4n"><!-- HTML_TAG_START -->
+                <p><em>maths for blondes lol</em></p>
+                <p><em>why not!</em></p>
+                <p></p><!-- HTML_TAG_END -->
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section-c85c5533">
+        <div class="section">
+            <div class="section-container content svelte-1lugy4n"><!-- HTML_TAG_START -->
+                <p><em>round and round.. what it is..</em></p>
+                <p></p><!-- HTML_TAG_END -->
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section-2c9c8751">
+        <div class="section">
+            <div class="section-container content svelte-1lugy4n"><!-- HTML_TAG_START -->
+                <p><em>i'm not sure where i'm going with this.. what is a matrix?</em></p>
+                <p><em>0,0 origin .. [0 0] to 0,1.. [0 1] .. [0 0][0 1] ?</em></p>
+                <p><em>anyhoo, i'll write more on this next thursday</em></p>
+                <p><code>columns = list(zip(*matrix))</code></p><!-- HTML_TAG_END -->
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section-49e99a26">
+        <header class="section-container svelte-1b2zbzi"><span class="superhead svelte-1b2zbzi">Brimful of Asha</span>
+            <h1 class="heading svelte-1b2zbzi"></h1>
+            <img src="https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690069312339main-qimg-589e7dad2b6c5f658e26048a27f0c609.webp" alt="triangles in circle" class="svelte-1b2zbzi">
+        </header>
+    </div>
+    <div class="section" id="section-abacf838">
         <header class="section-container svelte-ngjace">
             <div class="desktop-nav svelte-ngjace"><a href="/" class="logo svelte-ngjace">stOne</a>
                 <nav class="svelte-ngjace"><a class="link svelte-ngjace" href="/blog">blOg</a><a class="link svelte-ngjace" href="/about">abOut</a><a class="link svelte-ngjace" href="/contact">cOntact</a><a class="link svelte-ngjace" href="https://stOneskull.xyz">stOneskull</a></nav>
@@ -602,7 +1053,7 @@
             </div>
         </header>
     </div>
-    <div class="section" id="section-f8d6cfb8">
+    <div class="section" id="section-a16e5768">
         <footer>
             <div class="section-container svelte-1excgdw">
                 <hr class="svelte-1excgdw">
