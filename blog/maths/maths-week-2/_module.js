@@ -6536,7 +6536,7 @@ function create_fragment$i(ctx) {
 				},
 				image: {
 					"alt": "la pieta",
-					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/R.jpeg1690303079277"
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/R.webp1690314973317"
 				},
 				title: "maths - week 2",
 				description: "matrices",
