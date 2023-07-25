@@ -5000,12 +5000,12 @@ function create_fragment$7(ctx) {
 				},
 				image: {
 					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690249269994text-1690249269700.png",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690249269994text-1690249269700.png",
+					"size": 2
 				},
-				title: "dunno",
-				description: "in the aether"
+				title: "X",
+				description: "blackboard"
 			}
 		});
 
@@ -5019,12 +5019,12 @@ function create_fragment$7(ctx) {
 				},
 				image: {
 					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690249269994text-1690249269700.png",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690249269994text-1690249269700.png",
+					"size": 2
 				},
-				title: "dunno",
-				description: "in the aether",
+				title: "X",
+				description: "blackboard",
 				logo: {
 					"image": {
 						"alt": "stOne",
@@ -5068,8 +5068,8 @@ function create_fragment$7(ctx) {
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690249269994text-1690249269700.png",
 					"size": 2
 				},
-				title: "dunno",
-				description: "in the aether",
+				title: "X",
+				description: "blackboard",
 				superhead: "2023-07-26",
 				heading: ""
 			}
@@ -5085,15 +5085,15 @@ function create_fragment$7(ctx) {
 				},
 				image: {
 					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690249269994text-1690249269700.png",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690249269994text-1690249269700.png",
+					"size": 2
 				},
-				title: "dunno",
-				description: "in the aether",
+				title: "X",
+				description: "blackboard",
 				content: {
-					"html": "<p><em>Some more text that's italicized to make an impact.</em></p>",
-					"markdown": "\n*Some more text that's italicized to make an impact.*\n\n\n\n\n\n"
+					"html": "<p><em>Some more text that's italicized to make an impact.</em></p><p>Or just write in normal text.</p><p>Twitter is a part of X Corp and <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link\" href=\"http://x.com\">x.com</a> goes to Twitter.</p><p>The new logo is X written in what's called 'blackboard bold' as it is the way mathematics teachers write in big letters as representations of number sets. eg. the real numbers set is written ℝ with the teacher writing with the long side of the chalk. </p><p>Apparently 𝕏 is sometimes used to denote an arbitrary <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link\" href=\"https://en.wikipedia.org/wiki/Metric_space\">metric space</a>.</p><p>The X window system that is at <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link\" href=\"http://x.org\">x.org</a> has a similar use of the blackboard X as a logo.</p><p></p>",
+					"markdown": "*Some more text that's italicized to make an impact.*\n\nOr just write in normal text.\n\nTwitter is a part of X Corp and [x.com](<http://x.com>) goes to Twitter.\n\nThe new logo is X written in what's called 'blackboard bold' as it is the way mathematics teachers write in big letters as representations of number sets. eg. the real numbers set is written ℝ with the teacher writing with the long side of the chalk.\n\nApparently 𝕏 is sometimes used to denote an arbitrary [metric space](<https://en.wikipedia.org/wiki/Metric_space>).\n\nThe X window system that is at [x.org](<http://x.org>) has a similar use of the blackboard X as a logo.\n\n\n\n"
 				}
 			}
 		});
@@ -5108,12 +5108,12 @@ function create_fragment$7(ctx) {
 				},
 				image: {
 					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690249269994text-1690249269700.png",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690249269994text-1690249269700.png",
+					"size": 2
 				},
-				title: "dunno",
-				description: "in the aether",
+				title: "X",
+				description: "blackboard",
 				logo: {
 					"image": {
 						"alt": "stOne",
@@ -5153,12 +5153,12 @@ function create_fragment$7(ctx) {
 				},
 				image: {
 					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690249269994text-1690249269700.png",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690249269994text-1690249269700.png",
+					"size": 2
 				},
-				title: "dunno",
-				description: "in the aether",
+				title: "X",
+				description: "blackboard",
 				heading: "",
 				email: "",
 				social_links: [
@@ -5213,12 +5213,12 @@ function create_fragment$7(ctx) {
 				},
 				image: {
 					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690249269994text-1690249269700.png",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690249269994text-1690249269700.png",
+					"size": 2
 				},
-				title: "dunno",
-				description: "in the aether"
+				title: "X",
+				description: "blackboard"
 			}
 		});
 
