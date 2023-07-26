@@ -6025,8 +6025,8 @@ function create_fragment$h(ctx) {
 				title: "maths",
 				description: "tree",
 				content: {
-					"html": "<p></p><p>note: i have no idea what i'm talking about.</p><p><em>i'm kinda tired of trying to learn the right way of doing it..</em></p><p>i'm just diving in.</p><p><em>so i'm going to try my way..</em></p><p></p><p><em>and i want a node to have six outputs..</em></p><p><em>n, e, s, w.. up and down</em></p><p></p>",
-					"markdown": "\n\nnote: i have no idea what i'm talking about.\n\n*i'm kinda tired of trying to learn the right way of doing it..*\n\ni'm just diving in.\n\n*so i'm going to try my way..*\n\n\n\n*and i want a node to have six outputs..*\n\n*n, e, s, w.. up and down*\n\n\n\n"
+					"html": "<p></p><p><em>i'm kinda tired of trying to learn the right way of doing it..</em></p><p>i'm just diving in.</p><p><em>going to try my way..</em></p><p></p><p><em>i want a node to have six outputs..</em></p><p><em>n, e, s, w.. up and down</em></p><p></p>",
+					"markdown": "\n\n*i'm kinda tired of trying to learn the right way of doing it..*\n\ni'm just diving in.\n\n*going to try my way..*\n\n\n\n*i want a node to have six outputs..*\n\n*n, e, s, w.. up and down*\n\n\n\n"
 				}
 			}
 		});
