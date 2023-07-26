@@ -5962,8 +5962,8 @@ function create_fragment$h(ctx) {
 				title: "maths",
 				description: "tree",
 				content: {
-					"html": "<h1>nodes and trees and binary and 3s</h1><p></p><p><em>for a game i'm making, i want the map to be a tree, and each room in the map is a node.</em></p><p><em>i've been thinking about it for quite a while..</em></p><p><em>i've written it different ways and stopped. now i'm gonna solve it.</em></p><p></p>",
-					"markdown": "# nodes and trees and binary and 3s\n\n\n\n*for a game i'm making, i want the map to be a tree, and each room in the map is a node.*\n\n*i've been thinking about it for quite a while..*\n\n*i've written it different ways and stopped. now i'm gonna solve it.*\n\n\n\n"
+					"html": "<h1 id=\"nodesandtreesandbinaryand3s\">nodes and trees and binary and 3s</h1>\n<p><em>for a game i'm making, i want the map to be a tree, and each room in the map is a node.</em></p>\n<p><em>i've been thinking about it for quite a while..</em></p>\n<p><em>i've written it different ways and stopped. now i'm gonna solve it.</em></p>\n<p>note: i have no idea what i am talking about</p>\n<p>if read: <a href=\"https://www.stoneskull.me/blog/maths\">zoom to next week</a></p>",
+					"markdown": "# nodes and trees and binary and 3s\n\n\n\n*for a game i'm making, i want the map to be a tree, and each room in the map is a node.*\n\n*i've been thinking about it for quite a while..*\n\n*i've written it different ways and stopped. now i'm gonna solve it.*\n\nnote: i have no idea what i am talking about\n\nif read: [zoom to next week](https://www.stoneskull.me/blog/maths)\n\n\n\n"
 				}
 			}
 		});
