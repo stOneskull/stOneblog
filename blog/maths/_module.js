@@ -6168,8 +6168,8 @@ function create_fragment$h(ctx) {
 				title: "maths",
 				description: "tree",
 				content: {
-					"html": "<p><em>i'm not sure where i'm going with this.. what is a decimal place in binary?</em></p><p><em>anyhoo, i'll write more on this next thursday</em></p><p><code>columns = list(zip(*matrix))</code></p><p></p><p>early link: 2023-07-27 - <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link\" href=\"https://stoneskull.me/blog/maths/maths-week-1\">maths week 1</a></p>",
-					"markdown": "*i'm not sure where i'm going with this.. what is a decimal place in binary?*\n\n*anyhoo, i'll write more on this next thursday*\n\n`columns = list(zip(*matrix))`\n\n\n\nearly link: 2023-07-27 - [maths week 1](<https://stoneskull.me/blog/maths/maths-week-1>)\n\n"
+					"html": "<p><em>i'm not sure where i'm going with this.. what is a decimal place in binary?</em></p><p><em>anyhoo, i'll write more on this next thursday</em></p><p><code>columns = list(zip(*matrix))</code></p><p></p><p>2023-07-27 - <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link link\" href=\"https://stoneskull.me/blog/maths/maths-week-1\">maths week 1</a></p>",
+					"markdown": "*i'm not sure where i'm going with this.. what is a decimal place in binary?*\n\n*anyhoo, i'll write more on this next thursday*\n\n`columns = list(zip(*matrix))`\n\n\n\n2023-07-27 - [maths week 1](<https://stoneskull.me/blog/maths/maths-week-1>)\n\n"
 				}
 			}
 		});
