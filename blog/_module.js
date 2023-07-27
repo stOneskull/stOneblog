@@ -5271,6 +5271,23 @@ function create_fragment$6(ctx) {
 							"html": "<h1 id=\"blackboard\">blackboard</h1>",
 							"markdown": "# blackboard"
 						}
+					},
+					{
+						"date": "2023-07-28",
+						"link": {
+							"url": "/blog/the-end",
+							"label": "the end"
+						},
+						"thumbnail": {
+							"alt": "antenna",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690501117772R.webp",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690501117772R.webp",
+							"size": 8
+						},
+						"description": {
+							"html": "<h1 id=\"nigh\">nigh</h1>",
+							"markdown": "# nigh"
+						}
 					}
 				]
 			}

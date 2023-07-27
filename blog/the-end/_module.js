@@ -5175,7 +5175,7 @@ function create_fragment$9(ctx) {
 					"size": 8
 				},
 				image: { "alt": "", "url": "" },
-				title: "we free",
+				title: "the end",
 				description: "rolling rolling rollling"
 			}
 		});
@@ -5189,7 +5189,7 @@ function create_fragment$9(ctx) {
 					"size": 8
 				},
 				image: { "alt": "", "url": "" },
-				title: "we free",
+				title: "the end",
 				description: "rolling rolling rollling",
 				logo: {
 					"image": {
@@ -5234,7 +5234,7 @@ function create_fragment$9(ctx) {
 					"url": "",
 					"size": null
 				},
-				title: "we free",
+				title: "the end",
 				description: "rolling rolling rollling",
 				superhead: "2023-07-28 ",
 				heading: ""
@@ -5250,7 +5250,7 @@ function create_fragment$9(ctx) {
 					"size": 8
 				},
 				image: { "alt": "", "url": "" },
-				title: "we free",
+				title: "the end",
 				description: "rolling rolling rollling",
 				content: {
 					"html": "<h1>the end</h1><p></p><p>but really a new beginning.</p><p>i've been thinking about what happens when i die.</p><p>not so much to me, but the world.</p><p>i've written a bit about this in tomorrow's conclusion to the Free blog</p>",
@@ -5268,7 +5268,7 @@ function create_fragment$9(ctx) {
 					"size": 8
 				},
 				image: { "alt": "", "url": "" },
-				title: "we free",
+				title: "the end",
 				description: "rolling rolling rollling",
 				content: {
 					"html": "<h1>and then</h1><p></p><p>i think my blog has been a lot of me trying to organizize and focus things i've been thinking about. like a little chaos turbulence. before getting into smooth sailing.</p><p>ride with me..</p>",
@@ -5289,7 +5289,7 @@ function create_fragment$9(ctx) {
 					"alt": "pineal gland",
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/R.webp1690501117772"
 				},
-				title: "we free",
+				title: "the end",
 				description: "rolling rolling rollling"
 			}
 		});
@@ -5303,7 +5303,7 @@ function create_fragment$9(ctx) {
 					"size": 8
 				},
 				image: { "alt": "", "url": "" },
-				title: "we free",
+				title: "the end",
 				description: "rolling rolling rollling",
 				logo: {
 					"image": {
@@ -5343,7 +5343,7 @@ function create_fragment$9(ctx) {
 					"size": 8
 				},
 				image: { "alt": "", "url": "" },
-				title: "we free",
+				title: "the end",
 				description: "rolling rolling rollling",
 				heading: "",
 				email: "",
@@ -5398,7 +5398,7 @@ function create_fragment$9(ctx) {
 					"size": 8
 				},
 				image: { "alt": "", "url": "" },
-				title: "we free",
+				title: "the end",
 				description: "rolling rolling rollling"
 			}
 		});
