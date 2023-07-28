@@ -5185,8 +5185,8 @@ function create_fragment$8(ctx) {
 				title: "cOntact",
 				description: "i'm friendly",
 				content: {
-					"html": "<p><a href=\"http://twitter.com/stOneskull\">twitter.com/stOneskull</a></p>\n<p><a href=\"http://fosstodon.org/@stOneskull\">fosstodon.org/@stOneskull</a></p>\n<p>write to me@stOneskull.me</p>\n<p>shout me at <a href=\"https://www.buymeacoffee.com/stoneskull\">this cafe</a> or <a href=\"https://ko-fi.com/stoneskull\">that cafe</a></p>",
-					"markdown": "[twitter.com/stOneskull](<http://twitter.com/stOneskull>)\n\n[fosstodon.org/@stOneskull](<http://fosstodon.org/@stOneskull>)\n\nwrite to me@stOneskull.me\n\nshout me at [this cafe](https://www.buymeacoffee.com/stoneskull) or [that cafe](https://ko-fi.com/stoneskull)\n\n"
+					"html": "<p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link\" href=\"http://twitter.com/stOneskull\">twitter.com/stOneskull</a></p><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link\" href=\"http://fosstodon.org/@stOneskull\">fosstodon.org/@stOneskull</a></p><p>write to stOne@skull.casa</p><p>shout me at <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link\" href=\"https://www.buymeacoffee.com/stoneskull\">this cafe</a> or <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link\" href=\"https://ko-fi.com/stoneskull\">that cafe</a></p>",
+					"markdown": "[twitter.com/stOneskull](<http://twitter.com/stOneskull>)\n\n[fosstodon.org/@stOneskull](<http://fosstodon.org/@stOneskull>)\n\nwrite to stOne@skull.casa\n\nshout me at [this cafe](<https://www.buymeacoffee.com/stoneskull>) or [that cafe](<https://ko-fi.com/stoneskull>)\n\n"
 				}
 			}
 		});
