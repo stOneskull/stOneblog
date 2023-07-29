@@ -5141,7 +5141,7 @@ function create_fragment$6(ctx) {
 				items: [
 					{
 						"date": "2023-07-16",
-						"link": { "url": "/blog/free", "label": "free" },
+						"link": { "url": "/2023-07/free", "label": "free" },
 						"thumbnail": {
 							"alt": "",
 							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1092769150000stoneskull.jpg",
@@ -5155,7 +5155,10 @@ function create_fragment$6(ctx) {
 					},
 					{
 						"date": "2023-07-17",
-						"link": { "url": "/blog/dunno", "label": "dunno" },
+						"link": {
+							"url": "/2023-07/dunno",
+							"label": "dunno"
+						},
 						"thumbnail": {
 							"alt": "zodiac",
 							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1093079818000zodiac2.gif",
@@ -5169,7 +5172,7 @@ function create_fragment$6(ctx) {
 					},
 					{
 						"date": "2023-07-18",
-						"link": { "url": "/blog/tim", "label": "tim" },
+						"link": { "url": "/2023-07/tim", "label": "tim" },
 						"thumbnail": {
 							"alt": "tim",
 							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689607454174R.webp",
@@ -5183,7 +5186,7 @@ function create_fragment$6(ctx) {
 					},
 					{
 						"date": "2023-07-19",
-						"link": { "url": "/blog/dang", "label": "dang" },
+						"link": { "url": "/2023-07/dang", "label": "dang" },
 						"thumbnail": {
 							"alt": "",
 							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689633464109dangguru99%20(22).webp",
@@ -5197,7 +5200,10 @@ function create_fragment$6(ctx) {
 					},
 					{
 						"date": "2023-07-20",
-						"link": { "url": "/blog/maths", "label": "maths" },
+						"link": {
+							"url": "/2023-07/maths",
+							"label": "maths"
+						},
 						"thumbnail": {
 							"alt": "",
 							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689751910605base-3-step-4.webp",
@@ -5211,7 +5217,7 @@ function create_fragment$6(ctx) {
 					},
 					{
 						"date": "2023-07-21",
-						"link": { "url": "/blog/time", "label": "time" },
+						"link": { "url": "/2023-07/time", "label": "time" },
 						"thumbnail": {
 							"alt": "time",
 							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/Time%20Wave%20Zero.webp1689868575547"
@@ -5223,7 +5229,7 @@ function create_fragment$6(ctx) {
 					},
 					{
 						"date": "2023-07-22",
-						"link": { "url": "/blog/web", "label": "web" },
+						"link": { "url": "/2023-07/web", "label": "web" },
 						"thumbnail": {
 							"alt": "web",
 							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689875533962R.webp",
@@ -5237,7 +5243,7 @@ function create_fragment$6(ctx) {
 					},
 					{
 						"date": "2023-07-24",
-						"link": { "url": "/blog/code", "label": "code" },
+						"link": { "url": "/2023-07/code", "label": "code" },
 						"thumbnail": {
 							"alt": "lemonade",
 							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690098197371lemonade.png",
@@ -5251,7 +5257,10 @@ function create_fragment$6(ctx) {
 					},
 					{
 						"date": "2023-07-25",
-						"link": { "url": "/blog/write", "label": "write" },
+						"link": {
+							"url": "/2023-07/write",
+							"label": "write"
+						},
 						"thumbnail": {
 							"alt": "book up",
 							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/nothb.png1654873892000"
@@ -5263,7 +5272,7 @@ function create_fragment$6(ctx) {
 					},
 					{
 						"date": "2023-07-26",
-						"link": { "url": "/blog/x", "label": "X" },
+						"link": { "url": "/2023-07/x", "label": "X" },
 						"thumbnail": {
 							"alt": "x",
 							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690249269994text-1690249269700.png",
@@ -5278,7 +5287,7 @@ function create_fragment$6(ctx) {
 					{
 						"date": "2023-07-28",
 						"link": {
-							"url": "/blog/the-end",
+							"url": "/2023-07/the-end",
 							"label": "the end"
 						},
 						"thumbnail": {
