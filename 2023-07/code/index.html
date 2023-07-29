@@ -3,7 +3,7 @@
 
 <head>
     <meta name="generator" content="Primo" />
-    <title>blOgs</title><!-- HEAD_svelte-1pww12a_START -->
+    <title>code</title><!-- HEAD_svelte-1pww12a_START -->
     <link rel="shortcut icon" type="image/jpg" sizes="32x32" href="https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg">
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=inter:100,200,300,400,500,600,700,800,900" rel="stylesheet">
@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/themes/light.css">
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/shoelace-autoloader.js"></script>
     <link rel="shortcut icon" type="image/jpg" sizes="32x32" href="https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg">
-    <meta name="description" content="These are my blog posts and they are wonderful.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2370&amp;q=80">
-    <meta name="twitter:image" content="https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2370&amp;q=80">
+    <meta name="description" content="step by step">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2370&amp;q=80">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2370&amp;q=80">
     <style>
         /* Reset & standardize default styles */
         @import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css") layer;
@@ -170,75 +170,193 @@
             top: 1rem
         }
 
-        .section-container.svelte-10jylfj.svelte-10jylfj {
-            max-width: var(--inner-max-width, 900px)
-        }
-
-        h2.svelte-10jylfj.svelte-10jylfj {
-            font-size: 1rem;
-            line-height: 1.1;
-            font-weight: 600;
-            margin-bottom: 4rem;
-            letter-spacing: -0.02rem;
-            padding: .5rem 0;
-            border-bottom: 1px solid #f0f0f0
-        }
-
-        ul.items.svelte-10jylfj.svelte-10jylfj {
+        .section-container.svelte-1b2zbzi {
             display: grid;
-            gap: 4rem
+            place-items: center;
+            padding: 2rem 2rem 1rem 2rem
         }
 
-        li.svelte-10jylfj.svelte-10jylfj {
-            display: grid;
-            gap: 2rem
-        }
-
-        li.svelte-10jylfj .post-info .title.svelte-10jylfj {
-            display: block;
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-bottom: 0.75rem;
-            line-height: 1.2;
-            letter-spacing: -0.02rem;
-            -webkit-text-decoration: underline transparent;
-            text-decoration: underline transparent;
-            transition: 0.1s -webkit-text-decoration;
-            transition: 0.1s text-decoration;
-            transition: 0.1s text-decoration, 0.1s -webkit-text-decoration
-        }
-
-        li.svelte-10jylfj .post-info .title.svelte-10jylfj:hover {
-            -webkit-text-decoration-color: initial;
-            text-decoration-color: initial
-        }
-
-        li.svelte-10jylfj .post-info .description.svelte-10jylfj {
+        .superhead.svelte-1b2zbzi {
             font-size: 1rem;
-            margin-bottom: 0.5rem;
-            font-family: var(--body-font);
-            line-height: 1.4;
-            font-weight: 300;
-            color: #2d3339
-        }
-
-        li.svelte-10jylfj .post-info .date.svelte-10jylfj {
-            font-size: 1rem;
-            font-weight: 400;
             color: var(--color-accent2);
-            font-weight: 400
+            font-weight: 500;
+            margin-bottom: 0.5rem
         }
 
-        li.svelte-10jylfj img.svelte-10jylfj {
+        .heading.svelte-1b2zbzi {
+            margin-bottom: 2rem
+        }
+
+        @media(min-width:700px) {
+            img.svelte-1b2zbzi {
+                max-width: 750px
+            }
+        }
+
+        .section-container.svelte-1yn388l {
+            max-width: var(--inner-max-width, 800px);
+            padding: 2rem
+        }
+
+        .content.svelte-1yn388l img {
+            width: 23%;
+            margin: 2rem 0;
             box-shadow: var(--box-shadow);
             border-radius: var(--border-radius)
         }
 
-        @media(min-width: 600px) {
-            li.svelte-10jylfj.svelte-10jylfj {
-                grid-template-columns: 3fr 1fr;
-                gap: 3rem
+        .content.svelte-1yn388l p {
+            padding: 0.25rem 0;
+            line-height: 1.5;
+            font-family: var(--body-font);
+            font-weight: 300;
+            margin-bottom: 1rem;
+            color: #2d3339
+        }
+
+        .content.svelte-1yn388l a {
+            text-decoration: underline
+        }
+
+        .content.svelte-1yn388l h1 {
+            font-size: clamp(1.75rem, 10vw, 2.25rem);
+            font-weight: 600;
+            letter-spacing: -0.08rem;
+            margin-bottom: 1rem;
+            line-height: 1.1
+        }
+
+        .content.svelte-1yn388l h2 {
+            font-size: clamp(1.5rem, 10vw, 2.125rem);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            letter-spacing: -0.06rem;
+            line-height: 1.1
+        }
+
+        .content.svelte-1yn388l h3 {
+            font-size: clamp(1.25rem, 10vw, 1.75rem);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.05rem;
+            line-height: 1.1
+        }
+
+        .content.svelte-1yn388l ul {
+            list-style: disc;
+            padding: 0.25rem 0;
+            padding-left: 1.25rem
+        }
+
+        .content.svelte-1yn388l ol {
+            list-style: decimal;
+            padding-left: 1.25rem;
+            margin-bottom: 2rem
+        }
+
+        .content.svelte-1yn388l blockquote {
+            padding: 2rem;
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius)
+        }
+
+        .section-container.svelte-1b2zbzi {
+            display: grid;
+            place-items: center;
+            padding: 2rem 2rem 1rem 2rem
+        }
+
+        .superhead.svelte-1b2zbzi {
+            font-size: 1rem;
+            color: var(--color-accent2);
+            font-weight: 500;
+            margin-bottom: 0.5rem
+        }
+
+        .heading.svelte-1b2zbzi {
+            margin-bottom: 2rem
+        }
+
+        @media(min-width:700px) {
+            img.svelte-1b2zbzi {
+                max-width: 750px
             }
+        }
+
+        .section-container.svelte-1yn388l {
+            max-width: var(--inner-max-width, 800px);
+            padding: 2rem
+        }
+
+        .content.svelte-1yn388l img {
+            width: 23%;
+            margin: 2rem 0;
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius)
+        }
+
+        .content.svelte-1yn388l p {
+            padding: 0.25rem 0;
+            line-height: 1.5;
+            font-family: var(--body-font);
+            font-weight: 300;
+            margin-bottom: 1rem;
+            color: #2d3339
+        }
+
+        .content.svelte-1yn388l a {
+            text-decoration: underline
+        }
+
+        .content.svelte-1yn388l h1 {
+            font-size: clamp(1.75rem, 10vw, 2.25rem);
+            font-weight: 600;
+            letter-spacing: -0.08rem;
+            margin-bottom: 1rem;
+            line-height: 1.1
+        }
+
+        .content.svelte-1yn388l h2 {
+            font-size: clamp(1.5rem, 10vw, 2.125rem);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            letter-spacing: -0.06rem;
+            line-height: 1.1
+        }
+
+        .content.svelte-1yn388l h3 {
+            font-size: clamp(1.25rem, 10vw, 1.75rem);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.05rem;
+            line-height: 1.1
+        }
+
+        .content.svelte-1yn388l ul {
+            list-style: disc;
+            padding: 0.25rem 0;
+            padding-left: 1.25rem
+        }
+
+        .content.svelte-1yn388l ol {
+            list-style: decimal;
+            padding-left: 1.25rem;
+            margin-bottom: 2rem
+        }
+
+        .content.svelte-1yn388l blockquote {
+            padding: 2rem;
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius)
+        }
+
+        section.svelte-j9bxxr {
+            padding-top: 2rem;
+            padding-bottom: 2rem
+        }
+
+        iframe.svelte-j9bxxr {
+            width: 100%
         }
 
         .section-container.svelte-ngjace.svelte-ngjace {
@@ -366,7 +484,7 @@
 
 <body id="page">
 
-    <div class="section" id="section-4a7e9f26">
+    <div class="section" id="section-d6e15be4">
         <header class="section-container svelte-ngjace">
             <div class="desktop-nav svelte-ngjace"><a href="/" class="logo svelte-ngjace">stOne</a>
                 <nav class="svelte-ngjace"><a class="link svelte-ngjace" href="/2023-08">2023-08</a><a class="link svelte-ngjace" href="/2023-07/x">2023-07</a><a class="link svelte-ngjace" href="/about">abOut</a><a class="link svelte-ngjace" href="/contact">cOntact</a><a class="link svelte-ngjace" href="https://stOneskull.xyz">stOneskull</a></nav>
@@ -386,32 +504,66 @@
             </div>
         </header>
     </div>
-    <div class="section" id="section-b3b76b9b">
-        <section class="section-container svelte-10jylfj">
-            <h2 class="svelte-10jylfj">2023-08</h2>
-            <ul class="items svelte-10jylfj">
-                <li class="svelte-10jylfj">
-                    <div class="post-info"><a class="title svelte-10jylfj" href="/blog/maths/maths-week-2">maths</a>
-                        <div class="description svelte-10jylfj"><!-- HTML_TAG_START -->
-                            <h1 id="based">based</h1><!-- HTML_TAG_END -->
-                        </div>
-                        <span class="date svelte-10jylfj">2023-08-03</span>
-                    </div>
-                    <img data-key="items[0].thumbnail" src="https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689751910605base-3-step-4.webp" alt="" class="svelte-10jylfj">
-                </li>
-                <li class="svelte-10jylfj">
-                    <div class="post-info"><a class="title svelte-10jylfj" href="/2023-07">July 2023</a>
-                        <div class="description svelte-10jylfj"><!-- HTML_TAG_START -->
-                            <h1 id="lastmonth">Last Month</h1><!-- HTML_TAG_END -->
-                        </div>
-                        <span class="date svelte-10jylfj">2023-07</span>
-                    </div>
-                    <img data-key="items[1].thumbnail" src="https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/16906022874792307.webp" alt="2023-07" class="svelte-10jylfj">
-                </li>
-            </ul>
-        </section>
+    <div class="section" id="section-cf9970ad">
+        <header class="section-container svelte-1b2zbzi"><span class="superhead svelte-1b2zbzi">2023-07-24</span>
+            <h1 class="heading svelte-1b2zbzi">code</h1>
+            <img src="https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/OIP.jpeg1690080525978" alt="python language" class="svelte-1b2zbzi">
+        </header>
     </div>
-    <div class="section" id="section-c2f53dbd">
+    <div class="section" id="section-878b7157">
+        <div class="section">
+            <div class="section-container content svelte-1yn388l"><!-- HTML_TAG_START -->
+                <p><em>my favourite computer language..</em></p>
+                <p><strong>Python</strong></p>
+                <p>3.12 is coming out soon.</p>
+                <p>i like to use the latest but i have been using 3.10 rather than 3.11</p>
+                <p>there was a program i downloaded from github that wouldn't work with 3.11. some dependency problem or something. 3.11 was too new. so i started using 3.10. it's nice.</p>
+                <p>i don't really know the difference in the very latest editions. i haven't used the walrus operator yet. or data classes. i want to, just haven't yet. i don't use type-annotation. i haven't tried the asyncio stuff. i'm quite a novice. i only just recently used the os module. i've used random and time mostly.</p>
+                <p>i started using conda for some things. it's good you can choose the python version to put in the environment. venv just uses the latest python you have. i think.. i'm kinda new to it all. bit of this, bit of that. i often just install into the base conda environment. i'm a bit messy.</p>
+                <p>3.12 is going to improve f-strings which is cool. i really like f-strings.</p>
+                <p></p>
+                <p><strong>retro nostalgia trip..</strong></p><!-- HTML_TAG_END -->
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section-95bbcdd9">
+        <header class="section-container svelte-1b2zbzi"><span class="superhead svelte-1b2zbzi"></span>
+            <h1 class="heading svelte-1b2zbzi"></h1>
+            <img src="https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690097088055How_to.webp" alt="basic language" class="svelte-1b2zbzi">
+        </header>
+    </div>
+    <div class="section" id="section-12ea22e6">
+        <div class="section">
+            <div class="section-container content svelte-1yn388l"><!-- HTML_TAG_START -->
+                <p></p>
+                <p><strong>BASIC</strong></p>
+                <p><em>my first computer language</em></p>
+                <p>when i was about 10, my father's father died and i got $1000 from his will.</p>
+                <p>before i could think about it, i knew i wanted a commodore 64. a neighbour friend had one and it would make me wish i had one, and so would the ads on tv. that cost about $500, i think. with the rest of the money i got a tv and some furniture stuff. i should've got a disk drive but oh well.</p>
+                <p>i bought one game. it was Labyrinth. it was great.</p>
+                <p>it was so unbelievably slow loading games on tape. i could start loading a game when dinner was ready, go eat dinner, and the game would still be loading when i got back. kids today wouldn't be able to handle how slow it was. old me today couldn't.</p>
+                <p>anyway, i needed more than that one game. i didn't have much choice but to learn some BASIC. just to have some fun. luckily the library had some books, and i typed in programs from them. then modified them. i didn't get into graphics unfortunately. i got zork from somewhere, or something similar to zork maybe. and i was able to read the BASIC program. i wrote some text games of my own and that's about as far as i got.</p>
+                <p>one day i met a guy who got the same bus as me to my new school and he had a c64 too. and he had games and knew how to copy the tapes. we became good friends and i started copying games. a really cool thing at the time were double-cassette players, where you could copy tape to tape. and there was a feature called high-speed dubbing, speeding up the time. a copied tape wouldn't work straight away in the datasette. this copy-protection was bypassed by turning a screw inside the datasette that changed the tape playing speed. the screw was accessible with a small phillips-head screwdriver through a hole just to side of where you put a tape in. i can't remember exactly but something like 1 and half turns of that screw.</p>
+                <p>anyway, i stopped using BASIC except for something like mother's day where i would draw a mother's day card on the tv.</p>
+                <p>and then it was the same with the Amiga. at first it was fun playing with the Amiga BASIC. i really liked that you didn't need line numbers, and could give subroutines names. but then i met a guy who had connections to copy the latest of Amiga software. i had hundreds and hundreds of floppies and didn't really use the BASIC anymore.</p>
+                <p>and since then, all i did that was anything like programming were things like config files, dos batch files, and simple spreadsheets and databases . then later on, a little bit of html. i still hardly know any javascript. i have learnt a little bit more html, and a tiny bit of css. i'm going to learn more though. it should get easier with time and practice. the practice has been a cycle. 0 to 1 and back. that's my life.</p>
+                <p>there was a brief stint at college, where i only lasted a few months. i leaned a bit of C and assembly language, some networking, hardware stuff.. serious stresses in my life at the time made me shoot off to thailand and into a whole different life adventure. i can write a 'hello world' in C. i probably forget that even. you have to use string.h i think. a header. i forget what import is, maybe it's include. like hash include string.h.. then int main(void) i think, some curly brackets and blah, blah, bleurgh. C annoys me. "let's turn this integer into a string.." then i'm spending my day learning how to do that..</p>
+                <p></p>
+                <p><strong>C#</strong></p>
+                <p>i got to a point where i wanted to program again and i was going to go with C#.</p>
+                <p>it would've been an interesting alternative timeline but at the time, i had started to use linux. i liked exploring different linux distros, to try them out. at that time, i had an itch to program. i thought C# seemed good, and that it was like the default language to write for Unity. and i had a Sony Vita. there was thing called playstation mobile. and they provided a SDK which used C#. it didn't work on linux though. there was something about .NET not working. you were supposed to use a thing called mono but the latest version of .NET wasn't compatible with mono yet or something.. and then a coincidence of two things happened.</p>
+                <p>going back before the vita, around the time of the Sony PSP. it got hacked and people were making homebrew for it. i thought it would be cool to write my own game onto the PSP. i learnt how to hack the PSP myself and got into configuring, theming, installing tools and homebrew, and honestly, piracy. not just PSP games, PS1 games (tony hawk is awesome!) and emulated games like nes and sega console games. guys were using a language called Python to make homebrew. (shout out to wololo - legend). i almost tried learning it, but again, like before.. i just played games.</p>
+                <p>so yeah, i was playing with linux, had an itch, C# was annoying me, and an old friend popped up in my life again after years. he is a computer programmer. he has been since a kid. he suggested i tried Python. when he mentioned it, i remembered about the PSP, and i thought it made sense to go with that. it felt independent, as in not owned by a company like java and c# seem to be. plus linux has python built in!</p>
+                <p></p>
+                <p>and then i found dr chuck..</p>
+                <p></p><!-- HTML_TAG_END -->
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section-8d769523">
+        <section class="section-container svelte-j9bxxr"><iframe width="36" height="400" src="https://www.youtube.com/embed/z3o6yEzcnLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="svelte-j9bxxr"></iframe></section>
+    </div>
+    <div class="section" id="section-379f4c5e">
         <header class="section-container svelte-ngjace">
             <div class="desktop-nav svelte-ngjace"><a href="/" class="logo svelte-ngjace">stOne</a>
                 <nav class="svelte-ngjace"><a class="link svelte-ngjace" href="/2023-08">2023-08</a><a class="link svelte-ngjace" href="/2023-07/x">2023-07</a><a class="link svelte-ngjace" href="/about">abOut</a><a class="link svelte-ngjace" href="/contact">cOntact</a><a class="link svelte-ngjace" href="https://stOneskull.xyz">stOneskull</a></nav>
@@ -431,7 +583,7 @@
             </div>
         </header>
     </div>
-    <div class="section" id="section-10b7ae86">
+    <div class="section" id="section-131d63c6">
         <footer>
             <div class="section-container svelte-1excgdw">
                 <hr class="svelte-1excgdw">

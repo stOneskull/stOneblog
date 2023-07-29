@@ -3563,7 +3563,7 @@ function create_fragment$2(ctx) {
 			attr(div1, "class", "mobile-nav svelte-ngjace");
 			attr(header, "class", "section-container svelte-ngjace");
 			attr(div2, "class", "section");
-			attr(div2, "id", "section-4a7e9f26");
+			attr(div2, "id", "section-3d1acac6");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
@@ -3971,7 +3971,7 @@ function create_fragment$3(ctx) {
 			attr(ul, "class", "items svelte-10jylfj");
 			attr(section, "class", "section-container svelte-10jylfj");
 			attr(div, "class", "section");
-			attr(div, "id", "section-b3b76b9b");
+			attr(div, "id", "section-44a39a8f");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div, anchor);
@@ -4535,7 +4535,7 @@ function create_fragment$4(ctx) {
 			attr(div1, "class", "mobile-nav svelte-ngjace");
 			attr(header, "class", "section-container svelte-ngjace");
 			attr(div2, "class", "section");
-			attr(div2, "id", "section-c2f53dbd");
+			attr(div2, "id", "section-7a06e90d");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
@@ -4892,7 +4892,7 @@ function create_fragment$5(ctx) {
 			attr(div0, "class", "footer svelte-1excgdw");
 			attr(div1, "class", "section-container svelte-1excgdw");
 			attr(div2, "class", "section");
-			attr(div2, "id", "section-10b7ae86");
+			attr(div2, "id", "section-b78cef2c");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
@@ -5137,14 +5137,67 @@ function create_fragment$6(ctx) {
 				},
 				title: "blOgs",
 				description: "These are my blog posts and they are wonderful.",
-				heading: "2023-08",
+				heading: "blOgs",
 				items: [
 					{
-						"date": "2023-08-03",
-						"link": {
-							"url": "/blog/maths/maths-week-2",
-							"label": "maths"
+						"date": "2023-07-16",
+						"link": { "url": "/blog/free", "label": "free" },
+						"thumbnail": {
+							"alt": "",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1092769150000stoneskull.jpg",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1092769150000stoneskull.jpg",
+							"size": 8
 						},
+						"description": {
+							"html": "<h1 id=\"2things\">2 things</h1>",
+							"markdown": "# 2 things"
+						}
+					},
+					{
+						"date": "2023-07-17",
+						"link": { "url": "/blog/dunno", "label": "dunno" },
+						"thumbnail": {
+							"alt": "zodiac",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1093079818000zodiac2.gif",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1093079818000zodiac2.gif",
+							"size": 61
+						},
+						"description": {
+							"html": "<h1 id=\"wellsee\">we'll see</h1>",
+							"markdown": "# we'll see"
+						}
+					},
+					{
+						"date": "2023-07-18",
+						"link": { "url": "/blog/tim", "label": "tim" },
+						"thumbnail": {
+							"alt": "tim",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689607454174R.webp",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689607454174R.webp",
+							"size": 113
+						},
+						"description": {
+							"html": "<h1 id=\"guru\">guru</h1>",
+							"markdown": "# guru"
+						}
+					},
+					{
+						"date": "2023-07-19",
+						"link": { "url": "/blog/dang", "label": "dang" },
+						"thumbnail": {
+							"alt": "",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689633464109dangguru99%20(22).webp",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689633464109dangguru99%20(22).webp",
+							"size": 52
+						},
+						"description": {
+							"html": "<h1 id=\"guru\">guru</h1>",
+							"markdown": "# guru"
+						}
+					},
+					{
+						"date": "2023-07-20",
+						"link": { "url": "/blog/maths", "label": "maths" },
 						"thumbnail": {
 							"alt": "",
 							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689751910605base-3-step-4.webp",
@@ -5157,17 +5210,86 @@ function create_fragment$6(ctx) {
 						}
 					},
 					{
-						"date": "2023-07",
-						"link": { "url": "/2023-07", "label": "July 2023" },
+						"date": "2023-07-21",
+						"link": { "url": "/blog/time", "label": "time" },
 						"thumbnail": {
-							"alt": "2023-07",
-							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/16906022874792307.webp",
-							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/16906022874792307.webp",
-							"size": 22
+							"alt": "time",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/Time%20Wave%20Zero.webp1689868575547"
 						},
 						"description": {
-							"html": "<h1 id=\"lastmonth\">Last Month</h1>",
-							"markdown": "# Last Month"
+							"html": "<h1 id=\"wave\">wave</h1>",
+							"markdown": "# wave"
+						}
+					},
+					{
+						"date": "2023-07-22",
+						"link": { "url": "/blog/web", "label": "web" },
+						"thumbnail": {
+							"alt": "web",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689875533962R.webp",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689875533962R.webp",
+							"size": 82
+						},
+						"description": {
+							"html": "<h1 id=\"cycles\">cycles</h1>",
+							"markdown": "# cycles"
+						}
+					},
+					{
+						"date": "2023-07-24",
+						"link": { "url": "/blog/code", "label": "code" },
+						"thumbnail": {
+							"alt": "lemonade",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690098197371lemonade.png",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690098197371lemonade.png",
+							"size": 3
+						},
+						"description": {
+							"html": "<h1 id=\"cliche\">cliche</h1>",
+							"markdown": "# cliche"
+						}
+					},
+					{
+						"date": "2023-07-25",
+						"link": { "url": "/blog/write", "label": "write" },
+						"thumbnail": {
+							"alt": "book up",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/nothb.png1654873892000"
+						},
+						"description": {
+							"html": "<h1 id=\"way\">way</h1>",
+							"markdown": "# way"
+						}
+					},
+					{
+						"date": "2023-07-26",
+						"link": { "url": "/blog/x", "label": "X" },
+						"thumbnail": {
+							"alt": "x",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690249269994text-1690249269700.png",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690249269994text-1690249269700.png",
+							"size": 2
+						},
+						"description": {
+							"html": "<h1 id=\"blackboard\">blackboard</h1>",
+							"markdown": "# blackboard"
+						}
+					},
+					{
+						"date": "2023-07-28",
+						"link": {
+							"url": "/blog/the-end",
+							"label": "the end"
+						},
+						"thumbnail": {
+							"alt": "antenna",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690501117772R.webp",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690501117772R.webp",
+							"size": 8
+						},
+						"description": {
+							"html": "<h1 id=\"nigh\">nigh</h1>",
+							"markdown": "# nigh"
 						}
 					}
 				]
