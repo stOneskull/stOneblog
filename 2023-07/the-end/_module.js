@@ -5574,8 +5574,8 @@ function create_fragment$b(ctx) {
 				title: "the end",
 				description: "rolling rolling rollling",
 				content: {
-					"html": "<p>i see this as the brain. </p><p>spinal cord coming down on the left.. eyes pointing out.. a long curly tongue..</p><p>atop is a skull of stone..</p>",
-					"markdown": "i see this as the brain.\n\nspinal cord coming down on the left.. eyes pointing out.. a long curly tongue..\n\natop is a skull of stone..\n\n"
+					"html": "<p>i see this as the brain.</p><p>brain stem coming down on the left.. eyes pointing out.. a long curly tongue..</p><p>atop is a cranium of stone..</p>",
+					"markdown": "i see this as the brain.\n\nbrain stem coming down on the left.. eyes pointing out.. a long curly tongue..\n\natop is a cranium of stone..\n\n"
 				}
 			}
 		});
