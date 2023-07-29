@@ -6246,8 +6246,8 @@ function create_fragment$h(ctx) {
 				title: "maths - week 1",
 				description: "triangles in circle",
 				content: {
-					"html": "<h1 id=\"vectorstrianglesthecirclesinandcos\">vectors, triangles, the circle, sin and cos</h1>\n<p><em>another thing going on in my head for quite a while.</em></p>\n<p><em>i get sin and cos mixed up if i'm not actively looking and thinking about it.</em></p>\n<p><em>then i go back to soh cah toa</em></p>\n<p>note: i have no idea what i'm talking about</p>\n<p>if read: <a href=\"https://www.stoneskull.me/2023-07/maths/maths-week-2\">zoom to next week</a></p>",
-					"markdown": "# vectors, triangles, the circle, sin and cos\n\n\n\n*another thing going on in my head for quite a while.*\n\n*i get sin and cos mixed up if i'm not actively looking and thinking about it.*\n\n*then i go back to soh cah toa*\n\nnote: i have no idea what i'm talking about\n\nif read: [zoom to next week](https://www.stoneskull.me/2023-07/maths/maths-week-2)\n\n\n\n"
+					"html": "<h1 id=\"vectorstrianglesthecirclesinandcos\">vectors, triangles, the circle, sin and cos</h1>\n<p><em>another thing going on in my head for quite a while.</em></p>\n<p><em>i get sin and cos mixed up if i'm not actively looking and thinking about it.</em></p>\n<p><em>then i go back to soh cah toa</em></p>\n<p>note: i have no idea what i'm talking about</p>\n<p><-- <a href=\"https://www.stoneskull.me/2023-07/maths/maths-week-1\">previous week</a> - <a href=\"https://www.stoneskull.me/2023-07/maths/maths-week-2\">next week</a> --></p>",
+					"markdown": "# vectors, triangles, the circle, sin and cos\n\n\n\n*another thing going on in my head for quite a while.*\n\n*i get sin and cos mixed up if i'm not actively looking and thinking about it.*\n\n*then i go back to soh cah toa*\n\nnote: i have no idea what i'm talking about\n\n<-- [previous week](https://www.stoneskull.me/2023-07/maths/maths-week-1) - [next week](https://www.stoneskull.me/2023-07/maths/maths-week-2) -->\n\n\n\n"
 				}
 			}
 		});
