@@ -4953,10 +4953,7 @@ function create_fragment$6(ctx) {
 				},
 				site_nav: [
 					{
-						"link": { "url": "/2023-08", "label": "2023-08" }
-					},
-					{
-						"link": { "url": "/2023-07", "label": "2023-07" }
+						"link": { "url": "/2023-08", "label": "blOg" }
 					},
 					{
 						"link": { "url": "/about", "label": "abOut" }
@@ -5022,10 +5019,7 @@ function create_fragment$6(ctx) {
 				},
 				site_nav: [
 					{
-						"link": { "url": "/2023-08", "label": "2023-08" }
-					},
-					{
-						"link": { "url": "/2023-07", "label": "2023-07" }
+						"link": { "url": "/2023-08", "label": "blOg" }
 					},
 					{
 						"link": { "url": "/about", "label": "abOut" }
