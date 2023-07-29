@@ -5153,7 +5153,7 @@ function create_fragment$6(ctx) {
 					{
 						"date": "2023-08-03",
 						"link": {
-							"url": "/blog/maths/maths-week-2",
+							"url": "/2023-07/maths/maths-week-2",
 							"label": "maths"
 						},
 						"thumbnail": {
