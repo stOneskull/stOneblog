@@ -5137,6 +5137,20 @@ function create_fragment$6(ctx) {
 				heading: "2023-08",
 				items: [
 					{
+						"date": "2023-07",
+						"link": { "url": "/2023-07", "label": "July 2023" },
+						"thumbnail": {
+							"alt": "2023-07",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/16906022874792307.webp",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/16906022874792307.webp",
+							"size": 22
+						},
+						"description": {
+							"html": "<h1 id=\"lastmonth\">Last Month</h1>",
+							"markdown": "# Last Month"
+						}
+					},
+					{
 						"date": "2023-08-03",
 						"link": {
 							"url": "/blog/maths/maths-week-2",
@@ -5151,20 +5165,6 @@ function create_fragment$6(ctx) {
 						"description": {
 							"html": "<h1 id=\"based\">based</h1>",
 							"markdown": "# based"
-						}
-					},
-					{
-						"date": "2023-07",
-						"link": { "url": "/2023-07", "label": "July 2023" },
-						"thumbnail": {
-							"alt": "2023-07",
-							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/16906022874792307.webp",
-							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/16906022874792307.webp",
-							"size": 22
-						},
-						"description": {
-							"html": "<h1 id=\"lastmonth\">Last Month</h1>",
-							"markdown": "# Last Month"
 						}
 					}
 				]
