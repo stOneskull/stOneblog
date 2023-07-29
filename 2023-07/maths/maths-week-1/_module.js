@@ -6246,8 +6246,8 @@ function create_fragment$h(ctx) {
 				title: "maths - week 1",
 				description: "triangles in circle",
 				content: {
-					"html": "<h1 id=\"vectorstrianglesthecirclesinandcos\">vectors, triangles, the circle, sin and cos</h1>\n<p><em>another thing going on in my head for quite a while.</em></p>\n<p><em>i get sin and cos mixed up if i'm not actively looking and thinking about it.</em></p>\n<p><em>then i go back to soh cah toa</em></p>\n<p>note: i have no idea what i'm talking about</p>\n<p>if read: <a href=\"https://www.stoneskull.me/blog/maths/maths-week-2\">zoom to next week</a></p>",
-					"markdown": "# vectors, triangles, the circle, sin and cos\n\n\n\n*another thing going on in my head for quite a while.*\n\n*i get sin and cos mixed up if i'm not actively looking and thinking about it.*\n\n*then i go back to soh cah toa*\n\nnote: i have no idea what i'm talking about\n\nif read: [zoom to next week](https://www.stoneskull.me/blog/maths/maths-week-2)\n\n\n\n"
+					"html": "<h1 id=\"vectorstrianglesthecirclesinandcos\">vectors, triangles, the circle, sin and cos</h1>\n<p><em>another thing going on in my head for quite a while.</em></p>\n<p><em>i get sin and cos mixed up if i'm not actively looking and thinking about it.</em></p>\n<p><em>then i go back to soh cah toa</em></p>\n<p>note: i have no idea what i'm talking about</p>\n<p>if read: <a href=\"https://www.stoneskull.me/2023-07/maths/maths-week-2\">zoom to next week</a></p>",
+					"markdown": "# vectors, triangles, the circle, sin and cos\n\n\n\n*another thing going on in my head for quite a while.*\n\n*i get sin and cos mixed up if i'm not actively looking and thinking about it.*\n\n*then i go back to soh cah toa*\n\nnote: i have no idea what i'm talking about\n\nif read: [zoom to next week](https://www.stoneskull.me/2023-07/maths/maths-week-2)\n\n\n\n"
 				}
 			}
 		});
@@ -6441,8 +6441,8 @@ function create_fragment$h(ctx) {
 				title: "maths - week 1",
 				description: "triangles in circle",
 				content: {
-					"html": "<p><code>columns = list(zip(*matrix))</code></p><p><em>i'm not sure where i'm going with this.. what is a matrix?</em></p><p><em>0,0 origin .. [0 0] to 0,1.. [0 1] .. [0 0][0 1] ?</em></p><h4><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link\" href=\"https://stOneskull.me/blog/maths/maths-week-2\"><em>2 - matrices</em></a><em> 2023-08-03</em></h4><p><em>(fixed link)</em></p>",
-					"markdown": "`columns = list(zip(*matrix))`\n\n*i'm not sure where i'm going with this.. what is a matrix?*\n\n*0,0 origin .. [0 0] to 0,1.. [0 1] .. [0 0][0 1] ?*\n\n#### [*2 - matrices*](<https://stOneskull.me/blog/maths/maths-week-2>)* 2023-08-03*\n\n*(fixed link)*\n\n"
+					"html": "<p><code>columns = list(zip(*matrix))</code></p>\n<p><em>i'm not sure where i'm going with this.. what is a matrix?</em></p>\n<p><em>0,0 origin .. [0 0] to 0,1.. [0 1] .. [0 0][0 1] ?</em></p>\n<h4 id=\"2matriceshttpsstoneskullme202307mathsmathsweek220230803\"><a href=\"https://stOneskull.me/2023-07/maths/maths-week-2\"><em>2 - matrices</em></a> <em>2023-08-03</em></h4>",
+					"markdown": "`columns = list(zip(*matrix))`\n\n*i'm not sure where i'm going with this.. what is a matrix?*\n\n*0,0 origin .. [0 0] to 0,1.. [0 1] .. [0 0][0 1] ?*\n\n#### [*2 - matrices*](<https://stOneskull.me/2023-07/maths/maths-week-2>) *2023-08-03*\n\n\n"
 				}
 			}
 		});
