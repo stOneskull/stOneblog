@@ -5134,7 +5134,7 @@ function create_fragment$6(ctx) {
 				},
 				title: "blOgs",
 				description: "These are my blog posts and they are wonderful.",
-				heading: "2023-08",
+				heading: "August 2023",
 				items: [
 					{
 						"date": "2023-07",
