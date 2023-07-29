@@ -5965,8 +5965,8 @@ function create_fragment$h(ctx) {
 				title: "maths",
 				description: "tree",
 				content: {
-					"html": "<h1 id=\"nodesandtreesandbinaryand3s\">nodes and trees and binary and 3s</h1>\n<p><em>for a game i'm making, i want the map to be a tree, and each room in the map is a node.</em></p>\n<p><em>i've been thinking about it for quite a while..</em></p>\n<p><em>i've written it different ways and stopped. now i'm gonna solve it.</em></p>\n<p>note: i have no idea what i am talking about</p>\n<p>if read: <a href=\"https://www.stoneskull.me/blog/maths\">zoom to next week</a></p>",
-					"markdown": "# nodes and trees and binary and 3s\n\n\n\n*for a game i'm making, i want the map to be a tree, and each room in the map is a node.*\n\n*i've been thinking about it for quite a while..*\n\n*i've written it different ways and stopped. now i'm gonna solve it.*\n\nnote: i have no idea what i am talking about\n\nif read: [zoom to next week](https://www.stoneskull.me/blog/maths)\n\n\n\n"
+					"html": "<h1 id=\"nodesandtreesandbinaryand3s\">nodes and trees and binary and 3s</h1>\n<p><em>for a game i'm making, i want the map to be a tree, and each room in the map is a node.</em></p>\n<p><em>i've been thinking about it for quite a while..</em></p>\n<p><em>i've written it different ways and stopped. now i'm gonna solve it.</em></p>\n<p>note: i have no idea what i am talking about</p>\n<p>if read: <a href=\"https://www.stoneskull.me/2023-07/maths/maths-week-1\">zoom to next week</a></p>",
+					"markdown": "# nodes and trees and binary and 3s\n\n\n\n*for a game i'm making, i want the map to be a tree, and each room in the map is a node.*\n\n*i've been thinking about it for quite a while..*\n\n*i've written it different ways and stopped. now i'm gonna solve it.*\n\nnote: i have no idea what i am talking about\n\nif read: [zoom to next week](https://www.stoneskull.me/2023-07/maths/maths-week-1)\n\n\n\n"
 				}
 			}
 		});
@@ -6171,8 +6171,8 @@ function create_fragment$h(ctx) {
 				title: "maths",
 				description: "tree",
 				content: {
-					"html": "<p><em>i'm not sure where i'm going with this.. what is a decimal place in binary?</em></p><p><em>anyhoo, i'll write more on this next thursday</em></p><p><code>columns = list(zip(*matrix))</code></p><p></p><p>2023-07-27 - <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link link\" href=\"https://stoneskull.me/blog/maths/maths-week-1\">maths week 1</a></p>",
-					"markdown": "*i'm not sure where i'm going with this.. what is a decimal place in binary?*\n\n*anyhoo, i'll write more on this next thursday*\n\n`columns = list(zip(*matrix))`\n\n\n\n2023-07-27 - [maths week 1](<https://stoneskull.me/blog/maths/maths-week-1>)\n\n"
+					"html": "<p><em>i'm not sure where i'm going with this.. what is a decimal place in binary?</em></p>\n<p><em>anyhoo, i'll write more on this next thursday</em></p>\n<p><code>columns = list(zip(*matrix))</code></p>\n<p>2023-07-27 - <a href=\"https://www.stoneskull.me/2023-07/maths/maths-week-1\">maths week 1</a></p>",
+					"markdown": "*i'm not sure where i'm going with this.. what is a decimal place in binary?*\n\n*anyhoo, i'll write more on this next thursday*\n\n`columns = list(zip(*matrix))`\n\n\n\n2023-07-27 - [maths week 1](https://www.stoneskull.me/2023-07/maths/maths-week-1)\n\n"
 				}
 			}
 		});
