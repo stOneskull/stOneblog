@@ -5345,6 +5345,23 @@ function create_fragment$8(ctx) {
 							"html": "<h1 id=\"blackboard\">blackboard</h1>",
 							"markdown": "# blackboard"
 						}
+					},
+					{
+						"date": "2023-07-25",
+						"link": {
+							"url": "/2023-07/write",
+							"label": "write"
+						},
+						"thumbnail": {
+							"alt": "",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/nothb.png1654873892000",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/nothb.png1654873892000",
+							"size": null
+						},
+						"description": {
+							"html": "<h1 id=\"way\">way</h1>",
+							"markdown": "# way"
+						}
 					}
 				]
 			}
