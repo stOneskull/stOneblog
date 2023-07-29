@@ -6702,6 +6702,9 @@ function create_fragment$n(ctx) {
 				},
 				site_nav: [
 					{
+						"link": { "url": "/2023-08", "label": "2023-08" }
+					},
+					{
 						"link": { "url": "/blog", "label": "blOg" }
 					},
 					{
@@ -7133,6 +7136,9 @@ function create_fragment$n(ctx) {
 					"title": "stOne"
 				},
 				site_nav: [
+					{
+						"link": { "url": "/2023-08", "label": "2023-08" }
+					},
 					{
 						"link": { "url": "/blog", "label": "blOg" }
 					},

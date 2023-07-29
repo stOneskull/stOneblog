@@ -5129,6 +5129,9 @@ function create_fragment$8(ctx) {
 				},
 				site_nav: [
 					{
+						"link": { "url": "/2023-08", "label": "2023-08" }
+					},
+					{
 						"link": { "url": "/blog", "label": "blOg" }
 					},
 					{
@@ -5232,6 +5235,9 @@ function create_fragment$8(ctx) {
 					"title": "stOne"
 				},
 				site_nav: [
+					{
+						"link": { "url": "/2023-08", "label": "2023-08" }
+					},
 					{
 						"link": { "url": "/blog", "label": "blOg" }
 					},
