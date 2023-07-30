@@ -3761,10 +3761,17 @@ function create_if_block$3(ctx) {
 			this.h();
 		},
 		l(nodes) {
-			img = claim_element(nodes, "IMG", { src: true, alt: true, class: true });
+			img = claim_element(nodes, "IMG", {
+				width: true,
+				src: true,
+				alt: true,
+				class: true
+			});
+
 			this.h();
 		},
 		h() {
+			attr(img, "width", "300");
 			if (!src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*image*/ ctx[0].alt);
 			attr(img, "class", "svelte-1b2zbzi");
@@ -4085,10 +4092,17 @@ function create_if_block$4(ctx) {
 			this.h();
 		},
 		l(nodes) {
-			img = claim_element(nodes, "IMG", { src: true, alt: true, class: true });
+			img = claim_element(nodes, "IMG", {
+				width: true,
+				src: true,
+				alt: true,
+				class: true
+			});
+
 			this.h();
 		},
 		h() {
+			attr(img, "width", "300");
 			if (!src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*image*/ ctx[0].alt);
 			attr(img, "class", "svelte-1b2zbzi");
@@ -4328,10 +4342,17 @@ function create_if_block$5(ctx) {
 			this.h();
 		},
 		l(nodes) {
-			img = claim_element(nodes, "IMG", { src: true, alt: true, class: true });
+			img = claim_element(nodes, "IMG", {
+				width: true,
+				src: true,
+				alt: true,
+				class: true
+			});
+
 			this.h();
 		},
 		h() {
+			attr(img, "width", "300");
 			if (!src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*image*/ ctx[0].alt);
 			attr(img, "class", "svelte-1b2zbzi");
@@ -4571,10 +4592,17 @@ function create_if_block$6(ctx) {
 			this.h();
 		},
 		l(nodes) {
-			img = claim_element(nodes, "IMG", { src: true, alt: true, class: true });
+			img = claim_element(nodes, "IMG", {
+				width: true,
+				src: true,
+				alt: true,
+				class: true
+			});
+
 			this.h();
 		},
 		h() {
+			attr(img, "width", "300");
 			if (!src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*image*/ ctx[0].alt);
 			attr(img, "class", "svelte-1b2zbzi");
@@ -4976,10 +5004,17 @@ function create_if_block$7(ctx) {
 			this.h();
 		},
 		l(nodes) {
-			img = claim_element(nodes, "IMG", { src: true, alt: true, class: true });
+			img = claim_element(nodes, "IMG", {
+				width: true,
+				src: true,
+				alt: true,
+				class: true
+			});
+
 			this.h();
 		},
 		h() {
+			attr(img, "width", "300");
 			if (!src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*image*/ ctx[0].alt);
 			attr(img, "class", "svelte-1b2zbzi");

@@ -3761,10 +3761,17 @@ function create_if_block$3(ctx) {
 			this.h();
 		},
 		l(nodes) {
-			img = claim_element(nodes, "IMG", { src: true, alt: true, class: true });
+			img = claim_element(nodes, "IMG", {
+				width: true,
+				src: true,
+				alt: true,
+				class: true
+			});
+
 			this.h();
 		},
 		h() {
+			attr(img, "width", "300");
 			if (!src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*image*/ ctx[0].alt);
 			attr(img, "class", "svelte-1b2zbzi");
@@ -4166,10 +4173,17 @@ function create_if_block$4(ctx) {
 			this.h();
 		},
 		l(nodes) {
-			img = claim_element(nodes, "IMG", { src: true, alt: true, class: true });
+			img = claim_element(nodes, "IMG", {
+				width: true,
+				src: true,
+				alt: true,
+				class: true
+			});
+
 			this.h();
 		},
 		h() {
+			attr(img, "width", "300");
 			if (!src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*image*/ ctx[0].alt);
 			attr(img, "class", "svelte-1b2zbzi");
@@ -4328,10 +4342,17 @@ function create_if_block$5(ctx) {
 			this.h();
 		},
 		l(nodes) {
-			img = claim_element(nodes, "IMG", { src: true, alt: true, class: true });
+			img = claim_element(nodes, "IMG", {
+				width: true,
+				src: true,
+				alt: true,
+				class: true
+			});
+
 			this.h();
 		},
 		h() {
+			attr(img, "width", "300");
 			if (!src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*image*/ ctx[0].alt);
 			attr(img, "class", "svelte-1b2zbzi");
@@ -5476,10 +5497,17 @@ function create_if_block$6(ctx) {
 			this.h();
 		},
 		l(nodes) {
-			img = claim_element(nodes, "IMG", { src: true, alt: true, class: true });
+			img = claim_element(nodes, "IMG", {
+				width: true,
+				src: true,
+				alt: true,
+				class: true
+			});
+
 			this.h();
 		},
 		h() {
+			attr(img, "width", "300");
 			if (!src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*image*/ ctx[0].alt);
 			attr(img, "class", "svelte-1b2zbzi");
@@ -6758,8 +6786,8 @@ function create_fragment$n(ctx) {
 				title: "maths - week 2",
 				description: "matrices",
 				content: {
-					"html": "<p><a href=\"https://www.stoneskull.me/2023-07/maths/maths-week-1\"><-- previous week</a></p>\n<h1 id=\"matrices\">matrices</h1>\n<p>this is where my submarine head is about half-way down to the titanic..</p>\n<p>i can hear the fibres crackling.. but onward..</p>\n<p><em>note: i don't know what i'm talking about. don't put this in your schoolwork.</em></p>\n<p>1 can be represented as a 1x1 matrix [1] - that's interesting in itself!</p>\n<p>[23] is 23</p>\n<p>and a number by itself when interacting with the matrix is a scalar</p>\n<p>a matrix is a set of numbers, in rows and columns, in a rectangular array.</p>\n<p>you can have a square matrix, like 2x2, or 3x3.. <br></p>\n<p>an n x n matrix.. <br></p>\n<p>a square matrix to the order n</p>\n<p>or if there are two rows and three columns, then it is a 2x3 matrix.</p>\n<p>and m is used. it's an m x n matrix. <br></p>\n<p>m is the rows and n is the columns.</p>\n<p>[ 3 5 6]<br></p>\n<p>[ 2 1 0 ] … a 2x3 matrix of some numbers.</p>\n<p>transposing means making the rows into columns and the columns, rows.</p>\n<p>[ 3 2 ]<br></p>\n<p>[ 5 1 ]<br></p>\n<p>[ 6 0 ]… a 3x2 matrix is the transpose of a 2x3 matrix</p>",
-					"markdown": "[<-- previous week](<https://www.stoneskull.me/2023-07/maths/maths-week-1>)\n\n\n\n# matrices\n\n\n\nthis is where my submarine head is about half-way down to the titanic..\n\ni can hear the fibres crackling.. but onward..\n\n*note: i don't know what i'm talking about. don't put this in your schoolwork.*\n\n1 can be represented as a 1x1 matrix [1] - that's interesting in itself!\n\n[23] is 23\n\nand a number by itself when interacting with the matrix is a scalar\n\na matrix is a set of numbers, in rows and columns, in a rectangular array.\n\nyou can have a square matrix, like 2x2, or 3x3.. <br>\n\nan n x n matrix.. <br>\n\na square matrix to the order n\n\nor if there are two rows and three columns, then it is a 2x3 matrix.\n\nand m is used. it's an m x n matrix. <br>\n\nm is the rows and n is the columns.\n\n[ 3 5 6]<br>\n\n[ 2 1 0 ] … a 2x3 matrix of some numbers.\n\ntransposing means making the rows into columns and the columns, rows.\n\n[ 3 2 ]<br>\n\n[ 5 1 ]<br>\n\n[ 6 0 ]… a 3x2 matrix is the transpose of a 2x3 matrix\n\n"
+					"html": "<p><a href=\"https://www.stoneskull.me/2023-07/maths/maths-week-1\"><-- previous week</a></p>\n<p><br></p>\n<h1 id=\"matrices\">matrices</h1>\n<p><br></p>\n<p>this is where my submarine head is about half-way down to the titanic..</p>\n<p>i can hear the fibres crackling.. but onward..</p>\n<p><em>note: i don't know what i'm talking about. don't put this in your schoolwork.</em></p>\n<p>1 can be represented as a 1x1 matrix [1] - that's interesting in itself!</p>\n<p>[23] is 23</p>\n<p>and a number by itself when interacting with the matrix is a scalar</p>\n<p>a matrix is a set of numbers, in rows and columns, in a rectangular array.</p>\n<p>you can have a square matrix, like 2x2, or 3x3.. <br></p>\n<p>an n x n matrix.. <br></p>\n<p>a square matrix to the order n</p>\n<p>or if there are two rows and three columns, then it is a 2x3 matrix.</p>\n<p>and m is used. it's an m x n matrix. <br></p>\n<p>m is the rows and n is the columns.</p>\n<p>[ 3 5 6]<br></p>\n<p>[ 2 1 0 ] … a 2x3 matrix of some numbers.</p>\n<p>transposing means making the rows into columns and the columns, rows.</p>\n<p>[ 3 2 ]<br></p>\n<p>[ 5 1 ]<br></p>\n<p>[ 6 0 ]… a 3x2 matrix is the transpose of a 2x3 matrix</p>",
+					"markdown": "[<-- previous week](<https://www.stoneskull.me/2023-07/maths/maths-week-1>)\n\n\n<br>\n\n# matrices\n\n<br>\n\nthis is where my submarine head is about half-way down to the titanic..\n\ni can hear the fibres crackling.. but onward..\n\n*note: i don't know what i'm talking about. don't put this in your schoolwork.*\n\n1 can be represented as a 1x1 matrix [1] - that's interesting in itself!\n\n[23] is 23\n\nand a number by itself when interacting with the matrix is a scalar\n\na matrix is a set of numbers, in rows and columns, in a rectangular array.\n\nyou can have a square matrix, like 2x2, or 3x3.. <br>\n\nan n x n matrix.. <br>\n\na square matrix to the order n\n\nor if there are two rows and three columns, then it is a 2x3 matrix.\n\nand m is used. it's an m x n matrix. <br>\n\nm is the rows and n is the columns.\n\n[ 3 5 6]<br>\n\n[ 2 1 0 ] … a 2x3 matrix of some numbers.\n\ntransposing means making the rows into columns and the columns, rows.\n\n[ 3 2 ]<br>\n\n[ 5 1 ]<br>\n\n[ 6 0 ]… a 3x2 matrix is the transpose of a 2x3 matrix\n\n"
 				}
 			}
 		});
