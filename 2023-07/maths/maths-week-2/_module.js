@@ -7102,8 +7102,8 @@ function create_fragment$n(ctx) {
 				},
 				title: "maths - week 2",
 				description: "matrices",
-				superhead: "what the..",
-				heading: ""
+				superhead: "",
+				heading: "what the.."
 			}
 		});
 
