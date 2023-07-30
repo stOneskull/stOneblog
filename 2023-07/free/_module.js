@@ -3771,7 +3771,7 @@ function create_if_block$3(ctx) {
 			this.h();
 		},
 		h() {
-			attr(img, "width", "750");
+			attr(img, "width", "650");
 			if (!src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*image*/ ctx[0].alt);
 			attr(img, "class", "svelte-1b2zbzi");
