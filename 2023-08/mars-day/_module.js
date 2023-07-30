@@ -5100,12 +5100,12 @@ function create_fragment$8(ctx) {
 				},
 				image: {
 					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
+					"src": "",
+					"url": "",
 					"size": null
 				},
-				title: "dunno",
-				description: "in the aether"
+				title: "mars day",
+				description: "tuesday"
 			}
 		});
 
@@ -5119,12 +5119,12 @@ function create_fragment$8(ctx) {
 				},
 				image: {
 					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
+					"src": "",
+					"url": "",
 					"size": null
 				},
-				title: "dunno",
-				description: "in the aether",
+				title: "mars day",
+				description: "tuesday",
 				logo: {
 					"image": {
 						"alt": "stOne",
@@ -5166,8 +5166,8 @@ function create_fragment$8(ctx) {
 					"alt": "supper signs",
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/supper-signs.webp1689589269635"
 				},
-				title: "dunno",
-				description: "in the aether",
+				title: "mars day",
+				description: "tuesday",
 				superhead: "2023-08-02",
 				heading: "mars day"
 			}
@@ -5183,12 +5183,12 @@ function create_fragment$8(ctx) {
 				},
 				image: {
 					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
+					"src": "",
+					"url": "",
 					"size": null
 				},
-				title: "dunno",
-				description: "in the aether",
+				title: "mars day",
+				description: "tuesday",
 				content: {
 					"html": "<h1>We shall see</h1><p></p><p><em>Some more text that's italicized to make an impact.</em></p><p><em>Dan Brown sux. Holy Blood, Holy Grail was at least original fiction</em></p><p><em>I worked these out before DaVinci Code was even a blank Word file</em></p><p></p><p><em>have a look at cancer on the zodiac wheel here:</em></p><p></p>",
 					"markdown": "# We shall see\n\n\n\n*Some more text that's italicized to make an impact.*\n\n*Dan Brown sux. Holy Blood, Holy Grail was at least original fiction*\n\n*I worked these out before DaVinci Code was even a blank Word file*\n\n\n\n*have a look at cancer on the zodiac wheel here:*\n\n\n\n"
@@ -5208,8 +5208,8 @@ function create_fragment$8(ctx) {
 					"alt": "zodiac",
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/zodiac2.gif1093079818000"
 				},
-				title: "dunno",
-				description: "in the aether"
+				title: "mars day",
+				description: "tuesday"
 			}
 		});
 
@@ -5223,12 +5223,12 @@ function create_fragment$8(ctx) {
 				},
 				image: {
 					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
+					"src": "",
+					"url": "",
 					"size": null
 				},
-				title: "dunno",
-				description: "in the aether",
+				title: "mars day",
+				description: "tuesday",
 				logo: {
 					"image": {
 						"alt": "stOne",
@@ -5268,12 +5268,12 @@ function create_fragment$8(ctx) {
 				},
 				image: {
 					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
+					"src": "",
+					"url": "",
 					"size": null
 				},
-				title: "dunno",
-				description: "in the aether",
+				title: "mars day",
+				description: "tuesday",
 				heading: "",
 				email: "",
 				social_links: [
@@ -5328,12 +5328,12 @@ function create_fragment$8(ctx) {
 				},
 				image: {
 					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
+					"src": "",
+					"url": "",
 					"size": null
 				},
-				title: "dunno",
-				description: "in the aether"
+				title: "mars day",
+				description: "tuesday"
 			}
 		});
 
