@@ -5350,6 +5350,23 @@ function create_fragment$8(ctx) {
 						}
 					},
 					{
+						"date": "2023-07-27",
+						"link": {
+							"url": "/2023-07/maths/maths-week-1",
+							"label": "maths week 1"
+						},
+						"thumbnail": {
+							"alt": "",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/R.webp1690078598113",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/R.webp1690078598113",
+							"size": null
+						},
+						"description": {
+							"html": "<h1 id=\"sineandcosine\">sine and cosine</h1>",
+							"markdown": "# sine and cosine"
+						}
+					},
+					{
 						"date": "2023-07-26",
 						"link": { "url": "/2023-07/x", "label": "X" },
 						"thumbnail": {
