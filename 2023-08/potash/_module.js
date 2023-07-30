@@ -5266,12 +5266,12 @@ function create_fragment$a(ctx) {
 				},
 				image: {
 					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
+					"src": "",
+					"url": "",
 					"size": null
 				},
-				title: "pot ash",
-				description: "what what"
+				title: "potash",
+				description: "pot ash"
 			}
 		});
 
@@ -5285,12 +5285,12 @@ function create_fragment$a(ctx) {
 				},
 				image: {
 					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
+					"src": "",
+					"url": "",
 					"size": null
 				},
-				title: "pot ash",
-				description: "what what",
+				title: "potash",
+				description: "pot ash",
 				logo: {
 					"image": {
 						"alt": "stOne",
@@ -5332,8 +5332,8 @@ function create_fragment$a(ctx) {
 					"alt": "us-patent-01",
 					"url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/FirstUSpatent.jpg/1136px-FirstUSpatent.jpg"
 				},
-				title: "pot ash",
-				description: "what what",
+				title: "potash",
+				description: "pot ash",
 				superhead: "2023-07-31",
 				heading: "potash"
 			}
@@ -5349,12 +5349,12 @@ function create_fragment$a(ctx) {
 				},
 				image: {
 					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
+					"src": "",
+					"url": "",
 					"size": null
 				},
-				title: "pot ash",
-				description: "what what",
+				title: "potash",
+				description: "pot ash",
 				content: {
 					"html": "<h1>US Patent #1</h1><p>On July 31, 1790, the first US Patent was issued.</p><p>It was issued to <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link\" href=\"https://en.wikipedia.org/wiki/Samuel_Hopkins_(inventor)\">Samuel Hopkins</a> ..</p><p>.. for a way to get pot ash.</p><p><em>What is pot ash?</em></p>",
 					"markdown": "# US Patent #1\n\nOn July 31, 1790, the first US Patent was issued.\n\nIt was issued to [Samuel Hopkins](<https://en.wikipedia.org/wiki/Samuel_Hopkins_(inventor)>) ..\n\n.. for a way to get pot ash.\n\n*What is pot ash?*\n\n"
@@ -5372,15 +5372,15 @@ function create_fragment$a(ctx) {
 				},
 				image: {
 					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
+					"src": "",
+					"url": "",
 					"size": null
 				},
-				title: "pot ash",
-				description: "what what",
+				title: "potash",
+				description: "pot ash",
 				content: {
-					"html": "<p>Potassium pearls under paraffin oil. Original size of the largest pearl: 0.5&nbsp;cm</p><p></p><h2>heading 2</h2><p>Additionally, our software integrates seamlessly with <mark>popular email services,</mark></p><p>so that users can easily invite others and receive updates about events.</p><h3>heading 3</h3><p>Try it out today and see the difference for yourself. Overall, our calendar software is a comprehensive and effective tool for managing your time.</p><blockquote><p>Some interesting quote info</p></blockquote>",
-					"markdown": "Potassium pearls under paraffin oil. Original size of the largest pearl: 0.5 cm\n\n\n\n## heading 2\n\nAdditionally, our software integrates seamlessly with <mark>popular email services,</mark>\n\nso that users can easily invite others and receive updates about events.\n\n### heading 3\n\nTry it out today and see the difference for yourself. Overall, our calendar software is a comprehensive and effective tool for managing your time.\n\n> Some interesting quote info\n\n"
+					"html": "<p>The name comes from <em>pot ash</em>, plant ashes or wood ash soaked in water in a pot. </p><p>The word <em>potassium</em> is derived from <em>potash</em>.</p><h2></h2><p>The word \"potash\" originates from the Middle Dutch \"potaschen\", denoting \"pot ashes\" in 1477. The old method of making potassium carbonate was by collecting or producing wood ash (the occupation of ash burners), leaching the ashes, and then evaporating the resulting solution in large iron pots, which left a white residue denominated \"pot ash\".</p><p>Approximately 10% by weight of common wood ash can be recovered as potash.</p><p>Later, \"potash\" became widely applied to naturally occurring potassium salts and the commercial product derived from them, although it most probably derived its name (where it was used) from the anion of the acid that replaced the carbonate moiety, a common equivocative use of \"potash\" for \"potassium\".</p><blockquote><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link\" href=\"https://en.wikipedia.org/wiki/Potash\">Potash - Wikipedia</a></p></blockquote>",
+					"markdown": "The name comes from *pot ash*, plant ashes or wood ash soaked in water in a pot.\n\nThe word *potassium* is derived from *potash*.\n\n\n\nThe word \"potash\" originates from the Middle Dutch \"potaschen\", denoting \"pot ashes\" in 1477. The old method of making potassium carbonate was by collecting or producing wood ash (the occupation of ash burners), leaching the ashes, and then evaporating the resulting solution in large iron pots, which left a white residue denominated \"pot ash\".\n\nApproximately 10% by weight of common wood ash can be recovered as potash.\n\nLater, \"potash\" became widely applied to naturally occurring potassium salts and the commercial product derived from them, although it most probably derived its name (where it was used) from the anion of the acid that replaced the carbonate moiety, a common equivocative use of \"potash\" for \"potassium\".\n\n> [Potash - Wikipedia](<https://en.wikipedia.org/wiki/Potash>)\n\n"
 				}
 			}
 		});
@@ -5397,8 +5397,8 @@ function create_fragment$a(ctx) {
 					"alt": "potassium pearls",
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/Potassium-2.webp1690689116477"
 				},
-				title: "pot ash",
-				description: "what what"
+				title: "potash",
+				description: "pot ash"
 			}
 		});
 
@@ -5412,12 +5412,12 @@ function create_fragment$a(ctx) {
 				},
 				image: {
 					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
+					"src": "",
+					"url": "",
 					"size": null
 				},
-				title: "pot ash",
-				description: "what what",
+				title: "potash",
+				description: "pot ash",
 				content: {
 					"html": "<p>Potassium pearls under paraffin oil. Original size of the largest pearl: 0.5&nbsp;cm</p><p></p><h2>heading 2</h2><p>Additionally, our software integrates seamlessly with <mark>popular email services,</mark></p><p>so that users can easily invite others and receive updates about events.</p><h3>heading 3</h3><p>Try it out today and see the difference for yourself. Overall, our calendar software is a comprehensive and effective tool for managing your time.</p><blockquote><p>Some interesting quote info</p></blockquote>",
 					"markdown": "Potassium pearls under paraffin oil. Original size of the largest pearl: 0.5 cm\n\n\n\n## heading 2\n\nAdditionally, our software integrates seamlessly with <mark>popular email services,</mark>\n\nso that users can easily invite others and receive updates about events.\n\n### heading 3\n\nTry it out today and see the difference for yourself. Overall, our calendar software is a comprehensive and effective tool for managing your time.\n\n> Some interesting quote info\n\n"
@@ -5435,12 +5435,12 @@ function create_fragment$a(ctx) {
 				},
 				image: {
 					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
+					"src": "",
+					"url": "",
 					"size": null
 				},
-				title: "pot ash",
-				description: "what what",
+				title: "potash",
+				description: "pot ash",
 				logo: {
 					"image": {
 						"alt": "stOne",
@@ -5480,12 +5480,12 @@ function create_fragment$a(ctx) {
 				},
 				image: {
 					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
+					"src": "",
+					"url": "",
 					"size": null
 				},
-				title: "pot ash",
-				description: "what what",
+				title: "potash",
+				description: "pot ash",
 				heading: "",
 				email: "",
 				social_links: [
@@ -5540,12 +5540,12 @@ function create_fragment$a(ctx) {
 				},
 				image: {
 					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
+					"src": "",
+					"url": "",
 					"size": null
 				},
-				title: "pot ash",
-				description: "what what"
+				title: "potash",
+				description: "pot ash"
 			}
 		});
 
