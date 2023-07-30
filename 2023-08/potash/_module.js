@@ -5335,7 +5335,7 @@ function create_fragment$a(ctx) {
 				title: "pot ash",
 				description: "what what",
 				superhead: "2023-07-31",
-				heading: "pot ash"
+				heading: "potash"
 			}
 		});
 
@@ -5356,8 +5356,8 @@ function create_fragment$a(ctx) {
 				title: "pot ash",
 				description: "what what",
 				content: {
-					"html": "<h1 id=\"uspatent1\">US Patent #1</h1>\n<p><em>On July 31, 1790, the first US Patent was issued.</em></p>\n<p>It was issued to <a href=\"https://en.wikipedia.org/wiki/Samuel_Hopkins_(inventor)\">Samuel Hopkins</a> ..</p>\n<p>.. for a way to get pot ash.</p>\n<p><em>What is pot ash?</em></p>",
-					"markdown": "# US Patent #1\n\n*On July 31, 1790, the first US Patent was issued.*\n\nIt was issued to [Samuel Hopkins](<https://en.wikipedia.org/wiki/Samuel_Hopkins_(inventor)>) ..\n\n.. for a way to get pot ash.\n\n*What is pot ash?*\n\n"
+					"html": "<h1>US Patent #1</h1><p>On July 31, 1790, the first US Patent was issued.</p><p>It was issued to <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link\" href=\"https://en.wikipedia.org/wiki/Samuel_Hopkins_(inventor)\">Samuel Hopkins</a> ..</p><p>.. for a way to get pot ash.</p><p><em>What is pot ash?</em></p>",
+					"markdown": "# US Patent #1\n\nOn July 31, 1790, the first US Patent was issued.\n\nIt was issued to [Samuel Hopkins](<https://en.wikipedia.org/wiki/Samuel_Hopkins_(inventor)>) ..\n\n.. for a way to get pot ash.\n\n*What is pot ash?*\n\n"
 				}
 			}
 		});
