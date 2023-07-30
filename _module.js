@@ -5316,6 +5316,23 @@ function create_fragment$8(ctx) {
 				heading: "Latest",
 				items: [
 					{
+						"date": "2023-07-30",
+						"link": {
+							"url": "/2023-07/free/free-we-too",
+							"label": "free we too"
+						},
+						"thumbnail": {
+							"alt": "",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1092769150000stoneskull.jpg",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1092769150000stoneskull.jpg",
+							"size": null
+						},
+						"description": {
+							"html": "<h1 id=\"conclusion\">conclusion</h1>",
+							"markdown": "# conclusion"
+						}
+					},
+					{
 						"date": "2023-07-28",
 						"link": {
 							"url": "/2023-07/the-end",
