@@ -5011,8 +5011,8 @@ function create_fragment$7(ctx) {
 					"url": "",
 					"size": null
 				},
-				title: "mars day",
-				description: "tuesday"
+				title: "full moon",
+				description: "on a sunday"
 			}
 		});
 
@@ -5030,8 +5030,8 @@ function create_fragment$7(ctx) {
 					"url": "",
 					"size": null
 				},
-				title: "mars day",
-				description: "tuesday",
+				title: "full moon",
+				description: "on a sunday",
 				logo: {
 					"image": {
 						"alt": "stOne",
@@ -5073,8 +5073,8 @@ function create_fragment$7(ctx) {
 					"alt": "ooh la la",
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/OIP%20(1).webp1690798822829"
 				},
-				title: "mars day",
-				description: "tuesday",
+				title: "full moon",
+				description: "on a sunday",
 				superhead: "2023-08-02",
 				heading: "full moon"
 			}
@@ -5094,8 +5094,8 @@ function create_fragment$7(ctx) {
 					"url": "",
 					"size": null
 				},
-				title: "mars day",
-				description: "tuesday",
+				title: "full moon",
+				description: "on a sunday",
 				content: {
 					"html": "<h1>Tonight</h1><p></p><p><em>Some more text that's italicized to make an impact.</em></p><p><em>Sturgeon!</em></p><p></p>",
 					"markdown": "# Tonight\n\n\n\n*Some more text that's italicized to make an impact.*\n\n*Sturgeon!*\n\n\n\n"
@@ -5117,8 +5117,8 @@ function create_fragment$7(ctx) {
 					"url": "",
 					"size": null
 				},
-				title: "mars day",
-				description: "tuesday",
+				title: "full moon",
+				description: "on a sunday",
 				logo: {
 					"image": {
 						"alt": "stOne",
@@ -5162,8 +5162,8 @@ function create_fragment$7(ctx) {
 					"url": "",
 					"size": null
 				},
-				title: "mars day",
-				description: "tuesday",
+				title: "full moon",
+				description: "on a sunday",
 				heading: "",
 				email: "",
 				social_links: [
@@ -5222,8 +5222,8 @@ function create_fragment$7(ctx) {
 					"url": "",
 					"size": null
 				},
-				title: "mars day",
-				description: "tuesday"
+				title: "full moon",
+				description: "on a sunday"
 			}
 		});
 
