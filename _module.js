@@ -5316,6 +5316,40 @@ function create_fragment$8(ctx) {
 				heading: "Latest",
 				items: [
 					{
+						"date": "2023-08-02",
+						"link": {
+							"url": "/2023-08/full-moon",
+							"label": "full moon"
+						},
+						"thumbnail": {
+							"alt": "",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/OIP%20(1).webp1690798822829",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/OIP%20(1).webp1690798822829",
+							"size": null
+						},
+						"description": {
+							"html": "<h1 id=\"tonight\">tonight</h1>",
+							"markdown": "# tonight"
+						}
+					},
+					{
+						"date": "2023-08-01",
+						"link": {
+							"url": "/2023-08/one-drive",
+							"label": "one drive"
+						},
+						"thumbnail": {
+							"alt": "",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/OIP.webp1690798488319",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/OIP.webp1690798488319",
+							"size": null
+						},
+						"description": {
+							"html": "<h1 id=\"yeahright\">yeah right</h1>",
+							"markdown": "# yeah right"
+						}
+					},
+					{
 						"date": "2023-07-31",
 						"link": {
 							"url": "/2023-08/potash",
@@ -5381,37 +5415,6 @@ function create_fragment$8(ctx) {
 						"description": {
 							"html": "<h1 id=\"sineandcosine\">sine and cosine</h1>",
 							"markdown": "# sine and cosine"
-						}
-					},
-					{
-						"date": "2023-07-26",
-						"link": { "url": "/2023-07/x", "label": "X" },
-						"thumbnail": {
-							"alt": "x",
-							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690249269994text-1690249269700.png",
-							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690249269994text-1690249269700.png",
-							"size": null
-						},
-						"description": {
-							"html": "<h1 id=\"blackboard\">blackboard</h1>",
-							"markdown": "# blackboard"
-						}
-					},
-					{
-						"date": "2023-07-25",
-						"link": {
-							"url": "/2023-07/write",
-							"label": "write"
-						},
-						"thumbnail": {
-							"alt": "",
-							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/nothb.png1654873892000",
-							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/nothb.png1654873892000",
-							"size": null
-						},
-						"description": {
-							"html": "<h1 id=\"way\">way</h1>",
-							"markdown": "# way"
 						}
 					}
 				]
