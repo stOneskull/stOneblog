@@ -5170,7 +5170,7 @@ function create_fragment$6(ctx) {
 					{
 						"date": "2023-08-02",
 						"link": {
-							"url": "/2023-08/mars-day",
+							"url": "/2023-08/full-moon",
 							"label": "full moon"
 						},
 						"thumbnail": {
