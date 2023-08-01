@@ -5381,8 +5381,8 @@ function create_fragment$b(ctx) {
 					"url": "",
 					"size": null
 				},
-				title: "full moon",
-				description: "on a sunday"
+				title: "venus day",
+				description: "friday"
 			}
 		});
 
@@ -5400,8 +5400,8 @@ function create_fragment$b(ctx) {
 					"url": "",
 					"size": null
 				},
-				title: "full moon",
-				description: "on a sunday",
+				title: "venus day",
+				description: "friday",
 				logo: {
 					"image": {
 						"alt": "stOne",
@@ -5443,8 +5443,8 @@ function create_fragment$b(ctx) {
 					"alt": "ooh la la",
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/OIP%20(1).webp1690798822829"
 				},
-				title: "full moon",
-				description: "on a sunday",
+				title: "venus day",
+				description: "friday",
 				superhead: "2023-08-04",
 				heading: "venus day"
 			}
@@ -5464,11 +5464,11 @@ function create_fragment$b(ctx) {
 					"url": "",
 					"size": null
 				},
-				title: "full moon",
-				description: "on a sunday",
+				title: "venus day",
+				description: "friday",
 				content: {
-					"html": "<h1>Tonight</h1><p><em>4:33pm Sydney time / 6:33pm (Aug 1) UTC.</em></p><p><br>Apparently, a full moon in August is called a sturgeon moon.</p><p><em>Sturgeon moon!</em></p><p>I'm so old but have never heard this before. I have hardly heard of the fish.</p><p>Is it a fish you eat or not. <em>Hmm..</em></p><p></p>",
-					"markdown": "# Tonight\n\n*4:33pm Sydney time / 6:33pm (Aug 1) UTC.*\n\n<br>\n\nApparently, a full moon in August is called a sturgeon moon.\n\n*Sturgeon moon!*\n\nI'm so old but have never heard this before. I have hardly heard of the fish.\n\nIs it a fish you eat or not. *Hmm..*\n\n\n\n"
+					"html": "<p><em>I see what I did there.</em></p><p><br></p><p></p>",
+					"markdown": "*I see what I did there.*\n\n<br>\n\n\n\n"
 				}
 			}
 		});
@@ -5487,8 +5487,8 @@ function create_fragment$b(ctx) {
 					"url": "",
 					"size": null
 				},
-				title: "full moon",
-				description: "on a sunday",
+				title: "venus day",
+				description: "friday",
 				quote: {
 					"html": "<p>\"<em>Sturgeons are now considered the single most critically endangered group of species on earth - and you might be part of the reason why..</em>.\"</p>",
 					"markdown": "\"*Sturgeons are now considered the single most critically endangered group of species on earth - and you might be part of the reason why..*.\"\n\n"
@@ -5511,8 +5511,8 @@ function create_fragment$b(ctx) {
 					"url": "",
 					"size": null
 				},
-				title: "full moon",
-				description: "on a sunday",
+				title: "venus day",
+				description: "friday",
 				content: {
 					"html": "<p><br>Sturgeons can grow up to 3.5 metres long! That's huge. That's two people standing on top of each other!</p><p>They used to be abundant in North American lakes and rivers during summer months.</p><p>Caviar comes from the eggs of sturgeons, and they are now nearly extinct because of being overfished. Also, they died a lot because of agriculture and logging. They're very sensitive to pollution in their water home.</p><p>If left alone, they can live a long, long time. A female sturgeon can live up to 150 years old!</p>",
 					"markdown": "<br>\n\nSturgeons can grow up to 3.5 metres long! That's huge. That's two people standing on top of each other!\n\nThey used to be abundant in North American lakes and rivers during summer months.\n\nCaviar comes from the eggs of sturgeons, and they are now nearly extinct because of being overfished. Also, they died a lot because of agriculture and logging. They're very sensitive to pollution in their water home.\n\nIf left alone, they can live a long, long time. A female sturgeon can live up to 150 years old!\n\n"
@@ -5534,8 +5534,8 @@ function create_fragment$b(ctx) {
 					"url": "",
 					"size": null
 				},
-				title: "full moon",
-				description: "on a sunday",
+				title: "venus day",
+				description: "friday",
 				content: {
 					"html": "<p><em>The August full moon has other nicknames too.</em></p><p></p><p>The Anishinaabe people, who are indigenous to the Great Lakes area in USA and Canada, would call it The Ricing Moon. It was time to harvest the wild rice.</p><p>Cherokee tribes called it the Full Fruit Moon. The Sioux called it the Moon When All Things Ripen. Some other tribes would call it the Black Berries Moon.</p><p>In some areas of north Europe, it is called The Lightning Moon, because of the late summer thunder and lightning storms.</p><p>Another European name is Corn Moon.</p><p>In China, it gets called the Hungry Ghosts Moon. And there is a Hungry Ghosts Festival. This is when the gates of hell open and the hungry dead get to come out and play. Chinese people put out offerings of food and money to feed the ghosts, hoping they will be happy. They will also light lotus-shaped water lanterns and float them on lakes and rivers to provide light for lost souls to get back to the afterlife.</p><p>Japan has a similar festival called the Obon festival, and they do the Obon dance.</p>",
 					"markdown": "*The August full moon has other nicknames too.*\n\n\n\nThe Anishinaabe people, who are indigenous to the Great Lakes area in USA and Canada, would call it The Ricing Moon. It was time to harvest the wild rice.\n\nCherokee tribes called it the Full Fruit Moon. The Sioux called it the Moon When All Things Ripen. Some other tribes would call it the Black Berries Moon.\n\nIn some areas of north Europe, it is called The Lightning Moon, because of the late summer thunder and lightning storms.\n\nAnother European name is Corn Moon.\n\nIn China, it gets called the Hungry Ghosts Moon. And there is a Hungry Ghosts Festival. This is when the gates of hell open and the hungry dead get to come out and play. Chinese people put out offerings of food and money to feed the ghosts, hoping they will be happy. They will also light lotus-shaped water lanterns and float them on lakes and rivers to provide light for lost souls to get back to the afterlife.\n\nJapan has a similar festival called the Obon festival, and they do the Obon dance.\n\n"
@@ -5557,8 +5557,8 @@ function create_fragment$b(ctx) {
 					"url": "",
 					"size": null
 				},
-				title: "full moon",
-				description: "on a sunday",
+				title: "venus day",
+				description: "friday",
 				video_id: "pZxL9Q4KiS0"
 			}
 		});
@@ -5577,8 +5577,8 @@ function create_fragment$b(ctx) {
 					"url": "",
 					"size": null
 				},
-				title: "full moon",
-				description: "on a sunday",
+				title: "venus day",
+				description: "friday",
 				logo: {
 					"image": {
 						"alt": "stOne",
@@ -5622,8 +5622,8 @@ function create_fragment$b(ctx) {
 					"url": "",
 					"size": null
 				},
-				title: "full moon",
-				description: "on a sunday",
+				title: "venus day",
+				description: "friday",
 				heading: "",
 				email: "",
 				social_links: [
@@ -5682,8 +5682,8 @@ function create_fragment$b(ctx) {
 					"url": "",
 					"size": null
 				},
-				title: "full moon",
-				description: "on a sunday"
+				title: "venus day",
+				description: "friday"
 			}
 		});
 
