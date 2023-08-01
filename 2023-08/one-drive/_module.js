@@ -5097,8 +5097,8 @@ function create_fragment$7(ctx) {
 				title: "one drive",
 				description: "yeah right",
 				content: {
-					"html": "<h1>Yeah, right..</h1><p></p><p><em>Some more text that's italicized to make an impact.</em></p><p></p><p></p>",
-					"markdown": "# Yeah, right..\n\n\n\n*Some more text that's italicized to make an impact.*\n\n\n\n\n\n"
+					"html": "<h1>Yeah, right..</h1><p></p><p><em>Happy birthday, horse!</em></p><p></p><p></p>",
+					"markdown": "# Yeah, right..\n\n\n\n*Happy birthday, horse!*\n\n\n\n\n\n"
 				}
 			}
 		});
