@@ -5365,8 +5365,8 @@ function create_fragment$a(ctx) {
 				title: "full moon",
 				description: "on a sunday",
 				content: {
-					"html": "<h1>Tonight</h1><p><em>Ha, so very time relevant.</em></p><p><br>Apparently, a full moon in August is called a sturgeon moon.</p><p><em>Sturgeon moon!</em></p><p>I'm so old but have never heard this before. I have hardly heard of the fish.</p><p>Is it a fish you eat or not. <em>Hmm..</em></p><p></p>",
-					"markdown": "# Tonight\n\n*Ha, so very time relevant.*\n\n<br>\n\nApparently, a full moon in August is called a sturgeon moon.\n\n*Sturgeon moon!*\n\nI'm so old but have never heard this before. I have hardly heard of the fish.\n\nIs it a fish you eat or not. *Hmm..*\n\n\n\n"
+					"html": "<h1>Tonight</h1><p><em>4:33pm Sydney time / 6:33pm (Aug 1) UTC.</em></p><p><br>Apparently, a full moon in August is called a sturgeon moon.</p><p><em>Sturgeon moon!</em></p><p>I'm so old but have never heard this before. I have hardly heard of the fish.</p><p>Is it a fish you eat or not. <em>Hmm..</em></p><p></p>",
+					"markdown": "# Tonight\n\n*4:33pm Sydney time / 6:33pm (Aug 1) UTC.*\n\n<br>\n\nApparently, a full moon in August is called a sturgeon moon.\n\n*Sturgeon moon!*\n\nI'm so old but have never heard this before. I have hardly heard of the fish.\n\nIs it a fish you eat or not. *Hmm..*\n\n\n\n"
 				}
 			}
 		});
