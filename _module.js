@@ -5333,23 +5333,6 @@ function create_fragment$8(ctx) {
 						}
 					},
 					{
-						"date": "2023-08-01",
-						"link": {
-							"url": "/2023-08/one-drive",
-							"label": "one drive"
-						},
-						"thumbnail": {
-							"alt": "",
-							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/OIP.webp1690798488319",
-							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/OIP.webp1690798488319",
-							"size": null
-						},
-						"description": {
-							"html": "<h1 id=\"yeahright\">yeah right</h1>",
-							"markdown": "# yeah right"
-						}
-					},
-					{
 						"date": "2023-07-31",
 						"link": {
 							"url": "/2023-08/potash",
