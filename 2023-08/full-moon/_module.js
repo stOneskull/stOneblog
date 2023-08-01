@@ -5097,8 +5097,8 @@ function create_fragment$7(ctx) {
 				title: "full moon",
 				description: "on a sunday",
 				content: {
-					"html": "<h1>Tonight</h1><p><em>Ha, so very time relevant.</em></p><p>Apparently, full moons in August are called sturgeon moons.</p><p><em>Sturgeon moon!</em></p><p>I'm so old but have never heard this before. I have hardly heard of the fish.</p><p>Is it a fish you eat or not. <em>Hmm..</em></p><p></p>",
-					"markdown": "# Tonight\n\n*Ha, so very time relevant.*\n\nApparently, full moons in August are called sturgeon moons.\n\n*Sturgeon moon!*\n\nI'm so old but have never heard this before. I have hardly heard of the fish.\n\nIs it a fish you eat or not. *Hmm..*\n\n\n\n"
+					"html": "<h1>Tonight</h1><p><em>Ha, so very time relevant.</em></p><p><br>Apparently, a full moon in August is called a sturgeon moon.</p><p><em>Sturgeon moon!</em></p><p>I'm so old but have never heard this before. I have hardly heard of the fish.</p><p>Is it a fish you eat or not. <em>Hmm..</em></p><p></p>",
+					"markdown": "# Tonight\n\n*Ha, so very time relevant.*\n\n<br>\n\nApparently, a full moon in August is called a sturgeon moon.\n\n*Sturgeon moon!*\n\nI'm so old but have never heard this before. I have hardly heard of the fish.\n\nIs it a fish you eat or not. *Hmm..*\n\n\n\n"
 				}
 			}
 		});
