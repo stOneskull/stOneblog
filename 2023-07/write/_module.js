@@ -3771,7 +3771,7 @@ function create_if_block$3(ctx) {
 			this.h();
 		},
 		h() {
-			attr(img, "width", "200");
+			attr(img, "width", "400");
 			if (!src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*image*/ ctx[0].alt);
 			attr(img, "class", "svelte-1b2zbzi");
@@ -4021,7 +4021,7 @@ function create_if_block$4(ctx) {
 			this.h();
 		},
 		h() {
-			attr(img, "width", "200");
+			attr(img, "width", "400");
 			if (!src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*image*/ ctx[0].alt);
 			attr(img, "class", "svelte-1b2zbzi");
