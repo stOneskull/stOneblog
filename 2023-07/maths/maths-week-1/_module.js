@@ -3771,7 +3771,7 @@ function create_if_block$3(ctx) {
 			this.h();
 		},
 		h() {
-			attr(img, "width", "400");
+			attr(img, "width", "300");
 			if (!src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*image*/ ctx[0].alt);
 			attr(img, "class", "svelte-1b2zbzi");
@@ -4102,7 +4102,7 @@ function create_if_block$4(ctx) {
 			this.h();
 		},
 		h() {
-			attr(img, "width", "400");
+			attr(img, "width", "300");
 			if (!src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*image*/ ctx[0].alt);
 			attr(img, "class", "svelte-1b2zbzi");
@@ -4352,7 +4352,7 @@ function create_if_block$5(ctx) {
 			this.h();
 		},
 		h() {
-			attr(img, "width", "400");
+			attr(img, "width", "300");
 			if (!src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*image*/ ctx[0].alt);
 			attr(img, "class", "svelte-1b2zbzi");
@@ -4602,7 +4602,7 @@ function create_if_block$6(ctx) {
 			this.h();
 		},
 		h() {
-			attr(img, "width", "400");
+			attr(img, "width", "300");
 			if (!src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*image*/ ctx[0].alt);
 			attr(img, "class", "svelte-1b2zbzi");
@@ -4852,7 +4852,7 @@ function create_if_block$7(ctx) {
 			this.h();
 		},
 		h() {
-			attr(img, "width", "400");
+			attr(img, "width", "300");
 			if (!src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*image*/ ctx[0].alt);
 			attr(img, "class", "svelte-1b2zbzi");
@@ -5102,7 +5102,7 @@ function create_if_block$8(ctx) {
 			this.h();
 		},
 		h() {
-			attr(img, "width", "400");
+			attr(img, "width", "300");
 			if (!src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*image*/ ctx[0].alt);
 			attr(img, "class", "svelte-1b2zbzi");
@@ -5514,7 +5514,7 @@ function create_if_block$9(ctx) {
 			this.h();
 		},
 		h() {
-			attr(img, "width", "400");
+			attr(img, "width", "300");
 			if (!src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*image*/ ctx[0].alt);
 			attr(img, "class", "svelte-1b2zbzi");
@@ -6980,8 +6980,8 @@ function create_fragment$l(ctx) {
 				title: "maths - week 1",
 				description: "triangles in circle",
 				content: {
-					"html": "<p></p><p>sin 45 is square root of 2, and cos 45 is square root of 2</p><p>x, y = 0.707, 0.707</p><p></p><p></p><p></p>",
-					"markdown": "\n\nsin 45 is square root of 2, and cos 45 is square root of 2\n\nx, y = 0.707, 0.707\n\n\n\n\n\n\n\n"
+					"html": "<p></p><p>sin 45 is square root of 2, and cos 45 is square root of 2</p><p>x, y = 0.707, 0.707</p><p></p>",
+					"markdown": "\n\nsin 45 is square root of 2, and cos 45 is square root of 2\n\nx, y = 0.707, 0.707\n\n\n\n"
 				}
 			}
 		});
