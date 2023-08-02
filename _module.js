@@ -5483,6 +5483,23 @@ function create_fragment$9(ctx) {
 							"html": "<h1 id=\"sineandcosine\">sine and cosine</h1>",
 							"markdown": "# sine and cosine"
 						}
+					},
+					{
+						"date": "2023-08-03",
+						"link": {
+							"url": "/2023-07/maths/maths-week-2",
+							"label": "2-matrices"
+						},
+						"thumbnail": {
+							"alt": "",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690311663162EngMath_TensorProduct_Example_02_02.png",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690311663162EngMath_TensorProduct_Example_02_02.png",
+							"size": null
+						},
+						"description": {
+							"html": "<h1 id=\"week2\">week 2</h1>",
+							"markdown": "# week 2"
+						}
 					}
 				]
 			}
