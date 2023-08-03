@@ -5417,6 +5417,20 @@ function create_fragment$9(ctx) {
 				heading: "Latest",
 				items: [
 					{
+						"date": "2023-08-04",
+						"link": { "url": "/2023-08/salt", "label": "salt" },
+						"thumbnail": {
+							"alt": "salty",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/60-uses-of-salt.webp1691082559777",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/60-uses-of-salt.webp1691082559777",
+							"size": null
+						},
+						"description": {
+							"html": "<h1 id=\"salty\">salty</h1>",
+							"markdown": "# salty"
+						}
+					},
+					{
 						"date": "2023-08-03",
 						"link": {
 							"url": "/2023-07/maths/maths-week-2",
