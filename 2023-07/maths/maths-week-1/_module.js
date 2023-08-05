@@ -6980,8 +6980,8 @@ function create_fragment$l(ctx) {
 				title: "maths - week 1",
 				description: "triangles in circle",
 				content: {
-					"html": "<p></p><p>sin 45 is square root of 2, and cos 45 is square root of 2</p><p>x, y = 0.707, 0.707</p><p></p>",
-					"markdown": "\n\nsin 45 is square root of 2, and cos 45 is square root of 2\n\nx, y = 0.707, 0.707\n\n\n\n"
+					"html": "<p></p><p>sin 45 is square root of 2, and cos 45 is square root of 2</p><p>x, y = 0.707, 0.707</p><p></p><p>edit.. square root of 2 is actually about 0.1414</p><p>it's divided by 2 to get 0.707</p><p><em>why?</em></p><p>wait, let me see..</p>",
+					"markdown": "\n\nsin 45 is square root of 2, and cos 45 is square root of 2\n\nx, y = 0.707, 0.707\n\n\n\nedit.. square root of 2 is actually about 0.1414\n\nit's divided by 2 to get 0.707\n\n*why?*\n\nwait, let me see..\n\n"
 				}
 			}
 		});
