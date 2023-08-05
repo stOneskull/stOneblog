@@ -6980,8 +6980,8 @@ function create_fragment$l(ctx) {
 				title: "maths - week 1",
 				description: "triangles in circle",
 				content: {
-					"html": "<p></p><p>sin 45 is square root of 2, and cos 45 is square root of 2</p><p>x, y = 0.707, 0.707</p><p></p><p>edit.. square root of 2 is actually about 0.1414</p><p>it's divided by 2 to get 0.707</p><p><em>why?</em></p><p>wait, let me see..</p>",
-					"markdown": "\n\nsin 45 is square root of 2, and cos 45 is square root of 2\n\nx, y = 0.707, 0.707\n\n\n\nedit.. square root of 2 is actually about 0.1414\n\nit's divided by 2 to get 0.707\n\n*why?*\n\nwait, let me see..\n\n"
+					"html": "<p></p><p>sine is opposite over hypotenuse..</p><p>1 / root 2</p><p>cosine is adjacent over hypotenuse..</p><p>1 / root 2</p><p></p><p>what we do here is say root 2 / root 2 == 1</p><p>root 2 * 1 == root 2</p><p>the root 2 * root 2 makes a 2</p><p>so it's (root 2) / 2</p><p>sin 45 is (square root of 2) / 2, and cos 45 is (square root of 2) / 2</p><p>x, y = 0.707, 0.707</p><p></p>",
+					"markdown": "\n\nsine is opposite over hypotenuse..\n\n1 / root 2\n\ncosine is adjacent over hypotenuse..\n\n1 / root 2\n\n\n\nwhat we do here is say root 2 / root 2 == 1\n\nroot 2 \\* 1 == root 2\n\nthe root 2 \\* root 2 makes a 2\n\nso it's (root 2) / 2\n\nsin 45 is (square root of 2) / 2, and cos 45 is (square root of 2) / 2\n\nx, y = 0.707, 0.707\n\n\n\n"
 				}
 			}
 		});
