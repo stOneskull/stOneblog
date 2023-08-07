@@ -5408,8 +5408,8 @@ function create_fragment$a(ctx) {
 				title: "amiga",
 				description: "what a special machine",
 				content: {
-					"html": "<p><em>Some more text that's italicized to make an impact.</em></p><p>I cooked my duck.</p><p></p>",
-					"markdown": "*Some more text that's italicized to make an impact.*\n\nI cooked my duck.\n\n\n\n"
+					"html": "<p><em>I love Haiku.</em></p><p>I wanted an environment to sort of get away.</p><p><em>I still keep an eye on Haiku. Install it, try it out.. </em></p><p>For my game and stuff. For imagination. Nostalgia.</p><p></p>",
+					"markdown": "*I love Haiku.*\n\nI wanted an environment to sort of get away.\n\n*I still keep an eye on Haiku. Install it, try it out.. *\n\nFor my game and stuff. For imagination. Nostalgia.\n\n\n\n"
 				}
 			}
 		});
