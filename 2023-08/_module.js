@@ -5220,14 +5220,31 @@ function create_fragment$6(ctx) {
 							"label": "blOgs"
 						},
 						"thumbnail": {
-							"alt": "",
-							"src": "https://picsum.photos/600/400?blur=10",
-							"url": "https://picsum.photos/600/400?blur=10",
+							"alt": "salty",
+							"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
+							"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 							"size": null
 						},
 						"description": {
 							"html": "<h1 id=\"saltylol\">salty lol</h1>",
 							"markdown": "# salty lol"
+						}
+					},
+					{
+						"date": "2023-08-08",
+						"link": {
+							"url": "/2023-08/amiga",
+							"label": "amiga"
+						},
+						"thumbnail": {
+							"alt": "amiga",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/amiga.png1691394250352",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/amiga.png1691394250352",
+							"size": null
+						},
+						"description": {
+							"html": "<h1 id=\"sister\">sister</h1>",
+							"markdown": "# sister"
 						}
 					}
 				]
