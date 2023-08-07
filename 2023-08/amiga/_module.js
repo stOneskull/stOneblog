@@ -6357,7 +6357,7 @@ function create_fragment$g(ctx) {
 				},
 				title: "amiga",
 				description: "what a special machine",
-				video_id: "PHN8ANlR8KI"
+				video_id: "n-MqC35aWrQ"
 			}
 		});
 
