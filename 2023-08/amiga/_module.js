@@ -6148,8 +6148,8 @@ function create_fragment$f(ctx) {
 				title: "amiga",
 				description: "what a special machine",
 				content: {
-					"html": "<p><em>Jeez.. I love it but I gotta do my own thing..</em></p><p><em>Especially with a multiplayer adventure.</em></p><p><em>ScummVM is like there is a game on that weird system over there,</em><br><em>and I wanna play it on this system here..</em></p><p><em>It unfortunately isn't suited for my grand plan..</em></p>",
-					"markdown": "*Jeez.. I love it but I gotta do my own thing..*\n\n*Especially with a multiplayer adventure.*\n\n*ScummVM is like there is a game on that weird system over there,*<br>\n\n*and I wanna play it on this system here..*\n\n*It unfortunately isn't suited for my grand plan..*\n\n"
+					"html": "<p><em>Jeez.. I love it but I gotta do my own thing..</em></p><p><em>Especially with a multiplayer adventure.</em></p><p><em>ScummVM is like there is a game on that system over there,</em><br><em>and I wanna play it on this system here..</em></p><p><em>It unfortunately isn't suited for my grand plan..</em></p>",
+					"markdown": "*Jeez.. I love it but I gotta do my own thing..*\n\n*Especially with a multiplayer adventure.*\n\n*ScummVM is like there is a game on that system over there,*<br>\n\n*and I wanna play it on this system here..*\n\n*It unfortunately isn't suited for my grand plan..*\n\n"
 				}
 			}
 		});
@@ -6233,8 +6233,8 @@ function create_fragment$f(ctx) {
 				title: "amiga",
 				description: "what a special machine",
 				content: {
-					"html": "<p><em>Jeez.. quack quack..</em></p>",
-					"markdown": "*Jeez.. quack quack..*\n\n"
+					"html": "<p>and um..</p><p><em>desserts..</em></p>",
+					"markdown": "and um..\n\n*desserts..*\n\n"
 				}
 			}
 		});
