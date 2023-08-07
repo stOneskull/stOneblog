@@ -5212,6 +5212,23 @@ function create_fragment$6(ctx) {
 							"html": "<h1 id=\"salty\">salty</h1>",
 							"markdown": "# salty"
 						}
+					},
+					{
+						"date": "2023-08-07",
+						"link": {
+							"url": "/2023-08/blogs",
+							"label": "blOgs"
+						},
+						"thumbnail": {
+							"alt": "",
+							"src": "https://picsum.photos/600/400?blur=10",
+							"url": "https://picsum.photos/600/400?blur=10",
+							"size": null
+						},
+						"description": {
+							"html": "<h1 id=\"saltylol\">salty lol</h1>",
+							"markdown": "# salty lol"
+						}
 					}
 				]
 			}
