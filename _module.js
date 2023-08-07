@@ -5417,6 +5417,23 @@ function create_fragment$9(ctx) {
 				heading: "Latest",
 				items: [
 					{
+						"date": "2023-08-07",
+						"link": {
+							"url": "/2023-08/blogs",
+							"label": "blOgs"
+						},
+						"thumbnail": {
+							"alt": "",
+							"src": "https://picsum.photos/600/400?blur=10",
+							"url": "https://picsum.photos/600/400?blur=10",
+							"size": null
+						},
+						"description": {
+							"html": "<h1 id=\"saltylol\">salty lol</h1>",
+							"markdown": "# salty lol"
+						}
+					},
+					{
 						"date": "2023-08-04",
 						"link": { "url": "/2023-08/salt", "label": "salt" },
 						"thumbnail": {
@@ -5496,23 +5513,6 @@ function create_fragment$9(ctx) {
 						"description": {
 							"html": "<p>nigh</p>",
 							"markdown": "nigh"
-						}
-					},
-					{
-						"date": "2023-07-27",
-						"link": {
-							"url": "/2023-07/maths/maths-week-1",
-							"label": "maths week 1"
-						},
-						"thumbnail": {
-							"alt": "",
-							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/R.webp1690078598113",
-							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/R.webp1690078598113",
-							"size": null
-						},
-						"description": {
-							"html": "<h1 id=\"sineandcosine\">sine and cosine</h1>",
-							"markdown": "# sine and cosine"
 						}
 					}
 				]
