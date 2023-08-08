@@ -6189,8 +6189,8 @@ function create_fragment$g(ctx) {
 				title: "amiga",
 				description: "what a special machine",
 				content: {
-					"html": "<p><em>I do love Haiku.</em></p><p>I wanted an environment to sort of get away.</p><p><em>I keep an eye on Haiku. Install it, try it.</em></p><p>For my game and stuff. For imagination. Nostalgia.</p><p></p>",
-					"markdown": "*I do love Haiku.*\n\nI wanted an environment to sort of get away.\n\n*I keep an eye on Haiku. Install it, try it.*\n\nFor my game and stuff. For imagination. Nostalgia.\n\n\n\n"
+					"html": "<p><em>I do love Haiku.</em></p><p>I wanted an environment to sort of get away.</p><p><em>I keep an eye on Haiku. </em></p><p>For my game and stuff. For imagination. Nostalgia.</p><p><em>Install it, try it.</em></p>",
+					"markdown": "*I do love Haiku.*\n\nI wanted an environment to sort of get away.\n\n*I keep an eye on Haiku. *\n\nFor my game and stuff. For imagination. Nostalgia.\n\n*Install it, try it.*\n\n"
 				}
 			}
 		});
