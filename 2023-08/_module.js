@@ -5263,6 +5263,23 @@ function create_fragment$6(ctx) {
 							"html": "<h1 id=\"aninterview\">an interview</h1>",
 							"markdown": "# an interview"
 						}
+					},
+					{
+						"date": "2023-08-10",
+						"link": {
+							"url": "/2023-08/laksa",
+							"label": "laksa"
+						},
+						"thumbnail": {
+							"alt": "laksa",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/th-3680930452.jpg1691487056259",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/th-3680930452.jpg1691487056259",
+							"size": null
+						},
+						"description": {
+							"html": "<h1 id=\"foodjourney\">food journey</h1>",
+							"markdown": "# food journey"
+						}
 					}
 				]
 			}
