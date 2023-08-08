@@ -5417,34 +5417,20 @@ function create_fragment$9(ctx) {
 				heading: "Latest",
 				items: [
 					{
-						"date": "2023-08-07",
+						"date": "2023-08-09",
 						"link": {
-							"url": "/2023-08/blogs",
-							"label": "blOgs"
+							"url": "/2023-08/ned-kelly",
+							"label": "ned kelly"
 						},
 						"thumbnail": {
-							"alt": "",
-							"src": "https://picsum.photos/600/400?blur=10",
-							"url": "https://picsum.photos/600/400?blur=10",
+							"alt": "ned kelly",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/Ned-Kelly.webp1691480606890",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/Ned-Kelly.webp1691480606890",
 							"size": null
 						},
 						"description": {
-							"html": "<h1 id=\"saltylol\">salty lol</h1>",
-							"markdown": "# salty lol"
-						}
-					},
-					{
-						"date": "2023-08-04",
-						"link": { "url": "/2023-08/salt", "label": "salt" },
-						"thumbnail": {
-							"alt": "salty",
-							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/60-uses-of-salt.webp1691082559777",
-							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/60-uses-of-salt.webp1691082559777",
-							"size": null
-						},
-						"description": {
-							"html": "<h1 id=\"salty\">salty</h1>",
-							"markdown": "# salty"
+							"html": "<h1 id=\"aninterview\">an interview</h1>",
+							"markdown": "# an interview"
 						}
 					},
 					{
