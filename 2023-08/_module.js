@@ -5246,6 +5246,23 @@ function create_fragment$6(ctx) {
 							"html": "<h1 id=\"sister\">sister</h1>",
 							"markdown": "# sister"
 						}
+					},
+					{
+						"date": "2023-08-09",
+						"link": {
+							"url": "/2023-08/ned-kelly",
+							"label": "ned kelly"
+						},
+						"thumbnail": {
+							"alt": "ned kelly",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/Ned-Kelly.webp1691480606890",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/Ned-Kelly.webp1691480606890",
+							"size": null
+						},
+						"description": {
+							"html": "<h1 id=\"aninterview\">an interview</h1>",
+							"markdown": "# an interview"
+						}
 					}
 				]
 			}
