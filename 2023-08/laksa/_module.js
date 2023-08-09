@@ -3945,7 +3945,7 @@ function create_fragment$4(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "section-container content svelte-ksypcu");
+			attr(div0, "class", "section-container content svelte-1yn388l");
 			attr(div1, "class", "section");
 			attr(div2, "class", "section");
 			attr(div2, "id", "section-f9dafc1a");
@@ -4026,7 +4026,7 @@ function create_fragment$5(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "section-container content svelte-ksypcu");
+			attr(div0, "class", "section-container content svelte-1yn388l");
 			attr(div1, "class", "section");
 			attr(div2, "class", "section");
 			attr(div2, "id", "section-02aebe7b");
@@ -4107,7 +4107,7 @@ function create_fragment$6(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "section-container content svelte-ksypcu");
+			attr(div0, "class", "section-container content svelte-1yn388l");
 			attr(div1, "class", "section");
 			attr(div2, "class", "section");
 			attr(div2, "id", "section-e928c25b");
@@ -4526,7 +4526,7 @@ function create_fragment$9(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "section-container content svelte-ksypcu");
+			attr(div0, "class", "section-container content svelte-1yn388l");
 			attr(div1, "class", "section");
 			attr(div2, "class", "section");
 			attr(div2, "id", "section-ca3504c3");
@@ -5711,8 +5711,8 @@ function create_fragment$c(ctx) {
 				title: "laksa",
 				description: "food of foods",
 				content: {
-					"html": "<p><strong>Probably really, the best food is in Kuala Lumpur.</strong></p><p><strong>It's a debate.</strong></p><p></p><p><strong>Anyway, you ask people in KL, </strong><br><strong>\"Where is the best food in Malaysia?\" </strong><br><strong>and quite commonly the answer is Penang.</strong></p><p></p><p>Another debate is what is the best Malaysian food.</p><p>This encompasses a couple of groups. Most significantly, is that Malaysia is a few countries in one. Or, a few nationalities in one. At least in the major areas. In rural areas, there is a much more majority population of Malay people.</p><p>In KL, the major groups are:</p><ul><li><p>native Malay people. They are majority Muslim.</p></li><li><p>Then there is the Chinese community. They usually have more money and own property and business. They have Buddhist/Confucius shrines. </p></li><li><p>And the third main people are the Indian. It's like the hard work and artistry is in this community. Much life. And mmm, the food.</p></li><li><p>and then there are others like black and white people.</p></li></ul><p>There is quite a Thai influence as well. The next-door neighbours to the north.</p><blockquote><p><em>you wake up to a malay rice dish wrapped in a leaf, and a cup of sweet kopi.</em></p><p><em>you select from a buffet of amazing chinese splendors for lunch.</em></p><p><em>how about the most tasty tandoori or curry for dinner. </em></p><p><em>it's just so good.</em></p></blockquote><p></p><p>Penang is like a small version of KL. A little microcosm of it. There is an airport, it's a major Visa issuance place, right near the border of Thailand. You can get a sleeper train from Butterworth into Thailand which is awesome, and about which I will write soon.</p><p>Penang is fantastic.</p><p>You walk down a small street. You pass a Hindu temple, then a Buddhist temple, then you're at a Mosque. There is also a Christian church just down that street. It is most amazing, delightful, interesting.. and also, arguably what is most important.. delicious!</p><p></p>",
-					"markdown": "**Probably really, the best food is in Kuala Lumpur.**\n\n**It's a debate.**\n\n\n\n**Anyway, you ask people in KL, **<br>\n\n**\"Where is the best food in Malaysia?\" **<br>\n\n**and quite commonly the answer is Penang.**\n\n\n\nAnother debate is what is the best Malaysian food.\n\nThis encompasses a couple of groups. Most significantly, is that Malaysia is a few countries in one. Or, a few nationalities in one. At least in the major areas. In rural areas, there is a much more majority population of Malay people.\n\nIn KL, the major groups are:\n\n- native Malay people. They are majority Muslim.\n\n- Then there is the Chinese community. They usually have more money and own property and business. They have Buddhist/Confucius shrines.\n\n- And the third main people are the Indian. It's like the hard work and artistry is in this community. Much life. And mmm, the food.\n\n- and then there are others like black and white people.\n\n\n<!-- -->\n\nThere is quite a Thai influence as well. The next-door neighbours to the north.\n\n> *you wake up to a malay rice dish wrapped in a leaf, and a cup of sweet kopi.*\n> \n> *you select from a buffet of amazing chinese splendors for lunch.*\n> \n> *how about the most tasty tandoori or curry for dinner. *\n> \n> *it's just so good.*\n\n\n\nPenang is like a small version of KL. A little microcosm of it. There is an airport, it's a major Visa issuance place, right near the border of Thailand. You can get a sleeper train from Butterworth into Thailand which is awesome, and about which I will write soon.\n\nPenang is fantastic.\n\nYou walk down a small street. You pass a Hindu temple, then a Buddhist temple, then you're at a Mosque. There is also a Christian church just down that street. It is most amazing, delightful, interesting.. and also, arguably what is most important.. delicious!\n\n\n\n"
+					"html": "<p><strong>Probably really, the best food is in Kuala Lumpur.</strong></p><p><strong>It's a debate.</strong></p><p></p><p><strong>Anyway, you ask people in KL, </strong><br><strong>\"Where is the best food in Malaysia?\" </strong><br><strong>and quite commonly the answer is Penang.</strong></p><p></p><p>Another debate is what is the best Malaysian food.</p><p>This encompasses a couple of groups. Most significantly, is that Malaysia is a few countries in one. Or, a few nationalities in one. At least in the major areas. In rural areas, there is a much more majority population of Malay people.</p><p>In KL, the major groups are:</p><ul><li><p>native Malay people. They are majority Muslim.</p></li><li><p>Then there is the Chinese community. They usually have more money and own property and business. They have Buddhist/Confucius shrines.</p></li><li><p>And the third main people are the Indian. It's like the hard work and artistry is in this community. Much life. And mmm, the food.</p></li><li><p>and then there are others like black and white people.</p></li></ul><p>There is quite a Thai influence as well. The next-door neighbours to the north.</p><blockquote><p><em>you wake up to a malay rice dish wrapped in a leaf, and a cup of sweet kopi.</em></p><p><em>you select from a buffet of amazing chinese splendors for lunch.</em></p><p><em>how about the most tasty tandoori or curry for dinner.</em></p><p><em>it's just so good.</em></p></blockquote><p></p><p>Penang is like a small version of KL. A little microcosm of it. There is an airport, it's a major Visa issuance place, right near the border of Thailand. You can get a sleeper train from Butterworth into Thailand which is awesome, and about which I will write soon.</p><p>Penang is fantastic.</p><p>You walk down a small street. You pass a Hindu temple, then a Buddhist temple, then you're at a Mosque. There is also a Christian church just down that street. It is most amazing, delightful, interesting.. and also, arguably what is most important.. delicious!</p><p></p>",
+					"markdown": "**Probably really, the best food is in Kuala Lumpur.**\n\n**It's a debate.**\n\n\n\n**Anyway, you ask people in KL, **<br>\n\n**\"Where is the best food in Malaysia?\" **<br>\n\n**and quite commonly the answer is Penang.**\n\n\n\nAnother debate is what is the best Malaysian food.\n\nThis encompasses a couple of groups. Most significantly, is that Malaysia is a few countries in one. Or, a few nationalities in one. At least in the major areas. In rural areas, there is a much more majority population of Malay people.\n\nIn KL, the major groups are:\n\n- native Malay people. They are majority Muslim.\n\n- Then there is the Chinese community. They usually have more money and own property and business. They have Buddhist/Confucius shrines.\n\n- And the third main people are the Indian. It's like the hard work and artistry is in this community. Much life. And mmm, the food.\n\n- and then there are others like black and white people.\n\n\n<!-- -->\n\nThere is quite a Thai influence as well. The next-door neighbours to the north.\n\n> *you wake up to a malay rice dish wrapped in a leaf, and a cup of sweet kopi.*\n> \n> *you select from a buffet of amazing chinese splendors for lunch.*\n> \n> *how about the most tasty tandoori or curry for dinner.*\n> \n> *it's just so good.*\n\n\n\nPenang is like a small version of KL. A little microcosm of it. There is an airport, it's a major Visa issuance place, right near the border of Thailand. You can get a sleeper train from Butterworth into Thailand which is awesome, and about which I will write soon.\n\nPenang is fantastic.\n\nYou walk down a small street. You pass a Hindu temple, then a Buddhist temple, then you're at a Mosque. There is also a Christian church just down that street. It is most amazing, delightful, interesting.. and also, arguably what is most important.. delicious!\n\n\n\n"
 				}
 			}
 		});
@@ -5795,8 +5795,8 @@ function create_fragment$c(ctx) {
 				title: "laksa",
 				description: "food of foods",
 				content: {
-					"html": "<p><a href=\"https://en.wikipedia.org/wiki/Laksa#Asam_laksa\">Asam Laksa</a></p>",
-					"markdown": "[Asam Laksa](<https://en.wikipedia.org/wiki/Laksa#Asam_laksa>)\n\n"
+					"html": "<p><center><a href=\"https://en.wikipedia.org/wiki/Laksa#Asam_laksa\">Asam Laksa</a></center></p>",
+					"markdown": "<center>[Asam Laksa](<https://en.wikipedia.org/wiki/Laksa#Asam_laksa>)</center>\n\n"
 				}
 			}
 		});

@@ -3945,7 +3945,7 @@ function create_fragment$4(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "section-container content svelte-ksypcu");
+			attr(div0, "class", "section-container content svelte-1yn388l");
 			attr(div1, "class", "section");
 			attr(div2, "class", "section");
 			attr(div2, "id", "section-143c9021");
@@ -4195,7 +4195,7 @@ function create_fragment$6(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "section-container content svelte-ksypcu");
+			attr(div0, "class", "section-container content svelte-1yn388l");
 			attr(div1, "class", "section");
 			attr(div2, "class", "section");
 			attr(div2, "id", "section-3e1259ae");
