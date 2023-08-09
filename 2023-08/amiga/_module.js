@@ -4045,7 +4045,7 @@ function create_fragment$5(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "section-container content svelte-1yn388l");
+			attr(div0, "class", "section-container content svelte-ksypcu");
 			attr(div1, "class", "section");
 			attr(div2, "class", "section");
 			attr(div2, "id", "section-173a15f4");
@@ -4464,7 +4464,7 @@ function create_fragment$8(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "section-container content svelte-1yn388l");
+			attr(div0, "class", "section-container content svelte-ksypcu");
 			attr(div1, "class", "section");
 			attr(div2, "class", "section");
 			attr(div2, "id", "section-a0f61e65");
@@ -4714,7 +4714,7 @@ function create_fragment$a(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "section-container content svelte-1yn388l");
+			attr(div0, "class", "section-container content svelte-ksypcu");
 			attr(div1, "class", "section");
 			attr(div2, "class", "section");
 			attr(div2, "id", "section-af4229b4");
@@ -4895,7 +4895,7 @@ function create_fragment$c(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "section-container content svelte-1yn388l");
+			attr(div0, "class", "section-container content svelte-ksypcu");
 			attr(div1, "class", "section");
 			attr(div2, "class", "section");
 			attr(div2, "id", "section-43acaf4e");

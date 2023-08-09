@@ -3945,7 +3945,7 @@ function create_fragment$4(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "section-container content svelte-1yn388l");
+			attr(div0, "class", "section-container content svelte-ksypcu");
 			attr(div1, "class", "section");
 			attr(div2, "class", "section");
 			attr(div2, "id", "section-6431083d");
@@ -4026,7 +4026,7 @@ function create_fragment$5(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "section-container content svelte-1yn388l");
+			attr(div0, "class", "section-container content svelte-ksypcu");
 			attr(div1, "class", "section");
 			attr(div2, "class", "section");
 			attr(div2, "id", "section-6684a4c0");
@@ -4107,7 +4107,7 @@ function create_fragment$6(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "section-container content svelte-1yn388l");
+			attr(div0, "class", "section-container content svelte-ksypcu");
 			attr(div1, "class", "section");
 			attr(div2, "class", "section");
 			attr(div2, "id", "section-38812b9e");
