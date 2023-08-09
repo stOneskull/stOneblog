@@ -5316,6 +5316,23 @@ function create_fragment$8(ctx) {
 				heading: "Latest",
 				items: [
 					{
+						"date": "2023-08-10",
+						"link": {
+							"url": "/2023-08/laksa",
+							"label": "laksa"
+						},
+						"thumbnail": {
+							"alt": "go to penang",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/th-3680930452.jpg1691487056259",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/th-3680930452.jpg1691487056259",
+							"size": null
+						},
+						"description": {
+							"html": "<h1 id=\"justatribute\">just a tribute</h1>",
+							"markdown": "# just a tribute"
+						}
+					},
+					{
 						"date": "2023-08-09",
 						"link": {
 							"url": "/2023-08/ned-kelly",
