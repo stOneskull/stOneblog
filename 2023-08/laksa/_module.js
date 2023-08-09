@@ -5688,8 +5688,8 @@ function create_fragment$c(ctx) {
 				title: "laksa",
 				description: "food of foods",
 				content: {
-					"html": "<p><strong>the best food in the world is in malaysia</strong></p><p><em>the best food in malaysia is in penang</em></p>",
-					"markdown": "**the best food in the world is in malaysia**\n\n*the best food in malaysia is in penang*\n\n"
+					"html": "<p><center><strong>the best food in the world is in malaysia</strong></p>\n<p><em>the best food in malaysia is in penang</em></center></p>",
+					"markdown": "<center>**the best food in the world is in malaysia**\n\n*the best food in malaysia is in penang*</center>\n\n"
 				}
 			}
 		});
