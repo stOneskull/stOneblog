@@ -5375,8 +5375,8 @@ function create_fragment$a(ctx) {
 				title: "krisna",
 				description: "hallelujah",
 				content: {
-					"html": "<h1>We shall see</h1><p></p><p><em>I will talk to Krisna and Rama.. in a way.. rushing?..</em></p><p><em>i kinda am... been on a vacation.. more will be here and continued there..</em></p><p></p><p>This video below celebrates the 50th anniversary of the George Harrison album:</p><p>\"All Things Must Pass\"</p>",
-					"markdown": "# We shall see\n\n\n\n*I will talk to Krisna and Rama.. in a way.. rushing?..*\n\n*i kinda am... been on a vacation.. more will be here and continued there..*\n\n\n\nThis video below celebrates the 50th anniversary of the George Harrison album:\n\n\"All Things Must Pass\"\n\n"
+					"html": "<h1>We shall see</h1><p></p><p><em>I will talk to Krisna and Rama.. in a way.. rushing?.. in a way..</em></p><p><em>i kinda am... been on a vacation.. more will be here and continued there..</em></p><p></p><p>This video below celebrates the 50th anniversary of the George Harrison album:</p><p>\"All Things Must Pass\"</p>",
+					"markdown": "# We shall see\n\n\n\n*I will talk to Krisna and Rama.. in a way.. rushing?.. in a way..*\n\n*i kinda am... been on a vacation.. more will be here and continued there..*\n\n\n\nThis video below celebrates the 50th anniversary of the George Harrison album:\n\n\"All Things Must Pass\"\n\n"
 				}
 			}
 		});
