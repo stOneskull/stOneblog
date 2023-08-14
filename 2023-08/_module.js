@@ -5280,6 +5280,23 @@ function create_fragment$6(ctx) {
 							"html": "<h1 id=\"foodjourney\">food journey</h1>",
 							"markdown": "# food journey"
 						}
+					},
+					{
+						"date": "2023-08-11",
+						"link": {
+							"url": "/2023-08/religitics",
+							"label": "religitics"
+						},
+						"thumbnail": {
+							"alt": "politics and religion",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1691992006450buddhajesus.jpeg",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1691992006450buddhajesus.jpeg",
+							"size": 51
+						},
+						"description": {
+							"html": "<h1 id=\"blah\">blah</h1>",
+							"markdown": "# blah"
+						}
 					}
 				]
 			}
