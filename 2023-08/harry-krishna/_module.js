@@ -5201,13 +5201,13 @@ function create_fragment$9(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
+					"alt": "krisna",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/th-245743606.jpeg1691992566714",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/th-245743606.jpeg1691992566714",
 					"size": null
 				},
-				title: "dunno",
-				description: "in the aether"
+				title: "krisna",
+				description: "hallelujah"
 			}
 		});
 
@@ -5220,13 +5220,13 @@ function create_fragment$9(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
+					"alt": "krisna",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/th-245743606.jpeg1691992566714",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/th-245743606.jpeg1691992566714",
 					"size": null
 				},
-				title: "dunno",
-				description: "in the aether",
+				title: "krisna",
+				description: "hallelujah",
 				logo: {
 					"image": {
 						"alt": "stOne",
@@ -5268,8 +5268,8 @@ function create_fragment$9(ctx) {
 					"alt": "krisna",
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/th-245743606.jpeg1691992566714"
 				},
-				title: "dunno",
-				description: "in the aether",
+				title: "krisna",
+				description: "hallelujah",
 				superhead: "2023-08-12",
 				heading: "hurry krisna\n"
 			}
@@ -5284,13 +5284,13 @@ function create_fragment$9(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
+					"alt": "krisna",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/th-245743606.jpeg1691992566714",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/th-245743606.jpeg1691992566714",
 					"size": null
 				},
-				title: "dunno",
-				description: "in the aether",
+				title: "krisna",
+				description: "hallelujah",
 				content: {
 					"html": "<h1>We shall see</h1><p></p><p><em>I will talk to Krisna and Rama.. in a way.. rushing?..</em></p><p></p><p>This video below celebrates the 50th anniversary of the George Harrison album:</p><p>\"All Things Must Pass\"</p>",
 					"markdown": "# We shall see\n\n\n\n*I will talk to Krisna and Rama.. in a way.. rushing?..*\n\n\n\nThis video below celebrates the 50th anniversary of the George Harrison album:\n\n\"All Things Must Pass\"\n\n"
@@ -5307,13 +5307,13 @@ function create_fragment$9(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
+					"alt": "krisna",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/th-245743606.jpeg1691992566714",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/th-245743606.jpeg1691992566714",
 					"size": null
 				},
-				title: "dunno",
-				description: "in the aether",
+				title: "krisna",
+				description: "hallelujah",
 				video_id: "04v-SdKeEpE"
 			}
 		});
@@ -5330,8 +5330,8 @@ function create_fragment$9(ctx) {
 					"alt": "rama krisna",
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/th-4288734460.jpeg1691992539394"
 				},
-				title: "dunno",
-				description: "in the aether"
+				title: "krisna",
+				description: "hallelujah"
 			}
 		});
 
@@ -5344,13 +5344,13 @@ function create_fragment$9(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
+					"alt": "krisna",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/th-245743606.jpeg1691992566714",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/th-245743606.jpeg1691992566714",
 					"size": null
 				},
-				title: "dunno",
-				description: "in the aether",
+				title: "krisna",
+				description: "hallelujah",
 				logo: {
 					"image": {
 						"alt": "stOne",
@@ -5389,13 +5389,13 @@ function create_fragment$9(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
+					"alt": "krisna",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/th-245743606.jpeg1691992566714",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/th-245743606.jpeg1691992566714",
 					"size": null
 				},
-				title: "dunno",
-				description: "in the aether",
+				title: "krisna",
+				description: "hallelujah",
 				heading: "",
 				email: "",
 				social_links: [
@@ -5449,13 +5449,13 @@ function create_fragment$9(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
+					"alt": "krisna",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/th-245743606.jpeg1691992566714",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/th-245743606.jpeg1691992566714",
 					"size": null
 				},
-				title: "dunno",
-				description: "in the aether"
+				title: "krisna",
+				description: "hallelujah"
 			}
 		});
 
