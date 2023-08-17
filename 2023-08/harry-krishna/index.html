@@ -447,71 +447,57 @@
             }
         }
 
-        .section-container.svelte-1yn388l {
-            max-width: var(--inner-max-width, 800px);
-            padding: 2rem
+        .section-container.svelte-1oe3rov.svelte-1oe3rov.svelte-1oe3rov {
+            display: grid;
+            place-items: center
         }
 
-        .content.svelte-1yn388l img {
-            width: 23%;
-            margin: 2rem 0;
-            box-shadow: var(--box-shadow);
-            border-radius: var(--border-radius)
+        .heading.svelte-1oe3rov.svelte-1oe3rov.svelte-1oe3rov {
+            text-align: center;
+            margin-bottom: 1.5rem
         }
 
-        .content.svelte-1yn388l p {
-            padding: 0.25rem 0;
-            line-height: 1.5;
-            font-family: var(--body-font);
-            font-weight: 300;
-            margin-bottom: 1rem;
-            color: #2d3339
+        .accordion.svelte-1oe3rov.svelte-1oe3rov.svelte-1oe3rov {
+            width: 100%;
+            max-width: 900px
         }
 
-        .content.svelte-1yn388l a {
-            text-decoration: underline
+        .accordion.svelte-1oe3rov .item.svelte-1oe3rov.svelte-1oe3rov {
+            padding: 1.5rem 0
         }
 
-        .content.svelte-1yn388l h1 {
-            font-size: clamp(1.75rem, 10vw, 2.25rem);
-            font-weight: 600;
-            letter-spacing: -0.08rem;
-            margin-bottom: 1rem;
-            line-height: 1.1
+        .accordion.svelte-1oe3rov .item.svelte-1oe3rov.svelte-1oe3rov:not(:last-child) {
+            border-bottom: 1px solid var(--border-color, #eee)
         }
 
-        .content.svelte-1yn388l h2 {
-            font-size: clamp(1.5rem, 10vw, 2.125rem);
-            font-weight: 600;
-            margin-bottom: 1rem;
-            letter-spacing: -0.06rem;
-            line-height: 1.1
+        .accordion.svelte-1oe3rov .item.active button .icon.svelte-1oe3rov.svelte-1oe3rov {
+            transform: scaleY(-1)
         }
 
-        .content.svelte-1yn388l h3 {
-            font-size: clamp(1.25rem, 10vw, 1.75rem);
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            letter-spacing: -0.05rem;
-            line-height: 1.1
+        .accordion.svelte-1oe3rov .item button.svelte-1oe3rov.svelte-1oe3rov {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%
         }
 
-        .content.svelte-1yn388l ul {
-            list-style: disc;
-            padding: 0.25rem 0;
-            padding-left: 1.25rem
+        .accordion.svelte-1oe3rov .item button span.svelte-1oe3rov.svelte-1oe3rov {
+            font-size: 1.25rem;
+            font-weight: 600
         }
 
-        .content.svelte-1yn388l ol {
-            list-style: decimal;
-            padding-left: 1.25rem;
-            margin-bottom: 2rem
+        .accordion.svelte-1oe3rov .item button .icon.svelte-1oe3rov.svelte-1oe3rov {
+            font-size: 1.25rem;
+            color: var(--color-accent, rebeccapurple);
+            transition: transform 0.2s
         }
 
-        .content.svelte-1yn388l blockquote {
-            padding: 2rem;
-            box-shadow: var(--box-shadow);
-            border-radius: var(--border-radius)
+        .accordion.svelte-1oe3rov .item button.svelte-1oe3rov+.description.svelte-1oe3rov {
+            padding-top: 0.5rem
+        }
+
+        .accordion.svelte-1oe3rov .item .description.svelte-1oe3rov.svelte-1oe3rov {
+            padding-right: 2rem
         }
 
         .section-container.svelte-1b2zbzi {
@@ -909,17 +895,57 @@
             <img width="360" src="https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/babykrisna2.jpg1692175009778" alt="safe krishna" class="svelte-1b2zbzi">
         </header>
     </div>
-    <div class="section" id="section-e2ff69f0">
-        <div class="section">
-            <div class="section-container content svelte-1yn388l"><!-- HTML_TAG_START -->
-                <p>Krishna is known by other names.</p>
-                <p>Some names include: <br>Mohan ("enchanter"); <br>Govinda ("chief herdsman");<br>Keev ("prankster"); <br>Gopala ("Protector of the 'Go'", which means "soul" or "the cows").</p>
-                <p>Jagannatha ("Lord of the World") is a form or incarnation of Krishna, <br>worshipped in the Puri Hindu temple, and surrounding areas in Eastern India.</p>
-                <p>Krishna can be referred to as: <br>Vāsudeva-Krishna, Murlidhar, or Chakradhar.</p>
-                <p>The honorary title "Sri" is used before his name..</p>
-                <p>Shri Krishna</p><!-- HTML_TAG_END -->
+    <div class="section" id="section-f0435572">
+        <section class="section-container svelte-1oe3rov">
+            <h2 class="heading svelte-1oe3rov"></h2>
+            <div class="accordion svelte-1oe3rov">
+                <div class="item svelte-1oe3rov active"><button class="svelte-1oe3rov"><span class="svelte-1oe3rov">Some other names for Krishna include:</span>
+                        <span class="icon svelte-1oe3rov"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 256 256" class="iconify iconify--ph"><!-- HTML_TAG_START -->
+                                <path fill="currentColor" d="m216.49 104.49l-80 80a12 12 0 0 1-17 0l-80-80a12 12 0 0 1 17-17L128 159l71.51-71.52a12 12 0 0 1 17 17Z" /><!-- HTML_TAG_END -->
+                            </svg>
+                        </span></button>
+                    <div class="description svelte-1oe3rov"><!-- HTML_TAG_START -->
+                        <p>Mohan ("enchanter"); <br>
+                            Govinda ("chief herdsman");<br>
+                            Keev ("prankster"); <br>
+                            Gopala ("Protector of the 'Go'", which means "soul" or "the cows").
+                            <br><br>
+                            Jagannatha ("Lord of the World") is a form or incarnation of Krishna, <br>
+                            worshipped in the Puri Hindu temple, and surrounding areas in Eastern India.
+                        </p><!-- HTML_TAG_END -->
+                    </div>
+                    <noscript>
+                        <div class="description svelte-1oe3rov"><!-- HTML_TAG_START -->
+                            <p>Mohan ("enchanter"); <br>
+                                Govinda ("chief herdsman");<br>
+                                Keev ("prankster"); <br>
+                                Gopala ("Protector of the 'Go'", which means "soul" or "the cows").
+                                <br><br>
+                                Jagannatha ("Lord of the World") is a form or incarnation of Krishna, <br>
+                                worshipped in the Puri Hindu temple, and surrounding areas in Eastern India.
+                            </p><!-- HTML_TAG_END -->
+                        </div>
+                    </noscript>
+                </div>
+                <div class="item svelte-1oe3rov"><button class="svelte-1oe3rov"><span class="svelte-1oe3rov">Krishna can be referred to as: </span>
+                        <span class="icon svelte-1oe3rov"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 256 256" class="iconify iconify--ph"><!-- HTML_TAG_START -->
+                                <path fill="currentColor" d="m216.49 104.49l-80 80a12 12 0 0 1-17 0l-80-80a12 12 0 0 1 17-17L128 159l71.51-71.52a12 12 0 0 1 17 17Z" /><!-- HTML_TAG_END -->
+                            </svg>
+                        </span></button>
+
+                    <noscript>
+                        <div class="description svelte-1oe3rov"><!-- HTML_TAG_START -->
+                            <p><br>Vāsudeva-Krishna, Murlidhar, or Chakradhar.
+                                <br><br>
+                                The honorary title "Sri" is used before his name..
+                                <br><br>
+                                Shri Krishna
+                            </p><!-- HTML_TAG_END -->
+                        </div>
+                    </noscript>
+                </div>
             </div>
-        </div>
+        </section>
     </div>
     <div class="section" id="section-e9c64416">
         <header class="section-container svelte-1b2zbzi"><span class="superhead svelte-1b2zbzi"></span>
