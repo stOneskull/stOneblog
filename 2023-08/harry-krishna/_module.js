@@ -6650,8 +6650,8 @@ function create_fragment$j(ctx) {
 				title: "krisna",
 				description: "hallelujah",
 				content: {
-					"html": "<h1>hallelujah</h1><p></p><p>This video below celebrates the 50th anniversary of the George Harrison album:</p><p>\"All Things Must Pass\"</p>",
-					"markdown": "# hallelujah\n\n\n\nThis video below celebrates the 50th anniversary of the George Harrison album:\n\n\"All Things Must Pass\"\n\n"
+					"html": "<p><center></p>\n<h1 id=\"hallelujah\">hallelujah</h1>\n<p>This video below celebrates the 50th anniversary of the George Harrison album:</p>\n<p>\"All Things Must Pass\"\n</center></p>",
+					"markdown": "<center>\n# hallelujah\n\n\n\nThis video below celebrates the 50th anniversary of the George Harrison album:\n\n\"All Things Must Pass\"\n</center>\n\n"
 				}
 			}
 		});
