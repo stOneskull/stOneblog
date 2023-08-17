@@ -5289,8 +5289,8 @@ function create_fragment$8(ctx) {
 				title: "siddhartha",
 				description: "2 men",
 				content: {
-					"html": "<h1>hermann hesse</h1>",
-					"markdown": "# hermann hesse\n\n"
+					"html": "<p><center># hermann hesse</center></p>",
+					"markdown": "<center># hermann hesse</center>\n\n"
 				}
 			}
 		});
