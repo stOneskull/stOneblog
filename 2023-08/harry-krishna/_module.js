@@ -6608,8 +6608,8 @@ function create_fragment$j(ctx) {
 				title: "krisna",
 				description: "hallelujah",
 				content: {
-					"html": "<p>Young Krishna </p><p></p>",
-					"markdown": "Young Krishna\n\n\n\n"
+					"html": "<p>Krishna is known by other names. Some names include: <br>Mohan (\"enchanter\"); <br>Govinda (\"chief herdsman\");<br>Keev (\"prankster\"); <br>Gopala (\"Protector of the 'Go'\", which means \"soul\" or \"the cows\").</p><p>Jagannatha is a form or incarnation of Krishna. <br>He is worshipped in the Puri Hindu temple, in Eastern India.</p><p>Krishna can be referred to as Vāsudeva-Krishna, Murlidhar, or Chakradhar. </p><p>The honorary title \"Sri\" is used before his name.. Shri Krishna</p>",
+					"markdown": "Krishna is known by other names. Some names include: <br>\n\nMohan (\"enchanter\"); <br>\n\nGovinda (\"chief herdsman\");<br>\n\nKeev (\"prankster\"); <br>\n\nGopala (\"Protector of the 'Go'\", which means \"soul\" or \"the cows\").\n\nJagannatha is a form or incarnation of Krishna. <br>\n\nHe is worshipped in the Puri Hindu temple, in Eastern India.\n\nKrishna can be referred to as Vāsudeva-Krishna, Murlidhar, or Chakradhar.\n\nThe honorary title \"Sri\" is used before his name.. Shri Krishna\n\n"
 				}
 			}
 		});
