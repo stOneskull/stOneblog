@@ -6526,8 +6526,8 @@ function create_fragment$j(ctx) {
 				title: "krisna",
 				description: "hallelujah",
 				content: {
-					"html": "<p>Baby Krishna was born just after midnight.</p><p>His mother was Queen Devaki and his dad was King Vasudeva.</p><p></p><p>His birthday is called Janmashtami.</p><p>It is a week after the first full moon after August 23.</p><p>Janmashtami is Thursday, September 7, this year, 2023.</p><p></p><p>Krishna was born in a place called Mathura.</p>",
-					"markdown": "Baby Krishna was born just after midnight.\n\nHis mother was Queen Devaki and his dad was King Vasudeva.\n\n\n\nHis birthday is called Janmashtami.\n\nIt is a week after the first full moon after August 23.\n\nJanmashtami is Thursday, September 7, this year, 2023.\n\n\n\nKrishna was born in a place called Mathura.\n\n"
+					"html": "<p>Baby Krishna was born at midnight.</p><p>His mother was Queen Devaki and his dad was King Vasudeva.</p><p></p><p>His birthday is called Janmashtami.</p><p>It is a week after the first full moon after August 23.</p><p>Janmashtami is Thursday, September 7, this year, 2023.</p><p></p><p>Krishna was born in a place called Mathura.</p>",
+					"markdown": "Baby Krishna was born at midnight.\n\nHis mother was Queen Devaki and his dad was King Vasudeva.\n\n\n\nHis birthday is called Janmashtami.\n\nIt is a week after the first full moon after August 23.\n\nJanmashtami is Thursday, September 7, this year, 2023.\n\n\n\nKrishna was born in a place called Mathura.\n\n"
 				}
 			}
 		});
