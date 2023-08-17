@@ -5367,23 +5367,6 @@ function create_fragment$8(ctx) {
 						}
 					},
 					{
-						"date": "2023-08-03",
-						"link": {
-							"url": "/2023-07/maths/maths-week-2",
-							"label": "2-matrices"
-						},
-						"thumbnail": {
-							"alt": "",
-							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690311663162EngMath_TensorProduct_Example_02_02.png",
-							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690311663162EngMath_TensorProduct_Example_02_02.png",
-							"size": null
-						},
-						"description": {
-							"html": "<h1 id=\"week2\">week 2</h1>",
-							"markdown": "# week 2"
-						}
-					},
-					{
 						"date": "2023-08-02",
 						"link": {
 							"url": "/2023-08/full-moon",
@@ -5398,40 +5381,6 @@ function create_fragment$8(ctx) {
 						"description": {
 							"html": "<h1 id=\"tonight\">tonight</h1>",
 							"markdown": "# tonight"
-						}
-					},
-					{
-						"date": "2023-07-30",
-						"link": {
-							"url": "/2023-07/free/free-we-too",
-							"label": "free we too"
-						},
-						"thumbnail": {
-							"alt": "",
-							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1092769150000stoneskull.jpg",
-							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1092769150000stoneskull.jpg",
-							"size": null
-						},
-						"description": {
-							"html": "<h1 id=\"conclusion\">conclusion?</h1>",
-							"markdown": "# conclusion?"
-						}
-					},
-					{
-						"date": "2023-07-28",
-						"link": {
-							"url": "/2023-07/the-end",
-							"label": "the end"
-						},
-						"thumbnail": {
-							"alt": "neigh",
-							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690501117772horuseye.webp",
-							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1690501117772horuseye.webp",
-							"size": 8
-						},
-						"description": {
-							"html": "<p>nigh</p>",
-							"markdown": "nigh"
 						}
 					}
 				]
