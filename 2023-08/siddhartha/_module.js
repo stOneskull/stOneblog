@@ -6291,8 +6291,8 @@ function create_fragment$g(ctx) {
 				title: "siddhartha",
 				description: "2 men",
 				content: {
-					"html": "<p>i decided that i will read another book by hermann hesse.<br>and it will be the glass bead game.</p><p>the last book choice is the alchemist,<br>another favourite, like shantaram, i want to re-read.</p><p></p><p></p><blockquote><p>calm the mind and read..</p></blockquote>",
-					"markdown": "i decided that i will read another book by hermann hesse.<br>\n\nand it will be the glass bead game.\n\nthe last book choice is the alchemist,<br>\n\nanother favourite, like shantaram, i want to re-read.\n\n\n\n\n\n> calm the mind and read..\n\n"
+					"html": "<p>i decided that i will read another book by hermann hesse.<br>and it will be the glass bead game.</p><p>the last book choice will either be<br>the alchemist or the peaceful warrior,<br>both favourites, like shantaram, i want to re-read.</p><p></p><p></p><blockquote><p>calm the mind and read..</p></blockquote>",
+					"markdown": "i decided that i will read another book by hermann hesse.<br>\n\nand it will be the glass bead game.\n\nthe last book choice will either be<br>\n\nthe alchemist or the peaceful warrior,<br>\n\nboth favourites, like shantaram, i want to re-read.\n\n\n\n\n\n> calm the mind and read..\n\n"
 				}
 			}
 		});
