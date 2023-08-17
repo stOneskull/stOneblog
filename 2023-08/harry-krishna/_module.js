@@ -7008,14 +7008,14 @@ function create_fragment$j(ctx) {
 				heading: "",
 				items: [
 					{
-						"title": "Some other names for Krishna include:",
+						"title": "Some other names for Krishna include",
 						"description": {
-							"html": "<p>Mohan (\"enchanter\"); <br>\nGovinda (\"chief herdsman\");<br>\nKeev (\"prankster\"); <br>\nGopala (\"Protector of the 'Go'\", which means \"soul\" or \"the cows\").\n<br><br>\nJagannatha (\"Lord of the World\") is a form or incarnation of Krishna, <br>\nworshipped in the Puri Hindu temple, and surrounding areas in Eastern India.</p>",
-							"markdown": "\nMohan (\"enchanter\"); <br>\nGovinda (\"chief herdsman\");<br>\nKeev (\"prankster\"); <br>\nGopala (\"Protector of the 'Go'\", which means \"soul\" or \"the cows\").\n<br><br>\nJagannatha (\"Lord of the World\") is a form or incarnation of Krishna, <br>\nworshipped in the Puri Hindu temple, and surrounding areas in Eastern India."
+							"html": "<p><br>Mohan (\"enchanter\") <br>\nGovinda (\"chief herdsman\")<br>\nKeev (\"prankster\") <br>\nGopala (\"Protector of the 'Go'\", which means \"soul\" or \"the cows\").\n<br><br>\nJagannatha (\"Lord of the World\") is a form or incarnation of Krishna, <br>\nworshipped in the Puri Hindu temple, and surrounding areas in Eastern India.</p>",
+							"markdown": "<br>Mohan (\"enchanter\") <br>\nGovinda (\"chief herdsman\")<br>\nKeev (\"prankster\") <br>\nGopala (\"Protector of the 'Go'\", which means \"soul\" or \"the cows\").\n<br><br>\nJagannatha (\"Lord of the World\") is a form or incarnation of Krishna, <br>\nworshipped in the Puri Hindu temple, and surrounding areas in Eastern India."
 						}
 					},
 					{
-						"title": "Krishna can be referred to as: ",
+						"title": "Krishna can be referred to as",
 						"description": {
 							"html": "<p><br>Vāsudeva-Krishna, Murlidhar, or Chakradhar.\n<br><br>\nThe honorary title \"Sri\" is used before his name..\n<br><br>\nShri Krishna</p>",
 							"markdown": "<br>Vāsudeva-Krishna, Murlidhar, or Chakradhar.\n<br><br>\nThe honorary title \"Sri\" is used before his name..\n<br><br>\nShri Krishna"
