@@ -5316,6 +5316,23 @@ function create_fragment$8(ctx) {
 				heading: "Latest",
 				items: [
 					{
+						"date": "2023-08-14",
+						"link": {
+							"url": "/2023-08/siddhartha",
+							"label": "siddhartha"
+						},
+						"thumbnail": {
+							"alt": "gautama",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692243232638543900270.jpg",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692243232638543900270.jpg",
+							"size": 85
+						},
+						"description": {
+							"html": "<h1 id=\"2men\">2 men</h1>",
+							"markdown": "# 2 men"
+						}
+					},
+					{
 						"date": "2023-08-10",
 						"link": {
 							"url": "/2023-08/laksa",
