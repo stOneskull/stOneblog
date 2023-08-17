@@ -6463,7 +6463,7 @@ function create_fragment$j(ctx) {
 				title: "krisna",
 				description: "hallelujah",
 				superhead: "2023-08-12",
-				heading: "hurry krisna\n"
+				heading: "Hurry Kṛṣṇa"
 			}
 		});
 
