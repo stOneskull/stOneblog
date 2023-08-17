@@ -5316,6 +5316,23 @@ function create_fragment$6(ctx) {
 						}
 					},
 					{
+						"date": "2023-08-13",
+						"link": {
+							"url": "/2023-08/humanism",
+							"label": "humanism"
+						},
+						"thumbnail": {
+							"alt": "humanism logo",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692267892939th-3723510551.jpeg",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692267892939th-3723510551.jpeg",
+							"size": 4
+						},
+						"description": {
+							"html": "<h1 id=\"hmm\">hmm</h1>",
+							"markdown": "# hmm"
+						}
+					},
+					{
 						"date": "2023-08-14",
 						"link": {
 							"url": "/2023-08/siddhartha",
