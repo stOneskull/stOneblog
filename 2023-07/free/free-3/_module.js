@@ -5265,7 +5265,7 @@ function create_fragment$a(ctx) {
 					"size": 8
 				},
 				image: { "alt": "", "url": "" },
-				title: "we free",
+				title: "free 3",
 				description: "rolling rolling rollling"
 			}
 		});
@@ -5279,7 +5279,7 @@ function create_fragment$a(ctx) {
 					"size": 8
 				},
 				image: { "alt": "", "url": "" },
-				title: "we free",
+				title: "free 3",
 				description: "rolling rolling rollling",
 				logo: {
 					"image": {
@@ -5318,7 +5318,7 @@ function create_fragment$a(ctx) {
 					"url": "",
 					"size": null
 				},
-				title: "we free",
+				title: "free 3",
 				description: "rolling rolling rollling",
 				superhead: "2023-08-19 ",
 				heading: ""
@@ -5334,7 +5334,7 @@ function create_fragment$a(ctx) {
 					"size": 8
 				},
 				image: { "alt": "", "url": "" },
-				title: "we free",
+				title: "free 3",
 				description: "rolling rolling rollling",
 				content: {
 					"html": "<p>&lt;-- <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link\" href=\"https://www.stoneskull.me/2023-07/free/free-we-too\">previous</a></p><h1>free 3</h1><p></p><p>i ended up putting pop os! on my laptop.</p><p>i don't mind it. at first i wanted to change to kde or xforce, and i don't like the automatic tiling.. i turned that off. but it's alright. </p><p>i never really used gnome and i tried my first extension. i wanted to have different wallpaper on each workspace, and that's how i found a way to do it. sometimes it's fun just tweaking.</p><p>i came <em>this</em> close to learning vim. then i was going to go with emacs. now i'm going with neither. it was a nice fantasy dream. for a little while. i use a desktop and a laptop. i like that i can have vs code all magically connected, and with github, and stuff. i'm lazy like that. i'm still using filezilla instead of learning bash. oh well. i'm too worried about that. what's important is the writing of the stuff.</p><p>i started this blog to write. to free my mind. </p><p>it's taken time away from the science and mathematics. but brought me closer to them. coding has been put in the drawer for a spell. but it will be fine blue cheese in the morning.. </p><p>no pictures again today. kinda keyboard-orientated. </p><p>typing on my mad $200 keyboard. feeling free.</p>",
@@ -5352,7 +5352,7 @@ function create_fragment$a(ctx) {
 					"size": 8
 				},
 				image: { "alt": "", "url": "" },
-				title: "we free",
+				title: "free 3",
 				description: "rolling rolling rollling",
 				content: {
 					"html": "<h1>and then</h1><p></p><p>kali..</p><p>i tried a live installation on a usb stick but either the stick was too high of a capacity or it is a dud. i will try again very soon. i like the idea of having kali on a flash drive. i could stick it in any lappy with a heartbeat. shwing!</p><p></p>",
@@ -5373,7 +5373,7 @@ function create_fragment$a(ctx) {
 					"alt": "kali",
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/OIP.webp1690499240960"
 				},
-				title: "we free",
+				title: "free 3",
 				description: "rolling rolling rollling"
 			}
 		});
@@ -5387,7 +5387,7 @@ function create_fragment$a(ctx) {
 					"size": 8
 				},
 				image: { "alt": "", "url": "" },
-				title: "we free",
+				title: "free 3",
 				description: "rolling rolling rollling",
 				content: {
 					"html": "<p>more next week..<br></p><p></p>",
@@ -5405,7 +5405,7 @@ function create_fragment$a(ctx) {
 					"size": 8
 				},
 				image: { "alt": "", "url": "" },
-				title: "we free",
+				title: "free 3",
 				description: "rolling rolling rollling",
 				logo: {
 					"image": {
@@ -5439,7 +5439,7 @@ function create_fragment$a(ctx) {
 					"size": 8
 				},
 				image: { "alt": "", "url": "" },
-				title: "we free",
+				title: "free 3",
 				description: "rolling rolling rollling",
 				heading: "",
 				email: "",
@@ -5494,7 +5494,7 @@ function create_fragment$a(ctx) {
 					"size": 8
 				},
 				image: { "alt": "", "url": "" },
-				title: "we free",
+				title: "free 3",
 				description: "rolling rolling rollling"
 			}
 		});
