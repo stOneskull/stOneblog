@@ -5341,6 +5341,23 @@ function create_fragment$8(ctx) {
 						}
 					},
 					{
+						"date": "2023-08-12",
+						"link": {
+							"url": "/2023-08/harry-krishna",
+							"label": "hurry krisna"
+						},
+						"thumbnail": {
+							"alt": "hare krishna",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1691993013152krisna.jpeg",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1691993013152krisna.jpeg",
+							"size": null
+						},
+						"description": {
+							"html": "<h1 id=\"love\">love</h1>",
+							"markdown": "# love"
+						}
+					},
+					{
 						"date": "2023-08-10",
 						"link": {
 							"url": "/2023-08/laksa",
