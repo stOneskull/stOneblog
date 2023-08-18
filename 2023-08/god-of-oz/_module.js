@@ -5440,8 +5440,8 @@ function create_fragment$a(ctx) {
 				title: "dunno",
 				description: "in the aether",
 				content: {
-					"html": "<h1 id=\"book\">book</h1>\n<p>i'm writing a book. it's called God of Oz.</p>\n<p>it <em>is</em> set in the same connected world as the Wizard of Oz. It isn't a sequel to that. it's not about dorothy. there is a lion but a very different lion. more like aslan from narnia. his name is solarius. but that's enough for now on that. i said before i didn't want to jinx it. ha.</p>\n<p>below is just a draft idea of the cover. i will not be using the word whimsical at all:</p>",
-					"markdown": "# book\n\ni'm writing a book. it's called God of Oz.\n\nit *is* set in the same connected world as the Wizard of Oz. It isn't a sequel to that. it's not about dorothy. there is a lion but a very different lion. more like aslan from narnia. his name is solarius. but that's enough for now on that. i said before i didn't want to jinx it. ha.\n\nbelow is just a draft idea of the cover. i will not be using the word whimsical at all:\n\n"
+					"html": "<h1>book</h1><p>i'm writing a book. it's called God of Oz.</p><p>it <em>is</em> set in the same connected world as the Wizard of Oz. It isn't a sequel to that. it's not about dorothy. there is a lion but a very different lion. more like aslan from narnia. his name is solarius. but that's enough for now on that. i said before i didn't want to jinx it. ha.</p><p></p><p>below is just a draft idea of the cover. </p><p>i will not be using the word whimsical at all:</p>",
+					"markdown": "# book\n\ni'm writing a book. it's called God of Oz.\n\nit *is* set in the same connected world as the Wizard of Oz. It isn't a sequel to that. it's not about dorothy. there is a lion but a very different lion. more like aslan from narnia. his name is solarius. but that's enough for now on that. i said before i didn't want to jinx it. ha.\n\n\n\nbelow is just a draft idea of the cover.\n\ni will not be using the word whimsical at all:\n\n"
 				}
 			}
 		});
