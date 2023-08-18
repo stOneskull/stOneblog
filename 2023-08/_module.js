@@ -5373,6 +5373,23 @@ function create_fragment$6(ctx) {
 							"html": "<h1 id=\"grains\">grains</h1>",
 							"markdown": "# grains"
 						}
+					},
+					{
+						"date": "2023-08-18",
+						"link": {
+							"url": "/2023-08/god-of-oz",
+							"label": "god of oz"
+						},
+						"thumbnail": {
+							"alt": "god of oz",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1674958923774My%20project-1.png",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1674958923774My%20project-1.png",
+							"size": 90
+						},
+						"description": {
+							"html": "<h1 id=\"adventure\">adventure</h1>",
+							"markdown": "# adventure"
+						}
 					}
 				]
 			}
