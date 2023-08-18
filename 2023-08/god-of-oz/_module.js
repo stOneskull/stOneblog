@@ -5446,12 +5446,12 @@ function create_fragment$b(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "draft",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/16876580191376f839fbb-2375-457e-a93c-68e8a55df2c3.jpg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/16876580191376f839fbb-2375-457e-a93c-68e8a55df2c3.jpg",
+					"size": 8
 				},
-				title: "dunno",
+				title: "god of oz",
 				description: "in the aether"
 			}
 		});
@@ -5465,12 +5465,12 @@ function create_fragment$b(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "draft",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/16876580191376f839fbb-2375-457e-a93c-68e8a55df2c3.jpg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/16876580191376f839fbb-2375-457e-a93c-68e8a55df2c3.jpg",
+					"size": 8
 				},
-				title: "dunno",
+				title: "god of oz",
 				description: "in the aether",
 				logo: {
 					"image": {
@@ -5509,7 +5509,7 @@ function create_fragment$b(ctx) {
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1673609247972Harmony.jpg",
 					"size": 31
 				},
-				title: "dunno",
+				title: "god of oz",
 				description: "in the aether",
 				superhead: "2023-08-18",
 				heading: "god of oz"
@@ -5525,12 +5525,12 @@ function create_fragment$b(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "draft",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/16876580191376f839fbb-2375-457e-a93c-68e8a55df2c3.jpg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/16876580191376f839fbb-2375-457e-a93c-68e8a55df2c3.jpg",
+					"size": 8
 				},
-				title: "dunno",
+				title: "god of oz",
 				description: "in the aether",
 				content: {
 					"html": "<h1>book</h1><p>i'm writing a book. it's called God of Oz.</p><p>it <em>is</em> set in the same connected world as the Wizard of Oz. It isn't a sequel to that. it's not about dorothy. there is a lion but a very different lion. more like aslan from narnia. his name is solarius. but that's enough for now on that. i said before i didn't want to jinx it. ha.</p><p>in case someone (or somebot) steals my idea(s): i haven't published my book so it isn't me! my version will be my version :) when it's ready.</p><p></p><p>below is just a draft idea of the cover. </p><p>i will not be using the word whimsical at all:</p>",
@@ -5551,7 +5551,7 @@ function create_fragment$b(ctx) {
 					"alt": "draft",
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/0369c2ba-f6e9-4b43-bcb6-87d8e2db2543.jpg1687674519833"
 				},
-				title: "dunno",
+				title: "god of oz",
 				description: "in the aether"
 			}
 		});
@@ -5568,7 +5568,7 @@ function create_fragment$b(ctx) {
 					"alt": "meditate",
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/IMG20230814122643.webp1692324674806"
 				},
-				title: "dunno",
+				title: "god of oz",
 				description: "in the aether",
 				superhead: "",
 				heading: ""
@@ -5584,16 +5584,16 @@ function create_fragment$b(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "draft",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/16876580191376f839fbb-2375-457e-a93c-68e8a55df2c3.jpg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/16876580191376f839fbb-2375-457e-a93c-68e8a55df2c3.jpg",
+					"size": 8
 				},
-				title: "dunno",
+				title: "god of oz",
 				description: "in the aether",
 				content: {
-					"html": "<h1>email</h1><p>any communication related to God of Oz will be organized at <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link\" href=\"mailto:godofoz@hotmail.com\">godofoz@hotmail.com</a>  </p>",
-					"markdown": "# email\n\nany communication related to God of Oz will be organized at [godofoz@hotmail.com](<mailto:godofoz@hotmail.com>)\n\n"
+					"html": "<h1>email</h1><p>communication related to God of Oz is organized at <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link link\" href=\"mailto:godofoz@hotmail.com\">godofoz@hotmail.com</a></p>",
+					"markdown": "# email\n\ncommunication related to God of Oz is organized at [godofoz@hotmail.com](<mailto:godofoz@hotmail.com>)\n\n"
 				}
 			}
 		});
@@ -5612,7 +5612,7 @@ function create_fragment$b(ctx) {
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/16876580191376f839fbb-2375-457e-a93c-68e8a55df2c3.jpg",
 					"size": 8
 				},
-				title: "dunno",
+				title: "god of oz",
 				description: "in the aether"
 			}
 		});
@@ -5626,12 +5626,12 @@ function create_fragment$b(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "draft",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/16876580191376f839fbb-2375-457e-a93c-68e8a55df2c3.jpg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/16876580191376f839fbb-2375-457e-a93c-68e8a55df2c3.jpg",
+					"size": 8
 				},
-				title: "dunno",
+				title: "god of oz",
 				description: "in the aether",
 				logo: {
 					"image": {
@@ -5665,12 +5665,12 @@ function create_fragment$b(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "draft",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/16876580191376f839fbb-2375-457e-a93c-68e8a55df2c3.jpg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/16876580191376f839fbb-2375-457e-a93c-68e8a55df2c3.jpg",
+					"size": 8
 				},
-				title: "dunno",
+				title: "god of oz",
 				description: "in the aether",
 				heading: "",
 				email: "",
@@ -5725,12 +5725,12 @@ function create_fragment$b(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "draft",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/16876580191376f839fbb-2375-457e-a93c-68e8a55df2c3.jpg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/16876580191376f839fbb-2375-457e-a93c-68e8a55df2c3.jpg",
+					"size": 8
 				},
-				title: "dunno",
+				title: "god of oz",
 				description: "in the aether"
 			}
 		});
