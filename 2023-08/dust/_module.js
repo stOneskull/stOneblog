@@ -5064,10 +5064,10 @@ function create_fragment$7(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "dust",
-					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692320485104dust2.jpeg",
-					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692320485104dust2.jpeg",
-					"size": 6
+					"alt": "",
+					"src": "",
+					"url": "",
+					"size": null
 				},
 				title: "dust",
 				description: "atomic grains",
