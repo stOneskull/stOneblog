@@ -5307,7 +5307,7 @@ function create_fragment$8(ctx) {
 				image: { "alt": "", "url": "" },
 				title: "blOg",
 				description: "bit of fun and expression",
-				heading: "Latest",
+				heading: "Cherries",
 				items: [
 					{
 						"date": "2023-08-17",
