@@ -5421,6 +5421,23 @@ function create_fragment$6(ctx) {
 							"html": "<h1 id=\"lxdvsdocker\">lxd vs docker</h1>",
 							"markdown": "# lxd vs docker"
 						}
+					},
+					{
+						"date": "2023-08-21",
+						"link": {
+							"url": "/2023-07/maths/maths-3",
+							"label": "maths 3"
+						},
+						"thumbnail": {
+							"alt": "tree",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
+							"size": 29
+						},
+						"description": {
+							"html": "<h1 id=\"thetaxi\">the taxi</h1>",
+							"markdown": "# the taxi"
+						}
 					}
 				]
 			}
