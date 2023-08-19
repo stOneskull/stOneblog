@@ -5352,8 +5352,8 @@ function create_fragment$a(ctx) {
 				title: "LXD",
 				description: "lxd vs docker",
 				content: {
-					"html": "<h2>lxd vs docker</h2><h4><em>hey what..</em></h4><p></p><p>i hadn't heard of lxd before..</p><p>i mentioned before that i got a nas. and besides being storage, it can also use its computer to run stuff. media apps like plex, data back-up solutions, and these things called containers..</p><p>i used docker a few years ago.. hardly remember it. </p><p>so yeah, i'm going to learn about both these container things at the same time.</p>",
-					"markdown": "## lxd vs docker\n\n#### *hey what..*\n\n\n\ni hadn't heard of lxd before..\n\ni mentioned before that i got a nas. and besides being storage, it can also use its computer to run stuff. media apps like plex, data back-up solutions, and these things called containers..\n\ni used docker a few years ago.. hardly remember it.\n\nso yeah, i'm going to learn about both these container things at the same time.\n\n"
+					"html": "<p><a href=\"https://www.stoneskull.me/2023-07/web\"><-- previously</a>\n<br><br></p>\n<h2 id=\"lxdvsdocker\">lxd vs docker</h2>\n<h4 id=\"heywhat\"><em>hey what..</em></h4>\n<p><br></p>\n<p>i hadn't heard of lxd before..</p>\n<p>i mentioned before that i got a nas. and besides being storage, it can also use its computer to run stuff. media apps like plex, data back-up solutions, and these things called containers..</p>\n<p>i used docker a few years ago.. hardly remember it.</p>\n<p>so yeah, i'm going to learn about both these container things at the same time.</p>",
+					"markdown": "[<-- previously](https://www.stoneskull.me/2023-07/web)\n<br><br>\n\n## lxd vs docker\n\n#### *hey what..*\n\n<br>\n\ni hadn't heard of lxd before..\n\ni mentioned before that i got a nas. and besides being storage, it can also use its computer to run stuff. media apps like plex, data back-up solutions, and these things called containers..\n\ni used docker a few years ago.. hardly remember it.\n\nso yeah, i'm going to learn about both these container things at the same time.\n\n"
 				}
 			}
 		});
@@ -5415,8 +5415,8 @@ function create_fragment$a(ctx) {
 				title: "LXD",
 				description: "lxd vs docker",
 				content: {
-					"html": "<h2>an os and an application</h2><h4><em>system containers and application containers</em></h4><p></p><p>this is the main difference, of both the two types of container, and between lxd and docker.</p>",
-					"markdown": "## an os and an application\n\n#### *system containers and application containers*\n\n\n\nthis is the main difference, of both the two types of container, and between lxd and docker.\n\n"
+					"html": "<h2>an os and an application</h2><h4><em>system containers and application containers</em></h4><p></p><p>this is the main difference, of both the two types of container, and between lxd and docker. lxd runs system containers. docker runs application containers. the complexities and complications, the contradictions and arguments, the other space and another time is where i'll leave them.</p><p>lxd seems like wsl, or virtualbox, where it it can run an operating system. </p><p>i think i can install ubuntu on my nas this way. i could choose a different one but i'm basically ubuntu everywhere anyway.. </p><p>i'm going to try lxd now..</p>",
+					"markdown": "## an os and an application\n\n#### *system containers and application containers*\n\n\n\nthis is the main difference, of both the two types of container, and between lxd and docker. lxd runs system containers. docker runs application containers. the complexities and complications, the contradictions and arguments, the other space and another time is where i'll leave them.\n\nlxd seems like wsl, or virtualbox, where it it can run an operating system.\n\ni think i can install ubuntu on my nas this way. i could choose a different one but i'm basically ubuntu everywhere anyway..\n\ni'm going to try lxd now..\n\n"
 				}
 			}
 		});
