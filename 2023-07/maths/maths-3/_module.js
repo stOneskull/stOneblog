@@ -5839,8 +5839,8 @@ function create_fragment$e(ctx) {
 				title: "maths 3",
 				description: "tree",
 				content: {
-					"html": "<h1>The Dream</h1><p><em>the tree isn't God.. the tree is a Dream</em></p><p><em>God dreams.</em></p><p></p><p>as well as the player having their tree, they have their god.</p><p>a player's god is a dream, an aspect, of God.</p><p>God dreams up the god who scattered you as a seed. He is behind the door. Grow..</p>",
-					"markdown": "# The Dream\n\n*the tree isn't God.. the tree is a Dream*\n\n*God dreams.*\n\n\n\nas well as the player having their tree, they have their god.\n\na player's god is a dream, an aspect, of God.\n\nGod dreams up the god who scattered you as a seed. He is behind the door. Grow..\n\n"
+					"html": "<h1>The Dream</h1><p><em>the tree isn't God.. the tree is a Dream</em></p><p><em>God dreams.</em></p><p></p><p>as well as the player having their tree, they have their god.</p><p>a player's god is a dream, an aspect, of God.</p><p>God dreams up the god who scattered you as a seed. </p><p>He is behind the door.. grow now.</p>",
+					"markdown": "# The Dream\n\n*the tree isn't God.. the tree is a Dream*\n\n*God dreams.*\n\n\n\nas well as the player having their tree, they have their god.\n\na player's god is a dream, an aspect, of God.\n\nGod dreams up the god who scattered you as a seed.\n\nHe is behind the door.. grow now.\n\n"
 				}
 			}
 		});
