@@ -5737,8 +5737,8 @@ function create_fragment$d(ctx) {
 				title: "maths 3",
 				description: "tree",
 				content: {
-					"html": "<p><em>and i gotta remember to talk about taxis.</em></p><p><em>that'll be here soon.</em></p><p><em>taxis are shortcuts..</em></p><p><em>portals but with many more dimensions..</em></p><p><em>like the deLorean or the more modern, wild west train.</em></p><p></p>",
-					"markdown": "*and i gotta remember to talk about taxis.*\n\n*that'll be here soon.*\n\n*taxis are shortcuts..*\n\n*portals but with many more dimensions..*\n\n*like the deLorean or the more modern, wild west train.*\n\n\n\n"
+					"html": "<h1>Taxis</h1><p><em>taxis are portals but with many more dimensions..</em></p><p><em>like the deLorean or the more modern, wild west train.</em></p><p></p><p>rooms can be connected by taxi. not all rooms. rooms that have that capability.</p><p>you must have a driver to drive you, a location address, and the money to pay.</p><p>you get these things in the game. ie. you get driver's numbers you can save in your phone, you come across locations by foot normally. you start on foot. that's the only way to travel at the start. and then you get phone numbers and location experience and memory, and you get money along the way too.</p><p></p>",
+					"markdown": "# Taxis\n\n*taxis are portals but with many more dimensions..*\n\n*like the deLorean or the more modern, wild west train.*\n\n\n\nrooms can be connected by taxi. not all rooms. rooms that have that capability.\n\nyou must have a driver to drive you, a location address, and the money to pay.\n\nyou get these things in the game. ie. you get driver's numbers you can save in your phone, you come across locations by foot normally. you start on foot. that's the only way to travel at the start. and then you get phone numbers and location experience and memory, and you get money along the way too.\n\n\n\n"
 				}
 			}
 		});
