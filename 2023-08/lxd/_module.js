@@ -5280,8 +5280,8 @@ function create_fragment$a(ctx) {
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689875074261491167_boxing-matches_t285.webp",
 					"size": 13
 				},
-				title: "web",
-				description: "flask vs django"
+				title: "LXD",
+				description: "lxd vs docker"
 			}
 		});
 
@@ -5299,8 +5299,8 @@ function create_fragment$a(ctx) {
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689875074261491167_boxing-matches_t285.webp",
 					"size": 13
 				},
-				title: "web",
-				description: "flask vs django",
+				title: "LXD",
+				description: "lxd vs docker",
 				logo: {
 					"image": {
 						"alt": "stOne",
@@ -5338,8 +5338,8 @@ function create_fragment$a(ctx) {
 					"url": "",
 					"size": null
 				},
-				title: "web",
-				description: "flask vs django",
+				title: "LXD",
+				description: "lxd vs docker",
 				superhead: "2023-08-20",
 				heading: ""
 			}
@@ -5359,8 +5359,8 @@ function create_fragment$a(ctx) {
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689875074261491167_boxing-matches_t285.webp",
 					"size": 13
 				},
-				title: "web",
-				description: "flask vs django",
+				title: "LXD",
+				description: "lxd vs docker",
 				content: {
 					"html": "<h2>lxd vs docker</h2><h4><em>hey what..</em></h4><p></p><p>i was going to call the headline 'clickbait' and then talk about the title..</p><p>but that's what clickbait is. just having this title will bring in some traffic.</p><p>even though this article doesn't really answer the stupid question.</p><p>they are both good and there a pros and cons about both.</p>",
 					"markdown": "## lxd vs docker\n\n#### *hey what..*\n\n\n\ni was going to call the headline 'clickbait' and then talk about the title..\n\nbut that's what clickbait is. just having this title will bring in some traffic.\n\neven though this article doesn't really answer the stupid question.\n\nthey are both good and there a pros and cons about both.\n\n"
@@ -5382,8 +5382,8 @@ function create_fragment$a(ctx) {
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689874837193django1.jpg",
 					"size": 59
 				},
-				title: "web",
-				description: "flask vs django"
+				title: "LXD",
+				description: "lxd vs docker"
 			}
 		});
 
@@ -5401,8 +5401,8 @@ function create_fragment$a(ctx) {
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689874875578OIP%20(1).jpeg",
 					"size": 12
 				},
-				title: "web",
-				description: "flask vs django"
+				title: "LXD",
+				description: "lxd vs docker"
 			}
 		});
 
@@ -5420,8 +5420,8 @@ function create_fragment$a(ctx) {
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689875074261491167_boxing-matches_t285.webp",
 					"size": 13
 				},
-				title: "web",
-				description: "flask vs django",
+				title: "LXD",
+				description: "lxd vs docker",
 				content: {
 					"html": "<h2>more to come</h2><h4><em>there is a lot to talk about re: django and flask</em></h4><p></p><p>i've used both and will be writing more about them.</p><p>stay tuned my friends.</p>",
 					"markdown": "## more to come\n\n#### *there is a lot to talk about re: django and flask*\n\n\n\ni've used both and will be writing more about them.\n\nstay tuned my friends.\n\n"
@@ -5443,8 +5443,8 @@ function create_fragment$a(ctx) {
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689875074261491167_boxing-matches_t285.webp",
 					"size": 13
 				},
-				title: "web",
-				description: "flask vs django",
+				title: "LXD",
+				description: "lxd vs docker",
 				logo: {
 					"image": {
 						"alt": "stOne",
@@ -5482,8 +5482,8 @@ function create_fragment$a(ctx) {
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689875074261491167_boxing-matches_t285.webp",
 					"size": 13
 				},
-				title: "web",
-				description: "flask vs django",
+				title: "LXD",
+				description: "lxd vs docker",
 				heading: "",
 				email: "",
 				social_links: [
@@ -5542,8 +5542,8 @@ function create_fragment$a(ctx) {
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689875074261491167_boxing-matches_t285.webp",
 					"size": 13
 				},
-				title: "web",
-				description: "flask vs django"
+				title: "LXD",
+				description: "lxd vs docker"
 			}
 		});
 
