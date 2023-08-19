@@ -5415,8 +5415,8 @@ function create_fragment$a(ctx) {
 				title: "LXD",
 				description: "lxd vs docker",
 				content: {
-					"html": "<h2>more to come</h2><h4><em>there is a lot to talk about re: lxd v docker</em></h4><p></p><p>stay tuned my friends.</p>",
-					"markdown": "## more to come\n\n#### *there is a lot to talk about re: lxd v docker*\n\n\n\nstay tuned my friends.\n\n"
+					"html": "<h2>an os and an application</h2><h4><em>system containers and application containers</em></h4><p></p><p>this is the main difference, of both the two types of container, and between lxd and docker.</p>",
+					"markdown": "## an os and an application\n\n#### *system containers and application containers*\n\n\n\nthis is the main difference, of both the two types of container, and between lxd and docker.\n\n"
 				}
 			}
 		});
