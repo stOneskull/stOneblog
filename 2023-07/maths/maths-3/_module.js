@@ -5607,12 +5607,12 @@ function create_fragment$e(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "tree",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
+					"size": 29
 				},
-				title: "maths",
+				title: "maths 3",
 				description: "tree"
 			}
 		});
@@ -5626,12 +5626,12 @@ function create_fragment$e(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "tree",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
+					"size": 29
 				},
-				title: "maths",
+				title: "maths 3",
 				description: "tree",
 				logo: {
 					"image": {
@@ -5670,7 +5670,7 @@ function create_fragment$e(ctx) {
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
 					"size": 29
 				},
-				title: "maths",
+				title: "maths 3",
 				description: "tree",
 				superhead: "2023-08-21",
 				heading: "maths 3"
@@ -5686,16 +5686,16 @@ function create_fragment$e(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "tree",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
+					"size": 29
 				},
-				title: "maths",
+				title: "maths 3",
 				description: "tree",
 				content: {
-					"html": "<h1 id=\"nodesandtreesandbinaryand3s\">nodes and trees and binary and 3s</h1>\n<p><em>for a game i'm making, i want the map to be a tree, and each room in the map is a node.</em></p>\n<p><em>i've been thinking about it for quite a while..</em></p>\n<p><em>i've written it different ways and stopped. now i'm gonna solve it.</em></p>\n<p>note: i have no idea what i am talking about</p>\n<p>if read: <a href=\"https://www.stoneskull.me/2023-07/maths/maths-week-1\">zoom to next week</a></p>",
-					"markdown": "# nodes and trees and binary and 3s\n\n\n\n*for a game i'm making, i want the map to be a tree, and each room in the map is a node.*\n\n*i've been thinking about it for quite a while..*\n\n*i've written it different ways and stopped. now i'm gonna solve it.*\n\nnote: i have no idea what i am talking about\n\nif read: [zoom to next week](https://www.stoneskull.me/2023-07/maths/maths-week-1)\n\n\n\n"
+					"html": "<p><a href=\"https://www.stoneskull.me/2023-07/maths/maths-week-2\"><-- previously</a></p>\n<h1 id=\"nodesandtrees\">nodes and trees</h1>\n<p><em>for a game i'm making, i want the map to be a tree, and each room in the map is a node.</em></p>\n<p><em>i've been thinking about it for quite a while..</em></p>\n<p><em>i've written it different ways and stopped. now i'm gonna solve it.</em></p>\n<p>note: i have no idea what i am talking about</p>",
+					"markdown": "[<-- previously](https://www.stoneskull.me/2023-07/maths/maths-week-2)\n\n# nodes and trees\n\n*for a game i'm making, i want the map to be a tree, and each room in the map is a node.*\n\n*i've been thinking about it for quite a while..*\n\n*i've written it different ways and stopped. now i'm gonna solve it.*\n\nnote: i have no idea what i am talking about\n\n\n"
 				}
 			}
 		});
@@ -5709,12 +5709,12 @@ function create_fragment$e(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "tree",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
+					"size": 29
 				},
-				title: "maths",
+				title: "maths 3",
 				description: "tree",
 				content: {
 					"html": "<p></p><p><em>i'm kinda tired of trying to learn the right way of doing it..</em></p><p>i'm just diving in.</p><p><em>going to try my way..</em></p><p></p><p><em>i want a node to have six outputs..</em></p><p><em>n, e, s, w.. up and down</em></p><p></p>",
@@ -5735,7 +5735,7 @@ function create_fragment$e(ctx) {
 					"alt": "cube",
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/node.jpg1689751023002"
 				},
-				title: "maths",
+				title: "maths 3",
 				description: "tree"
 			}
 		});
@@ -5749,12 +5749,12 @@ function create_fragment$e(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "tree",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
+					"size": 29
 				},
-				title: "maths",
+				title: "maths 3",
 				description: "tree",
 				content: {
 					"html": "<p><em>if i make it that a room can have a maximum of three exits, then it will be easier.</em></p><p><em>so even though a room can have possible six exits, it'll never have them all..</em></p><p><em>i thought maybe it needs a minimum of 2.. but nah.</em></p><p><em>a node can't have 0 exits unless there is at least 1 path there thru an extra dimension. this counts as a path. and maybe there are nodes but with no way of commuting there. well, they can exist in a different way. maybe a communication path is something to think about. maybe there is infinity in zero.</em></p><p><em>1-exit rooms could be the root room, or special rooms that you don't travel through, you just visit. there can also be extra dimension travel available. but that applies to any node anyway..</em></p><p><em>i'm imagining a room that has an attic. the attic is considered another room in the game. another node. but anyway, the room exit to the attic, and the attic exit to the room. the attic will likely have just that 1 exit..</em></p><p><em>as the game/map gets generated differently each game, i might have to think about exit contexts. what exits are more likely based on the room type..</em></p><p></p>",
@@ -5772,12 +5772,12 @@ function create_fragment$e(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "tree",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
+					"size": 29
 				},
-				title: "maths",
+				title: "maths 3",
 				description: "tree",
 				content: {
 					"html": "<h1>maybe</h1><p></p><p><em>and maybe i won't have it great like a computer scientist should</em></p><p><em>but i will enjoy trying..</em></p><p><em>stay tuned..</em></p><p><em>i'll be scribbling...</em></p><p></p>",
@@ -5798,7 +5798,7 @@ function create_fragment$e(ctx) {
 					"alt": "2 power",
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/2power.jpg1689751277538"
 				},
-				title: "maths",
+				title: "maths 3",
 				description: "tree"
 			}
 		});
@@ -5812,12 +5812,12 @@ function create_fragment$e(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "tree",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
+					"size": 29
 				},
-				title: "maths",
+				title: "maths 3",
 				description: "tree",
 				content: {
 					"html": "<p><em>and i gotta remember to talk about taxis.</em></p><p><em>that'll be here soon.</em></p><p><em>taxis are shortcuts..</em></p><p><em>portals but with many more dimensions..</em></p><p><em>like the deLorean or the more modern, wild west train.</em></p><p></p>",
@@ -5835,12 +5835,12 @@ function create_fragment$e(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "tree",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
+					"size": 29
 				},
-				title: "maths",
+				title: "maths 3",
 				description: "tree",
 				content: {
 					"html": "<p><em>i'm not sure where i'm going with this.. what is a decimal place in binary?</em></p>\n<p><em>anyhoo, i'll write more on this next thursday</em></p>\n<p><code>columns = list(zip(*matrix))</code></p>\n<p>2023-07-27 - <a href=\"https://www.stoneskull.me/2023-07/maths/maths-week-1\">maths week 1</a></p>",
@@ -5858,12 +5858,12 @@ function create_fragment$e(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "tree",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
+					"size": 29
 				},
-				title: "maths",
+				title: "maths 3",
 				description: "tree",
 				logo: {
 					"image": {
@@ -5897,12 +5897,12 @@ function create_fragment$e(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "tree",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
+					"size": 29
 				},
-				title: "maths",
+				title: "maths 3",
 				description: "tree",
 				heading: "",
 				email: "",
@@ -5957,12 +5957,12 @@ function create_fragment$e(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "tree",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
+					"size": 29
 				},
-				title: "maths",
+				title: "maths 3",
 				description: "tree"
 			}
 		});
