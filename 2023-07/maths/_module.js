@@ -5986,8 +5986,8 @@ function create_fragment$h(ctx) {
 				title: "maths",
 				description: "tree",
 				content: {
-					"html": "<p><em>just a touch on binary..</em></p><p>what i find interesting is that in powers of the base number the 1 shifts over</p><p>2**1 = 10 .. 2**2 = 100 .. 2**3 = 1000</p><p>and then it's the same for decimal or other bases</p><p>10**1 = 10 .. 10**2 = 100 .. 10**3 = 1000</p><p>log2 100 = 2 .. log10 100 = 2<br>log2 1000 = 3 .. log10 1000 = 3 </p><p>just that we do an extra step of saying 100 = 4</p><p></p><p></p><p><em>in a binary tree, there are 2 paths forward and one path back..</em></p><p></p>",
-					"markdown": "*just a touch on binary..*\n\nwhat i find interesting is that in powers of the base number the 1 shifts over\n\n2\\*\\*1 = 10 .. 2\\*\\*2 = 100 .. 2\\*\\*3 = 1000\n\nand then it's the same for decimal or other bases\n\n10\\*\\*1 = 10 .. 10\\*\\*2 = 100 .. 10\\*\\*3 = 1000\n\nlog2 100 = 2 .. log10 100 = 2<br>\n\nlog2 1000 = 3 .. log10 1000 = 3\n\njust that we do an extra step of saying 100 = 4\n\n\n\n\n\n*in a binary tree, there are 2 paths forward and one path back..*\n\n\n\n"
+					"html": "<p><em>just a touch on binary..</em></p><p>what i find interesting is that in powers of the base number the 1 shifts over</p><p>2**1 = 10 .. 2**2 = 100 .. 2**3 = 1000</p><p>and then it's the same for decimal or other bases</p><p>10**1 = 10 .. 10**2 = 100 .. 10**3 = 1000</p><p>log2 100 = 2 .. log10 100 = 2<br>log2 1000 = 3 .. log10 1000 = 3</p><p></p><p></p><p><em>in a binary tree, there are 2 paths forward and one path back..</em></p><p></p>",
+					"markdown": "*just a touch on binary..*\n\nwhat i find interesting is that in powers of the base number the 1 shifts over\n\n2\\*\\*1 = 10 .. 2\\*\\*2 = 100 .. 2\\*\\*3 = 1000\n\nand then it's the same for decimal or other bases\n\n10\\*\\*1 = 10 .. 10\\*\\*2 = 100 .. 10\\*\\*3 = 1000\n\nlog2 100 = 2 .. log10 100 = 2<br>\n\nlog2 1000 = 3 .. log10 1000 = 3\n\n\n\n\n\n*in a binary tree, there are 2 paths forward and one path back..*\n\n\n\n"
 				}
 			}
 		});
@@ -6129,8 +6129,8 @@ function create_fragment$h(ctx) {
 				title: "maths",
 				description: "tree",
 				content: {
-					"html": "<p><em>and i gotta remember to talk about taxis.</em></p><p><em>that'll be here soon.</em></p><p><em>taxis are shortcuts..</em></p><p></p>",
-					"markdown": "*and i gotta remember to talk about taxis.*\n\n*that'll be here soon.*\n\n*taxis are shortcuts..*\n\n\n\n"
+					"html": "<p><em>and i gotta remember to talk about taxis.</em></p><p><em>that'll be here soon.</em></p><p><em>taxis are shortcuts..</em></p><p><em>portals but with many more dimensions..</em></p><p><em>like the deLorean or the more modern, wild west train.</em></p><p></p>",
+					"markdown": "*and i gotta remember to talk about taxis.*\n\n*that'll be here soon.*\n\n*taxis are shortcuts..*\n\n*portals but with many more dimensions..*\n\n*like the deLorean or the more modern, wild west train.*\n\n\n\n"
 				}
 			}
 		});
