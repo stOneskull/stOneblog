@@ -5423,8 +5423,8 @@ function create_fragment$a(ctx) {
 				title: "web",
 				description: "flask vs django",
 				content: {
-					"html": "<h2>more to come</h2><h4><em>there is a lot to talk about re: django and flask</em></h4><p></p><p>i've used both and will be writing more about them.</p><p>stay tuned my friends.</p>",
-					"markdown": "## more to come\n\n#### *there is a lot to talk about re: django and flask*\n\n\n\ni've used both and will be writing more about them.\n\nstay tuned my friends.\n\n"
+					"html": "<h2>django is big brother</h2><h4><em>no not like that</em></h4><p></p><p>if you were going to make a big website. let's say an e-commerce site. you have a range of garden products for sale. from seeds to bonsai trees. you keep track of stock, customers, and updates. it's big. you would use django. </p><p>if you have a small website. like a photo album, a blog.. like an uno task site, with little maintenance, you would use flask.</p><p>flask is django's little brother.</p><p>they both have templates, and variables. many things work similarly. </p><p>there are many great tutorials out there.. go try one.</p><p>now! </p>",
+					"markdown": "## django is big brother\n\n#### *no not like that*\n\n\n\nif you were going to make a big website. let's say an e-commerce site. you have a range of garden products for sale. from seeds to bonsai trees. you keep track of stock, customers, and updates. it's big. you would use django.\n\nif you have a small website. like a photo album, a blog.. like an uno task site, with little maintenance, you would use flask.\n\nflask is django's little brother.\n\nthey both have templates, and variables. many things work similarly.\n\nthere are many great tutorials out there.. go try one.\n\nnow!\n\n"
 				}
 			}
 		});
