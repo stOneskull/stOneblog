@@ -5407,6 +5407,20 @@ function create_fragment$6(ctx) {
 							"html": "<h1 id=\"tree\">tree</h1>",
 							"markdown": "# tree"
 						}
+					},
+					{
+						"date": "2023-08-20",
+						"link": { "url": "/2023-08/lxd", "label": "LXD" },
+						"thumbnail": {
+							"alt": "lxd v docker",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692425267276th-846768313.jpeg",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692425267276th-846768313.jpeg",
+							"size": 16
+						},
+						"description": {
+							"html": "<h1 id=\"lxdvsdocker\">lxd vs docker</h1>",
+							"markdown": "# lxd vs docker"
+						}
 					}
 				]
 			}
