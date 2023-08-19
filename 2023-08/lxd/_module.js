@@ -5269,8 +5269,8 @@ function create_fragment$9(ctx) {
 				title: "LXD",
 				description: "lxd vs docker",
 				content: {
-					"html": "<h2>lxd vs docker</h2><h4><em>hey what..</em></h4><p></p><p>i hadn't heard of lxd before..</p><p>i mentioned before that i got a nas. and besides being storage, it can also use its computer to run stuff. media apps like plex, data back-up solutions, and the things called containers..</p><p>i used docker a few years ago.. hardly remember it. </p><p>so yeah, i'm going to learn about both these container things at the same time.</p>",
-					"markdown": "## lxd vs docker\n\n#### *hey what..*\n\n\n\ni hadn't heard of lxd before..\n\ni mentioned before that i got a nas. and besides being storage, it can also use its computer to run stuff. media apps like plex, data back-up solutions, and the things called containers..\n\ni used docker a few years ago.. hardly remember it.\n\nso yeah, i'm going to learn about both these container things at the same time.\n\n"
+					"html": "<h2>lxd vs docker</h2><h4><em>hey what..</em></h4><p></p><p>i hadn't heard of lxd before..</p><p>i mentioned before that i got a nas. and besides being storage, it can also use its computer to run stuff. media apps like plex, data back-up solutions, and these things called containers..</p><p>i used docker a few years ago.. hardly remember it. </p><p>so yeah, i'm going to learn about both these container things at the same time.</p>",
+					"markdown": "## lxd vs docker\n\n#### *hey what..*\n\n\n\ni hadn't heard of lxd before..\n\ni mentioned before that i got a nas. and besides being storage, it can also use its computer to run stuff. media apps like plex, data back-up solutions, and these things called containers..\n\ni used docker a few years ago.. hardly remember it.\n\nso yeah, i'm going to learn about both these container things at the same time.\n\n"
 				}
 			}
 		});
@@ -5309,8 +5309,8 @@ function create_fragment$9(ctx) {
 				title: "LXD",
 				description: "lxd vs docker",
 				content: {
-					"html": "<h2>more to come</h2><h4><em>there is a lot to talk about re: django and flask</em></h4><p></p><p>i've used both and will be writing more about them.</p><p>stay tuned my friends.</p>",
-					"markdown": "## more to come\n\n#### *there is a lot to talk about re: django and flask*\n\n\n\ni've used both and will be writing more about them.\n\nstay tuned my friends.\n\n"
+					"html": "<h2>more to come</h2><h4><em>there is a lot to talk about re: lxd v docker</em></h4><p></p><p>stay tuned my friends.</p>",
+					"markdown": "## more to come\n\n#### *there is a lot to talk about re: lxd v docker*\n\n\n\nstay tuned my friends.\n\n"
 				}
 			}
 		});
