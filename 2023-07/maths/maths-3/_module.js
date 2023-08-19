@@ -5435,8 +5435,8 @@ function create_fragment$b(ctx) {
 				title: "maths 3",
 				description: "tree",
 				content: {
-					"html": "<p><a href=\"https://www.stoneskull.me/2023-07/maths/maths-week-2\"><-- previously</a></p>\n<h1 id=\"nodesandtrees\">nodes and trees</h1>\n<p><em>for a game i'm making, i want the map to be a tree, and each room in the map is a node.</em></p>\n<p><em>i've been thinking about it for quite a while..</em></p>\n<p><em>i've written it different ways and stopped. now i'm gonna solve it.</em></p>\n<p>note: i have no idea what i am talking about</p>",
-					"markdown": "[<-- previously](https://www.stoneskull.me/2023-07/maths/maths-week-2)\n\n# nodes and trees\n\n*for a game i'm making, i want the map to be a tree, and each room in the map is a node.*\n\n*i've been thinking about it for quite a while..*\n\n*i've written it different ways and stopped. now i'm gonna solve it.*\n\nnote: i have no idea what i am talking about\n\n\n"
+					"html": "<p><a href=\"https://www.stoneskull.me/2023-07/maths/maths-week-2\"><-- previously</a></p>\n<h1 id=\"nodesandtrees\">nodes and trees</h1>\n<p><em>for a game i'm making, i want the map to be a tree, and each room in the map is a node.</em></p>\n<p><em>i've been thinking about it for quite a while..</em></p>\n<p><em>i've written it different ways and stopped. now i'm gonna solve it.</em></p>",
+					"markdown": "[<-- previously](https://www.stoneskull.me/2023-07/maths/maths-week-2)\n\n# nodes and trees\n\n*for a game i'm making, i want the map to be a tree, and each room in the map is a node.*\n\n*i've been thinking about it for quite a while..*\n\n*i've written it different ways and stopped. now i'm gonna solve it.*\n\n\n\n"
 				}
 			}
 		});
@@ -5458,8 +5458,8 @@ function create_fragment$b(ctx) {
 				title: "maths 3",
 				description: "tree",
 				content: {
-					"html": "<p></p><p><em>i'm kinda tired of trying to learn the right way of doing it..</em></p><p>i'm just diving in.</p><p><em>going to try my way..</em></p><p></p><p><em>i want a node to have six outputs..</em></p><p><em>n, e, s, w.. up and down</em></p><p></p>",
-					"markdown": "\n\n*i'm kinda tired of trying to learn the right way of doing it..*\n\ni'm just diving in.\n\n*going to try my way..*\n\n\n\n*i want a node to have six outputs..*\n\n*n, e, s, w.. up and down*\n\n\n\n"
+					"html": "<p><em>i want a node to have six outputs..</em></p><p><em>n, e, s, w.. up and down</em></p>",
+					"markdown": "*i want a node to have six outputs..*\n\n*n, e, s, w.. up and down*\n\n"
 				}
 			}
 		});
