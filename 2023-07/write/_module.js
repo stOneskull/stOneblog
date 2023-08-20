@@ -5300,16 +5300,16 @@ function create_fragment$9(ctx) {
 						"link": { "url": "/2023-08", "label": "blOg" }
 					},
 					{
-						"link": { "url": "/about", "label": "abOut" }
-					},
-					{
-						"link": { "url": "/contact", "label": "cOntact" }
-					},
-					{
 						"link": {
 							"url": "https://stone.prose.sh/rss",
 							"label": "rsslOg"
 						}
+					},
+					{
+						"link": { "url": "/about", "label": "abOut" }
+					},
+					{
+						"link": { "url": "/contact", "label": "cOntact" }
 					}
 				]
 			}
@@ -5431,16 +5431,16 @@ function create_fragment$9(ctx) {
 						"link": { "url": "/2023-08", "label": "blOg" }
 					},
 					{
-						"link": { "url": "/about", "label": "abOut" }
-					},
-					{
-						"link": { "url": "/contact", "label": "cOntact" }
-					},
-					{
 						"link": {
 							"url": "https://stone.prose.sh/rss",
 							"label": "rsslOg"
 						}
+					},
+					{
+						"link": { "url": "/about", "label": "abOut" }
+					},
+					{
+						"link": { "url": "/contact", "label": "cOntact" }
 					}
 				]
 			}
