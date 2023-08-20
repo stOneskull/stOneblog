@@ -5438,6 +5438,23 @@ function create_fragment$6(ctx) {
 							"html": "<h1 id=\"thetaxi\">the taxi</h1>",
 							"markdown": "# the taxi"
 						}
+					},
+					{
+						"date": "2023-08-22",
+						"link": {
+							"url": "/2023-08/blogs/blogs-week-1",
+							"label": "blOgs 1"
+						},
+						"thumbnail": {
+							"alt": "blog baby",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692507924586th-3933424918.jpeg",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692507924586th-3933424918.jpeg",
+							"size": 11
+						},
+						"description": {
+							"html": "<h1 id=\"prose\">prOse</h1>",
+							"markdown": "# prOse"
+						}
 					}
 				]
 			}

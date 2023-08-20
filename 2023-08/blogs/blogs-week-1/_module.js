@@ -5113,7 +5113,7 @@ function create_fragment$8(ctx) {
 					"url": "https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "blOgs",
+				title: "blOgs 1",
 				description: "These are my blog posts and they are wonderful."
 			}
 		});
@@ -5132,7 +5132,7 @@ function create_fragment$8(ctx) {
 					"url": "https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "blOgs",
+				title: "blOgs 1",
 				description: "These are my blog posts and they are wonderful.",
 				logo: {
 					"image": {
@@ -5171,7 +5171,7 @@ function create_fragment$8(ctx) {
 					"url": "https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "blOgs",
+				title: "blOgs 1",
 				description: "These are my blog posts and they are wonderful.",
 				superhead: "2023-08-22 ",
 				heading: "blOgs week 1\n"
@@ -5192,7 +5192,7 @@ function create_fragment$8(ctx) {
 					"url": "https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "blOgs",
+				title: "blOgs 1",
 				description: "These are my blog posts and they are wonderful.",
 				quote: {
 					"html": "<p>“It is sometimes an appropriate response to reality to go insane.” </p>",
@@ -5216,7 +5216,7 @@ function create_fragment$8(ctx) {
 					"url": "https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "blOgs",
+				title: "blOgs 1",
 				description: "These are my blog posts and they are wonderful.",
 				content: {
 					"html": "<p><em>Some more text that's italicized to make an impact.</em></p><p><em>RSS, baby.</em></p><p></p><p>My blog doesn't have RSS. I didn't really think about it before. My blog is for me really. You can read it, anyone can, it's public, but really it's for me. I'm getting old. My memory isn't so good anymore. I want to put things down on e-paper. And when I die, maybe someone who remembers me, will read it, and find out some more about me. But anyway..</p><p>I mentioned here somewhere before, flippantly, about having a blog like a changelog. i found an interesting little blogger thing, that i will use for something like that. i mean, what version of my software am i? it's an interesting concept actually.. a changelog.. hmm.. but this will be more like a summary of what i blogged here on the main blog.</p><p>this is the new 'changelog' blog..</p><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link\" href=\"https://stone.prose.sh\">https://stone.prose.sh</a></p><p></p><p></p>",
@@ -5239,7 +5239,7 @@ function create_fragment$8(ctx) {
 					"url": "https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "blOgs",
+				title: "blOgs 1",
 				description: "These are my blog posts and they are wonderful.",
 				logo: {
 					"image": {
@@ -5278,7 +5278,7 @@ function create_fragment$8(ctx) {
 					"url": "https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "blOgs",
+				title: "blOgs 1",
 				description: "These are my blog posts and they are wonderful.",
 				heading: "",
 				email: "",
@@ -5338,7 +5338,7 @@ function create_fragment$8(ctx) {
 					"url": "https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "blOgs",
+				title: "blOgs 1",
 				description: "These are my blog posts and they are wonderful."
 			}
 		});
