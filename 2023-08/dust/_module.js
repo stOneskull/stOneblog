@@ -5050,6 +5050,12 @@ function create_fragment$7(ctx) {
 					},
 					{
 						"link": { "url": "/contact", "label": "cOntact" }
+					},
+					{
+						"link": {
+							"url": "https://stone.prose.sh/rss",
+							"label": "rsslOg"
+						}
 					}
 				]
 			}
@@ -5133,6 +5139,12 @@ function create_fragment$7(ctx) {
 					},
 					{
 						"link": { "url": "/contact", "label": "cOntact" }
+					},
+					{
+						"link": {
+							"url": "https://stone.prose.sh/rss",
+							"label": "rsslOg"
+						}
 					}
 				]
 			}

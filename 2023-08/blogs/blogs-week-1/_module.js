@@ -5152,6 +5152,12 @@ function create_fragment$8(ctx) {
 					},
 					{
 						"link": { "url": "/contact", "label": "cOntact" }
+					},
+					{
+						"link": {
+							"url": "https://stone.prose.sh/rss",
+							"label": "rsslOg"
+						}
 					}
 				]
 			}
@@ -5195,7 +5201,7 @@ function create_fragment$8(ctx) {
 				title: "blOgs 1",
 				description: "These are my blog posts and they are wonderful.",
 				quote: {
-					"html": "<p>“It is sometimes an appropriate response to reality to go insane.” </p>",
+					"html": "<p>“It is sometimes an appropriate response to reality to go insane.”</p>",
 					"markdown": "“It is sometimes an appropriate response to reality to go insane.”\n\n"
 				},
 				attribution: "- Philip K. Dick"
@@ -5259,6 +5265,12 @@ function create_fragment$8(ctx) {
 					},
 					{
 						"link": { "url": "/contact", "label": "cOntact" }
+					},
+					{
+						"link": {
+							"url": "https://stone.prose.sh/rss",
+							"label": "rsslOg"
+						}
 					}
 				]
 			}
