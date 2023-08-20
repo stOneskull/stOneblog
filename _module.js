@@ -5317,9 +5317,9 @@ function create_fragment$8(ctx) {
 						},
 						"thumbnail": {
 							"alt": "blog baby",
-							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692507924586th-3933424918.jpeg",
-							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692507924586th-3933424918.jpeg",
-							"size": 11
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692510069930untitled.webp",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692510069930untitled.webp",
+							"size": 7
 						},
 						"description": {
 							"html": "<h1 id=\"prose\">prOse</h1>",
