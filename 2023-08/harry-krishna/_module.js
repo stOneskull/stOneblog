@@ -8101,8 +8101,8 @@ function create_fragment$n(ctx) {
 					{
 						"title": "3) Vamsi : ",
 						"description": {
-							"html": "<p>The Vamsi flute is about 40cm, with nine holes on its body. <br>The sound of Krishna’s Vamsi flute spreads in all four directions. <br>Even though Krishna vibrates his flute within this universe, its sound pierces the universal covering and goes to the spiritual sky. <br>Thus the vibration enters the ears of all inhabitants. <br>It especially enters Goloka Vṛndāvana-dhāma and attracts the minds of the young damsels of Vrajabhūmi, bringing them forcibly to where Krishna is present.</p>",
-							"markdown": "The Vamsi flute is about 40cm, with nine holes on its body. <br>The sound of Krishna’s Vamsi flute spreads in all four directions. <br>Even though Krishna vibrates his flute within this universe, its sound pierces the universal covering and goes to the spiritual sky. <br>Thus the vibration enters the ears of all inhabitants. <br>It especially enters Goloka Vṛndāvana-dhāma and attracts the minds of the young damsels of Vrajabhūmi, bringing them forcibly to where Krishna is present.\n\n"
+							"html": "<p>The Vamsi flute is about 40cm, with nine holes on its body. <br>The sound of Krishna’s Vamsi flute spreads in all four directions. <br>Even though Krishna vibrates his flute within this universe, its sound pierces the universal covering and goes to the spiritual sky. <br>Thus the vibration enters the ears of all inhabitants. <br></p>",
+							"markdown": "The Vamsi flute is about 40cm, with nine holes on its body. <br>The sound of Krishna’s Vamsi flute spreads in all four directions. <br>Even though Krishna vibrates his flute within this universe, its sound pierces the universal covering and goes to the spiritual sky. <br>Thus the vibration enters the ears of all inhabitants. <br>\n\n"
 						}
 					}
 				]
