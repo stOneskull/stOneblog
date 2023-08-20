@@ -3948,7 +3948,7 @@ function create_fragment$4(ctx) {
 			attr(div0, "class", "section-container content svelte-1yn388l");
 			attr(div1, "class", "section");
 			attr(div2, "class", "section");
-			attr(div2, "id", "section-74d46a5d");
+			attr(div2, "id", "section-93b6c800");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
@@ -4110,7 +4110,7 @@ function create_fragment$6(ctx) {
 			attr(div0, "class", "section-container content svelte-1yn388l");
 			attr(div1, "class", "section");
 			attr(div2, "class", "section");
-			attr(div2, "id", "section-93b6c800");
+			attr(div2, "id", "section-624b1c05");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
@@ -5434,8 +5434,8 @@ function create_fragment$a(ctx) {
 				title: "23 day",
 				description: "triangular circle",
 				content: {
-					"html": "<p><center>\n<br><br>\n<em>circle symmetry</em> </p>\n<p><em>like petals round a flower</em> </p>\n<p><em>a galaxy's earths</em></center></p>",
-					"markdown": "<center>\n<br><br>\n*circle symmetry* \n\n*like petals round a flower* \n\n*a galaxy's earths*</center>\n"
+					"html": "<p><center>\n<em>circle symmetry</em> </p>\n<p><em>like petals round a flower</em> </p>\n<p><em>a galaxy's earths</em>\n</center></p>",
+					"markdown": "<center>\n*circle symmetry* \n\n*like petals round a flower* \n\n*a galaxy's earths*\n</center>\n"
 				}
 			}
 		});
@@ -5457,8 +5457,8 @@ function create_fragment$a(ctx) {
 				title: "23 day",
 				description: "triangular circle",
 				content: {
-					"html": "<h2>2 sense</h2><p><em>taste, smell</em></p><p><em>delicious treats</em></p><p></p><h3>for 3</h3><p><em>third ear sees</em></p><p><em>feel</em></p><p></p><blockquote><p>yOu</p></blockquote>",
-					"markdown": "## 2 sense\n\n*taste, smell*\n\n*delicious treats*\n\n\n\n### for 3\n\n*third ear sees*\n\n*feel*\n\n\n\n> yOu\n\n"
+					"html": "<h2>2 sense</h2><p><em>taste &amp; smell</em></p><p><em>delicious treats</em></p><p></p><h3>for 3</h3><p><em>third ear sees</em></p><p><em>feel</em></p><p></p><blockquote><p>yOu</p></blockquote>",
+					"markdown": "## 2 sense\n\n*taste & smell*\n\n*delicious treats*\n\n\n\n### for 3\n\n*third ear sees*\n\n*feel*\n\n\n\n> yOu\n\n"
 				}
 			}
 		});
