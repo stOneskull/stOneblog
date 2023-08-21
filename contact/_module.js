@@ -5192,8 +5192,8 @@ function create_fragment$8(ctx) {
 				title: "cOntact",
 				description: "i'm friendly",
 				content: {
-					"html": "<p><a href=\"http://twitter.com/stOneskull\">twitter.com/stOneskull</a></p>\n<p><a href=\"http://fosstodon.org/@stOneskull\">fosstodon.org/@stOneskull</a></p>\n<p>write to <a href=\"mailto:stOne@skull.casa\">stOne@skull.casa</a></p>\n<p>shout me at <a href=\"https://www.buymeacoffee.com/stoneskull\">this cafe</a> or <a href=\"https://ko-fi.com/stoneskull\">that cafe</a></p>",
-					"markdown": "[twitter.com/stOneskull](<http://twitter.com/stOneskull>)\n\n[fosstodon.org/@stOneskull](<http://fosstodon.org/@stOneskull>)\n\nwrite to [stOne@skull.casa](mailto:stOne@skull.casa)\n\nshout me at [this cafe](<https://www.buymeacoffee.com/stoneskull>) or [that cafe](<https://ko-fi.com/stoneskull>)\n\n"
+					"html": "<p><a href=\"https://x.com/stOneskull\">x.com/stOneskull</a></p>\n<p><a href=\"https://fosstodon.org/@stOneskull\">fosstodon.org/@stOneskull</a></p>\n<p>write to <a href=\"mailto:stOne@skull.casa\">stOne@skull.casa</a></p>\n<p>shout me at <a href=\"https://www.buymeacoffee.com/stoneskull\">this cafe</a> or <a href=\"https://ko-fi.com/stoneskull\">that cafe</a></p>",
+					"markdown": "[x.com/stOneskull](<https://x.com/stOneskull>)\n\n[fosstodon.org/@stOneskull](<https://fosstodon.org/@stOneskull>)\n\nwrite to [stOne@skull.casa](mailto:stOne@skull.casa)\n\nshout me at [this cafe](<https://www.buymeacoffee.com/stoneskull>) or [that cafe](<https://ko-fi.com/stoneskull>)\n\n"
 				}
 			}
 		});
