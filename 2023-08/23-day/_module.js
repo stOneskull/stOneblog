@@ -4037,6 +4037,238 @@ class Component$3 extends SvelteComponent {
 
 function get_each_context$1(ctx, list, i) {
 	const child_ctx = ctx.slice();
+	child_ctx[7] = list[i];
+	return child_ctx;
+}
+
+// (57:4) {#each cards as card}
+function create_each_block$1(ctx) {
+	let div;
+	let span0;
+	let t0_value = /*card*/ ctx[7].stat + "";
+	let t0;
+	let t1;
+	let span1;
+	let t2_value = /*card*/ ctx[7].title + "";
+	let t2;
+	let t3;
+
+	return {
+		c() {
+			div = element("div");
+			span0 = element("span");
+			t0 = text(t0_value);
+			t1 = space();
+			span1 = element("span");
+			t2 = text(t2_value);
+			t3 = space();
+			this.h();
+		},
+		l(nodes) {
+			div = claim_element(nodes, "DIV", { class: true });
+			var div_nodes = children(div);
+			span0 = claim_element(div_nodes, "SPAN", { class: true });
+			var span0_nodes = children(span0);
+			t0 = claim_text(span0_nodes, t0_value);
+			span0_nodes.forEach(detach);
+			t1 = claim_space(div_nodes);
+			span1 = claim_element(div_nodes, "SPAN", { class: true });
+			var span1_nodes = children(span1);
+			t2 = claim_text(span1_nodes, t2_value);
+			span1_nodes.forEach(detach);
+			t3 = claim_space(div_nodes);
+			div_nodes.forEach(detach);
+			this.h();
+		},
+		h() {
+			attr(span0, "class", "stat svelte-14pw1m8");
+			attr(span1, "class", "title svelte-14pw1m8");
+			attr(div, "class", "card svelte-14pw1m8");
+		},
+		m(target, anchor) {
+			insert_hydration(target, div, anchor);
+			append_hydration(div, span0);
+			append_hydration(span0, t0);
+			append_hydration(div, t1);
+			append_hydration(div, span1);
+			append_hydration(span1, t2);
+			append_hydration(div, t3);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*cards*/ 4 && t0_value !== (t0_value = /*card*/ ctx[7].stat + "")) set_data(t0, t0_value);
+			if (dirty & /*cards*/ 4 && t2_value !== (t2_value = /*card*/ ctx[7].title + "")) set_data(t2, t2_value);
+		},
+		d(detaching) {
+			if (detaching) detach(div);
+		}
+	};
+}
+
+function create_fragment$4(ctx) {
+	let div1;
+	let section;
+	let h2;
+	let t0;
+	let t1;
+	let h3;
+	let t2;
+	let t3;
+	let div0;
+	let each_value = /*cards*/ ctx[2];
+	let each_blocks = [];
+
+	for (let i = 0; i < each_value.length; i += 1) {
+		each_blocks[i] = create_each_block$1(get_each_context$1(ctx, each_value, i));
+	}
+
+	return {
+		c() {
+			div1 = element("div");
+			section = element("section");
+			h2 = element("h2");
+			t0 = text(/*heading*/ ctx[0]);
+			t1 = space();
+			h3 = element("h3");
+			t2 = text(/*subheading*/ ctx[1]);
+			t3 = space();
+			div0 = element("div");
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			this.h();
+		},
+		l(nodes) {
+			div1 = claim_element(nodes, "DIV", { class: true, id: true });
+			var div1_nodes = children(div1);
+			section = claim_element(div1_nodes, "SECTION", { class: true });
+			var section_nodes = children(section);
+			h2 = claim_element(section_nodes, "H2", { class: true });
+			var h2_nodes = children(h2);
+			t0 = claim_text(h2_nodes, /*heading*/ ctx[0]);
+			h2_nodes.forEach(detach);
+			t1 = claim_space(section_nodes);
+			h3 = claim_element(section_nodes, "H3", { class: true });
+			var h3_nodes = children(h3);
+			t2 = claim_text(h3_nodes, /*subheading*/ ctx[1]);
+			h3_nodes.forEach(detach);
+			t3 = claim_space(section_nodes);
+			div0 = claim_element(section_nodes, "DIV", { class: true });
+			var div0_nodes = children(div0);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].l(div0_nodes);
+			}
+
+			div0_nodes.forEach(detach);
+			section_nodes.forEach(detach);
+			div1_nodes.forEach(detach);
+			this.h();
+		},
+		h() {
+			attr(h2, "class", "heading svelte-14pw1m8");
+			attr(h3, "class", "subheading svelte-14pw1m8");
+			attr(div0, "class", "cards svelte-14pw1m8");
+			attr(section, "class", "section-container svelte-14pw1m8");
+			attr(div1, "class", "section");
+			attr(div1, "id", "section-e598c425");
+		},
+		m(target, anchor) {
+			insert_hydration(target, div1, anchor);
+			append_hydration(div1, section);
+			append_hydration(section, h2);
+			append_hydration(h2, t0);
+			append_hydration(section, t1);
+			append_hydration(section, h3);
+			append_hydration(h3, t2);
+			append_hydration(section, t3);
+			append_hydration(section, div0);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(div0, null);
+				}
+			}
+		},
+		p(ctx, [dirty]) {
+			if (dirty & /*heading*/ 1) set_data(t0, /*heading*/ ctx[0]);
+			if (dirty & /*subheading*/ 2) set_data(t2, /*subheading*/ ctx[1]);
+
+			if (dirty & /*cards*/ 4) {
+				each_value = /*cards*/ ctx[2];
+				let i;
+
+				for (i = 0; i < each_value.length; i += 1) {
+					const child_ctx = get_each_context$1(ctx, each_value, i);
+
+					if (each_blocks[i]) {
+						each_blocks[i].p(child_ctx, dirty);
+					} else {
+						each_blocks[i] = create_each_block$1(child_ctx);
+						each_blocks[i].c();
+						each_blocks[i].m(div0, null);
+					}
+				}
+
+				for (; i < each_blocks.length; i += 1) {
+					each_blocks[i].d(1);
+				}
+
+				each_blocks.length = each_value.length;
+			}
+		},
+		i: noop,
+		o: noop,
+		d(detaching) {
+			if (detaching) detach(div1);
+			destroy_each(each_blocks, detaching);
+		}
+	};
+}
+
+function instance$4($$self, $$props, $$invalidate) {
+	let { favicon } = $$props;
+	let { image } = $$props;
+	let { title } = $$props;
+	let { description } = $$props;
+	let { heading } = $$props;
+	let { subheading } = $$props;
+	let { cards } = $$props;
+
+	$$self.$$set = $$props => {
+		if ('favicon' in $$props) $$invalidate(3, favicon = $$props.favicon);
+		if ('image' in $$props) $$invalidate(4, image = $$props.image);
+		if ('title' in $$props) $$invalidate(5, title = $$props.title);
+		if ('description' in $$props) $$invalidate(6, description = $$props.description);
+		if ('heading' in $$props) $$invalidate(0, heading = $$props.heading);
+		if ('subheading' in $$props) $$invalidate(1, subheading = $$props.subheading);
+		if ('cards' in $$props) $$invalidate(2, cards = $$props.cards);
+	};
+
+	return [heading, subheading, cards, favicon, image, title, description];
+}
+
+class Component$4 extends SvelteComponent {
+	constructor(options) {
+		super();
+
+		init(this, options, instance$4, create_fragment$4, safe_not_equal, {
+			favicon: 3,
+			image: 4,
+			title: 5,
+			description: 6,
+			heading: 0,
+			subheading: 1,
+			cards: 2
+		});
+	}
+}
+
+/* generated by Svelte v3.58.0 */
+
+function get_each_context$2(ctx, list, i) {
+	const child_ctx = ctx.slice();
 	child_ctx[9] = list[i];
 	child_ctx[11] = i;
 	return child_ctx;
@@ -4094,7 +4326,7 @@ function create_if_block$4(ctx) {
 }
 
 // (76:4) {#each items as item, i (i)}
-function create_each_block$1(key_1, ctx) {
+function create_each_block$2(key_1, ctx) {
 	let div1;
 	let button;
 	let span0;
@@ -4235,7 +4467,7 @@ function create_each_block$1(key_1, ctx) {
 	};
 }
 
-function create_fragment$4(ctx) {
+function create_fragment$5(ctx) {
 	let div1;
 	let section;
 	let h2;
@@ -4249,9 +4481,9 @@ function create_fragment$4(ctx) {
 	const get_key = ctx => /*i*/ ctx[11];
 
 	for (let i = 0; i < each_value.length; i += 1) {
-		let child_ctx = get_each_context$1(ctx, each_value, i);
+		let child_ctx = get_each_context$2(ctx, each_value, i);
 		let key = get_key(child_ctx);
-		each_1_lookup.set(key, each_blocks[i] = create_each_block$1(key, child_ctx));
+		each_1_lookup.set(key, each_blocks[i] = create_each_block$2(key, child_ctx));
 	}
 
 	return {
@@ -4320,7 +4552,7 @@ function create_fragment$4(ctx) {
 			if (dirty & /*activeItem, items, setActiveItem*/ 14) {
 				each_value = /*items*/ ctx[1];
 				group_outros();
-				each_blocks = update_keyed_each(each_blocks, dirty, get_key, 1, ctx, each_value, each_1_lookup, div0, outro_and_destroy_block, create_each_block$1, null, get_each_context$1);
+				each_blocks = update_keyed_each(each_blocks, dirty, get_key, 1, ctx, each_value, each_1_lookup, div0, outro_and_destroy_block, create_each_block$2, null, get_each_context$2);
 				check_outros();
 			}
 		},
@@ -4350,7 +4582,7 @@ function create_fragment$4(ctx) {
 	};
 }
 
-function instance$4($$self, $$props, $$invalidate) {
+function instance$5($$self, $$props, $$invalidate) {
 	let { favicon } = $$props;
 	let { image } = $$props;
 	let { title } = $$props;
@@ -4387,98 +4619,17 @@ function instance$4($$self, $$props, $$invalidate) {
 	];
 }
 
-class Component$4 extends SvelteComponent {
+class Component$5 extends SvelteComponent {
 	constructor(options) {
 		super();
 
-		init(this, options, instance$4, create_fragment$4, safe_not_equal, {
+		init(this, options, instance$5, create_fragment$5, safe_not_equal, {
 			favicon: 4,
 			image: 5,
 			title: 6,
 			description: 7,
 			heading: 0,
 			items: 1
-		});
-	}
-}
-
-/* generated by Svelte v3.58.0 */
-
-function create_fragment$5(ctx) {
-	let div2;
-	let div1;
-	let div0;
-	let raw_value = /*content*/ ctx[0].html + "";
-
-	return {
-		c() {
-			div2 = element("div");
-			div1 = element("div");
-			div0 = element("div");
-			this.h();
-		},
-		l(nodes) {
-			div2 = claim_element(nodes, "DIV", { class: true, id: true });
-			var div2_nodes = children(div2);
-			div1 = claim_element(div2_nodes, "DIV", { class: true });
-			var div1_nodes = children(div1);
-			div0 = claim_element(div1_nodes, "DIV", { class: true });
-			var div0_nodes = children(div0);
-			div0_nodes.forEach(detach);
-			div1_nodes.forEach(detach);
-			div2_nodes.forEach(detach);
-			this.h();
-		},
-		h() {
-			attr(div0, "class", "section-container content svelte-1yn388l");
-			attr(div1, "class", "section");
-			attr(div2, "class", "section");
-			attr(div2, "id", "section-93b6c800");
-		},
-		m(target, anchor) {
-			insert_hydration(target, div2, anchor);
-			append_hydration(div2, div1);
-			append_hydration(div1, div0);
-			div0.innerHTML = raw_value;
-		},
-		p(ctx, [dirty]) {
-			if (dirty & /*content*/ 1 && raw_value !== (raw_value = /*content*/ ctx[0].html + "")) div0.innerHTML = raw_value;		},
-		i: noop,
-		o: noop,
-		d(detaching) {
-			if (detaching) detach(div2);
-		}
-	};
-}
-
-function instance$5($$self, $$props, $$invalidate) {
-	let { favicon } = $$props;
-	let { image } = $$props;
-	let { title } = $$props;
-	let { description } = $$props;
-	let { content } = $$props;
-
-	$$self.$$set = $$props => {
-		if ('favicon' in $$props) $$invalidate(1, favicon = $$props.favicon);
-		if ('image' in $$props) $$invalidate(2, image = $$props.image);
-		if ('title' in $$props) $$invalidate(3, title = $$props.title);
-		if ('description' in $$props) $$invalidate(4, description = $$props.description);
-		if ('content' in $$props) $$invalidate(0, content = $$props.content);
-	};
-
-	return [content, favicon, image, title, description];
-}
-
-class Component$5 extends SvelteComponent {
-	constructor(options) {
-		super();
-
-		init(this, options, instance$5, create_fragment$5, safe_not_equal, {
-			favicon: 1,
-			image: 2,
-			title: 3,
-			description: 4,
-			content: 0
 		});
 	}
 }
@@ -4511,10 +4662,10 @@ function create_fragment$6(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "section-container content svelte-1iti8vr");
+			attr(div0, "class", "section-container content svelte-1yn388l");
 			attr(div1, "class", "section");
 			attr(div2, "class", "section");
-			attr(div2, "id", "section-aa6051ba");
+			attr(div2, "id", "section-93b6c800");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
@@ -4567,6 +4718,87 @@ class Component$6 extends SvelteComponent {
 /* generated by Svelte v3.58.0 */
 
 function create_fragment$7(ctx) {
+	let div2;
+	let div1;
+	let div0;
+	let raw_value = /*content*/ ctx[0].html + "";
+
+	return {
+		c() {
+			div2 = element("div");
+			div1 = element("div");
+			div0 = element("div");
+			this.h();
+		},
+		l(nodes) {
+			div2 = claim_element(nodes, "DIV", { class: true, id: true });
+			var div2_nodes = children(div2);
+			div1 = claim_element(div2_nodes, "DIV", { class: true });
+			var div1_nodes = children(div1);
+			div0 = claim_element(div1_nodes, "DIV", { class: true });
+			var div0_nodes = children(div0);
+			div0_nodes.forEach(detach);
+			div1_nodes.forEach(detach);
+			div2_nodes.forEach(detach);
+			this.h();
+		},
+		h() {
+			attr(div0, "class", "section-container content svelte-1iti8vr");
+			attr(div1, "class", "section");
+			attr(div2, "class", "section");
+			attr(div2, "id", "section-aa6051ba");
+		},
+		m(target, anchor) {
+			insert_hydration(target, div2, anchor);
+			append_hydration(div2, div1);
+			append_hydration(div1, div0);
+			div0.innerHTML = raw_value;
+		},
+		p(ctx, [dirty]) {
+			if (dirty & /*content*/ 1 && raw_value !== (raw_value = /*content*/ ctx[0].html + "")) div0.innerHTML = raw_value;		},
+		i: noop,
+		o: noop,
+		d(detaching) {
+			if (detaching) detach(div2);
+		}
+	};
+}
+
+function instance$7($$self, $$props, $$invalidate) {
+	let { favicon } = $$props;
+	let { image } = $$props;
+	let { title } = $$props;
+	let { description } = $$props;
+	let { content } = $$props;
+
+	$$self.$$set = $$props => {
+		if ('favicon' in $$props) $$invalidate(1, favicon = $$props.favicon);
+		if ('image' in $$props) $$invalidate(2, image = $$props.image);
+		if ('title' in $$props) $$invalidate(3, title = $$props.title);
+		if ('description' in $$props) $$invalidate(4, description = $$props.description);
+		if ('content' in $$props) $$invalidate(0, content = $$props.content);
+	};
+
+	return [content, favicon, image, title, description];
+}
+
+class Component$7 extends SvelteComponent {
+	constructor(options) {
+		super();
+
+		init(this, options, instance$7, create_fragment$7, safe_not_equal, {
+			favicon: 1,
+			image: 2,
+			title: 3,
+			description: 4,
+			content: 0
+		});
+	}
+}
+
+/* generated by Svelte v3.58.0 */
+
+function create_fragment$8(ctx) {
 	let div1;
 	let div0;
 	let feature;
@@ -4626,7 +4858,7 @@ function create_fragment$7(ctx) {
 	};
 }
 
-function instance$7($$self, $$props, $$invalidate) {
+function instance$8($$self, $$props, $$invalidate) {
 	let { favicon } = $$props;
 	let { image } = $$props;
 	let { title } = $$props;
@@ -4642,11 +4874,11 @@ function instance$7($$self, $$props, $$invalidate) {
 	return [image, favicon, title, description];
 }
 
-class Component$7 extends SvelteComponent {
+class Component$8 extends SvelteComponent {
 	constructor(options) {
 		super();
 
-		init(this, options, instance$7, create_fragment$7, safe_not_equal, {
+		init(this, options, instance$8, create_fragment$8, safe_not_equal, {
 			favicon: 1,
 			image: 0,
 			title: 2,
@@ -4657,7 +4889,7 @@ class Component$7 extends SvelteComponent {
 
 /* generated by Svelte v3.58.0 */
 
-function create_fragment$8(ctx) {
+function create_fragment$9(ctx) {
 	let div2;
 	let div1;
 	let div0;
@@ -4704,7 +4936,7 @@ function create_fragment$8(ctx) {
 	};
 }
 
-function instance$8($$self, $$props, $$invalidate) {
+function instance$9($$self, $$props, $$invalidate) {
 	let { favicon } = $$props;
 	let { image } = $$props;
 	let { title } = $$props;
@@ -4722,11 +4954,11 @@ function instance$8($$self, $$props, $$invalidate) {
 	return [content, favicon, image, title, description];
 }
 
-class Component$8 extends SvelteComponent {
+class Component$9 extends SvelteComponent {
 	constructor(options) {
 		super();
 
-		init(this, options, instance$8, create_fragment$8, safe_not_equal, {
+		init(this, options, instance$9, create_fragment$9, safe_not_equal, {
 			favicon: 1,
 			image: 2,
 			title: 3,
@@ -4782,7 +5014,7 @@ function create_if_block$5(ctx) {
 	};
 }
 
-function create_fragment$9(ctx) {
+function create_fragment$a(ctx) {
 	let div;
 	let header;
 	let span;
@@ -4870,7 +5102,7 @@ function create_fragment$9(ctx) {
 	};
 }
 
-function instance$9($$self, $$props, $$invalidate) {
+function instance$a($$self, $$props, $$invalidate) {
 	let { favicon } = $$props;
 	let { image } = $$props;
 	let { title } = $$props;
@@ -4890,11 +5122,11 @@ function instance$9($$self, $$props, $$invalidate) {
 	return [image, superhead, heading, favicon, title, description];
 }
 
-class Component$9 extends SvelteComponent {
+class Component$a extends SvelteComponent {
 	constructor(options) {
 		super();
 
-		init(this, options, instance$9, create_fragment$9, safe_not_equal, {
+		init(this, options, instance$a, create_fragment$a, safe_not_equal, {
 			favicon: 3,
 			image: 0,
 			title: 4,
@@ -4907,7 +5139,7 @@ class Component$9 extends SvelteComponent {
 
 /* generated by Svelte v3.58.0 */
 
-function get_each_context$2(ctx, list, i) {
+function get_each_context$3(ctx, list, i) {
 	const child_ctx = ctx.slice();
 	child_ctx[10] = list[i].link;
 	return child_ctx;
@@ -5101,7 +5333,7 @@ function create_if_block$6(ctx) {
 	let each_blocks = [];
 
 	for (let i = 0; i < each_value.length; i += 1) {
-		each_blocks[i] = create_each_block$2(get_each_context$2(ctx, each_value, i));
+		each_blocks[i] = create_each_block$3(get_each_context$3(ctx, each_value, i));
 	}
 
 	icon = new Component$1({ props: { height: "25", icon: "bi:x-lg" } });
@@ -5173,12 +5405,12 @@ function create_if_block$6(ctx) {
 				let i;
 
 				for (i = 0; i < each_value.length; i += 1) {
-					const child_ctx = get_each_context$2(ctx, each_value, i);
+					const child_ctx = get_each_context$3(ctx, each_value, i);
 
 					if (each_blocks[i]) {
 						each_blocks[i].p(child_ctx, dirty);
 					} else {
-						each_blocks[i] = create_each_block$2(child_ctx);
+						each_blocks[i] = create_each_block$3(child_ctx);
 						each_blocks[i].c();
 						each_blocks[i].m(nav, t);
 					}
@@ -5221,7 +5453,7 @@ function create_if_block$6(ctx) {
 }
 
 // (136:8) {#each site_nav as { link }}
-function create_each_block$2(ctx) {
+function create_each_block$3(ctx) {
 	let a;
 	let t_value = /*link*/ ctx[10].label + "";
 	let t;
@@ -5260,7 +5492,7 @@ function create_each_block$2(ctx) {
 	};
 }
 
-function create_fragment$a(ctx) {
+function create_fragment$b(ctx) {
 	let div2;
 	let header;
 	let div0;
@@ -5519,7 +5751,7 @@ function create_fragment$a(ctx) {
 	};
 }
 
-function instance$a($$self, $$props, $$invalidate) {
+function instance$b($$self, $$props, $$invalidate) {
 	let { favicon } = $$props;
 	let { image } = $$props;
 	let { title } = $$props;
@@ -5553,11 +5785,11 @@ function instance$a($$self, $$props, $$invalidate) {
 	];
 }
 
-class Component$a extends SvelteComponent {
+class Component$b extends SvelteComponent {
 	constructor(options) {
 		super();
 
-		init(this, options, instance$a, create_fragment$a, safe_not_equal, {
+		init(this, options, instance$b, create_fragment$b, safe_not_equal, {
 			favicon: 3,
 			image: 4,
 			title: 5,
@@ -5570,7 +5802,7 @@ class Component$a extends SvelteComponent {
 
 /* generated by Svelte v3.58.0 */
 
-function get_each_context$3(ctx, list, i) {
+function get_each_context$4(ctx, list, i) {
 	const child_ctx = ctx.slice();
 	child_ctx[7] = list[i].link;
 	child_ctx[8] = list[i].icon;
@@ -5578,7 +5810,7 @@ function get_each_context$3(ctx, list, i) {
 }
 
 // (73:8) {#each social_links as {link, icon}}
-function create_each_block$3(ctx) {
+function create_each_block$4(ctx) {
 	let li;
 	let a;
 	let icon;
@@ -5654,7 +5886,7 @@ function create_each_block$3(ctx) {
 	};
 }
 
-function create_fragment$b(ctx) {
+function create_fragment$c(ctx) {
 	let div2;
 	let footer;
 	let div1;
@@ -5673,7 +5905,7 @@ function create_fragment$b(ctx) {
 	let each_blocks = [];
 
 	for (let i = 0; i < each_value.length; i += 1) {
-		each_blocks[i] = create_each_block$3(get_each_context$3(ctx, each_value, i));
+		each_blocks[i] = create_each_block$4(get_each_context$4(ctx, each_value, i));
 	}
 
 	const out = i => transition_out(each_blocks[i], 1, 1, () => {
@@ -5770,13 +6002,13 @@ function create_fragment$b(ctx) {
 				let i;
 
 				for (i = 0; i < each_value.length; i += 1) {
-					const child_ctx = get_each_context$3(ctx, each_value, i);
+					const child_ctx = get_each_context$4(ctx, each_value, i);
 
 					if (each_blocks[i]) {
 						each_blocks[i].p(child_ctx, dirty);
 						transition_in(each_blocks[i], 1);
 					} else {
-						each_blocks[i] = create_each_block$3(child_ctx);
+						each_blocks[i] = create_each_block$4(child_ctx);
 						each_blocks[i].c();
 						transition_in(each_blocks[i], 1);
 						each_blocks[i].m(ul, null);
@@ -5817,7 +6049,7 @@ function create_fragment$b(ctx) {
 	};
 }
 
-function instance$b($$self, $$props, $$invalidate) {
+function instance$c($$self, $$props, $$invalidate) {
 	let { favicon } = $$props;
 	let { image } = $$props;
 	let { title } = $$props;
@@ -5839,11 +6071,11 @@ function instance$b($$self, $$props, $$invalidate) {
 	return [social_links, favicon, image, title, description, heading, email];
 }
 
-class Component$b extends SvelteComponent {
+class Component$c extends SvelteComponent {
 	constructor(options) {
 		super();
 
-		init(this, options, instance$b, create_fragment$b, safe_not_equal, {
+		init(this, options, instance$c, create_fragment$c, safe_not_equal, {
 			favicon: 1,
 			image: 2,
 			title: 3,
@@ -5857,7 +6089,7 @@ class Component$b extends SvelteComponent {
 
 /* generated by Svelte v3.58.0 */
 
-function instance$c($$self, $$props, $$invalidate) {
+function instance$d($$self, $$props, $$invalidate) {
 	let { favicon } = $$props;
 	let { image } = $$props;
 	let { title } = $$props;
@@ -5873,11 +6105,11 @@ function instance$c($$self, $$props, $$invalidate) {
 	return [favicon, image, title, description];
 }
 
-class Component$c extends SvelteComponent {
+class Component$d extends SvelteComponent {
 	constructor(options) {
 		super();
 
-		init(this, options, instance$c, null, safe_not_equal, {
+		init(this, options, instance$d, null, safe_not_equal, {
 			favicon: 0,
 			image: 1,
 			title: 2,
@@ -5888,7 +6120,7 @@ class Component$c extends SvelteComponent {
 
 /* generated by Svelte v3.58.0 */
 
-function create_fragment$c(ctx) {
+function create_fragment$d(ctx) {
 	let component_0;
 	let t0;
 	let component_1;
@@ -5912,6 +6144,8 @@ function create_fragment$c(ctx) {
 	let component_10;
 	let t10;
 	let component_11;
+	let t11;
+	let component_12;
 	let current;
 
 	component_0 = new Component({
@@ -6013,6 +6247,32 @@ function create_fragment$c(ctx) {
 				},
 				title: "23 day",
 				description: "triangular circle",
+				heading: "August\n",
+				subheading: "",
+				cards: [
+					{ "stat": "23", "title": "Calendar" },
+					{ "stat": "Leo", "title": "Sun" },
+					{ "stat": "Blue", "title": "Moon" }
+				]
+			}
+		});
+
+	component_4 = new Component$5({
+			props: {
+				favicon: {
+					"alt": "",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"size": 8
+				},
+				image: {
+					"alt": "23 bay",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/169251542185923bay.png",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/169251542185923bay.png",
+					"size": 17
+				},
+				title: "23 day",
+				description: "triangular circle",
 				heading: "8-circuit model of consciousness",
 				items: [
 					{
@@ -6033,7 +6293,7 @@ function create_fragment$c(ctx) {
 			}
 		});
 
-	component_4 = new Component$5({
+	component_5 = new Component$6({
 			props: {
 				favicon: {
 					"alt": "",
@@ -6056,7 +6316,7 @@ function create_fragment$c(ctx) {
 			}
 		});
 
-	component_5 = new Component$6({
+	component_6 = new Component$7({
 			props: {
 				favicon: {
 					"alt": "",
@@ -6079,7 +6339,7 @@ function create_fragment$c(ctx) {
 			}
 		});
 
-	component_6 = new Component$7({
+	component_7 = new Component$8({
 			props: {
 				favicon: {
 					"alt": "",
@@ -6096,7 +6356,7 @@ function create_fragment$c(ctx) {
 			}
 		});
 
-	component_7 = new Component$8({
+	component_8 = new Component$9({
 			props: {
 				favicon: {
 					"alt": "",
@@ -6119,7 +6379,7 @@ function create_fragment$c(ctx) {
 			}
 		});
 
-	component_8 = new Component$9({
+	component_9 = new Component$a({
 			props: {
 				favicon: {
 					"alt": "",
@@ -6138,7 +6398,7 @@ function create_fragment$c(ctx) {
 			}
 		});
 
-	component_9 = new Component$a({
+	component_10 = new Component$b({
 			props: {
 				favicon: {
 					"alt": "",
@@ -6183,7 +6443,7 @@ function create_fragment$c(ctx) {
 			}
 		});
 
-	component_10 = new Component$b({
+	component_11 = new Component$c({
 			props: {
 				favicon: {
 					"alt": "",
@@ -6243,7 +6503,7 @@ function create_fragment$c(ctx) {
 			}
 		});
 
-	component_11 = new Component$c({
+	component_12 = new Component$d({
 			props: {
 				favicon: {
 					"alt": "",
@@ -6287,6 +6547,8 @@ function create_fragment$c(ctx) {
 			create_component(component_10.$$.fragment);
 			t10 = space();
 			create_component(component_11.$$.fragment);
+			t11 = space();
+			create_component(component_12.$$.fragment);
 		},
 		l(nodes) {
 			claim_component(component_0.$$.fragment, nodes);
@@ -6312,6 +6574,8 @@ function create_fragment$c(ctx) {
 			claim_component(component_10.$$.fragment, nodes);
 			t10 = claim_space(nodes);
 			claim_component(component_11.$$.fragment, nodes);
+			t11 = claim_space(nodes);
+			claim_component(component_12.$$.fragment, nodes);
 		},
 		m(target, anchor) {
 			mount_component(component_0, target, anchor);
@@ -6337,6 +6601,8 @@ function create_fragment$c(ctx) {
 			mount_component(component_10, target, anchor);
 			insert_hydration(target, t10, anchor);
 			mount_component(component_11, target, anchor);
+			insert_hydration(target, t11, anchor);
+			mount_component(component_12, target, anchor);
 			current = true;
 		},
 		p: noop,
@@ -6354,6 +6620,7 @@ function create_fragment$c(ctx) {
 			transition_in(component_9.$$.fragment, local);
 			transition_in(component_10.$$.fragment, local);
 			transition_in(component_11.$$.fragment, local);
+			transition_in(component_12.$$.fragment, local);
 			current = true;
 		},
 		o(local) {
@@ -6369,6 +6636,7 @@ function create_fragment$c(ctx) {
 			transition_out(component_9.$$.fragment, local);
 			transition_out(component_10.$$.fragment, local);
 			transition_out(component_11.$$.fragment, local);
+			transition_out(component_12.$$.fragment, local);
 			current = false;
 		},
 		d(detaching) {
@@ -6395,15 +6663,17 @@ function create_fragment$c(ctx) {
 			destroy_component(component_10, detaching);
 			if (detaching) detach(t10);
 			destroy_component(component_11, detaching);
+			if (detaching) detach(t11);
+			destroy_component(component_12, detaching);
 		}
 	};
 }
 
-class Component$d extends SvelteComponent {
+class Component$e extends SvelteComponent {
 	constructor(options) {
 		super();
-		init(this, options, null, create_fragment$c, safe_not_equal, {});
+		init(this, options, null, create_fragment$d, safe_not_equal, {});
 	}
 }
 
-export default Component$d;
+export default Component$e;
