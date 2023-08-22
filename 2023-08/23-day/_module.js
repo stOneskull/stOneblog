@@ -6476,7 +6476,7 @@ function create_fragment$g(ctx) {
 				title: "23 day",
 				description: "triangular circle",
 				superhead: "2023-08-23",
-				heading: "23 day!"
+				heading: "23 day"
 			}
 		});
 
