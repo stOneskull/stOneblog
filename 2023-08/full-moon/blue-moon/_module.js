@@ -6173,7 +6173,7 @@ function create_fragment$f(ctx) {
 				title: "super blue moon",
 				description: "definition b but super",
 				heading: "Astrology",
-				subheading: "",
+				subheading: "Full Moon",
 				cards: [
 					{
 						"stat": "Pisces",
