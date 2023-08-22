@@ -6471,7 +6471,7 @@ function create_fragment$g(ctx) {
 				},
 				image: {
 					"alt": "23 bay",
-					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/169251542185923bay.png"
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/23baygenOIG.webp1690619102000"
 				},
 				title: "23 day",
 				description: "triangular circle",
