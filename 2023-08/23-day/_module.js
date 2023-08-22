@@ -6560,8 +6560,8 @@ function create_fragment$g(ctx) {
 				title: "23 day",
 				description: "triangular circle",
 				content: {
-					"html": "<p><em>by Timothy Leary and Robert Anton Wilson</em></p>",
-					"markdown": "*by Timothy Leary and Robert Anton Wilson*\n\n"
+					"html": "<p><em>8-circuit model developed by Timothy Leary and Robert Anton Wilson</em></p>",
+					"markdown": "*8-circuit model developed by Timothy Leary and Robert Anton Wilson*\n\n"
 				}
 			}
 		});
