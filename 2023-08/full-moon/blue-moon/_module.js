@@ -5467,8 +5467,8 @@ function create_fragment$b(ctx) {
 				title: "blue moon",
 				description: "definition b",
 				content: {
-					"html": "<h1>Today</h1><p><em>11:35am Sydney time / 1:35am UTC</em></p><p><br>There are 2 types of Blue Moon</p><p>The Seasonal Blue Moon is the third full moon in a season.. <br>if that season has four full moons in it.</p><p>The Monthly Blue Moon is a second full moon in the same month.</p>",
-					"markdown": "# Today\n\n*11:35am Sydney time / 1:35am UTC*\n\n<br>\n\nThere are 2 types of Blue Moon\n\nThe Seasonal Blue Moon is the third full moon in a season.. <br>\n\nif that season has four full moons in it.\n\nThe Monthly Blue Moon is a second full moon in the same month.\n\n"
+					"html": "<h1>Today</h1><p><em>11:35am Sydney time / 1:35am UTC</em></p><p></p><p><strong><br>There are 2 types of Blue Moon</strong></p><p></p><p>A seasonal Blue Moon is the third full moon in a season.. <br>if that season has four full moons in it.</p><p>(Seasons are considered the periods between equinoxes and solstices).</p><p></p><p>A monthly Blue Moon is a second full moon in a calendar month.</p><p>Today is a monthly Blue Moon.</p>",
+					"markdown": "# Today\n\n*11:35am Sydney time / 1:35am UTC*\n\n\n\n**<br>\n\nThere are 2 types of Blue Moon**\n\n\n\nA seasonal Blue Moon is the third full moon in a season.. <br>\n\nif that season has four full moons in it.\n\n(Seasons are considered the periods between equinoxes and solstices).\n\n\n\nA monthly Blue Moon is a second full moon in a calendar month.\n\nToday is a monthly Blue Moon.\n\n"
 				}
 			}
 		});
