@@ -5316,20 +5316,20 @@ function create_fragment$8(ctx) {
 				heading: "Cherries",
 				items: [
 					{
-						"date": "2023-08-22",
+						"date": "2023-08-23",
 						"link": {
-							"url": "/2023-08/blogs/blogs-week-1",
-							"label": "blOgs 1"
+							"url": "/2023-08/23-day",
+							"label": "23 day"
 						},
 						"thumbnail": {
-							"alt": "blog baby",
-							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692510069930untitled.webp",
-							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692510069930untitled.webp",
-							"size": 7
+							"alt": "23 bay",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/169251542185923bay.png",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/169251542185923bay.png",
+							"size": null
 						},
 						"description": {
-							"html": "<h1 id=\"prose\">prOse</h1>",
-							"markdown": "# prOse"
+							"html": "<h1 id=\"23bay\">23 bay</h1>",
+							"markdown": "# 23 bay"
 						}
 					},
 					{
