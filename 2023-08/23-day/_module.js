@@ -6629,8 +6629,8 @@ function create_fragment$g(ctx) {
 				title: "23 day",
 				description: "triangular circle",
 				content: {
-					"html": "<h2>2 sense</h2><p><em>taste &amp; smell</em></p><p><em>delicious treats</em></p><p></p><h3>for 3</h3><p><em>third ear sees</em></p><p><em>feel</em></p><p></p><blockquote><p>yOu</p></blockquote>",
-					"markdown": "## 2 sense\n\n*taste & smell*\n\n*delicious treats*\n\n\n\n### for 3\n\n*third ear sees*\n\n*feel*\n\n\n\n> yOu\n\n"
+					"html": "<h2>2 sense</h2><p><em>taste &amp; smell</em></p><p><em>delicious treats</em></p><p></p><h3>3</h3><p><em>third ear sees</em></p><p><em>feel</em></p><p></p><blockquote><p>yOu</p></blockquote>",
+					"markdown": "## 2 sense\n\n*taste & smell*\n\n*delicious treats*\n\n\n\n### 3\n\n*third ear sees*\n\n*feel*\n\n\n\n> yOu\n\n"
 				}
 			}
 		});
