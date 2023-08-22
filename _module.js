@@ -5316,6 +5316,23 @@ function create_fragment$8(ctx) {
 				heading: "Cherries",
 				items: [
 					{
+						"date": "2023-08-31",
+						"link": {
+							"url": "/2023-08/full-moon/blue-moon",
+							"label": "blue moon"
+						},
+						"thumbnail": {
+							"alt": "super",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/th-4082499986.jpeg1692696986192",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/th-4082499986.jpeg1692696986192",
+							"size": null
+						},
+						"description": {
+							"html": "<h1 id=\"super\">super</h1>",
+							"markdown": "# super"
+						}
+					},
+					{
 						"date": "2023-08-23",
 						"link": {
 							"url": "/2023-08/23-day",
