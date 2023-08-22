@@ -6251,7 +6251,8 @@ function create_fragment$d(ctx) {
 				subheading: "",
 				cards: [
 					{ "stat": "23", "title": "Calendar" },
-					{ "stat": "Leo", "title": "Sun" },
+					{ "stat": "Leo", "title": "Zodiac" },
+					{ "stat": "Sturgeon", "title": "Moon" },
 					{ "stat": "Blue", "title": "Moon" }
 				]
 			}
