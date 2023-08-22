@@ -4595,6 +4595,238 @@ class Component$a extends SvelteComponent {
 
 function get_each_context$1(ctx, list, i) {
 	const child_ctx = ctx.slice();
+	child_ctx[7] = list[i];
+	return child_ctx;
+}
+
+// (57:4) {#each cards as card}
+function create_each_block$1(ctx) {
+	let div;
+	let span0;
+	let t0_value = /*card*/ ctx[7].stat + "";
+	let t0;
+	let t1;
+	let span1;
+	let t2_value = /*card*/ ctx[7].title + "";
+	let t2;
+	let t3;
+
+	return {
+		c() {
+			div = element("div");
+			span0 = element("span");
+			t0 = text(t0_value);
+			t1 = space();
+			span1 = element("span");
+			t2 = text(t2_value);
+			t3 = space();
+			this.h();
+		},
+		l(nodes) {
+			div = claim_element(nodes, "DIV", { class: true });
+			var div_nodes = children(div);
+			span0 = claim_element(div_nodes, "SPAN", { class: true });
+			var span0_nodes = children(span0);
+			t0 = claim_text(span0_nodes, t0_value);
+			span0_nodes.forEach(detach);
+			t1 = claim_space(div_nodes);
+			span1 = claim_element(div_nodes, "SPAN", { class: true });
+			var span1_nodes = children(span1);
+			t2 = claim_text(span1_nodes, t2_value);
+			span1_nodes.forEach(detach);
+			t3 = claim_space(div_nodes);
+			div_nodes.forEach(detach);
+			this.h();
+		},
+		h() {
+			attr(span0, "class", "stat svelte-14pw1m8");
+			attr(span1, "class", "title svelte-14pw1m8");
+			attr(div, "class", "card svelte-14pw1m8");
+		},
+		m(target, anchor) {
+			insert_hydration(target, div, anchor);
+			append_hydration(div, span0);
+			append_hydration(span0, t0);
+			append_hydration(div, t1);
+			append_hydration(div, span1);
+			append_hydration(span1, t2);
+			append_hydration(div, t3);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*cards*/ 4 && t0_value !== (t0_value = /*card*/ ctx[7].stat + "")) set_data(t0, t0_value);
+			if (dirty & /*cards*/ 4 && t2_value !== (t2_value = /*card*/ ctx[7].title + "")) set_data(t2, t2_value);
+		},
+		d(detaching) {
+			if (detaching) detach(div);
+		}
+	};
+}
+
+function create_fragment$b(ctx) {
+	let div1;
+	let section;
+	let h2;
+	let t0;
+	let t1;
+	let h3;
+	let t2;
+	let t3;
+	let div0;
+	let each_value = /*cards*/ ctx[2];
+	let each_blocks = [];
+
+	for (let i = 0; i < each_value.length; i += 1) {
+		each_blocks[i] = create_each_block$1(get_each_context$1(ctx, each_value, i));
+	}
+
+	return {
+		c() {
+			div1 = element("div");
+			section = element("section");
+			h2 = element("h2");
+			t0 = text(/*heading*/ ctx[0]);
+			t1 = space();
+			h3 = element("h3");
+			t2 = text(/*subheading*/ ctx[1]);
+			t3 = space();
+			div0 = element("div");
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			this.h();
+		},
+		l(nodes) {
+			div1 = claim_element(nodes, "DIV", { class: true, id: true });
+			var div1_nodes = children(div1);
+			section = claim_element(div1_nodes, "SECTION", { class: true });
+			var section_nodes = children(section);
+			h2 = claim_element(section_nodes, "H2", { class: true });
+			var h2_nodes = children(h2);
+			t0 = claim_text(h2_nodes, /*heading*/ ctx[0]);
+			h2_nodes.forEach(detach);
+			t1 = claim_space(section_nodes);
+			h3 = claim_element(section_nodes, "H3", { class: true });
+			var h3_nodes = children(h3);
+			t2 = claim_text(h3_nodes, /*subheading*/ ctx[1]);
+			h3_nodes.forEach(detach);
+			t3 = claim_space(section_nodes);
+			div0 = claim_element(section_nodes, "DIV", { class: true });
+			var div0_nodes = children(div0);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].l(div0_nodes);
+			}
+
+			div0_nodes.forEach(detach);
+			section_nodes.forEach(detach);
+			div1_nodes.forEach(detach);
+			this.h();
+		},
+		h() {
+			attr(h2, "class", "heading svelte-14pw1m8");
+			attr(h3, "class", "subheading svelte-14pw1m8");
+			attr(div0, "class", "cards svelte-14pw1m8");
+			attr(section, "class", "section-container svelte-14pw1m8");
+			attr(div1, "class", "section");
+			attr(div1, "id", "section-e2b04a89");
+		},
+		m(target, anchor) {
+			insert_hydration(target, div1, anchor);
+			append_hydration(div1, section);
+			append_hydration(section, h2);
+			append_hydration(h2, t0);
+			append_hydration(section, t1);
+			append_hydration(section, h3);
+			append_hydration(h3, t2);
+			append_hydration(section, t3);
+			append_hydration(section, div0);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(div0, null);
+				}
+			}
+		},
+		p(ctx, [dirty]) {
+			if (dirty & /*heading*/ 1) set_data(t0, /*heading*/ ctx[0]);
+			if (dirty & /*subheading*/ 2) set_data(t2, /*subheading*/ ctx[1]);
+
+			if (dirty & /*cards*/ 4) {
+				each_value = /*cards*/ ctx[2];
+				let i;
+
+				for (i = 0; i < each_value.length; i += 1) {
+					const child_ctx = get_each_context$1(ctx, each_value, i);
+
+					if (each_blocks[i]) {
+						each_blocks[i].p(child_ctx, dirty);
+					} else {
+						each_blocks[i] = create_each_block$1(child_ctx);
+						each_blocks[i].c();
+						each_blocks[i].m(div0, null);
+					}
+				}
+
+				for (; i < each_blocks.length; i += 1) {
+					each_blocks[i].d(1);
+				}
+
+				each_blocks.length = each_value.length;
+			}
+		},
+		i: noop,
+		o: noop,
+		d(detaching) {
+			if (detaching) detach(div1);
+			destroy_each(each_blocks, detaching);
+		}
+	};
+}
+
+function instance$b($$self, $$props, $$invalidate) {
+	let { favicon } = $$props;
+	let { image } = $$props;
+	let { title } = $$props;
+	let { description } = $$props;
+	let { heading } = $$props;
+	let { subheading } = $$props;
+	let { cards } = $$props;
+
+	$$self.$$set = $$props => {
+		if ('favicon' in $$props) $$invalidate(3, favicon = $$props.favicon);
+		if ('image' in $$props) $$invalidate(4, image = $$props.image);
+		if ('title' in $$props) $$invalidate(5, title = $$props.title);
+		if ('description' in $$props) $$invalidate(6, description = $$props.description);
+		if ('heading' in $$props) $$invalidate(0, heading = $$props.heading);
+		if ('subheading' in $$props) $$invalidate(1, subheading = $$props.subheading);
+		if ('cards' in $$props) $$invalidate(2, cards = $$props.cards);
+	};
+
+	return [heading, subheading, cards, favicon, image, title, description];
+}
+
+class Component$b extends SvelteComponent {
+	constructor(options) {
+		super();
+
+		init(this, options, instance$b, create_fragment$b, safe_not_equal, {
+			favicon: 3,
+			image: 4,
+			title: 5,
+			description: 6,
+			heading: 0,
+			subheading: 1,
+			cards: 2
+		});
+	}
+}
+
+/* generated by Svelte v3.58.0 */
+
+function get_each_context$2(ctx, list, i) {
+	const child_ctx = ctx.slice();
 	child_ctx[10] = list[i].link;
 	return child_ctx;
 }
@@ -4787,7 +5019,7 @@ function create_if_block$5(ctx) {
 	let each_blocks = [];
 
 	for (let i = 0; i < each_value.length; i += 1) {
-		each_blocks[i] = create_each_block$1(get_each_context$1(ctx, each_value, i));
+		each_blocks[i] = create_each_block$2(get_each_context$2(ctx, each_value, i));
 	}
 
 	icon = new Component$1({ props: { height: "25", icon: "bi:x-lg" } });
@@ -4859,12 +5091,12 @@ function create_if_block$5(ctx) {
 				let i;
 
 				for (i = 0; i < each_value.length; i += 1) {
-					const child_ctx = get_each_context$1(ctx, each_value, i);
+					const child_ctx = get_each_context$2(ctx, each_value, i);
 
 					if (each_blocks[i]) {
 						each_blocks[i].p(child_ctx, dirty);
 					} else {
-						each_blocks[i] = create_each_block$1(child_ctx);
+						each_blocks[i] = create_each_block$2(child_ctx);
 						each_blocks[i].c();
 						each_blocks[i].m(nav, t);
 					}
@@ -4907,7 +5139,7 @@ function create_if_block$5(ctx) {
 }
 
 // (136:8) {#each site_nav as { link }}
-function create_each_block$1(ctx) {
+function create_each_block$2(ctx) {
 	let a;
 	let t_value = /*link*/ ctx[10].label + "";
 	let t;
@@ -4946,7 +5178,7 @@ function create_each_block$1(ctx) {
 	};
 }
 
-function create_fragment$b(ctx) {
+function create_fragment$c(ctx) {
 	let div2;
 	let header;
 	let div0;
@@ -5205,7 +5437,7 @@ function create_fragment$b(ctx) {
 	};
 }
 
-function instance$b($$self, $$props, $$invalidate) {
+function instance$c($$self, $$props, $$invalidate) {
 	let { favicon } = $$props;
 	let { image } = $$props;
 	let { title } = $$props;
@@ -5239,11 +5471,11 @@ function instance$b($$self, $$props, $$invalidate) {
 	];
 }
 
-class Component$b extends SvelteComponent {
+class Component$c extends SvelteComponent {
 	constructor(options) {
 		super();
 
-		init(this, options, instance$b, create_fragment$b, safe_not_equal, {
+		init(this, options, instance$c, create_fragment$c, safe_not_equal, {
 			favicon: 3,
 			image: 4,
 			title: 5,
@@ -5256,7 +5488,7 @@ class Component$b extends SvelteComponent {
 
 /* generated by Svelte v3.58.0 */
 
-function get_each_context$2(ctx, list, i) {
+function get_each_context$3(ctx, list, i) {
 	const child_ctx = ctx.slice();
 	child_ctx[7] = list[i].link;
 	child_ctx[8] = list[i].icon;
@@ -5264,7 +5496,7 @@ function get_each_context$2(ctx, list, i) {
 }
 
 // (73:8) {#each social_links as {link, icon}}
-function create_each_block$2(ctx) {
+function create_each_block$3(ctx) {
 	let li;
 	let a;
 	let icon;
@@ -5340,7 +5572,7 @@ function create_each_block$2(ctx) {
 	};
 }
 
-function create_fragment$c(ctx) {
+function create_fragment$d(ctx) {
 	let div2;
 	let footer;
 	let div1;
@@ -5359,7 +5591,7 @@ function create_fragment$c(ctx) {
 	let each_blocks = [];
 
 	for (let i = 0; i < each_value.length; i += 1) {
-		each_blocks[i] = create_each_block$2(get_each_context$2(ctx, each_value, i));
+		each_blocks[i] = create_each_block$3(get_each_context$3(ctx, each_value, i));
 	}
 
 	const out = i => transition_out(each_blocks[i], 1, 1, () => {
@@ -5456,13 +5688,13 @@ function create_fragment$c(ctx) {
 				let i;
 
 				for (i = 0; i < each_value.length; i += 1) {
-					const child_ctx = get_each_context$2(ctx, each_value, i);
+					const child_ctx = get_each_context$3(ctx, each_value, i);
 
 					if (each_blocks[i]) {
 						each_blocks[i].p(child_ctx, dirty);
 						transition_in(each_blocks[i], 1);
 					} else {
-						each_blocks[i] = create_each_block$2(child_ctx);
+						each_blocks[i] = create_each_block$3(child_ctx);
 						each_blocks[i].c();
 						transition_in(each_blocks[i], 1);
 						each_blocks[i].m(ul, null);
@@ -5503,7 +5735,7 @@ function create_fragment$c(ctx) {
 	};
 }
 
-function instance$c($$self, $$props, $$invalidate) {
+function instance$d($$self, $$props, $$invalidate) {
 	let { favicon } = $$props;
 	let { image } = $$props;
 	let { title } = $$props;
@@ -5525,11 +5757,11 @@ function instance$c($$self, $$props, $$invalidate) {
 	return [social_links, favicon, image, title, description, heading, email];
 }
 
-class Component$c extends SvelteComponent {
+class Component$d extends SvelteComponent {
 	constructor(options) {
 		super();
 
-		init(this, options, instance$c, create_fragment$c, safe_not_equal, {
+		init(this, options, instance$d, create_fragment$d, safe_not_equal, {
 			favicon: 1,
 			image: 2,
 			title: 3,
@@ -5543,7 +5775,7 @@ class Component$c extends SvelteComponent {
 
 /* generated by Svelte v3.58.0 */
 
-function instance$d($$self, $$props, $$invalidate) {
+function instance$e($$self, $$props, $$invalidate) {
 	let { favicon } = $$props;
 	let { image } = $$props;
 	let { title } = $$props;
@@ -5559,11 +5791,11 @@ function instance$d($$self, $$props, $$invalidate) {
 	return [favicon, image, title, description];
 }
 
-class Component$d extends SvelteComponent {
+class Component$e extends SvelteComponent {
 	constructor(options) {
 		super();
 
-		init(this, options, instance$d, null, safe_not_equal, {
+		init(this, options, instance$e, null, safe_not_equal, {
 			favicon: 0,
 			image: 1,
 			title: 2,
@@ -5574,7 +5806,7 @@ class Component$d extends SvelteComponent {
 
 /* generated by Svelte v3.58.0 */
 
-function create_fragment$d(ctx) {
+function create_fragment$e(ctx) {
 	let component_0;
 	let t0;
 	let component_1;
@@ -5600,6 +5832,8 @@ function create_fragment$d(ctx) {
 	let component_11;
 	let t11;
 	let component_12;
+	let t12;
+	let component_13;
 	let current;
 
 	component_0 = new Component({
@@ -5702,8 +5936,8 @@ function create_fragment$d(ctx) {
 				title: "super blue moon",
 				description: "definition b but super",
 				content: {
-					"html": "<h1>Today</h1><p><em>11:36am Sydney time / 1:36am UTC / 9:36pm (Aug 30) New York time</em></p><p></p><p><strong><br>There are 12 types of Full Moon</strong></p><p></p><p>Around the world, people have given names to the full moons through the year.</p><p>In an American viewpoint, the native American people's names of Full Moons are used a lot, such as the Sturgeon Moon for August.</p><p>Because a lunar month is 29.5 days, 12 lunar months is shorter than a solar year.</p><p>Every 2 or 3 years, a 13th full moon will be in the year.</p><p>There wasn't a traditional name for it, and it became the Blue Moon</p><p><em>Which of the 13 full moons in the year is the blue moon?</em></p><p>Well, if you think of four seasons in a year, each season should have 3 full moons.</p><p>The blue moon is in the season with four full moons.</p>",
-					"markdown": "# Today\n\n*11:36am Sydney time / 1:36am UTC / 9:36pm (Aug 30) New York time*\n\n\n\n**<br>\n\nThere are 12 types of Full Moon**\n\n\n\nAround the world, people have given names to the full moons through the year.\n\nIn an American viewpoint, the native American people's names of Full Moons are used a lot, such as the Sturgeon Moon for August.\n\nBecause a lunar month is 29.5 days, 12 lunar months is shorter than a solar year.\n\nEvery 2 or 3 years, a 13th full moon will be in the year.\n\nThere wasn't a traditional name for it, and it became the Blue Moon\n\n*Which of the 13 full moons in the year is the blue moon?*\n\nWell, if you think of four seasons in a year, each season should have 3 full moons.\n\nThe blue moon is in the season with four full moons.\n\n"
+					"html": "<h1>Today</h1><p><em>11:36am Sydney time / 1:36am UTC / 9:36pm (Aug 30) New York time</em></p><p><em>Pisces Moon</em></p><p></p><p><strong><br>There are 12 types of Full Moon</strong></p><p></p><p>Around the world, people have given names to the full moons through the year.</p><p>In an American viewpoint, the native American people's names of Full Moons are used a lot, such as the Sturgeon Moon for August.</p><p>Because a lunar month is 29.5 days, 12 lunar months is shorter than a solar year.</p><p>Every 2 or 3 years, a 13th full moon will be in the year.</p><p>There wasn't a traditional name for it, and it became the Blue Moon</p><p><em>Which of the 13 full moons in the year is the blue moon?</em></p><p>Well, if you think of four seasons in a year, each season should have 3 full moons.</p><p>The blue moon is in the season with four full moons.</p>",
+					"markdown": "# Today\n\n*11:36am Sydney time / 1:36am UTC / 9:36pm (Aug 30) New York time*\n\n*Pisces Moon*\n\n\n\n**<br>\n\nThere are 12 types of Full Moon**\n\n\n\nAround the world, people have given names to the full moons through the year.\n\nIn an American viewpoint, the native American people's names of Full Moons are used a lot, such as the Sturgeon Moon for August.\n\nBecause a lunar month is 29.5 days, 12 lunar months is shorter than a solar year.\n\nEvery 2 or 3 years, a 13th full moon will be in the year.\n\nThere wasn't a traditional name for it, and it became the Blue Moon\n\n*Which of the 13 full moons in the year is the blue moon?*\n\nWell, if you think of four seasons in a year, each season should have 3 full moons.\n\nThe blue moon is in the season with four full moons.\n\n"
 				}
 			}
 		});
@@ -5855,6 +6089,34 @@ function create_fragment$d(ctx) {
 				},
 				title: "super blue moon",
 				description: "definition b but super",
+				heading: "",
+				subheading: "",
+				cards: [
+					{
+						"stat": "Pisces",
+						"title": "Constellation"
+					},
+					{ "stat": "Saturn", "title": "Planet" }
+				]
+			}
+		});
+
+	component_11 = new Component$c({
+			props: {
+				favicon: {
+					"alt": "",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"size": 8
+				},
+				image: {
+					"alt": "definition b",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/th-4082499986.jpeg1692696986192",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/th-4082499986.jpeg1692696986192",
+					"size": null
+				},
+				title: "super blue moon",
+				description: "definition b but super",
 				logo: {
 					"image": {
 						"alt": "stOne",
@@ -5884,7 +6146,7 @@ function create_fragment$d(ctx) {
 			}
 		});
 
-	component_11 = new Component$c({
+	component_12 = new Component$d({
 			props: {
 				favicon: {
 					"alt": "",
@@ -5944,7 +6206,7 @@ function create_fragment$d(ctx) {
 			}
 		});
 
-	component_12 = new Component$d({
+	component_13 = new Component$e({
 			props: {
 				favicon: {
 					"alt": "",
@@ -5990,6 +6252,8 @@ function create_fragment$d(ctx) {
 			create_component(component_11.$$.fragment);
 			t11 = space();
 			create_component(component_12.$$.fragment);
+			t12 = space();
+			create_component(component_13.$$.fragment);
 		},
 		l(nodes) {
 			claim_component(component_0.$$.fragment, nodes);
@@ -6017,6 +6281,8 @@ function create_fragment$d(ctx) {
 			claim_component(component_11.$$.fragment, nodes);
 			t11 = claim_space(nodes);
 			claim_component(component_12.$$.fragment, nodes);
+			t12 = claim_space(nodes);
+			claim_component(component_13.$$.fragment, nodes);
 		},
 		m(target, anchor) {
 			mount_component(component_0, target, anchor);
@@ -6044,6 +6310,8 @@ function create_fragment$d(ctx) {
 			mount_component(component_11, target, anchor);
 			insert_hydration(target, t11, anchor);
 			mount_component(component_12, target, anchor);
+			insert_hydration(target, t12, anchor);
+			mount_component(component_13, target, anchor);
 			current = true;
 		},
 		p: noop,
@@ -6062,6 +6330,7 @@ function create_fragment$d(ctx) {
 			transition_in(component_10.$$.fragment, local);
 			transition_in(component_11.$$.fragment, local);
 			transition_in(component_12.$$.fragment, local);
+			transition_in(component_13.$$.fragment, local);
 			current = true;
 		},
 		o(local) {
@@ -6078,6 +6347,7 @@ function create_fragment$d(ctx) {
 			transition_out(component_10.$$.fragment, local);
 			transition_out(component_11.$$.fragment, local);
 			transition_out(component_12.$$.fragment, local);
+			transition_out(component_13.$$.fragment, local);
 			current = false;
 		},
 		d(detaching) {
@@ -6106,15 +6376,17 @@ function create_fragment$d(ctx) {
 			destroy_component(component_11, detaching);
 			if (detaching) detach(t11);
 			destroy_component(component_12, detaching);
+			if (detaching) detach(t12);
+			destroy_component(component_13, detaching);
 		}
 	};
 }
 
-class Component$e extends SvelteComponent {
+class Component$f extends SvelteComponent {
 	constructor(options) {
 		super();
-		init(this, options, null, create_fragment$d, safe_not_equal, {});
+		init(this, options, null, create_fragment$e, safe_not_equal, {});
 	}
 }
 
-export default Component$e;
+export default Component$f;
