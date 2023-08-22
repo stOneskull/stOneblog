@@ -6667,7 +6667,7 @@ function create_fragment$h(ctx) {
 				},
 				title: "23 day",
 				description: "triangular circle",
-				heading: "August\n",
+				heading: "8 - August",
 				subheading: "⅔",
 				cards: [
 					{ "stat": "23", "title": "Calendar" },
