@@ -5470,9 +5470,7 @@ function create_fragment$6(ctx) {
 						},
 						"thumbnail": {
 							"alt": "23 bay",
-							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/169251542185923bay.png",
-							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/169251542185923bay.png",
-							"size": null
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/23baygenOIG.webp1690619102000"
 						},
 						"description": {
 							"html": "<h1 id=\"23bay\">23 bay</h1>",
