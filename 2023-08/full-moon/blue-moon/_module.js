@@ -5642,8 +5642,8 @@ function create_fragment$c(ctx) {
 				title: "super blue moon",
 				description: "definition b but super",
 				content: {
-					"html": "<p><strong><br>There are 2 types of Blue Moon</strong></p><p></p><p>A <em>seasonal</em> Blue Moon is the third full moon in a season.. <br>if that season has four full moons in it.</p><p>(Seasons are considered the periods between equinoxes and solstices)</p><p></p><p>And then a different type of rare moon, <br>a <em>monthly</em> Blue Moon is a second full moon in a calendar month.</p><p>Today is a monthly Blue Moon.</p>",
-					"markdown": "**<br>\n\nThere are 2 types of Blue Moon**\n\n\n\nA *seasonal* Blue Moon is the third full moon in a season.. <br>\n\nif that season has four full moons in it.\n\n(Seasons are considered the periods between equinoxes and solstices)\n\n\n\nAnd then a different type of rare moon, <br>\n\na *monthly* Blue Moon is a second full moon in a calendar month.\n\nToday is a monthly Blue Moon.\n\n"
+					"html": "<p><strong><br>There are 2 types of Blue Moon</strong></p><p></p><p>A <em>seasonal</em> Blue Moon is where there are four full moons in a season..<br>and the third full moon of that season is named the Blue Moon.</p><p><em>(Seasons are considered the periods between equinoxes and solstices)</em></p><p>The next seasonal blue moon will be next year, August 19, 2024.</p><p></p><p>And then a different type of rare moon, <br>a <em>monthly</em> Blue Moon is a second full moon in a calendar month.</p><p>Today is a monthly Blue Moon.</p>",
+					"markdown": "**<br>\n\nThere are 2 types of Blue Moon**\n\n\n\nA *seasonal* Blue Moon is where there are four full moons in a season..<br>\n\nand the third full moon of that season is named the Blue Moon.\n\n*(Seasons are considered the periods between equinoxes and solstices)*\n\nThe next seasonal blue moon will be next year, August 19, 2024.\n\n\n\nAnd then a different type of rare moon, <br>\n\na *monthly* Blue Moon is a second full moon in a calendar month.\n\nToday is a monthly Blue Moon.\n\n"
 				}
 			}
 		});
