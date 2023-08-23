@@ -5632,8 +5632,8 @@ function create_fragment$d(ctx) {
 				title: "maths 4",
 				description: "square",
 				content: {
-					"html": "<p><em>it doesn't really matter which direction the line is going</em></p><p><em>it could be a line on a piece of paper</em></p><p><em>it could be the line between the where you are sitting and the closest satellite</em></p><p><em>it's a line and it has the length dimension</em></p><p><em>lines are 1D and if it starts at zero then its length is x</em></p><p><em>an x ordinate, i guess. </em></p><p><em>it is when x teams up with y that it is a 'co-ordinate', right </em></p>",
-					"markdown": "*it doesn't really matter which direction the line is going*\n\n*it could be a line on a piece of paper*\n\n*it could be the line between the where you are sitting and the closest satellite*\n\n*it's a line and it has the length dimension*\n\n*lines are 1D and if it starts at zero then its length is x*\n\n*an x ordinate, i guess. *\n\n*it is when x teams up with y that it is a 'co-ordinate', right *\n\n"
+					"html": "<p><em>it doesn't really matter which direction the line is going</em></p><p><em>it could be a line on a piece of paper</em></p><p><em>it could be the line between where you are sitting and the closest satellite</em></p><p><em>it's a line and it has the length dimension</em></p><p><em>lines are 1D and if it starts at zero then its length is x</em></p><p><em>an x ordinate, i guess.</em></p><p><em>it is when x teams up with y that it is a 'co-ordinate', right</em></p>",
+					"markdown": "*it doesn't really matter which direction the line is going*\n\n*it could be a line on a piece of paper*\n\n*it could be the line between where you are sitting and the closest satellite*\n\n*it's a line and it has the length dimension*\n\n*lines are 1D and if it starts at zero then its length is x*\n\n*an x ordinate, i guess.*\n\n*it is when x teams up with y that it is a 'co-ordinate', right*\n\n"
 				}
 			}
 		});
