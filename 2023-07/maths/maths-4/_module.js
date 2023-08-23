@@ -5597,13 +5597,13 @@ function create_fragment$e(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "tree",
-					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
-					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
-					"size": 29
+					"alt": "square",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692805442636th-969951302.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692805442636th-969951302.jpeg",
+					"size": 10
 				},
-				title: "maths 3",
-				description: "tree"
+				title: "maths 4",
+				description: "square"
 			}
 		});
 
@@ -5616,13 +5616,13 @@ function create_fragment$e(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "tree",
-					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
-					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
-					"size": 29
+					"alt": "square",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692805442636th-969951302.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692805442636th-969951302.jpeg",
+					"size": 10
 				},
-				title: "maths 3",
-				description: "tree",
+				title: "maths 4",
+				description: "square",
 				logo: {
 					"image": {
 						"alt": "stOne",
@@ -5658,8 +5658,8 @@ function create_fragment$e(ctx) {
 					"alt": "square",
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692805442636th-969951302.jpeg"
 				},
-				title: "maths 3",
-				description: "tree",
+				title: "maths 4",
+				description: "square",
 				superhead: "2023-08-28",
 				heading: "maths 4\n"
 			}
@@ -5674,16 +5674,16 @@ function create_fragment$e(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "tree",
-					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
-					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
-					"size": 29
+					"alt": "square",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692805442636th-969951302.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692805442636th-969951302.jpeg",
+					"size": 10
 				},
-				title: "maths 3",
-				description: "tree",
+				title: "maths 4",
+				description: "square",
 				content: {
-					"html": "<p><a href=\"https://www.stoneskull.me/2023-07/maths/maths-week-2\"><-- previously</a></p>\n<h1 id=\"nodesandtrees\">nodes and trees</h1>\n<p><em>for a game i'm making, i want the map to be a tree, and each room in the map is a node.</em></p>\n<p><em>i've been thinking about it for quite a while..</em></p>\n<p><em>i've written it different ways and stopped. now i'm gonna solve it.</em></p>",
-					"markdown": "[<-- previously](https://www.stoneskull.me/2023-07/maths/maths-week-2)\n\n# nodes and trees\n\n*for a game i'm making, i want the map to be a tree, and each room in the map is a node.*\n\n*i've been thinking about it for quite a while..*\n\n*i've written it different ways and stopped. now i'm gonna solve it.*\n\n\n\n"
+					"html": "<p><a href=\"https://www.stoneskull.me/2023-07/maths/maths-3\"><-- previously</a>\n<br><br></p>\n<h1 id=\"line\">line</h1>\n<p><br>\nfor a line, all that's needed is x</p>\n<p>and x marks the spot</p>",
+					"markdown": "[<-- previously](<https://www.stoneskull.me/2023-07/maths/maths-3>)\n<br><br>\n# line\n<br>\nfor a line, all that's needed is x\n\nand x marks the spot\n\n\n\n\n"
 				}
 			}
 		});
@@ -5697,16 +5697,16 @@ function create_fragment$e(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "tree",
-					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
-					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
-					"size": 29
+					"alt": "square",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692805442636th-969951302.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692805442636th-969951302.jpeg",
+					"size": 10
 				},
-				title: "maths 3",
-				description: "tree",
+				title: "maths 4",
+				description: "square",
 				content: {
-					"html": "<p><em>i want a node to have six outputs..</em></p><p><em>n, e, s, w.. up and down</em></p>",
-					"markdown": "*i want a node to have six outputs..*\n\n*n, e, s, w.. up and down*\n\n"
+					"html": "<p><em>it doesn't really matter which direction the line is going</em></p><p><em>it could be a line on a piece of paper</em></p><p><em>it could be the line between the where you are sitting and the closest satellite</em></p><p><em>it's a line and it has the length dimension</em></p><p><em>lines are 1D and if it starts at zero then its length is x</em></p><p><em>an x ordinate, i guess. </em></p><p><em>it is when x teams up with y that it is a 'co-ordinate', right </em></p>",
+					"markdown": "*it doesn't really matter which direction the line is going*\n\n*it could be a line on a piece of paper*\n\n*it could be the line between the where you are sitting and the closest satellite*\n\n*it's a line and it has the length dimension*\n\n*lines are 1D and if it starts at zero then its length is x*\n\n*an x ordinate, i guess. *\n\n*it is when x teams up with y that it is a 'co-ordinate', right *\n\n"
 				}
 			}
 		});
@@ -5723,8 +5723,8 @@ function create_fragment$e(ctx) {
 					"alt": "cube",
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/node.jpg1689751023002"
 				},
-				title: "maths 3",
-				description: "tree"
+				title: "maths 4",
+				description: "square"
 			}
 		});
 
@@ -5737,13 +5737,13 @@ function create_fragment$e(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "tree",
-					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
-					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
-					"size": 29
+					"alt": "square",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692805442636th-969951302.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692805442636th-969951302.jpeg",
+					"size": 10
 				},
-				title: "maths 3",
-				description: "tree",
+				title: "maths 4",
+				description: "square",
 				content: {
 					"html": "<p><em>if i make it that a room can have a maximum of three exits, then it will be easier.</em></p><p><em>so even though a room can have possible six exits, it'll never have them all..</em></p><p><em>as the game/map gets generated differently each game, i might have to think about exit contexts. what exits are more likely based on the room type..</em></p><p>i'm not sure about something.</p><p><em>yes, definitely, there are only 3 exits on a node... at one time.</em></p><p><em>if 1 closed, can another open? or is it a permanent 3 exits, from cradle to grave of a node?</em></p><p>could there be more than one type of node?</p>",
 					"markdown": "*if i make it that a room can have a maximum of three exits, then it will be easier.*\n\n*so even though a room can have possible six exits, it'll never have them all..*\n\n*as the game/map gets generated differently each game, i might have to think about exit contexts. what exits are more likely based on the room type..*\n\ni'm not sure about something.\n\n*yes, definitely, there are only 3 exits on a node... at one time.*\n\n*if 1 closed, can another open? or is it a permanent 3 exits, from cradle to grave of a node?*\n\ncould there be more than one type of node?\n\n"
@@ -5760,13 +5760,13 @@ function create_fragment$e(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "tree",
-					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
-					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
-					"size": 29
+					"alt": "square",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692805442636th-969951302.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692805442636th-969951302.jpeg",
+					"size": 10
 				},
-				title: "maths 3",
-				description: "tree",
+				title: "maths 4",
+				description: "square",
 				content: {
 					"html": "<h1>Taxis</h1><p><em>taxis are portals but with many more dimensions..</em></p><p><em>like the deLorean or the more modern, wild west train.</em></p><p></p><p>rooms can be connected by taxi. not all rooms. just rooms that have that capability.</p><p><em>you must have a driver to drive you, a location address, and the money to pay.</em></p><p>you get these things in the game. ie. you get drivers's numbers you can save in your phone, you come across locations, by foot normally. you start on foot. that's the only way to travel at the start. and then you get phone numbers and location experience and memory, and you get money along the way too.</p><p>you can't really experience a location passing by it in a taxi. you must first reach there by other means. there are other types of portals. for example, there are portals. the portals that are like a round window, and as soon as you step through it, you step into the other place. those normal portals. so it's not just taxis.</p><p>sometimes a taxi will come past, and you can flag it. you didn't need the driver's number. be careful about waiting for a taxi though. it might be quicker to walk.</p><p></p>",
 					"markdown": "# Taxis\n\n*taxis are portals but with many more dimensions..*\n\n*like the deLorean or the more modern, wild west train.*\n\n\n\nrooms can be connected by taxi. not all rooms. just rooms that have that capability.\n\n*you must have a driver to drive you, a location address, and the money to pay.*\n\nyou get these things in the game. ie. you get drivers's numbers you can save in your phone, you come across locations, by foot normally. you start on foot. that's the only way to travel at the start. and then you get phone numbers and location experience and memory, and you get money along the way too.\n\nyou can't really experience a location passing by it in a taxi. you must first reach there by other means. there are other types of portals. for example, there are portals. the portals that are like a round window, and as soon as you step through it, you step into the other place. those normal portals. so it's not just taxis.\n\nsometimes a taxi will come past, and you can flag it. you didn't need the driver's number. be careful about waiting for a taxi though. it might be quicker to walk.\n\n\n\n"
@@ -5783,13 +5783,13 @@ function create_fragment$e(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "tree",
-					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
-					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
-					"size": 29
+					"alt": "square",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692805442636th-969951302.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692805442636th-969951302.jpeg",
+					"size": 10
 				},
-				title: "maths 3",
-				description: "tree",
+				title: "maths 4",
+				description: "square",
 				content: {
 					"html": "<h1>Portals</h1><p><em>portals are not nodes.. they are different parts of the tree system.</em></p><p><em>let's talk about the tree.</em></p><p></p>",
 					"markdown": "# Portals\n\n*portals are not nodes.. they are different parts of the tree system.*\n\n*let's talk about the tree.*\n\n\n\n"
@@ -5806,13 +5806,13 @@ function create_fragment$e(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "tree",
-					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
-					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
-					"size": 29
+					"alt": "square",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692805442636th-969951302.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692805442636th-969951302.jpeg",
+					"size": 10
 				},
-				title: "maths 3",
-				description: "tree",
+				title: "maths 4",
+				description: "square",
 				content: {
 					"html": "<h1>The Tree</h1><p><em>i think i will give the tree a name..</em></p><p><em>let's talk about the tree.</em></p><p></p><p>the tree is the game. it is the universe.</p><p>it is the tree.</p><p>when i say 'the tree', i mean your tree.</p><p>there are other trees. a tree belongs to the player. you are the center of the universe, and you can visit other players in their universe. they can visit you too. and you can both go visit me in my tree. </p><p>at the start of the game, the player starts at the root node of the tree. the player is not a node. the tree grows out of you. there is no tree at the start but you and the root node. the seed.</p><p>then you have a choice.. you can do nothing and stay put at the root.. or move on to the next node.. which is behind that door in front of you. is that one choice or two choices?</p><p>every player starts like that. but once the player opens the door, the tree becomes unique to the player. it grows with the player, in his or her adventure.</p><p>can u dig it?</p><p>as the player travels on his or her adventure, there may be a time when there is a connection of some type between their tree and the tree of another player. this is quite enthralling and exciting, isn't it. i think so.</p><p></p>",
 					"markdown": "# The Tree\n\n*i think i will give the tree a name..*\n\n*let's talk about the tree.*\n\n\n\nthe tree is the game. it is the universe.\n\nit is the tree.\n\nwhen i say 'the tree', i mean your tree.\n\nthere are other trees. a tree belongs to the player. you are the center of the universe, and you can visit other players in their universe. they can visit you too. and you can both go visit me in my tree.\n\nat the start of the game, the player starts at the root node of the tree. the player is not a node. the tree grows out of you. there is no tree at the start but you and the root node. the seed.\n\nthen you have a choice.. you can do nothing and stay put at the root.. or move on to the next node.. which is behind that door in front of you. is that one choice or two choices?\n\nevery player starts like that. but once the player opens the door, the tree becomes unique to the player. it grows with the player, in his or her adventure.\n\ncan u dig it?\n\nas the player travels on his or her adventure, there may be a time when there is a connection of some type between their tree and the tree of another player. this is quite enthralling and exciting, isn't it. i think so.\n\n\n\n"
@@ -5829,13 +5829,13 @@ function create_fragment$e(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "tree",
-					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
-					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
-					"size": 29
+					"alt": "square",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692805442636th-969951302.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692805442636th-969951302.jpeg",
+					"size": 10
 				},
-				title: "maths 3",
-				description: "tree",
+				title: "maths 4",
+				description: "square",
 				content: {
 					"html": "<h1>The Dream</h1><p><em>the tree isn't God.. the tree is a Dream</em></p><p><em>God dreams.</em></p><p></p><p>as well as the player having their tree, they have their god.</p><p>a player's god is a dream, an aspect, of God.</p><p>God dreams up the god who scattered you as a seed. </p><p>He is behind the door.. grow now.</p>",
 					"markdown": "# The Dream\n\n*the tree isn't God.. the tree is a Dream*\n\n*God dreams.*\n\n\n\nas well as the player having their tree, they have their god.\n\na player's god is a dream, an aspect, of God.\n\nGod dreams up the god who scattered you as a seed.\n\nHe is behind the door.. grow now.\n\n"
@@ -5852,13 +5852,13 @@ function create_fragment$e(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "tree",
-					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
-					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
-					"size": 29
+					"alt": "square",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692805442636th-969951302.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692805442636th-969951302.jpeg",
+					"size": 10
 				},
-				title: "maths 3",
-				description: "tree",
+				title: "maths 4",
+				description: "square",
 				logo: {
 					"image": {
 						"alt": "stOne",
@@ -5891,13 +5891,13 @@ function create_fragment$e(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "tree",
-					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
-					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
-					"size": 29
+					"alt": "square",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692805442636th-969951302.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692805442636th-969951302.jpeg",
+					"size": 10
 				},
-				title: "maths 3",
-				description: "tree",
+				title: "maths 4",
+				description: "square",
 				heading: "",
 				email: "",
 				social_links: [
@@ -5951,13 +5951,13 @@ function create_fragment$e(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "tree",
-					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
-					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692443796740th-2695032410.jpeg",
-					"size": 29
+					"alt": "square",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692805442636th-969951302.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692805442636th-969951302.jpeg",
+					"size": 10
 				},
-				title: "maths 3",
-				description: "tree"
+				title: "maths 4",
+				description: "square"
 			}
 		});
 
