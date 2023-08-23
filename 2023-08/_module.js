@@ -5495,9 +5495,9 @@ function create_fragment$6(ctx) {
 							"label": "databases"
 						},
 						"thumbnail": {
-							"alt": "",
-							"src": "https://picsum.photos/600/400?blur=10",
-							"url": "https://picsum.photos/600/400?blur=10",
+							"alt": "all your base",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/th-2467414110.jpeg1692787562661",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/th-2467414110.jpeg1692787562661",
 							"size": null
 						},
 						"description": {
