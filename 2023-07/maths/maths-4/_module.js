@@ -6387,8 +6387,8 @@ function create_fragment$j(ctx) {
 				title: "maths 4",
 				description: "square",
 				content: {
-					"html": "<h1>lines</h1><p></p><p>one more..</p><p>imagine that zero has three lines going through it</p><p>it has three lines and your head has three lines</p><p>i come by and there's lines going through my head too</p><p>if my head at zero, my lines line up with zero's lines, aligned</p><p>moving away from zero in a line.. </p><p>splits the sets of three lines because of moving on the fourth line</p><p>time is moving</p>",
-					"markdown": "# lines\n\n\n\none more..\n\nimagine that zero has three lines going through it\n\nit has three lines and your head has three lines\n\ni come by and there's lines going through my head too\n\nif my head at zero, my lines line up with zero's lines, aligned\n\nmoving away from zero in a line..\n\nsplits the sets of three lines because of moving on the fourth line\n\ntime is moving\n\n"
+					"html": "<h1>lines</h1><p></p><p>one more..</p><p>imagine that zero has three lines going through it</p><p>it has three lines and your head has three lines</p><p></p><p>i come by and there's lines going through my head too</p><p>if i put my head at zero, my lines line up with zero's lines, aligned</p><p></p><p>moving away from zero in a line.. </p><p>splits the sets of three lines because of moving on the fourth line</p><p>time is moving</p>",
+					"markdown": "# lines\n\n\n\none more..\n\nimagine that zero has three lines going through it\n\nit has three lines and your head has three lines\n\n\n\ni come by and there's lines going through my head too\n\nif i put my head at zero, my lines line up with zero's lines, aligned\n\n\n\nmoving away from zero in a line..\n\nsplits the sets of three lines because of moving on the fourth line\n\ntime is moving\n\n"
 				}
 			}
 		});
