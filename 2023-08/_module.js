@@ -5493,6 +5493,23 @@ function create_fragment$6(ctx) {
 							"html": "<h1 id=\"super\">super</h1>",
 							"markdown": "# super"
 						}
+					},
+					{
+						"date": "2023-08-24",
+						"link": {
+							"url": "/2023-07/code/databases",
+							"label": "databases"
+						},
+						"thumbnail": {
+							"alt": "",
+							"src": "https://picsum.photos/600/400?blur=10",
+							"url": "https://picsum.photos/600/400?blur=10",
+							"size": null
+						},
+						"description": {
+							"html": "<h1 id=\"choices\">choices</h1>",
+							"markdown": "# choices"
+						}
 					}
 				]
 			}
