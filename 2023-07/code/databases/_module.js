@@ -5721,8 +5721,8 @@ function create_fragment$c(ctx) {
 				title: "databases",
 				description: "step by step",
 				content: {
-					"html": "<p><strong>lite db and polo db</strong></p><p><em>these 2 were candidate 1</em></p><p></p><p><em>UnQLite is pulling me closer..</em></p><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link\" href=\"https://unqlite.org/\">unqlite.org</a></p>",
-					"markdown": "**lite db and polo db**\n\n*these 2 were candidate 1*\n\n\n\n*UnQLite is pulling me closer..*\n\n[unqlite.org](<https://unqlite.org/>)\n\n"
+					"html": "<p><strong>lite db and polo db</strong></p><p><em>these 2 were candidate 1</em></p><p></p><p><em>UnQLite is pulling me closer..</em></p><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link\" href=\"http://unqlite.org\"><em>unqlite.org</em></a><em> </em><br><br><br>and just learned about jxp..</p><p><code>Jx9 is a Turing-Complete, dynamically typed programming language based on JSON and implemented as a library in the UnQLite core</code> <br><br><br>looks like we have a winner!</p><p><em>for today anyway</em></p>",
+					"markdown": "**lite db and polo db**\n\n*these 2 were candidate 1*\n\n\n\n*UnQLite is pulling me closer..*\n\n[*unqlite.org*](<http://unqlite.org>)* *<br>\n\n<br>\n\n<br>\n\nand just learned about jxp..\n\n`Jx9 is a Turing-Complete, dynamically typed programming language based on JSON and implemented as a library in the UnQLite core`<br>\n\n<br>\n\n<br>\n\nlooks like we have a winner!\n\n*for today anyway*\n\n"
 				}
 			}
 		});
