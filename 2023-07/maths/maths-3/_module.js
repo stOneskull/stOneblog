@@ -5927,6 +5927,13 @@ function create_fragment$e(ctx) {
 					},
 					{
 						"link": {
+							"url": "https://programming.dev/u/stOneskull",
+							"label": "lemmy"
+						},
+						"icon": "mdi:language-python"
+					},
+					{
+						"link": {
 							"url": "https://github.com/stOneskull",
 							"label": "Github",
 							"active": false
@@ -5939,13 +5946,6 @@ function create_fragment$e(ctx) {
 							"label": "reddit"
 						},
 						"icon": "mdi:reddit"
-					},
-					{
-						"link": {
-							"url": "https://programming.dev/u/stOneskull",
-							"label": "lemmy"
-						},
-						"icon": "mdi:language-python"
 					}
 				]
 			}
