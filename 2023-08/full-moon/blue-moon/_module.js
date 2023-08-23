@@ -6013,8 +6013,8 @@ function create_fragment$f(ctx) {
 				title: "super blue moon",
 				description: "definition b but super",
 				content: {
-					"html": "<h1>Today</h1><p><em>11:36am Sydney time / 1:36am UTC / 9:36pm (Aug 30) New York time</em></p><p></p><p><strong><br>There are 12 types of Full Moon</strong></p><p></p><p>Around the world, people have given names to the full moons through the year.</p><p>In an American viewpoint, the native American people's names of Full Moons are used a lot, such as the Sturgeon Moon for August.</p><p>Because a lunar month is 29.5 days, 12 lunar months is shorter than a solar year.</p><p>Every 2 or 3 years, a 13th full moon will be in the year.</p><p>There wasn't a traditional name for it, and it became the Blue Moon</p><p><em>Which of the 13 full moons in the year is the blue moon?</em></p><p>Well, if you think of four seasons in a year, each season should have 3 full moons.</p><p>The blue moon is in the season with four full moons.</p>",
-					"markdown": "# Today\n\n*11:36am Sydney time / 1:36am UTC / 9:36pm (Aug 30) New York time*\n\n\n\n**<br>\n\nThere are 12 types of Full Moon**\n\n\n\nAround the world, people have given names to the full moons through the year.\n\nIn an American viewpoint, the native American people's names of Full Moons are used a lot, such as the Sturgeon Moon for August.\n\nBecause a lunar month is 29.5 days, 12 lunar months is shorter than a solar year.\n\nEvery 2 or 3 years, a 13th full moon will be in the year.\n\nThere wasn't a traditional name for it, and it became the Blue Moon\n\n*Which of the 13 full moons in the year is the blue moon?*\n\nWell, if you think of four seasons in a year, each season should have 3 full moons.\n\nThe blue moon is in the season with four full moons.\n\n"
+					"html": "<h1>Today</h1><p><em>11:36am Sydney time / 1:36am UTC / 9:36pm (Aug 30) New York time</em></p><p></p><p><strong><br>There are 12 Full Moons</strong></p><p></p><p>Around the world, people have given names to the full moons through the year.</p><p>In an American viewpoint, the native American people's names of Full Moons are used a lot, such as the Sturgeon Moon for August.</p><p>Because a lunar month is 29.5 days, 12 lunar months is shorter than a solar year.</p><p>Every 2 or 3 years, a 13th full moon will be in the year.</p><p>There wasn't a traditional name for it, and it became the Blue Moon</p><p><em>Which of the 13 full moons in the year is the blue moon?</em></p><p>Well, if you think of four seasons in a year, each season should have 3 full moons.</p><p>The blue moon is in the season with four full moons.</p>",
+					"markdown": "# Today\n\n*11:36am Sydney time / 1:36am UTC / 9:36pm (Aug 30) New York time*\n\n\n\n**<br>\n\nThere are 12 Full Moons**\n\n\n\nAround the world, people have given names to the full moons through the year.\n\nIn an American viewpoint, the native American people's names of Full Moons are used a lot, such as the Sturgeon Moon for August.\n\nBecause a lunar month is 29.5 days, 12 lunar months is shorter than a solar year.\n\nEvery 2 or 3 years, a 13th full moon will be in the year.\n\nThere wasn't a traditional name for it, and it became the Blue Moon\n\n*Which of the 13 full moons in the year is the blue moon?*\n\nWell, if you think of four seasons in a year, each season should have 3 full moons.\n\nThe blue moon is in the season with four full moons.\n\n"
 				}
 			}
 		});
@@ -6036,8 +6036,8 @@ function create_fragment$f(ctx) {
 				title: "super blue moon",
 				description: "definition b but super",
 				content: {
-					"html": "<p><strong><br>There are 2 types of Blue Moon</strong></p><p></p><p>A <em>seasonal</em> Blue Moon is where there are four full moons in a season..<br>and the third full moon of that season is named the Blue Moon.</p><p><em>(Seasons are considered the periods between equinoxes and solstices)</em></p><p>The next seasonal blue moon will be next year, August 19, 2024.</p><p></p><p>And then a different type of rare moon, <br>a <em>monthly</em> Blue Moon is a second full moon in a calendar month.</p><p>Today is a monthly Blue Moon.</p>",
-					"markdown": "**<br>\n\nThere are 2 types of Blue Moon**\n\n\n\nA *seasonal* Blue Moon is where there are four full moons in a season..<br>\n\nand the third full moon of that season is named the Blue Moon.\n\n*(Seasons are considered the periods between equinoxes and solstices)*\n\nThe next seasonal blue moon will be next year, August 19, 2024.\n\n\n\nAnd then a different type of rare moon, <br>\n\na *monthly* Blue Moon is a second full moon in a calendar month.\n\nToday is a monthly Blue Moon.\n\n"
+					"html": "<p><strong><br>There are 2 Blue Moons</strong></p><p></p><p>A <em>seasonal</em> Blue Moon is where there are four full moons in a season..<br>and the third full moon of that season is named the Blue Moon.</p><p><em>(Seasons are considered the periods between equinoxes and solstices)</em></p><p>The next seasonal blue moon will be next year, August 19, 2024.</p><p></p><p>And then a different type of rare moon, <br>a <em>monthly</em> Blue Moon is a second full moon in a calendar month.</p><p>Today is a monthly Blue Moon.</p>",
+					"markdown": "**<br>\n\nThere are 2 Blue Moons**\n\n\n\nA *seasonal* Blue Moon is where there are four full moons in a season..<br>\n\nand the third full moon of that season is named the Blue Moon.\n\n*(Seasons are considered the periods between equinoxes and solstices)*\n\nThe next seasonal blue moon will be next year, August 19, 2024.\n\n\n\nAnd then a different type of rare moon, <br>\n\na *monthly* Blue Moon is a second full moon in a calendar month.\n\nToday is a monthly Blue Moon.\n\n"
 				}
 			}
 		});
@@ -6260,41 +6260,41 @@ function create_fragment$f(ctx) {
 				email: "",
 				social_links: [
 					{
+						"icon": "mdi:rss",
 						"link": {
 							"url": "https://stone.prose.sh/rss",
 							"label": "rss"
-						},
-						"icon": "mdi:rss"
+						}
 					},
 					{
+						"icon": "mdi:mastodon",
 						"link": {
 							"url": "https://fosstodon.org/@stOneskull",
 							"label": "mastodon"
-						},
-						"icon": "mdi:mastodon"
+						}
 					},
 					{
+						"icon": "mdi:twitter",
 						"link": {
 							"url": "https://x.com/stOneskull",
 							"label": "Twitter",
 							"active": false
-						},
-						"icon": "mdi:twitter"
+						}
 					},
 					{
+						"icon": "mdi:language-python",
 						"link": {
 							"url": "https://programming.dev/u/stOneskull",
 							"label": "lemmy"
-						},
-						"icon": "mdi:language-python"
+						}
 					},
 					{
+						"icon": "mdi:github",
 						"link": {
 							"url": "https://github.com/stOneskull",
 							"label": "Github",
 							"active": false
-						},
-						"icon": "mdi:github"
+						}
 					}
 				]
 			}
