@@ -5613,8 +5613,8 @@ function create_fragment$c(ctx) {
 				title: "databases",
 				description: "step by step",
 				content: {
-					"html": "<p><em>i don't wanna talk about no sql..</em></p><p><strong>Key-Value</strong></p><p>For me, keys and values is easy to understand. A dictionary. JSON.<br>JSON pretty much is a dictionary, and doesn't look gross like XML</p><p>Javascript is pretty gross.</p><p>JSON should change its name. to Something-Else-ON</p><p>Anyway, let's look at different databases.</p>",
-					"markdown": "*i don't wanna talk about no sql..*\n\n**Key-Value**\n\nFor me, keys and values is easy to understand. A dictionary. JSON.<br>\n\nJSON pretty much is a dictionary, and doesn't look gross like XML\n\nJavascript is pretty gross.\n\nJSON should change its name. to Something-Else-ON\n\nAnyway, let's look at different databases.\n\n"
+					"html": "<p><em>i don't wanna talk about no sql..</em></p><p></p><p><strong>Key-Value</strong></p><p>for me, keys and values is easy to understand. a dictionary. json.</p><p>json pretty much is a dictionary, and doesn't look gross like xml</p><p>javascript is pretty gross.</p><p>json should change its name to something-else-on</p><p>anytrain, let's look at different databases.</p>",
+					"markdown": "*i don't wanna talk about no sql..*\n\n\n\n**Key-Value**\n\nfor me, keys and values is easy to understand. a dictionary. json.\n\njson pretty much is a dictionary, and doesn't look gross like xml\n\njavascript is pretty gross.\n\njson should change its name to something-else-on\n\nanytrain, let's look at different databases.\n\n"
 				}
 			}
 		});
