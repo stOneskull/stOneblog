@@ -5615,8 +5615,8 @@ function create_fragment$b(ctx) {
 				title: "databases",
 				description: "step by step",
 				content: {
-					"html": "<p><strong>Document-oriented database</strong></p><p><em>orientated</em></p><p>sounds good to me already</p><p></p><p>there are two or three branches here.. <br>eg. xml.. <br>we can scratch that one anyway..</p><p>we could talk about graph-databases..</p>",
-					"markdown": "**Document-oriented database**\n\n*orientated*\n\nsounds good to me already\n\n\n\nthere are two or three branches here.. <br>\n\neg. xml.. <br>\n\nwe can scratch that one anyway..\n\nwe could talk about graph-databases..\n\n"
+					"html": "<p><strong>Document-oriented database</strong></p><p><em>orientated</em></p><p>sounds good to me already</p><p></p><p>there are two or three branches here.. <br>eg. xml.. well, we can scratch that one anyway..</p><p>we could talk about graph-databases.. they seem cool </p><p>they are nodes and connections.. edges..</p>",
+					"markdown": "**Document-oriented database**\n\n*orientated*\n\nsounds good to me already\n\n\n\nthere are two or three branches here.. <br>\n\neg. xml.. well, we can scratch that one anyway..\n\nwe could talk about graph-databases.. they seem cool\n\nthey are nodes and connections.. edges..\n\n"
 				}
 			}
 		});
