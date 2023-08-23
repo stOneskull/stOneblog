@@ -8299,12 +8299,6 @@ function create_fragment$o(ctx) {
 						"link": { "url": "/2023-08", "label": "blOg" }
 					},
 					{
-						"link": {
-							"url": "https://stone.prose.sh/rss",
-							"label": "rsslOg"
-						}
-					},
-					{
 						"link": { "url": "/about", "label": "abOut" }
 					},
 					{
@@ -8790,12 +8784,6 @@ function create_fragment$o(ctx) {
 						"link": { "url": "/2023-08", "label": "blOg" }
 					},
 					{
-						"link": {
-							"url": "https://stone.prose.sh/rss",
-							"label": "rsslOg"
-						}
-					},
-					{
 						"link": { "url": "/about", "label": "abOut" }
 					},
 					{
@@ -8825,41 +8813,48 @@ function create_fragment$o(ctx) {
 				email: "",
 				social_links: [
 					{
-						"icon": "mdi:twitter",
+						"link": {
+							"url": "https://stone.prose.sh/rss",
+							"label": "rss"
+						},
+						"icon": "mdi:rss"
+					},
+					{
+						"link": {
+							"url": "https://fosstodon.org/@stOneskull",
+							"label": "mastodon"
+						},
+						"icon": "mdi:mastodon"
+					},
+					{
 						"link": {
 							"url": "https://twitter.com/stOneskull",
 							"label": "Twitter",
 							"active": false
-						}
+						},
+						"icon": "mdi:twitter"
 					},
 					{
-						"icon": "mdi:mastodon",
-						"link": {
-							"url": "https://fosstodon.org/@stOneskull",
-							"label": "mastodon"
-						}
-					},
-					{
-						"icon": "mdi:reddit",
-						"link": {
-							"url": "https://www.reddit.com/u/stOneskull",
-							"label": "reddit"
-						}
-					},
-					{
-						"icon": "mdi:language-python",
-						"link": {
-							"url": "https://programming.dev/u/stOneskull",
-							"label": "lemmy"
-						}
-					},
-					{
-						"icon": "mdi:github",
 						"link": {
 							"url": "https://github.com/stOneskull",
 							"label": "Github",
 							"active": false
-						}
+						},
+						"icon": "mdi:github"
+					},
+					{
+						"link": {
+							"url": "https://www.reddit.com/u/stOneskull",
+							"label": "reddit"
+						},
+						"icon": "mdi:reddit"
+					},
+					{
+						"link": {
+							"url": "https://programming.dev/u/stOneskull",
+							"label": "lemmy"
+						},
+						"icon": "mdi:language-python"
 					}
 				]
 			}
