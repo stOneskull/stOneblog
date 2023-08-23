@@ -5684,8 +5684,8 @@ function create_fragment$e(ctx) {
 				title: "maths 3",
 				description: "tree",
 				content: {
-					"html": "<p><a href=\"https://www.stoneskull.me/2023-07/maths/maths-week-2\"><-- previously</a></p>\n<h1 id=\"nodesandtrees\">nodes and trees</h1>\n<p><em>for a game i'm making, i want the map to be a tree, and each room in the map is a node.</em></p>\n<p><em>i've been thinking about it for quite a while..</em></p>\n<p><em>i've written it different ways and stopped. now i'm gonna solve it.</em></p>",
-					"markdown": "[<-- previously](https://www.stoneskull.me/2023-07/maths/maths-week-2)\n\n# nodes and trees\n\n*for a game i'm making, i want the map to be a tree, and each room in the map is a node.*\n\n*i've been thinking about it for quite a while..*\n\n*i've written it different ways and stopped. now i'm gonna solve it.*\n\n\n\n"
+					"html": "<p><a href=\"https://www.stoneskull.me/2023-07/maths/maths-week-2\"><-- previous</a>  <a href=\"https://www.stoneskull.me/2023-07/maths/maths-4\">next --></a></p>\n<h1 id=\"nodesandtrees\">nodes and trees</h1>\n<p><em>for a game i'm making, i want the map to be a tree, and each room in the map is a node.</em></p>\n<p><em>i've been thinking about it for quite a while..</em></p>\n<p><em>i've written it different ways and stopped. now i'm gonna solve it.</em></p>",
+					"markdown": "[<-- previous](https://www.stoneskull.me/2023-07/maths/maths-week-2)  [next -->](https://www.stoneskull.me/2023-07/maths/maths-4)\n\n# nodes and trees\n\n*for a game i'm making, i want the map to be a tree, and each room in the map is a node.*\n\n*i've been thinking about it for quite a while..*\n\n*i've written it different ways and stopped. now i'm gonna solve it.*\n\n\n\n"
 				}
 			}
 		});
