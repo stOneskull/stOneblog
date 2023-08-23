@@ -5721,8 +5721,8 @@ function create_fragment$c(ctx) {
 				title: "databases",
 				description: "step by step",
 				content: {
-					"html": "<p><strong>lite db and polo db </strong></p><p></p><p></p>",
-					"markdown": "**lite db and polo db **\n\n\n\n\n\n"
+					"html": "<p><strong>lite db and polo db </strong></p><p><em>these 2 were candidate 1</em></p><p></p>",
+					"markdown": "**lite db and polo db **\n\n*these 2 were candidate 1*\n\n\n\n"
 				}
 			}
 		});
