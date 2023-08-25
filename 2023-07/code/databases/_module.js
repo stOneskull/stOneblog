@@ -5827,8 +5827,8 @@ function create_fragment$d(ctx) {
 				title: "databases",
 				description: "step by step",
 				content: {
-					"html": "<p><em>what's today.. saturday. </em></p><p><em>2 days later..</em></p><p><em>i had another look, and there's a package for python call unqlite-python</em></p><p><em>i don't think i'll bother with that Jx9 thing.</em></p><p><em>i found it interesting that the unqlite-python team complains about there not being an update to the unqlite in a long time. isn't that meant to be good? that it's great software?</em></p><p></p>",
-					"markdown": "*what's today.. saturday. *\n\n*2 days later..*\n\n*i had another look, and there's a package for python call unqlite-python*\n\n*i don't think i'll bother with that Jx9 thing.*\n\n*i found it interesting that the unqlite-python team complains about there not being an update to the unqlite in a long time. isn't that meant to be good? that it's great software?*\n\n\n\n"
+					"html": "<p><em>what's today.. saturday. </em></p><p><em>2 days later..</em></p><p><em>i had another look, and there's a package for python called unqlite-python</em></p><p><em>i don't think i'll bother with that Jx9 thing.</em></p><p><em>i found it interesting that the unqlite-python team complains about there not being an update to the unqlite in a long time. isn't that meant to be good? that it's great software?</em></p><p></p>",
+					"markdown": "*what's today.. saturday. *\n\n*2 days later..*\n\n*i had another look, and there's a package for python called unqlite-python*\n\n*i don't think i'll bother with that Jx9 thing.*\n\n*i found it interesting that the unqlite-python team complains about there not being an update to the unqlite in a long time. isn't that meant to be good? that it's great software?*\n\n\n\n"
 				}
 			}
 		});
