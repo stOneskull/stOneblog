@@ -6838,8 +6838,8 @@ function create_fragment$k(ctx) {
 				title: "light",
 				description: "in the aether",
 				content: {
-					"html": "<h1>We shall see</h1><p></p><p>What is light?</p><p>It's radio. Electro-magnetic radiation.</p><p>The difference between different radio, is Wave Amplitude, Wave Lengths and Wave Frequency</p><p></p>",
-					"markdown": "# We shall see\n\n\n\nWhat is light?\n\nIt's radio. Electro-magnetic radiation.\n\nThe difference between different radio, is Wave Amplitude, Wave Lengths and Wave Frequency\n\n\n\n"
+					"html": "<h1>We shall see</h1><p></p><p>What is light?</p><p>It's radio. Electro-magnetic radiation.</p><p>The difference between different radio, is their Wave Amplitude, Wave Length and Wave Frequency</p><p></p>",
+					"markdown": "# We shall see\n\n\n\nWhat is light?\n\nIt's radio. Electro-magnetic radiation.\n\nThe difference between different radio, is their Wave Amplitude, Wave Length and Wave Frequency\n\n\n\n"
 				}
 			}
 		});
@@ -6991,8 +6991,8 @@ function create_fragment$k(ctx) {
 				title: "light",
 				description: "in the aether",
 				content: {
-					"html": "<h1>C</h1><p></p><p>All light travels at the speed of light</p><p>So I suppose there must be a common ratio between frequency and wavelengths. That with an increase in frequency, there should be a decrease in wavelength and vice versa.</p><p></p>",
-					"markdown": "# C\n\n\n\nAll light travels at the speed of light\n\nSo I suppose there must be a common ratio between frequency and wavelengths. That with an increase in frequency, there should be a decrease in wavelength and vice versa.\n\n\n\n"
+					"html": "<h1>C</h1><p></p><p>All light travels at the speed of light</p><p>So I suppose there must be a common ratio between frequency and wavelengths. That with an increase in frequency, there should be a decrease in wavelength and vice versa.</p><p>I'm not sure about the amplitude. It seems it should be related to wavelength. </p><p>I wonder if it is amplitude difference that makes the colour we see. </p><p>Or is frequency like film, and the wavelengths are frames, and the movie is the colour?</p><p></p>",
+					"markdown": "# C\n\n\n\nAll light travels at the speed of light\n\nSo I suppose there must be a common ratio between frequency and wavelengths. That with an increase in frequency, there should be a decrease in wavelength and vice versa.\n\nI'm not sure about the amplitude. It seems it should be related to wavelength.\n\nI wonder if it is amplitude difference that makes the colour we see.\n\nOr is frequency like film, and the wavelengths are frames, and the movie is the colour?\n\n\n\n"
 				}
 			}
 		});
