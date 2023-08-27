@@ -6838,8 +6838,8 @@ function create_fragment$k(ctx) {
 				title: "light",
 				description: "in the aether",
 				content: {
-					"html": "<h1>We shall see</h1><p></p><p>What is light?</p><p>It's radio. Electro-magnetic radiation.</p><p>Difference between different radio, is Wave Lengths and Frequency</p><p></p>",
-					"markdown": "# We shall see\n\n\n\nWhat is light?\n\nIt's radio. Electro-magnetic radiation.\n\nDifference between different radio, is Wave Lengths and Frequency\n\n\n\n"
+					"html": "<h1>We shall see</h1><p></p><p>What is light?</p><p>It's radio. Electro-magnetic radiation.</p><p>The difference between different radio, is Wave Amplitude, Wave Lengths and Wave Frequency</p><p></p>",
+					"markdown": "# We shall see\n\n\n\nWhat is light?\n\nIt's radio. Electro-magnetic radiation.\n\nThe difference between different radio, is Wave Amplitude, Wave Lengths and Wave Frequency\n\n\n\n"
 				}
 			}
 		});
