@@ -5132,7 +5132,7 @@ function create_fragment$6(ctx) {
 				items: [
 					{
 						"date": "2023-07",
-						"link": { "url": "/2023-07", "label": "July 2023" },
+						"link": { "url": "/2023-07", "label": "July" },
 						"thumbnail": {
 							"alt": "2023-07",
 							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/16906022874792307.webp",
@@ -5585,6 +5585,20 @@ function create_fragment$6(ctx) {
 						"description": {
 							"html": "<h1 id=\"super\">super</h1>",
 							"markdown": "# super"
+						}
+					},
+					{
+						"date": "2023-09",
+						"link": { "url": "/2023-09", "label": "September" },
+						"thumbnail": {
+							"alt": "september",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1693313765073th-1283601346.jpeg",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1693313765073th-1283601346.jpeg",
+							"size": 36
+						},
+						"description": {
+							"html": "<h1 id=\"nextmonth\">Next Month</h1>",
+							"markdown": "# Next Month"
 						}
 					}
 				]
