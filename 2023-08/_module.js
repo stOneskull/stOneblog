@@ -5554,6 +5554,23 @@ function create_fragment$6(ctx) {
 						}
 					},
 					{
+						"date": "2023-08-30",
+						"link": {
+							"url": "/2023-08/drink",
+							"label": "drink"
+						},
+						"thumbnail": {
+							"alt": "liquid food",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/th-201840982.jpeg1693309494811",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/th-201840982.jpeg1693309494811",
+							"size": null
+						},
+						"description": {
+							"html": "<h1 id=\"liquidfood\">liquid food</h1>",
+							"markdown": "# liquid food"
+						}
+					},
+					{
 						"date": "2023-08-31",
 						"link": {
 							"url": "/2023-08/full-moon/blue-moon",
