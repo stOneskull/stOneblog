@@ -5299,14 +5299,26 @@ function create_fragment$6(ctx) {
 							"label": "potash"
 						},
 						"thumbnail": {
-							"alt": "",
-							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/169068797221031.webp",
-							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/169068797221031.webp",
-							"size": 7
+							"alt": "potash",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/th-2814349488.jpeg1693313409490"
 						},
 						"description": {
 							"html": "<h1 id=\"potash\">pot ash</h1>",
 							"markdown": "# pot ash"
+						}
+					},
+					{
+						"date": "2023-08",
+						"link": { "url": "/2023-08", "label": "August" },
+						"thumbnail": {
+							"alt": "August 23",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1693311490361th-2210010940.jpeg",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1693311490361th-2210010940.jpeg",
+							"size": null
+						},
+						"description": {
+							"html": "<h1 id=\"nextmonth\">Next Month</h1>",
+							"markdown": "# Next Month"
 						}
 					}
 				]
