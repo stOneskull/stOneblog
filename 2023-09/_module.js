@@ -5162,20 +5162,20 @@ function create_fragment$6(ctx) {
 						}
 					},
 					{
-						"date": "2023-08-31",
+						"date": "2023-09-29",
 						"link": {
-							"url": "/2023-08/full-moon/blue-moon",
-							"label": "blue moon"
+							"url": "/2023-08/full-moon/harvest-moon",
+							"label": "harvest moon"
 						},
 						"thumbnail": {
-							"alt": "super blue moon",
-							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692696986192th-4082499986.jpeg",
-							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692696986192th-4082499986.jpeg",
-							"size": 24
+							"alt": "harvest moon",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1693315153292th-4252746029.jpeg",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1693315153292th-4252746029.jpeg",
+							"size": null
 						},
 						"description": {
-							"html": "<h1 id=\"super\">super</h1>",
-							"markdown": "# super"
+							"html": "<h1 id=\"equanimity\">equanimity</h1>",
+							"markdown": "# equanimity"
 						}
 					}
 				]
