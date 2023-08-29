@@ -5091,8 +5091,8 @@ function create_fragment$7(ctx) {
 				title: "first",
 				description: "first",
 				content: {
-					"html": "<h1>Nice..</h1><p></p><p><em>New moonth</em></p><p>A new beginning. </p><p>I was trying to write a blog each and every day. </p><p>I just about did it for August. It was cool but I'm not going to do it anymore. I'm going to them when I feel like it now, rather than feel like I need to do them.</p><p></p><p></p>",
-					"markdown": "# Nice..\n\n\n\n*New moonth*\n\nA new beginning.\n\nI was trying to write a blog each and every day.\n\nI just about did it for August. It was cool but I'm not going to do it anymore. I'm going to them when I feel like it now, rather than feel like I need to do them.\n\n\n\n\n\n"
+					"html": "<h1>Nice..</h1><p></p><p><em>New moonth</em></p><p>A new beginning. </p><p>I was trying to write a blog each and every day. </p><p>I just about did it for August. It was cool but I'm not going to do it anymore. I'm going to them when I feel like it now, rather than feel like I need to do them.</p><p>The ones I do do, I can put more time into, and I can put some time into the older blogs, adding more to them.</p><p>In the southern hemisphere, we come into Spring! I love it!</p><p>Autumn is beautiful too! </p><p>Equinox equanimity. Solstice serenity. Vice versas.</p><p></p><p></p>",
+					"markdown": "# Nice..\n\n\n\n*New moonth*\n\nA new beginning.\n\nI was trying to write a blog each and every day.\n\nI just about did it for August. It was cool but I'm not going to do it anymore. I'm going to them when I feel like it now, rather than feel like I need to do them.\n\nThe ones I do do, I can put more time into, and I can put some time into the older blogs, adding more to them.\n\nIn the southern hemisphere, we come into Spring! I love it!\n\nAutumn is beautiful too!\n\nEquinox equanimity. Solstice serenity. Vice versas.\n\n\n\n\n\n"
 				}
 			}
 		});
