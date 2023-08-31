@@ -7513,8 +7513,8 @@ function create_fragment$m(ctx) {
 				title: "happy krisna",
 				description: "janmashtami",
 				content: {
-					"html": "<h1>sweet krishna</h1><p></p><p><em>sweet fritters and milk<br>small footprints and ornaments</em><br><em>happy birthday lord</em><br></p>",
-					"markdown": "# sweet krishna\n\n\n\n*sweet fritters and milk<br>\n\nsmall footprints and ornaments*<br>\n\n*happy birthday lord*<br>\n\n"
+					"html": "<p><center>\n<em>sweet fritters and milk</em><br></p>\n<p><em>small footprints and ornaments</em><br></p>\n<p><em>happy birthday lord</em><br>\n</center></p>",
+					"markdown": "<center>\n*sweet fritters and milk*<br>\n\n*small footprints and ornaments*<br>\n\n*happy birthday lord*<br>\n</center>\n"
 				}
 			}
 		});
