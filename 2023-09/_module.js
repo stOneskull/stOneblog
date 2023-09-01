@@ -5189,6 +5189,23 @@ function create_fragment$6(ctx) {
 						}
 					},
 					{
+						"date": "2023-09-06",
+						"link": {
+							"url": "/2023-08/harry-krishna/happy-krishna",
+							"label": "happy krishna"
+						},
+						"thumbnail": {
+							"alt": "happy birthday krishna",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/AA1fPBUT.jpeg1693513565472",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/AA1fPBUT.jpeg1693513565472",
+							"size": null
+						},
+						"description": {
+							"html": "<h1 id=\"happybirthdaylord\">happy birthday lord</h1>",
+							"markdown": "# happy birthday lord"
+						}
+					},
+					{
 						"date": "2023-09-29",
 						"link": {
 							"url": "/2023-08/full-moon/harvest-moon",
