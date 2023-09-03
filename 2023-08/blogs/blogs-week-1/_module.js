@@ -4854,17 +4854,12 @@ function create_fragment$7(ctx) {
 	let hr;
 	let t0;
 	let div0;
-	let span0;
+	let span;
 	let t1;
 	let t2_value = new Date().getFullYear() + "";
 	let t2;
 	let t3;
 	let t4;
-	let span1;
-	let a;
-	let t5;
-	let t6;
-	let t7;
 	let ul;
 	let current;
 	let each_value = /*social_links*/ ctx[0];
@@ -4886,16 +4881,11 @@ function create_fragment$7(ctx) {
 			hr = element("hr");
 			t0 = space();
 			div0 = element("div");
-			span0 = element("span");
+			span = element("span");
 			t1 = text("(c) ");
 			t2 = text(t2_value);
 			t3 = text(" stOneskull");
 			t4 = space();
-			span1 = element("span");
-			a = element("a");
-			t5 = text("Primo");
-			t6 = text(" Powered");
-			t7 = space();
 			ul = element("ul");
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -4915,22 +4905,13 @@ function create_fragment$7(ctx) {
 			t0 = claim_space(div1_nodes);
 			div0 = claim_element(div1_nodes, "DIV", { class: true });
 			var div0_nodes = children(div0);
-			span0 = claim_element(div0_nodes, "SPAN", { class: true });
-			var span0_nodes = children(span0);
-			t1 = claim_text(span0_nodes, "(c) ");
-			t2 = claim_text(span0_nodes, t2_value);
-			t3 = claim_text(span0_nodes, " stOneskull");
-			span0_nodes.forEach(detach);
+			span = claim_element(div0_nodes, "SPAN", { class: true });
+			var span_nodes = children(span);
+			t1 = claim_text(span_nodes, "(c) ");
+			t2 = claim_text(span_nodes, t2_value);
+			t3 = claim_text(span_nodes, " stOneskull");
+			span_nodes.forEach(detach);
 			t4 = claim_space(div0_nodes);
-			span1 = claim_element(div0_nodes, "SPAN", { class: true });
-			var span1_nodes = children(span1);
-			a = claim_element(span1_nodes, "A", { href: true, class: true });
-			var a_nodes = children(a);
-			t5 = claim_text(a_nodes, "Primo");
-			a_nodes.forEach(detach);
-			t6 = claim_text(span1_nodes, " Powered");
-			span1_nodes.forEach(detach);
-			t7 = claim_space(div0_nodes);
 			ul = claim_element(div0_nodes, "UL", { class: true });
 			var ul_nodes = children(ul);
 
@@ -4947,10 +4928,7 @@ function create_fragment$7(ctx) {
 		},
 		h() {
 			attr(hr, "class", "svelte-1excgdw");
-			attr(span0, "class", "copyright svelte-1excgdw");
-			attr(a, "href", "https://primo.so");
-			attr(a, "class", "svelte-1excgdw");
-			attr(span1, "class", "primo svelte-1excgdw");
+			attr(span, "class", "copyright svelte-1excgdw");
 			attr(ul, "class", "svelte-1excgdw");
 			attr(div0, "class", "footer svelte-1excgdw");
 			attr(div1, "class", "section-container svelte-1excgdw");
@@ -4964,16 +4942,11 @@ function create_fragment$7(ctx) {
 			append_hydration(div1, hr);
 			append_hydration(div1, t0);
 			append_hydration(div1, div0);
-			append_hydration(div0, span0);
-			append_hydration(span0, t1);
-			append_hydration(span0, t2);
-			append_hydration(span0, t3);
+			append_hydration(div0, span);
+			append_hydration(span, t1);
+			append_hydration(span, t2);
+			append_hydration(span, t3);
 			append_hydration(div0, t4);
-			append_hydration(div0, span1);
-			append_hydration(span1, a);
-			append_hydration(a, t5);
-			append_hydration(span1, t6);
-			append_hydration(div0, t7);
 			append_hydration(div0, ul);
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
