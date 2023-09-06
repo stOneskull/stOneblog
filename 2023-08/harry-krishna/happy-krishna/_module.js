@@ -7108,8 +7108,8 @@ function create_fragment$i(ctx) {
 				title: "happy krisna",
 				description: "janmashtami",
 				content: {
-					"html": "<p>Baby Krishna was born at midnight.</p><p>His birthday is called Janmashtami.</p><p>It is a week after the first full moon after August 23.</p><p>Janmashtami is celebrated <br>Wednesday, September 6 and <br>Thursday, September 7, this year, 2023.</p><p></p>",
-					"markdown": "Baby Krishna was born at midnight.\n\nHis birthday is called Janmashtami.\n\nIt is a week after the first full moon after August 23.\n\nJanmashtami is celebrated <br>\n\nWednesday, September 6 and <br>\n\nThursday, September 7, this year, 2023.\n\n\n\n"
+					"html": "<p>Baby Krishna was born at midnight.</p><p>His birthday is called Janmashtami.</p><p>It is a week after the first full moon after August 23.</p><p>Janmashtami is celebrated <br>Wednesday, September 6 and <br>Thursday, September 7, this year, 2023.</p><p></p><p>This birthday, Krishna turns 5,250 years old.</p><p></p>",
+					"markdown": "Baby Krishna was born at midnight.\n\nHis birthday is called Janmashtami.\n\nIt is a week after the first full moon after August 23.\n\nJanmashtami is celebrated <br>\n\nWednesday, September 6 and <br>\n\nThursday, September 7, this year, 2023.\n\n\n\nThis birthday, Krishna turns 5,250 years old.\n\n\n\n"
 				}
 			}
 		});
