@@ -3563,7 +3563,7 @@ function create_fragment$2(ctx) {
 			attr(div1, "class", "mobile-nav svelte-ngjace");
 			attr(header, "class", "section-container svelte-ngjace");
 			attr(div2, "class", "section");
-			attr(div2, "id", "section-c765fc4e");
+			attr(div2, "id", "section-d1fca941");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
@@ -3843,7 +3843,7 @@ function create_fragment$3(ctx) {
 			attr(h1, "class", "heading svelte-1b2zbzi");
 			attr(header, "class", "section-container svelte-1b2zbzi");
 			attr(div, "class", "section");
-			attr(div, "id", "section-d4f770ba");
+			attr(div, "id", "section-367dafa7");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div, anchor);
@@ -3960,7 +3960,7 @@ function create_fragment$4(ctx) {
 			attr(span, "class", "attribution");
 			attr(aside, "class", "section-container svelte-1rprab5");
 			attr(div, "class", "section");
-			attr(div, "id", "section-f69a024b");
+			attr(div, "id", "section-36eb56c5");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div, anchor);
@@ -4048,7 +4048,7 @@ function create_fragment$5(ctx) {
 			attr(div0, "class", "section-container content svelte-1yn388l");
 			attr(div1, "class", "section");
 			attr(div2, "class", "section");
-			attr(div2, "id", "section-3f6ca367");
+			attr(div2, "id", "section-f40dd068");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
@@ -4576,7 +4576,7 @@ function create_fragment$6(ctx) {
 			attr(div1, "class", "mobile-nav svelte-ngjace");
 			attr(header, "class", "section-container svelte-ngjace");
 			attr(div2, "class", "section");
-			attr(div2, "id", "section-df02a1ad");
+			attr(div2, "id", "section-b868a95c");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
@@ -4933,7 +4933,7 @@ function create_fragment$7(ctx) {
 			attr(div0, "class", "footer svelte-1excgdw");
 			attr(div1, "class", "section-container svelte-1excgdw");
 			attr(div2, "class", "section");
-			attr(div2, "id", "section-c316bb1f");
+			attr(div2, "id", "section-1996b303");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
@@ -5171,8 +5171,8 @@ function create_fragment$8(ctx) {
 				},
 				title: "blOgs 1",
 				description: "These are my blog posts and they are wonderful.",
-				superhead: "2023-09-16 ",
-				heading: "blOggity blog blog"
+				superhead: "2023-08-22 ",
+				heading: "blOgs week 1\n"
 			}
 		});
 
@@ -5217,8 +5217,8 @@ function create_fragment$8(ctx) {
 				title: "blOgs 1",
 				description: "These are my blog posts and they are wonderful.",
 				content: {
-					"html": "<p><em>Some more text that's italicized to make an impact.</em></p><p><em>back, baby.</em></p><p>I gotta write again. </p><p></p><p>I had a nice break. I've been playing Super Mario Odyssey. Such a fun game. I think Mario games are the best. Like a standard of what a good, fun game should be.</p><p>Blogs. I gotta keep writing. I don't see any other way.</p><p>I kinda want to talk about free speech. How do I start? Well, this is my site. I acn say what I want. There would be consequences for certain things. Defamation of course. If I write certain somethings, it would be considered libel. I think most people get the gist of that. </p><p>There is a thing that gets mentioned more and more. They call it hate speech. I've always thought that that was free speech. If you;re frustrated about something, or hate something, you want to express it. I think it's a good thing. Then if what you're saying is insane, a friend or someone will correct you.</p><p>They call it 'expression' for a reason. Otherwise it would be bottled up. And then one day, it will explode. The expression and discussion with others dissipates the hate. I think it's quite common sense.</p><p>There are agendas of course. Scientologists don't want criticism. They could call exposure of their cult hate speech. And nobody minds too much, because they aren't Scientologist, nor care about them much. Probably they even feel some disdain toward the religion.</p><p>Hate speech is subjective, and is really speech that others hate. If you attack left-wing or attack right-wing, to some that is just a mirror image of the other, but to members of either side, it might be considered hate speech.</p><p>Is it that bad that people express hate? That's the question.</p><p></p><p></p><p><em>more soon...</em></p>",
-					"markdown": "*Some more text that's italicized to make an impact.*\n\n*back, baby.*\n\nI gotta write again.\n\n\n\nI had a nice break. I've been playing Super Mario Odyssey. Such a fun game. I think Mario games are the best. Like a standard of what a good, fun game should be.\n\nBlogs. I gotta keep writing. I don't see any other way.\n\nI kinda want to talk about free speech. How do I start? Well, this is my site. I acn say what I want. There would be consequences for certain things. Defamation of course. If I write certain somethings, it would be considered libel. I think most people get the gist of that.\n\nThere is a thing that gets mentioned more and more. They call it hate speech. I've always thought that that was free speech. If you;re frustrated about something, or hate something, you want to express it. I think it's a good thing. Then if what you're saying is insane, a friend or someone will correct you.\n\nThey call it 'expression' for a reason. Otherwise it would be bottled up. And then one day, it will explode. The expression and discussion with others dissipates the hate. I think it's quite common sense.\n\nThere are agendas of course. Scientologists don't want criticism. They could call exposure of their cult hate speech. And nobody minds too much, because they aren't Scientologist, nor care about them much. Probably they even feel some disdain toward the religion.\n\nHate speech is subjective, and is really speech that others hate. If you attack left-wing or attack right-wing, to some that is just a mirror image of the other, but to members of either side, it might be considered hate speech.\n\nIs it that bad that people express hate? That's the question.\n\n\n\n\n\n*more soon...*\n\n"
+					"html": "<p><em>Some more text that's italicized to make an impact.</em></p><p><em>RSS, baby.</em></p><p>My blog <s>doesn't</s> didn't have RSS. I didn't really think about it before. My blog is for me really. You can read it, anyone can, it's public, but really it's for me. I'm getting old. My memory isn't so good anymore. I want to put things down on e-paper. And when I die, maybe someone who remembers me, will read it, and find out some more about me. But anyway..</p><p>I mentioned here somewhere before, flippantly, about having a blog like a changelog. i found an interesting little blogger thing, that i will use for something like that. i mean, what version of my software am i? it's an interesting concept actually.. a changelog.. hmm.. but this will be more like a summary of what i blogged here on the main blog.</p><p>this is the new 'changelog' blog..</p><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link\" href=\"https://stone.prose.sh\">https://stone.prose.sh</a></p><p></p><p>and the attempt at an rss feed..<br></p><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link\" href=\"https://stone.prose.sh/rss\">https://stone.prose.sh/rss</a></p><p>this link is an xml file that goes in your rss reader</p><p>btw, i really like <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link\" href=\"http://protopage.com\">protopage.com</a> - you can make a cool webpage for yourself with the weather and newsfeeds and comics and all kinds of stuff you like.</p><p>try it out!</p><p></p><p></p><p><em>tomorrow is 23 day!</em></p>",
+					"markdown": "*Some more text that's italicized to make an impact.*\n\n*RSS, baby.*\n\nMy blog <s>doesn't</s>\n\n didn't have RSS. I didn't really think about it before. My blog is for me really. You can read it, anyone can, it's public, but really it's for me. I'm getting old. My memory isn't so good anymore. I want to put things down on e-paper. And when I die, maybe someone who remembers me, will read it, and find out some more about me. But anyway..\n\nI mentioned here somewhere before, flippantly, about having a blog like a changelog. i found an interesting little blogger thing, that i will use for something like that. i mean, what version of my software am i? it's an interesting concept actually.. a changelog.. hmm.. but this will be more like a summary of what i blogged here on the main blog.\n\nthis is the new 'changelog' blog..\n\n[https://stone.prose.sh](<https://stone.prose.sh>)\n\n\n\nand the attempt at an rss feed..<br>\n\n[https://stone.prose.sh/rss](<https://stone.prose.sh/rss>)\n\nthis link is an xml file that goes in your rss reader\n\nbtw, i really like [protopage.com](<http://protopage.com>) \\- you can make a cool webpage for yourself with the weather and newsfeeds and comics and all kinds of stuff you like.\n\ntry it out!\n\n\n\n\n\n*tomorrow is 23 day!*\n\n"
 				}
 			}
 		});
