@@ -5181,7 +5181,7 @@ function create_fragment$6(ctx) {
 					{
 						"date": "2023-09-16",
 						"link": {
-							"url": "/2023-08/blogs/blogs3",
+							"url": "/2023-08/blogs/blogs-week-1",
 							"label": "blOgs3"
 						},
 						"thumbnail": {
