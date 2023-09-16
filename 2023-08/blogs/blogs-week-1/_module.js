@@ -5113,7 +5113,7 @@ function create_fragment$8(ctx) {
 					"url": "https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "blOgs 1",
+				title: "blOgs 3",
 				description: "These are my blog posts and they are wonderful."
 			}
 		});
@@ -5132,7 +5132,7 @@ function create_fragment$8(ctx) {
 					"url": "https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "blOgs 1",
+				title: "blOgs 3",
 				description: "These are my blog posts and they are wonderful.",
 				logo: {
 					"image": {
@@ -5169,7 +5169,7 @@ function create_fragment$8(ctx) {
 					"alt": "Oz",
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/th-1903997244.jpeg1692734293212"
 				},
-				title: "blOgs 1",
+				title: "blOgs 3",
 				description: "These are my blog posts and they are wonderful.",
 				superhead: "2023-09-16 ",
 				heading: "blOggity blog blog"
@@ -5190,7 +5190,7 @@ function create_fragment$8(ctx) {
 					"url": "https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "blOgs 1",
+				title: "blOgs 3",
 				description: "These are my blog posts and they are wonderful.",
 				quote: {
 					"html": "<p>“It is sometimes an appropriate response to reality to go insane.”</p>",
@@ -5214,7 +5214,7 @@ function create_fragment$8(ctx) {
 					"url": "https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "blOgs 1",
+				title: "blOgs 3",
 				description: "These are my blog posts and they are wonderful.",
 				content: {
 					"html": "<p><em>Some more text that's italicized to make an impact.</em></p><p><em>back, baby.</em></p><p>I gotta write again. </p><p></p><p>I had a nice break. I've been playing Super Mario Odyssey. Such a fun game. I think Mario games are the best. Like a standard of what a good, fun game should be.</p><p>Blogs. I gotta keep writing. I don't see any other way.</p><p>I kinda want to talk about free speech. How do I start? Well, this is my site. I acn say what I want. There would be consequences for certain things. Defamation of course. If I write certain somethings, it would be considered libel. I think most people get the gist of that. </p><p>There is a thing that gets mentioned more and more. They call it hate speech. I've always thought that that was free speech. If you;re frustrated about something, or hate something, you want to express it. I think it's a good thing. Then if what you're saying is insane, a friend or someone will correct you.</p><p>They call it 'expression' for a reason. Otherwise it would be bottled up. And then one day, it will explode. The expression and discussion with others dissipates the hate. I think it's quite common sense.</p><p>There are agendas of course. Scientologists don't want criticism. They could call exposure of their cult hate speech. And nobody minds too much, because they aren't Scientologist, nor care about them much. Probably they even feel some disdain toward the religion.</p><p>Hate speech is subjective, and is really speech that others hate. If you attack left-wing or attack right-wing, to some that is just a mirror image of the other, but to members of either side, it might be considered hate speech.</p><p>Is it that bad that people express hate? That's the question.</p><p></p><p></p><p><em>more soon...</em></p><p><em>and i'm going to continue the light article</em></p>",
@@ -5237,7 +5237,7 @@ function create_fragment$8(ctx) {
 					"url": "https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "blOgs 1",
+				title: "blOgs 3",
 				description: "These are my blog posts and they are wonderful.",
 				logo: {
 					"image": {
@@ -5276,7 +5276,7 @@ function create_fragment$8(ctx) {
 					"url": "https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "blOgs 1",
+				title: "blOgs 3",
 				description: "These are my blog posts and they are wonderful.",
 				heading: "",
 				email: "",
@@ -5336,7 +5336,7 @@ function create_fragment$8(ctx) {
 					"url": "https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
 					"size": null
 				},
-				title: "blOgs 1",
+				title: "blOgs 3",
 				description: "These are my blog posts and they are wonderful."
 			}
 		});
