@@ -5196,6 +5196,20 @@ function create_fragment$6(ctx) {
 						}
 					},
 					{
+						"date": "2023-09-17",
+						"link": { "url": "/2023-09/17", "label": "stones" },
+						"thumbnail": {
+							"alt": "mental",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1694928478966th-1666044674.jpeg",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1694928478966th-1666044674.jpeg",
+							"size": 19
+						},
+						"description": {
+							"html": "<h1 id=\"mental\">mental</h1>",
+							"markdown": "# mental"
+						}
+					},
+					{
 						"date": "2023-09-29",
 						"link": {
 							"url": "/2023-08/full-moon/harvest-moon",
