@@ -5011,7 +5011,7 @@ function create_fragment$7(ctx) {
 					"url": "",
 					"size": null
 				},
-				title: "stone",
+				title: "stones",
 				description: "solid"
 			}
 		});
@@ -5030,7 +5030,7 @@ function create_fragment$7(ctx) {
 					"url": "",
 					"size": null
 				},
-				title: "stone",
+				title: "stones",
 				description: "solid",
 				logo: {
 					"image": {
@@ -5069,7 +5069,7 @@ function create_fragment$7(ctx) {
 					"url": "",
 					"size": null
 				},
-				title: "stone",
+				title: "stones",
 				description: "solid",
 				superhead: "2023-09-17",
 				heading: "stones"
@@ -5090,11 +5090,11 @@ function create_fragment$7(ctx) {
 					"url": "",
 					"size": null
 				},
-				title: "stone",
+				title: "stones",
 				description: "solid",
 				content: {
-					"html": "<p>silver.</p><p>platinum got its name from silver, because it's silver colour.</p><p></p><p>writing is something i kinda always wanted to do. my bi-polar helps with it. i don't take mood stabilizers. i never did. just anti-depressants. i would've been fine with just the manic depression but then i got schizophrenia too. i took anti-psychotics for a long time. i still have some on hand in case. but just anti-depressants mainly. a prozac a day.</p><p>i couldn't write my own signature. i had to change it to a little picture. i couldn't walk, or talk, or read. over the years i would read and write in a limited way. i wrote great song lyrics. and read about the rothschild family. i was on a psychosis rollercoaster a long time.</p><p>it's quite a stigma. i'd lie about it all the time. people would never look at you the same way again. it took a long time for me to accept it, and be honest about it. something with the brain, or something with the mind? i do think bottling up trauma is a main cause for psychosis. there are theories of viruses, genetics, and other things too. but honesty, meditation, and loving god are great medicine.</p><p></p><p>white gold looks silver too</p><p>i'm thinking of getting silver teeth</p>",
-					"markdown": "silver.\n\nplatinum got its name from silver, because it's silver colour.\n\n\n\nwriting is something i kinda always wanted to do. my bi-polar helps with it. i don't take mood stabilizers. i never did. just anti-depressants. i would've been fine with just the manic depression but then i got schizophrenia too. i took anti-psychotics for a long time. i still have some on hand in case. but just anti-depressants mainly. a prozac a day.\n\ni couldn't write my own signature. i had to change it to a little picture. i couldn't walk, or talk, or read. over the years i would read and write in a limited way. i wrote great song lyrics. and read about the rothschild family. i was on a psychosis rollercoaster a long time.\n\nit's quite a stigma. i'd lie about it all the time. people would never look at you the same way again. it took a long time for me to accept it, and be honest about it. something with the brain, or something with the mind? i do think bottling up trauma is a main cause for psychosis. there are theories of viruses, genetics, and other things too. but honesty, meditation, and loving god are great medicine.\n\n\n\nwhite gold looks silver too\n\ni'm thinking of getting silver teeth\n\n"
+					"html": "<p>silver</p><p>platinum got its name from silver because of its colour</p><p></p><p>writing is something i kinda always wanted to do. my bi-polar helps with it. i don't take mood stabilizers. i never did. just anti-depressants. i would've been fine with just the manic depression but then i got schizophrenia too. i took anti-psychotics for a long time. i still have some on hand in case. but just anti-depressants mainly. a prozac a day.</p><p>i couldn't write my own signature. i had to change it to a little picture. i couldn't walk, or talk, or read. over the years i would read and write in a limited way. i wrote great song lyrics. and read about the rothschild family. i was on a psychosis rollercoaster though.</p><p>it's quite a stigma. i'd lie about it all the time. people would never look at you the same way again. it took a long time for me to accept it, and be honest about it. something with the brain, or something with the mind? i do think bottling up trauma is a main cause for psychosis. and then when the mind gets overloaded, it explodes. there are theories of viruses, genetics, and other things too. but i find honesty, meditation, and loving god are great medicine.</p><p></p><p>white gold looks silver too</p><p>i'm thinking of getting silver teeth</p>",
+					"markdown": "silver\n\nplatinum got its name from silver because of its colour\n\n\n\nwriting is something i kinda always wanted to do. my bi-polar helps with it. i don't take mood stabilizers. i never did. just anti-depressants. i would've been fine with just the manic depression but then i got schizophrenia too. i took anti-psychotics for a long time. i still have some on hand in case. but just anti-depressants mainly. a prozac a day.\n\ni couldn't write my own signature. i had to change it to a little picture. i couldn't walk, or talk, or read. over the years i would read and write in a limited way. i wrote great song lyrics. and read about the rothschild family. i was on a psychosis rollercoaster though.\n\nit's quite a stigma. i'd lie about it all the time. people would never look at you the same way again. it took a long time for me to accept it, and be honest about it. something with the brain, or something with the mind? i do think bottling up trauma is a main cause for psychosis. and then when the mind gets overloaded, it explodes. there are theories of viruses, genetics, and other things too. but i find honesty, meditation, and loving god are great medicine.\n\n\n\nwhite gold looks silver too\n\ni'm thinking of getting silver teeth\n\n"
 				}
 			}
 		});
@@ -5113,7 +5113,7 @@ function create_fragment$7(ctx) {
 					"url": "",
 					"size": null
 				},
-				title: "stone",
+				title: "stones",
 				description: "solid",
 				logo: {
 					"image": {
@@ -5152,7 +5152,7 @@ function create_fragment$7(ctx) {
 					"url": "",
 					"size": null
 				},
-				title: "stone",
+				title: "stones",
 				description: "solid",
 				heading: "",
 				email: "",
@@ -5212,7 +5212,7 @@ function create_fragment$7(ctx) {
 					"url": "",
 					"size": null
 				},
-				title: "stone",
+				title: "stones",
 				description: "solid"
 			}
 		});
