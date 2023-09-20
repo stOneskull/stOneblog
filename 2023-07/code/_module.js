@@ -5583,25 +5583,11 @@ function create_fragment$a(ctx) {
 						}
 					},
 					{
-						"icon": "mdi:mastodon",
-						"link": {
-							"url": "https://fosstodon.org/@stOneskull",
-							"label": "mastodon"
-						}
-					},
-					{
 						"icon": "mdi:twitter",
 						"link": {
 							"url": "https://x.com/stOneskull",
 							"label": "Twitter",
 							"active": false
-						}
-					},
-					{
-						"icon": "mdi:language-python",
-						"link": {
-							"url": "https://programming.dev/u/stOneskull",
-							"label": "lemmy"
 						}
 					},
 					{
