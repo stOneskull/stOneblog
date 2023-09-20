@@ -5225,6 +5225,23 @@ function create_fragment$6(ctx) {
 							"html": "<h1 id=\"equanimity\">equanimity</h1>",
 							"markdown": "# equanimity"
 						}
+					},
+					{
+						"date": "2023-09-20",
+						"link": {
+							"url": "/2023-09/chess",
+							"label": "chess"
+						},
+						"thumbnail": {
+							"alt": "chess is the best",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1695199971555th-1129210086.jpeg",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1695199971555th-1129210086.jpeg",
+							"size": 21
+						},
+						"description": {
+							"html": "<h1 id=\"chessisthebest\">chess is the best</h1>",
+							"markdown": "# chess is the best"
+						}
 					}
 				]
 			}
