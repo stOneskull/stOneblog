@@ -3,7 +3,7 @@
 
 <head>
     <meta name="generator" content="Primo" />
-    <title>one drive</title><!-- HEAD_svelte-1pww12a_START -->
+    <title>blOgs</title><!-- HEAD_svelte-1pww12a_START -->
     <link rel="shortcut icon" type="image/jpg" sizes="32x32" href="https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg">
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=inter:100,200,300,400,500,600,700,800,900" rel="stylesheet">
@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/themes/light.css">
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/shoelace-autoloader.js"></script>
     <link rel="shortcut icon" type="image/jpg" sizes="32x32" href="https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg">
-    <meta name="description" content="yeah right">
-    <meta property="og:image" content="https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/OIP.webp1690798488319">
-    <meta name="twitter:image" content="https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/OIP.webp1690798488319">
+    <meta name="description" content="These are my blog posts and they are wonderful.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2370&amp;q=80">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2370&amp;q=80">
     <style>
         /* Reset & standardize default styles */
         @import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css") layer;
@@ -170,94 +170,75 @@
             top: 1rem
         }
 
-        .section-container.svelte-1b2zbzi {
-            display: grid;
-            place-items: center;
-            padding: 2rem 2rem 1rem 2rem
+        .section-container.svelte-10jylfj.svelte-10jylfj {
+            max-width: var(--inner-max-width, 900px)
         }
 
-        .superhead.svelte-1b2zbzi {
+        h2.svelte-10jylfj.svelte-10jylfj {
             font-size: 1rem;
-            color: var(--color-accent2);
-            font-weight: 500;
-            margin-bottom: 0.5rem
+            line-height: 1.1;
+            font-weight: 600;
+            margin-bottom: 4rem;
+            letter-spacing: -0.02rem;
+            padding: .5rem 0;
+            border-bottom: 1px solid #f0f0f0
         }
 
-        .heading.svelte-1b2zbzi {
-            margin-bottom: 2rem
+        ul.items.svelte-10jylfj.svelte-10jylfj {
+            display: grid;
+            gap: 4rem
         }
 
-        @media(min-width:700px) {
-            img.svelte-1b2zbzi {
-                max-width: 750px
-            }
+        li.svelte-10jylfj.svelte-10jylfj {
+            display: grid;
+            gap: 2rem
         }
 
-        .section-container.svelte-1yn388l {
-            max-width: var(--inner-max-width, 800px);
-            padding: 2rem
+        li.svelte-10jylfj .post-info .title.svelte-10jylfj {
+            display: block;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            line-height: 1.2;
+            letter-spacing: -0.02rem;
+            -webkit-text-decoration: underline transparent;
+            text-decoration: underline transparent;
+            transition: 0.1s -webkit-text-decoration;
+            transition: 0.1s text-decoration;
+            transition: 0.1s text-decoration, 0.1s -webkit-text-decoration
         }
 
-        .content.svelte-1yn388l img {
-            width: 23%;
-            margin: 2rem 0;
-            box-shadow: var(--box-shadow);
-            border-radius: var(--border-radius)
+        li.svelte-10jylfj .post-info .title.svelte-10jylfj:hover {
+            -webkit-text-decoration-color: initial;
+            text-decoration-color: initial
         }
 
-        .content.svelte-1yn388l p {
-            padding: 0.25rem 0;
-            line-height: 1.5;
+        li.svelte-10jylfj .post-info .description.svelte-10jylfj {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
             font-family: var(--body-font);
+            line-height: 1.4;
             font-weight: 300;
-            margin-bottom: 1rem;
             color: #2d3339
         }
 
-        .content.svelte-1yn388l a {
-            text-decoration: underline
+        li.svelte-10jylfj .post-info .date.svelte-10jylfj {
+            font-size: 1rem;
+            font-weight: 400;
+            color: var(--color-accent2);
+            font-weight: 400
         }
 
-        .content.svelte-1yn388l h1 {
-            font-size: clamp(1.75rem, 10vw, 2.25rem);
-            font-weight: 600;
-            letter-spacing: -0.08rem;
-            margin-bottom: 1rem;
-            line-height: 1.1
-        }
-
-        .content.svelte-1yn388l h2 {
-            font-size: clamp(1.5rem, 10vw, 2.125rem);
-            font-weight: 600;
-            margin-bottom: 1rem;
-            letter-spacing: -0.06rem;
-            line-height: 1.1
-        }
-
-        .content.svelte-1yn388l h3 {
-            font-size: clamp(1.25rem, 10vw, 1.75rem);
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            letter-spacing: -0.05rem;
-            line-height: 1.1
-        }
-
-        .content.svelte-1yn388l ul {
-            list-style: disc;
-            padding: 0.25rem 0;
-            padding-left: 1.25rem
-        }
-
-        .content.svelte-1yn388l ol {
-            list-style: decimal;
-            padding-left: 1.25rem;
-            margin-bottom: 2rem
-        }
-
-        .content.svelte-1yn388l blockquote {
-            padding: 2rem;
+        li.svelte-10jylfj img.svelte-10jylfj {
             box-shadow: var(--box-shadow);
             border-radius: var(--border-radius)
+        }
+
+        @media(min-width: 600px) {
+            li.svelte-10jylfj.svelte-10jylfj {
+                grid-template-columns: 3fr 1fr;
+                gap: 3rem
+            }
         }
 
         .section-container.svelte-ngjace.svelte-ngjace {
@@ -385,7 +366,7 @@
 
 <body id="page">
 
-    <div class="section" id="section-5f7cc429">
+    <div class="section" id="section-462dc99d">
         <header class="section-container svelte-ngjace">
             <div class="desktop-nav svelte-ngjace"><a href="/" class="logo svelte-ngjace">stOne</a>
                 <nav class="svelte-ngjace"><a class="link svelte-ngjace" href="/2023-09">blOg</a><a class="link svelte-ngjace" href="/about">abOut</a><a class="link svelte-ngjace" href="/contact">cOntact</a></nav>
@@ -405,24 +386,77 @@
             </div>
         </header>
     </div>
-    <div class="section" id="section-89ea84b5">
-        <header class="section-container svelte-1b2zbzi"><span class="superhead svelte-1b2zbzi">2023-08-01</span>
-            <h1 class="heading svelte-1b2zbzi">one drive</h1>
-            <img width="360" src="https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/OIP.webp1690798488319" alt="yeah right" class="svelte-1b2zbzi">
-        </header>
+    <div class="section" id="section-2571247d">
+        <section class="section-container svelte-10jylfj">
+            <h2 class="svelte-10jylfj">September 2023</h2>
+            <ul class="items svelte-10jylfj">
+                <li class="svelte-10jylfj">
+                    <div class="post-info"><a class="title svelte-10jylfj" href="/2023-08">August</a>
+                        <div class="description svelte-10jylfj"><!-- HTML_TAG_START -->
+                            <h1 id="lastmonth">Last Month</h1><!-- HTML_TAG_END -->
+                        </div>
+                        <span class="date svelte-10jylfj">2023-08</span>
+                    </div>
+                    <img data-key="items[0].thumbnail" src="https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1693311490361th-2210010940.jpeg" alt="2023-08" class="svelte-10jylfj">
+                </li>
+                <li class="svelte-10jylfj">
+                    <div class="post-info"><a class="title svelte-10jylfj" href="/2023-09/first">first</a>
+                        <div class="description svelte-10jylfj"><!-- HTML_TAG_START -->
+                            <h1 id="remember">remember</h1><!-- HTML_TAG_END -->
+                        </div>
+                        <span class="date svelte-10jylfj">2023-09-01</span>
+                    </div>
+                    <img data-key="items[1].thumbnail" src="https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1693312247657th-3077281170.jpeg" alt="september" class="svelte-10jylfj">
+                </li>
+                <li class="svelte-10jylfj">
+                    <div class="post-info"><a class="title svelte-10jylfj" href="/2023-08/harry-krishna/happy-krishna">happy krishna</a>
+                        <div class="description svelte-10jylfj"><!-- HTML_TAG_START -->
+                            <h1 id="happybirthdaylord">happy birthday lord</h1><!-- HTML_TAG_END -->
+                        </div>
+                        <span class="date svelte-10jylfj">2023-09-06</span>
+                    </div>
+                    <img data-key="items[2].thumbnail" src="https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/AA1fPBUT.jpeg1693513565472" alt="happy birthday krishna" class="svelte-10jylfj">
+                </li>
+                <li class="svelte-10jylfj">
+                    <div class="post-info"><a class="title svelte-10jylfj" href="/2023-08/blogs/blogs-week-2">blOgs3</a>
+                        <div class="description svelte-10jylfj"><!-- HTML_TAG_START -->
+                            <h1 id="bloggity">bloggity</h1><!-- HTML_TAG_END -->
+                        </div>
+                        <span class="date svelte-10jylfj">2023-09-16</span>
+                    </div>
+                    <img data-key="items[3].thumbnail" src="https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1694830912447th-949460736.jpg" alt="be free" class="svelte-10jylfj">
+                </li>
+                <li class="svelte-10jylfj">
+                    <div class="post-info"><a class="title svelte-10jylfj" href="/2023-09/17">stones</a>
+                        <div class="description svelte-10jylfj"><!-- HTML_TAG_START -->
+                            <h1 id="mental">mental</h1><!-- HTML_TAG_END -->
+                        </div>
+                        <span class="date svelte-10jylfj">2023-09-17</span>
+                    </div>
+                    <img data-key="items[4].thumbnail" src="https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1694928478966th-1666044674.jpeg" alt="mental" class="svelte-10jylfj">
+                </li>
+                <li class="svelte-10jylfj">
+                    <div class="post-info"><a class="title svelte-10jylfj" href="/2023-09/chess">chess</a>
+                        <div class="description svelte-10jylfj"><!-- HTML_TAG_START -->
+                            <h1 id="chessisthebest">chess is the best</h1><!-- HTML_TAG_END -->
+                        </div>
+                        <span class="date svelte-10jylfj">2023-09-20</span>
+                    </div>
+                    <img data-key="items[5].thumbnail" src="https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1695199971555th-1129210086.jpeg" alt="chess is the best" class="svelte-10jylfj">
+                </li>
+                <li class="svelte-10jylfj">
+                    <div class="post-info"><a class="title svelte-10jylfj" href="/2023-08/full-moon/harvest-moon">harvest moon</a>
+                        <div class="description svelte-10jylfj"><!-- HTML_TAG_START -->
+                            <h1 id="equanimity">equanimity</h1><!-- HTML_TAG_END -->
+                        </div>
+                        <span class="date svelte-10jylfj">2023-09-29</span>
+                    </div>
+                    <img data-key="items[6].thumbnail" src="https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1693315153292th-4252746029.jpeg" alt="harvest moon" class="svelte-10jylfj">
+                </li>
+            </ul>
+        </section>
     </div>
-    <div class="section" id="section-352c1cf4">
-        <div class="section">
-            <div class="section-container content svelte-1yn388l"><!-- HTML_TAG_START -->
-                <h1>Yeah, right..</h1>
-                <p></p>
-                <p><em>Happy birthday, horse!</em></p>
-                <p></p>
-                <p></p><!-- HTML_TAG_END -->
-            </div>
-        </div>
-    </div>
-    <div class="section" id="section-d4d4e481">
+    <div class="section" id="section-a86e6a8e">
         <header class="section-container svelte-ngjace">
             <div class="desktop-nav svelte-ngjace"><a href="/" class="logo svelte-ngjace">stOne</a>
                 <nav class="svelte-ngjace"><a class="link svelte-ngjace" href="/2023-09">blOg</a><a class="link svelte-ngjace" href="/about">abOut</a><a class="link svelte-ngjace" href="/contact">cOntact</a></nav>
@@ -442,7 +476,7 @@
             </div>
         </header>
     </div>
-    <div class="section" id="section-4cb69d4b">
+    <div class="section" id="section-b8c2279e">
         <footer>
             <div class="section-container svelte-1excgdw">
                 <hr class="svelte-1excgdw">
