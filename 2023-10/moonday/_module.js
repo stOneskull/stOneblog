@@ -5277,8 +5277,8 @@ function create_fragment$9(ctx) {
 				title: "moonday",
 				description: "la luna",
 				content: {
-					"html": "<h1>luna, selene</h1><p><em>From 10,000 BC to 8,000 BC we were in the Age of Leo</em></p><p></p>",
-					"markdown": "# luna, selene\n\n*From 10,000 BC to 8,000 BC we were in the Age of Leo*\n\n\n\n"
+					"html": "<h1>mani, mona, luna, selene</h1><p><em>Khonsu and Iah</em></p><p></p>",
+					"markdown": "# mani, mona, luna, selene\n\n*Khonsu and Iah*\n\n\n\n"
 				}
 			}
 		});
@@ -5292,8 +5292,8 @@ function create_fragment$9(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "sun word roots",
-					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/sun-word-roots.webp1696085990042"
+					"alt": "hey mona",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/th-2725946256.jpeg1696269905456"
 				},
 				title: "moonday",
 				description: "la luna"
