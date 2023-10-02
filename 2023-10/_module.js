@@ -5128,16 +5128,16 @@ function create_fragment$6(ctx) {
 				},
 				title: "blOgs",
 				description: "These are my blog posts and they are wonderful.",
-				heading: "September 2023",
+				heading: "October 2023",
 				items: [
 					{
-						"date": "2023-08",
-						"link": { "url": "/2023-08", "label": "August" },
+						"date": "2023-09",
+						"link": { "url": "/2023-09", "label": "September" },
 						"thumbnail": {
-							"alt": "2023-08",
-							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1693311490361th-2210010940.jpeg",
-							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1693311490361th-2210010940.jpeg",
-							"size": 24
+							"alt": "2023-09",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1696271244333th-2915472700.jpeg",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1696271244333th-2915472700.jpeg",
+							"size": 28
 						},
 						"description": {
 							"html": "<h1 id=\"lastmonth\">Last Month</h1>",
@@ -5145,102 +5145,54 @@ function create_fragment$6(ctx) {
 						}
 					},
 					{
-						"date": "2023-09-01",
+						"date": "2023-10-01",
 						"link": {
-							"url": "/2023-09/first",
-							"label": "first"
+							"url": "/2023-10/sunday",
+							"label": "sunday"
 						},
 						"thumbnail": {
-							"alt": "september",
-							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1693312247657th-3077281170.jpeg",
-							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1693312247657th-3077281170.jpeg",
+							"alt": "sol invictus",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1696084499955th-3355421279.jpeg",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1696084499955th-3355421279.jpeg",
 							"size": null
 						},
 						"description": {
-							"html": "<h1 id=\"remember\">remember</h1>",
-							"markdown": "# remember"
+							"html": "<h1 id=\"solinvictus\">sol invictus</h1>",
+							"markdown": "# sol invictus"
 						}
 					},
 					{
-						"date": "2023-09-06",
+						"date": "2023-10-02",
 						"link": {
-							"url": "/2023-08/harry-krishna/happy-krishna",
-							"label": "happy krishna"
+							"url": "/2023-10/moonday",
+							"label": "moonday"
 						},
 						"thumbnail": {
-							"alt": "happy birthday krishna",
-							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/AA1fPBUT.jpeg1693513565472",
-							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/AA1fPBUT.jpeg1693513565472",
+							"alt": "la luna",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1696268402528th-1581618081.jpeg",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1696268402528th-1581618081.jpeg",
 							"size": null
 						},
 						"description": {
-							"html": "<h1 id=\"happybirthdaylord\">happy birthday lord</h1>",
-							"markdown": "# happy birthday lord"
+							"html": "<h1 id=\"laluna\">la luna</h1>",
+							"markdown": "# la luna"
 						}
 					},
 					{
-						"date": "2023-09-16",
-						"link": {
-							"url": "/2023-08/blogs/blogs-week-2",
-							"label": "blOgs3"
-						},
-						"thumbnail": {
-							"alt": "be free",
-							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1694830912447th-949460736.jpg",
-							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1694830912447th-949460736.jpg",
-							"size": 48
-						},
-						"description": {
-							"html": "<h1 id=\"bloggity\">bloggity</h1>",
-							"markdown": "# bloggity"
-						}
-					},
-					{
-						"date": "2023-09-17",
-						"link": { "url": "/2023-09/17", "label": "stones" },
-						"thumbnail": {
-							"alt": "mental",
-							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1694928478966th-1666044674.jpeg",
-							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1694928478966th-1666044674.jpeg",
-							"size": 19
-						},
-						"description": {
-							"html": "<h1 id=\"mental\">mental</h1>",
-							"markdown": "# mental"
-						}
-					},
-					{
-						"date": "2023-09-20",
-						"link": {
-							"url": "/2023-09/chess",
-							"label": "chess"
-						},
-						"thumbnail": {
-							"alt": "chess is the best",
-							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1695199971555th-1129210086.jpeg",
-							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1695199971555th-1129210086.jpeg",
-							"size": 21
-						},
-						"description": {
-							"html": "<h1 id=\"chessisthebest\">chess is the best</h1>",
-							"markdown": "# chess is the best"
-						}
-					},
-					{
-						"date": "2023-09-29",
+						"date": "2023-10-28",
 						"link": {
 							"url": "/2023-08/full-moon/harvest-moon",
-							"label": "harvest moon"
+							"label": "hunter's moon"
 						},
 						"thumbnail": {
-							"alt": "harvest moon",
-							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1693315153292th-4252746029.jpeg",
-							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1693315153292th-4252746029.jpeg",
-							"size": null
+							"alt": "hunter's moon",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1696271494709th-1769562002.jpeg",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1696271494709th-1769562002.jpeg",
+							"size": 16
 						},
 						"description": {
-							"html": "<h1 id=\"equanimity\">equanimity</h1>",
-							"markdown": "# equanimity"
+							"html": "<h1 id=\"bloodmoon\">blood moon</h1>",
+							"markdown": "# blood moon"
 						}
 					}
 				]

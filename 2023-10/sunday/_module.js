@@ -5277,8 +5277,8 @@ function create_fragment$9(ctx) {
 				title: "sunday",
 				description: "sol invictus",
 				content: {
-					"html": "<h1>sunne, sol, helios</h1><p></p><p><em>From 10,000 BC to 8,000 BC we were in the Age of Leo</em></p><p></p>",
-					"markdown": "# sunne, sol, helios\n\n\n\n*From 10,000 BC to 8,000 BC we were in the Age of Leo*\n\n\n\n"
+					"html": "<h1>sunne, sol, helios</h1><p><em>dies solis</em></p><p></p><p><em>From 10,000 BC to 8,000 BC we were in the Age of Leo</em></p><p></p>",
+					"markdown": "# sunne, sol, helios\n\n*dies solis*\n\n\n\n*From 10,000 BC to 8,000 BC we were in the Age of Leo*\n\n\n\n"
 				}
 			}
 		});
