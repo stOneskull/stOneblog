@@ -5100,7 +5100,7 @@ function create_fragment$6(ctx) {
 				},
 				site_nav: [
 					{
-						"link": { "url": "/2023-10", "label": "blOg" }
+						"link": { "url": "/2023-11", "label": "blOg" }
 					},
 					{
 						"link": { "url": "/about", "label": "abOut" }
@@ -5145,37 +5145,20 @@ function create_fragment$6(ctx) {
 						}
 					},
 					{
-						"date": "2023-10-01",
+						"date": "2023-11-07",
 						"link": {
-							"url": "/2023-10/sunday",
-							"label": "sunday"
+							"url": "/2023-11/711",
+							"label": "marsday"
 						},
 						"thumbnail": {
-							"alt": "sol invictus",
-							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1696084499955th-3355421279.jpeg",
-							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1696084499955th-3355421279.jpeg",
+							"alt": "mars",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1699284885646th-2217255314.jpeg",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1699284885646th-2217255314.jpeg",
 							"size": null
 						},
 						"description": {
-							"html": "<h1 id=\"solinvictus\">sol invictus</h1>",
-							"markdown": "# sol invictus"
-						}
-					},
-					{
-						"date": "2023-10-02",
-						"link": {
-							"url": "/2023-10/moonday",
-							"label": "moonday"
-						},
-						"thumbnail": {
-							"alt": "la luna",
-							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1696268402528th-1581618081.jpeg",
-							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1696268402528th-1581618081.jpeg",
-							"size": null
-						},
-						"description": {
-							"html": "<h1 id=\"laluna\">la luna</h1>",
-							"markdown": "# la luna"
+							"html": "<h1 id=\"mars\">mars</h1>",
+							"markdown": "# mars"
 						}
 					},
 					{
@@ -5240,7 +5223,7 @@ function create_fragment$6(ctx) {
 				},
 				site_nav: [
 					{
-						"link": { "url": "/2023-10", "label": "blOg" }
+						"link": { "url": "/2023-11", "label": "blOg" }
 					},
 					{
 						"link": { "url": "/about", "label": "abOut" }

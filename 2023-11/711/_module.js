@@ -5202,13 +5202,13 @@ function create_fragment$9(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "la luna",
-					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1696268402528th-1581618081.jpeg",
-					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1696268402528th-1581618081.jpeg",
-					"size": 15
+					"alt": "mars",
+					"src": "",
+					"url": "",
+					"size": null
 				},
-				title: "moonday",
-				description: "la luna"
+				title: "marsday",
+				description: "mars"
 			}
 		});
 
@@ -5221,13 +5221,13 @@ function create_fragment$9(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "la luna",
-					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1696268402528th-1581618081.jpeg",
-					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1696268402528th-1581618081.jpeg",
-					"size": 15
+					"alt": "mars",
+					"src": "",
+					"url": "",
+					"size": null
 				},
-				title: "moonday",
-				description: "la luna",
+				title: "marsday",
+				description: "mars",
 				logo: {
 					"image": {
 						"alt": "stOne",
@@ -5239,7 +5239,7 @@ function create_fragment$9(ctx) {
 				},
 				site_nav: [
 					{
-						"link": { "url": "/2023-10", "label": "blOg" }
+						"link": { "url": "/2023-11", "label": "blOg" }
 					},
 					{
 						"link": { "url": "/about", "label": "abOut" }
@@ -5265,8 +5265,8 @@ function create_fragment$9(ctx) {
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1699284885646th-2217255314.jpeg",
 					"size": 34
 				},
-				title: "moonday",
-				description: "la luna",
+				title: "marsday",
+				description: "mars",
 				superhead: "2023-11-07",
 				heading: "marsday"
 			}
@@ -5284,8 +5284,8 @@ function create_fragment$9(ctx) {
 					"alt": "joom",
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/7114.jpeg1699284423017"
 				},
-				title: "moonday",
-				description: "la luna"
+				title: "marsday",
+				description: "mars"
 			}
 		});
 
@@ -5301,8 +5301,8 @@ function create_fragment$9(ctx) {
 					"alt": "joom",
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/C0258983-Time_spiral.webp1689930614652"
 				},
-				title: "moonday",
-				description: "la luna"
+				title: "marsday",
+				description: "mars"
 			}
 		});
 
@@ -5318,8 +5318,8 @@ function create_fragment$9(ctx) {
 					"alt": "joom",
 					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/71174.jpeg1699284441558"
 				},
-				title: "moonday",
-				description: "la luna"
+				title: "marsday",
+				description: "mars"
 			}
 		});
 
@@ -5332,13 +5332,13 @@ function create_fragment$9(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "la luna",
-					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1696268402528th-1581618081.jpeg",
-					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1696268402528th-1581618081.jpeg",
-					"size": 15
+					"alt": "mars",
+					"src": "",
+					"url": "",
+					"size": null
 				},
-				title: "moonday",
-				description: "la luna",
+				title: "marsday",
+				description: "mars",
 				logo: {
 					"image": {
 						"alt": "stOne",
@@ -5350,7 +5350,7 @@ function create_fragment$9(ctx) {
 				},
 				site_nav: [
 					{
-						"link": { "url": "/2023-10", "label": "blOg" }
+						"link": { "url": "/2023-11", "label": "blOg" }
 					},
 					{
 						"link": { "url": "/about", "label": "abOut" }
@@ -5371,13 +5371,13 @@ function create_fragment$9(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "la luna",
-					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1696268402528th-1581618081.jpeg",
-					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1696268402528th-1581618081.jpeg",
-					"size": 15
+					"alt": "mars",
+					"src": "",
+					"url": "",
+					"size": null
 				},
-				title: "moonday",
-				description: "la luna",
+				title: "marsday",
+				description: "mars",
 				heading: "",
 				email: "",
 				social_links: [
@@ -5417,13 +5417,13 @@ function create_fragment$9(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "la luna",
-					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1696268402528th-1581618081.jpeg",
-					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1696268402528th-1581618081.jpeg",
-					"size": 15
+					"alt": "mars",
+					"src": "",
+					"url": "",
+					"size": null
 				},
-				title: "moonday",
-				description: "la luna"
+				title: "marsday",
+				description: "mars"
 			}
 		});
 

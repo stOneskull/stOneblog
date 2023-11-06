@@ -5229,7 +5229,7 @@ function create_fragment$9(ctx) {
 				},
 				site_nav: [
 					{
-						"link": { "url": "/2023-10", "label": "blOg" }
+						"link": { "url": "/2023-11", "label": "blOg" }
 					},
 					{
 						"link": { "url": "/about", "label": "abOut" }
@@ -5344,7 +5344,7 @@ function create_fragment$9(ctx) {
 				},
 				site_nav: [
 					{
-						"link": { "url": "/2023-10", "label": "blOg" }
+						"link": { "url": "/2023-11", "label": "blOg" }
 					},
 					{
 						"link": { "url": "/about", "label": "abOut" }
