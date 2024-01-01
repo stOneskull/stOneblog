@@ -5179,6 +5179,23 @@ function create_fragment$6(ctx) {
 						}
 					},
 					{
+						"date": "2024-01-01",
+						"link": {
+							"url": "/2024-01/newyear24",
+							"label": "Happy New Year!"
+						},
+						"thumbnail": {
+							"alt": "newyear24",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1704071412235th-560978724.jpg",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1704071412235th-560978724.jpg",
+							"size": 24
+						},
+						"description": {
+							"html": "<p>New Year 24</p>",
+							"markdown": "New Year 24"
+						}
+					},
+					{
 						"date": "2023-10-23",
 						"link": { "url": "/2023-10/23", "label": "23" },
 						"thumbnail": {
