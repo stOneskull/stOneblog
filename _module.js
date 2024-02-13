@@ -5297,7 +5297,7 @@ function create_fragment$8(ctx) {
 				},
 				site_nav: [
 					{
-						"link": { "url": "/2024-01", "label": "blOg" }
+						"link": { "url": "/2024-02", "label": "blOg" }
 					},
 					{
 						"link": { "url": "/about", "label": "abOut" }
@@ -5341,6 +5341,23 @@ function create_fragment$8(ctx) {
 				heading: "Cherries",
 				items: [
 					{
+						"date": "2024-02-14",
+						"link": {
+							"url": "/2024-02/laura",
+							"label": "laura"
+						},
+						"thumbnail": {
+							"alt": "golden garland",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/17078230677854.-GettyImages-157280684-0dd5b12.webp",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/17078230677854.-GettyImages-157280684-0dd5b12.webp",
+							"size": null
+						},
+						"description": {
+							"html": "<h1 id=\"findlaura\">find laura</h1>",
+							"markdown": "# find laura"
+						}
+					},
+					{
 						"date": "2023-10-23",
 						"link": { "url": "/2023-10/23", "label": "23" },
 						"thumbnail": {
@@ -5352,23 +5369,6 @@ function create_fragment$8(ctx) {
 						"description": {
 							"html": "<h1 id=\"lessismore\">less is more</h1>",
 							"markdown": "# less is more"
-						}
-					},
-					{
-						"date": "2023-09-29",
-						"link": {
-							"url": "/2023-08/full-moon/harvest-moon",
-							"label": "harvest moon"
-						},
-						"thumbnail": {
-							"alt": "equanimity",
-							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1693315153292th-4252746029.jpeg",
-							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1693315153292th-4252746029.jpeg",
-							"size": null
-						},
-						"description": {
-							"html": "<h1 id=\"equanimity\">equanimity</h1>",
-							"markdown": "# equanimity"
 						}
 					},
 					{
@@ -5462,7 +5462,7 @@ function create_fragment$8(ctx) {
 				},
 				site_nav: [
 					{
-						"link": { "url": "/2024-01", "label": "blOg" }
+						"link": { "url": "/2024-02", "label": "blOg" }
 					},
 					{
 						"link": { "url": "/about", "label": "abOut" }
