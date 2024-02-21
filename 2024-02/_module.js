@@ -5163,10 +5163,7 @@ function create_fragment$6(ctx) {
 				items: [
 					{
 						"date": "2024-01",
-						"link": {
-							"url": "/2024-01",
-							"label": "January 2023"
-						},
+						"link": { "url": "/2024-01", "label": "January" },
 						"thumbnail": {
 							"alt": "january 24",
 							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1707827007028th-1205830987.jpg",
