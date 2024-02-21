@@ -5583,7 +5583,7 @@ function create_fragment$b(ctx) {
 				},
 				title: "harvest moon",
 				description: "september full moon",
-				superhead: "2024-10-28",
+				superhead: "2023-10-28",
 				heading: "hunter's moon"
 			}
 		});
