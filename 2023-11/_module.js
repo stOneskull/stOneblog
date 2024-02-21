@@ -5224,20 +5224,20 @@ function create_fragment$6(ctx) {
 						}
 					},
 					{
-						"date": "2023-10-28",
+						"date": "2023-11-27",
 						"link": {
-							"url": "/2023-08/full-moon/harvest-moon",
-							"label": "hunter's moon"
+							"url": "/2023-08/full-moon/beaver-moon",
+							"label": "beaver moon"
 						},
 						"thumbnail": {
-							"alt": "hunter's moon",
-							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1696271494709th-1769562002.jpeg",
-							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1696271494709th-1769562002.jpeg",
-							"size": 16
+							"alt": "beaver moon",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1708486428590th-968288821.jpg",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1708486428590th-968288821.jpg",
+							"size": 5
 						},
 						"description": {
-							"html": "<h1 id=\"bloodmoon\">blood moon</h1>",
-							"markdown": "# blood moon"
+							"html": "<h1 id=\"frostmoon\">frost moon</h1>",
+							"markdown": "# frost moon"
 						}
 					},
 					{
