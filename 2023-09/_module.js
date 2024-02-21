@@ -5273,6 +5273,20 @@ function create_fragment$6(ctx) {
 							"html": "<h1 id=\"equanimity\">equanimity</h1>",
 							"markdown": "# equanimity"
 						}
+					},
+					{
+						"date": "2023-10",
+						"link": { "url": "/2023-10", "label": "October" },
+						"thumbnail": {
+							"alt": "",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1699284606952th-151379005.jpeg",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1699284606952th-151379005.jpeg",
+							"size": null
+						},
+						"description": {
+							"html": "<h1 id=\"nextmonth\">Next Month</h1>",
+							"markdown": "# Next Month"
+						}
 					}
 				]
 			}

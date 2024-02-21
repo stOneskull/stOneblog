@@ -5239,6 +5239,20 @@ function create_fragment$6(ctx) {
 							"html": "<h1 id=\"bloodmoon\">blood moon</h1>",
 							"markdown": "# blood moon"
 						}
+					},
+					{
+						"date": "2023-12",
+						"link": { "url": "/2023-12", "label": "December" },
+						"thumbnail": {
+							"alt": "",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1704071984383th-1620026650.jpg",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1704071984383th-1620026650.jpg",
+							"size": null
+						},
+						"description": {
+							"html": "<h1 id=\"nextmonth\">Next Month</h1>",
+							"markdown": "# Next Month"
+						}
 					}
 				]
 			}
