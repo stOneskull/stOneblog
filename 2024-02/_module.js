@@ -5267,8 +5267,8 @@ function create_fragment$6(ctx) {
 							"size": null
 						},
 						"description": {
-							"html": "<h1 id=\"snowmoon\">snow moon</h1>",
-							"markdown": "# snow moon"
+							"html": "<h1 id=\"micromoon\">micromoon</h1>",
+							"markdown": "# micromoon"
 						}
 					}
 				]
