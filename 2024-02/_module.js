@@ -5241,20 +5241,6 @@ function create_fragment$6(ctx) {
 						}
 					},
 					{
-						"date": "2023-10-23",
-						"link": { "url": "/2023-10/23", "label": "23" },
-						"thumbnail": {
-							"alt": "23",
-							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1698035043724th-2541700484.jpeg",
-							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1698035043724th-2541700484.jpeg",
-							"size": 78
-						},
-						"description": {
-							"html": "<h1 id=\"5\">5</h1>",
-							"markdown": "# 5"
-						}
-					},
-					{
 						"date": "2024-02-24",
 						"link": {
 							"url": "/2023-08/full-moon/snow-moon",
