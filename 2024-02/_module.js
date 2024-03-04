@@ -5256,6 +5256,20 @@ function create_fragment$6(ctx) {
 							"html": "<h1 id=\"micromoon\">micromoon</h1>",
 							"markdown": "# micromoon"
 						}
+					},
+					{
+						"date": "2024-03",
+						"link": { "url": "/2024-03", "label": "next month" },
+						"thumbnail": {
+							"alt": "march 2024",
+							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1709527817373th-1857421040.jpeg",
+							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1709527817373th-1857421040.jpeg",
+							"size": 30
+						},
+						"description": {
+							"html": "<h1 id=\"march2024\">march 2024</h1>",
+							"markdown": "# march 2024"
+						}
 					}
 				]
 			}
