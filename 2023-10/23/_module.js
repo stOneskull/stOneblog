@@ -6645,7 +6645,7 @@ function create_fragment$h(ctx) {
 				},
 				site_nav: [
 					{
-						"link": { "url": "/2024-02", "label": "blOg" }
+						"link": { "url": "/2024-03", "label": "blOg" }
 					},
 					{
 						"link": { "url": "/about", "label": "abOut" }
@@ -6961,7 +6961,7 @@ function create_fragment$h(ctx) {
 				},
 				site_nav: [
 					{
-						"link": { "url": "/2024-02", "label": "blOg" }
+						"link": { "url": "/2024-03", "label": "blOg" }
 					},
 					{
 						"link": { "url": "/about", "label": "abOut" }
