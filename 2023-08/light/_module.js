@@ -8121,8 +8121,8 @@ function create_fragment$p(ctx) {
 				title: "light",
 				description: "in the aether",
 				content: {
-					"html": "<ul><li><p>This topic and page is going to take a while, ha.</p></li></ul>",
-					"markdown": "- This topic and page is going to take a while, ha.\n\n\n<!-- -->\n\n"
+					"html": "<ul><li><p>This topic and page is going to take a while, ha.</p></li><li><p>edit: 2024-03-11 - onto a new page.. snipping and gluing..</p></li></ul>",
+					"markdown": "- This topic and page is going to take a while, ha.\n\n- edit: 2024-03-11 - onto a new page.. snipping and gluing..\n\n\n<!-- -->\n\n"
 				}
 			}
 		});

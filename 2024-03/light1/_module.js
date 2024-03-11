@@ -821,6 +821,89 @@ function create_bidirectional_transition(node, fn, params, intro) {
         }
     };
 }
+function outro_and_destroy_block(block, lookup) {
+    transition_out(block, 1, 1, () => {
+        lookup.delete(block.key);
+    });
+}
+function update_keyed_each(old_blocks, dirty, get_key, dynamic, ctx, list, lookup, node, destroy, create_each_block, next, get_context) {
+    let o = old_blocks.length;
+    let n = list.length;
+    let i = o;
+    const old_indexes = {};
+    while (i--)
+        old_indexes[old_blocks[i].key] = i;
+    const new_blocks = [];
+    const new_lookup = new Map();
+    const deltas = new Map();
+    const updates = [];
+    i = n;
+    while (i--) {
+        const child_ctx = get_context(ctx, list, i);
+        const key = get_key(child_ctx);
+        let block = lookup.get(key);
+        if (!block) {
+            block = create_each_block(key, child_ctx);
+            block.c();
+        }
+        else if (dynamic) {
+            // defer updates until all the DOM shuffling is done
+            updates.push(() => block.p(child_ctx, dirty));
+        }
+        new_lookup.set(key, new_blocks[i] = block);
+        if (key in old_indexes)
+            deltas.set(key, Math.abs(i - old_indexes[key]));
+    }
+    const will_move = new Set();
+    const did_move = new Set();
+    function insert(block) {
+        transition_in(block, 1);
+        block.m(node, next);
+        lookup.set(block.key, block);
+        next = block.first;
+        n--;
+    }
+    while (o && n) {
+        const new_block = new_blocks[n - 1];
+        const old_block = old_blocks[o - 1];
+        const new_key = new_block.key;
+        const old_key = old_block.key;
+        if (new_block === old_block) {
+            // do nothing
+            next = new_block.first;
+            o--;
+            n--;
+        }
+        else if (!new_lookup.has(old_key)) {
+            // remove old block
+            destroy(old_block, lookup);
+            o--;
+        }
+        else if (!lookup.has(new_key) || will_move.has(new_key)) {
+            insert(new_block);
+        }
+        else if (did_move.has(old_key)) {
+            o--;
+        }
+        else if (deltas.get(new_key) > deltas.get(old_key)) {
+            did_move.add(new_key);
+            insert(new_block);
+        }
+        else {
+            will_move.add(old_key);
+            o--;
+        }
+    }
+    while (o--) {
+        const old_block = old_blocks[o];
+        if (!new_lookup.has(old_block.key))
+            destroy(old_block, lookup);
+    }
+    while (n)
+        insert(new_blocks[n - 1]);
+    run_all(updates);
+    return new_blocks;
+}
 
 function get_spread_update(levels, updates) {
     const update = {};
@@ -1224,6 +1307,11 @@ class Component extends SvelteComponent {
 	}
 }
 
+function cubicOut(t) {
+    const f = t - 1.0;
+    return f * f * f + 1.0;
+}
+
 function fade(node, { delay = 0, duration = 400, easing = identity } = {}) {
     const o = +getComputedStyle(node).opacity;
     return {
@@ -1231,6 +1319,34 @@ function fade(node, { delay = 0, duration = 400, easing = identity } = {}) {
         duration,
         easing,
         css: t => `opacity: ${t * o}`
+    };
+}
+function slide(node, { delay = 0, duration = 400, easing = cubicOut, axis = 'y' } = {}) {
+    const style = getComputedStyle(node);
+    const opacity = +style.opacity;
+    const primary_property = axis === 'y' ? 'height' : 'width';
+    const primary_property_value = parseFloat(style[primary_property]);
+    const secondary_properties = axis === 'y' ? ['top', 'bottom'] : ['left', 'right'];
+    const capitalized_secondary_properties = secondary_properties.map((e) => `${e[0].toUpperCase()}${e.slice(1)}`);
+    const padding_start_value = parseFloat(style[`padding${capitalized_secondary_properties[0]}`]);
+    const padding_end_value = parseFloat(style[`padding${capitalized_secondary_properties[1]}`]);
+    const margin_start_value = parseFloat(style[`margin${capitalized_secondary_properties[0]}`]);
+    const margin_end_value = parseFloat(style[`margin${capitalized_secondary_properties[1]}`]);
+    const border_width_start_value = parseFloat(style[`border${capitalized_secondary_properties[0]}Width`]);
+    const border_width_end_value = parseFloat(style[`border${capitalized_secondary_properties[1]}Width`]);
+    return {
+        delay,
+        duration,
+        easing,
+        css: t => 'overflow: hidden;' +
+            `opacity: ${Math.min(t * 20, 1) * opacity};` +
+            `${primary_property}: ${t * primary_property_value}px;` +
+            `padding-${secondary_properties[0]}: ${t * padding_start_value}px;` +
+            `padding-${secondary_properties[1]}: ${t * padding_end_value}px;` +
+            `margin-${secondary_properties[0]}: ${t * margin_start_value}px;` +
+            `margin-${secondary_properties[1]}: ${t * margin_end_value}px;` +
+            `border-${secondary_properties[0]}-width: ${t * border_width_start_value}px;` +
+            `border-${secondary_properties[1]}-width: ${t * border_width_end_value}px;`
     };
 }
 
@@ -3594,7 +3710,7 @@ function create_fragment$2(ctx) {
 			attr(div1, "class", "mobile-nav svelte-ngjace");
 			attr(header, "class", "section-container svelte-ngjace");
 			attr(div2, "class", "section");
-			attr(div2, "id", "section-8e12d161");
+			attr(div2, "id", "section-d883ba3f");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
@@ -3781,7 +3897,2450 @@ class Component$2 extends SvelteComponent {
 
 /* generated by Svelte v3.58.0 */
 
+function create_if_block$3(ctx) {
+	let img;
+	let img_src_value;
+	let img_alt_value;
+
+	return {
+		c() {
+			img = element("img");
+			this.h();
+		},
+		l(nodes) {
+			img = claim_element(nodes, "IMG", {
+				width: true,
+				src: true,
+				alt: true,
+				class: true
+			});
+
+			this.h();
+		},
+		h() {
+			attr(img, "width", "360");
+			if (!src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) attr(img, "src", img_src_value);
+			attr(img, "alt", img_alt_value = /*image*/ ctx[0].alt);
+			attr(img, "class", "svelte-1b2zbzi");
+		},
+		m(target, anchor) {
+			insert_hydration(target, img, anchor);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*image*/ 1 && !src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) {
+				attr(img, "src", img_src_value);
+			}
+
+			if (dirty & /*image*/ 1 && img_alt_value !== (img_alt_value = /*image*/ ctx[0].alt)) {
+				attr(img, "alt", img_alt_value);
+			}
+		},
+		d(detaching) {
+			if (detaching) detach(img);
+		}
+	};
+}
+
+function create_fragment$3(ctx) {
+	let div;
+	let header;
+	let span;
+	let t0;
+	let t1;
+	let h1;
+	let t2;
+	let t3;
+	let if_block = /*image*/ ctx[0].url && create_if_block$3(ctx);
+
+	return {
+		c() {
+			div = element("div");
+			header = element("header");
+			span = element("span");
+			t0 = text(/*superhead*/ ctx[1]);
+			t1 = space();
+			h1 = element("h1");
+			t2 = text(/*heading*/ ctx[2]);
+			t3 = space();
+			if (if_block) if_block.c();
+			this.h();
+		},
+		l(nodes) {
+			div = claim_element(nodes, "DIV", { class: true, id: true });
+			var div_nodes = children(div);
+			header = claim_element(div_nodes, "HEADER", { class: true });
+			var header_nodes = children(header);
+			span = claim_element(header_nodes, "SPAN", { class: true });
+			var span_nodes = children(span);
+			t0 = claim_text(span_nodes, /*superhead*/ ctx[1]);
+			span_nodes.forEach(detach);
+			t1 = claim_space(header_nodes);
+			h1 = claim_element(header_nodes, "H1", { class: true });
+			var h1_nodes = children(h1);
+			t2 = claim_text(h1_nodes, /*heading*/ ctx[2]);
+			h1_nodes.forEach(detach);
+			t3 = claim_space(header_nodes);
+			if (if_block) if_block.l(header_nodes);
+			header_nodes.forEach(detach);
+			div_nodes.forEach(detach);
+			this.h();
+		},
+		h() {
+			attr(span, "class", "superhead svelte-1b2zbzi");
+			attr(h1, "class", "heading svelte-1b2zbzi");
+			attr(header, "class", "section-container svelte-1b2zbzi");
+			attr(div, "class", "section");
+			attr(div, "id", "section-90ec2b9a");
+		},
+		m(target, anchor) {
+			insert_hydration(target, div, anchor);
+			append_hydration(div, header);
+			append_hydration(header, span);
+			append_hydration(span, t0);
+			append_hydration(header, t1);
+			append_hydration(header, h1);
+			append_hydration(h1, t2);
+			append_hydration(header, t3);
+			if (if_block) if_block.m(header, null);
+		},
+		p(ctx, [dirty]) {
+			if (dirty & /*superhead*/ 2) set_data(t0, /*superhead*/ ctx[1]);
+			if (dirty & /*heading*/ 4) set_data(t2, /*heading*/ ctx[2]);
+
+			if (/*image*/ ctx[0].url) {
+				if (if_block) {
+					if_block.p(ctx, dirty);
+				} else {
+					if_block = create_if_block$3(ctx);
+					if_block.c();
+					if_block.m(header, null);
+				}
+			} else if (if_block) {
+				if_block.d(1);
+				if_block = null;
+			}
+		},
+		i: noop,
+		o: noop,
+		d(detaching) {
+			if (detaching) detach(div);
+			if (if_block) if_block.d();
+		}
+	};
+}
+
+function instance$3($$self, $$props, $$invalidate) {
+	let { favicon } = $$props;
+	let { image } = $$props;
+	let { title } = $$props;
+	let { description } = $$props;
+	let { superhead } = $$props;
+	let { heading } = $$props;
+
+	$$self.$$set = $$props => {
+		if ('favicon' in $$props) $$invalidate(3, favicon = $$props.favicon);
+		if ('image' in $$props) $$invalidate(0, image = $$props.image);
+		if ('title' in $$props) $$invalidate(4, title = $$props.title);
+		if ('description' in $$props) $$invalidate(5, description = $$props.description);
+		if ('superhead' in $$props) $$invalidate(1, superhead = $$props.superhead);
+		if ('heading' in $$props) $$invalidate(2, heading = $$props.heading);
+	};
+
+	return [image, superhead, heading, favicon, title, description];
+}
+
+class Component$3 extends SvelteComponent {
+	constructor(options) {
+		super();
+
+		init(this, options, instance$3, create_fragment$3, safe_not_equal, {
+			favicon: 3,
+			image: 0,
+			title: 4,
+			description: 5,
+			superhead: 1,
+			heading: 2
+		});
+	}
+}
+
+/* generated by Svelte v3.58.0 */
+
+function create_fragment$4(ctx) {
+	let div2;
+	let div1;
+	let div0;
+	let raw_value = /*content*/ ctx[0].html + "";
+
+	return {
+		c() {
+			div2 = element("div");
+			div1 = element("div");
+			div0 = element("div");
+			this.h();
+		},
+		l(nodes) {
+			div2 = claim_element(nodes, "DIV", { class: true, id: true });
+			var div2_nodes = children(div2);
+			div1 = claim_element(div2_nodes, "DIV", { class: true });
+			var div1_nodes = children(div1);
+			div0 = claim_element(div1_nodes, "DIV", { class: true });
+			var div0_nodes = children(div0);
+			div0_nodes.forEach(detach);
+			div1_nodes.forEach(detach);
+			div2_nodes.forEach(detach);
+			this.h();
+		},
+		h() {
+			attr(div0, "class", "section-container content svelte-1yn388l");
+			attr(div1, "class", "section");
+			attr(div2, "class", "section");
+			attr(div2, "id", "section-078c02fa");
+		},
+		m(target, anchor) {
+			insert_hydration(target, div2, anchor);
+			append_hydration(div2, div1);
+			append_hydration(div1, div0);
+			div0.innerHTML = raw_value;
+		},
+		p(ctx, [dirty]) {
+			if (dirty & /*content*/ 1 && raw_value !== (raw_value = /*content*/ ctx[0].html + "")) div0.innerHTML = raw_value;		},
+		i: noop,
+		o: noop,
+		d(detaching) {
+			if (detaching) detach(div2);
+		}
+	};
+}
+
+function instance$4($$self, $$props, $$invalidate) {
+	let { favicon } = $$props;
+	let { image } = $$props;
+	let { title } = $$props;
+	let { description } = $$props;
+	let { content } = $$props;
+
+	$$self.$$set = $$props => {
+		if ('favicon' in $$props) $$invalidate(1, favicon = $$props.favicon);
+		if ('image' in $$props) $$invalidate(2, image = $$props.image);
+		if ('title' in $$props) $$invalidate(3, title = $$props.title);
+		if ('description' in $$props) $$invalidate(4, description = $$props.description);
+		if ('content' in $$props) $$invalidate(0, content = $$props.content);
+	};
+
+	return [content, favicon, image, title, description];
+}
+
+class Component$4 extends SvelteComponent {
+	constructor(options) {
+		super();
+
+		init(this, options, instance$4, create_fragment$4, safe_not_equal, {
+			favicon: 1,
+			image: 2,
+			title: 3,
+			description: 4,
+			content: 0
+		});
+	}
+}
+
+/* generated by Svelte v3.58.0 */
+
+function create_fragment$5(ctx) {
+	let div2;
+	let div1;
+	let div0;
+	let raw_value = /*content*/ ctx[0].html + "";
+
+	return {
+		c() {
+			div2 = element("div");
+			div1 = element("div");
+			div0 = element("div");
+			this.h();
+		},
+		l(nodes) {
+			div2 = claim_element(nodes, "DIV", { class: true, id: true });
+			var div2_nodes = children(div2);
+			div1 = claim_element(div2_nodes, "DIV", { class: true });
+			var div1_nodes = children(div1);
+			div0 = claim_element(div1_nodes, "DIV", { class: true });
+			var div0_nodes = children(div0);
+			div0_nodes.forEach(detach);
+			div1_nodes.forEach(detach);
+			div2_nodes.forEach(detach);
+			this.h();
+		},
+		h() {
+			attr(div0, "class", "section-container content svelte-1yn388l");
+			attr(div1, "class", "section");
+			attr(div2, "class", "section");
+			attr(div2, "id", "section-af652661");
+		},
+		m(target, anchor) {
+			insert_hydration(target, div2, anchor);
+			append_hydration(div2, div1);
+			append_hydration(div1, div0);
+			div0.innerHTML = raw_value;
+		},
+		p(ctx, [dirty]) {
+			if (dirty & /*content*/ 1 && raw_value !== (raw_value = /*content*/ ctx[0].html + "")) div0.innerHTML = raw_value;		},
+		i: noop,
+		o: noop,
+		d(detaching) {
+			if (detaching) detach(div2);
+		}
+	};
+}
+
+function instance$5($$self, $$props, $$invalidate) {
+	let { favicon } = $$props;
+	let { image } = $$props;
+	let { title } = $$props;
+	let { description } = $$props;
+	let { content } = $$props;
+
+	$$self.$$set = $$props => {
+		if ('favicon' in $$props) $$invalidate(1, favicon = $$props.favicon);
+		if ('image' in $$props) $$invalidate(2, image = $$props.image);
+		if ('title' in $$props) $$invalidate(3, title = $$props.title);
+		if ('description' in $$props) $$invalidate(4, description = $$props.description);
+		if ('content' in $$props) $$invalidate(0, content = $$props.content);
+	};
+
+	return [content, favicon, image, title, description];
+}
+
+class Component$5 extends SvelteComponent {
+	constructor(options) {
+		super();
+
+		init(this, options, instance$5, create_fragment$5, safe_not_equal, {
+			favicon: 1,
+			image: 2,
+			title: 3,
+			description: 4,
+			content: 0
+		});
+	}
+}
+
+/* generated by Svelte v3.58.0 */
+
+function create_fragment$6(ctx) {
+	let div2;
+	let div1;
+	let div0;
+	let raw_value = /*content*/ ctx[0].html + "";
+
+	return {
+		c() {
+			div2 = element("div");
+			div1 = element("div");
+			div0 = element("div");
+			this.h();
+		},
+		l(nodes) {
+			div2 = claim_element(nodes, "DIV", { class: true, id: true });
+			var div2_nodes = children(div2);
+			div1 = claim_element(div2_nodes, "DIV", { class: true });
+			var div1_nodes = children(div1);
+			div0 = claim_element(div1_nodes, "DIV", { class: true });
+			var div0_nodes = children(div0);
+			div0_nodes.forEach(detach);
+			div1_nodes.forEach(detach);
+			div2_nodes.forEach(detach);
+			this.h();
+		},
+		h() {
+			attr(div0, "class", "section-container content svelte-1yn388l");
+			attr(div1, "class", "section");
+			attr(div2, "class", "section");
+			attr(div2, "id", "section-cfead943");
+		},
+		m(target, anchor) {
+			insert_hydration(target, div2, anchor);
+			append_hydration(div2, div1);
+			append_hydration(div1, div0);
+			div0.innerHTML = raw_value;
+		},
+		p(ctx, [dirty]) {
+			if (dirty & /*content*/ 1 && raw_value !== (raw_value = /*content*/ ctx[0].html + "")) div0.innerHTML = raw_value;		},
+		i: noop,
+		o: noop,
+		d(detaching) {
+			if (detaching) detach(div2);
+		}
+	};
+}
+
+function instance$6($$self, $$props, $$invalidate) {
+	let { favicon } = $$props;
+	let { image } = $$props;
+	let { title } = $$props;
+	let { description } = $$props;
+	let { content } = $$props;
+
+	$$self.$$set = $$props => {
+		if ('favicon' in $$props) $$invalidate(1, favicon = $$props.favicon);
+		if ('image' in $$props) $$invalidate(2, image = $$props.image);
+		if ('title' in $$props) $$invalidate(3, title = $$props.title);
+		if ('description' in $$props) $$invalidate(4, description = $$props.description);
+		if ('content' in $$props) $$invalidate(0, content = $$props.content);
+	};
+
+	return [content, favicon, image, title, description];
+}
+
+class Component$6 extends SvelteComponent {
+	constructor(options) {
+		super();
+
+		init(this, options, instance$6, create_fragment$6, safe_not_equal, {
+			favicon: 1,
+			image: 2,
+			title: 3,
+			description: 4,
+			content: 0
+		});
+	}
+}
+
+/* generated by Svelte v3.58.0 */
+
+function create_fragment$7(ctx) {
+	let div2;
+	let div1;
+	let div0;
+	let raw_value = /*content*/ ctx[0].html + "";
+
+	return {
+		c() {
+			div2 = element("div");
+			div1 = element("div");
+			div0 = element("div");
+			this.h();
+		},
+		l(nodes) {
+			div2 = claim_element(nodes, "DIV", { class: true, id: true });
+			var div2_nodes = children(div2);
+			div1 = claim_element(div2_nodes, "DIV", { class: true });
+			var div1_nodes = children(div1);
+			div0 = claim_element(div1_nodes, "DIV", { class: true });
+			var div0_nodes = children(div0);
+			div0_nodes.forEach(detach);
+			div1_nodes.forEach(detach);
+			div2_nodes.forEach(detach);
+			this.h();
+		},
+		h() {
+			attr(div0, "class", "section-container content svelte-1yn388l");
+			attr(div1, "class", "section");
+			attr(div2, "class", "section");
+			attr(div2, "id", "section-c7f68ab4");
+		},
+		m(target, anchor) {
+			insert_hydration(target, div2, anchor);
+			append_hydration(div2, div1);
+			append_hydration(div1, div0);
+			div0.innerHTML = raw_value;
+		},
+		p(ctx, [dirty]) {
+			if (dirty & /*content*/ 1 && raw_value !== (raw_value = /*content*/ ctx[0].html + "")) div0.innerHTML = raw_value;		},
+		i: noop,
+		o: noop,
+		d(detaching) {
+			if (detaching) detach(div2);
+		}
+	};
+}
+
+function instance$7($$self, $$props, $$invalidate) {
+	let { favicon } = $$props;
+	let { image } = $$props;
+	let { title } = $$props;
+	let { description } = $$props;
+	let { content } = $$props;
+
+	$$self.$$set = $$props => {
+		if ('favicon' in $$props) $$invalidate(1, favicon = $$props.favicon);
+		if ('image' in $$props) $$invalidate(2, image = $$props.image);
+		if ('title' in $$props) $$invalidate(3, title = $$props.title);
+		if ('description' in $$props) $$invalidate(4, description = $$props.description);
+		if ('content' in $$props) $$invalidate(0, content = $$props.content);
+	};
+
+	return [content, favicon, image, title, description];
+}
+
+class Component$7 extends SvelteComponent {
+	constructor(options) {
+		super();
+
+		init(this, options, instance$7, create_fragment$7, safe_not_equal, {
+			favicon: 1,
+			image: 2,
+			title: 3,
+			description: 4,
+			content: 0
+		});
+	}
+}
+
+/* generated by Svelte v3.58.0 */
+
+function create_fragment$8(ctx) {
+	let div2;
+	let div1;
+	let div0;
+	let raw_value = /*content*/ ctx[0].html + "";
+
+	return {
+		c() {
+			div2 = element("div");
+			div1 = element("div");
+			div0 = element("div");
+			this.h();
+		},
+		l(nodes) {
+			div2 = claim_element(nodes, "DIV", { class: true, id: true });
+			var div2_nodes = children(div2);
+			div1 = claim_element(div2_nodes, "DIV", { class: true });
+			var div1_nodes = children(div1);
+			div0 = claim_element(div1_nodes, "DIV", { class: true });
+			var div0_nodes = children(div0);
+			div0_nodes.forEach(detach);
+			div1_nodes.forEach(detach);
+			div2_nodes.forEach(detach);
+			this.h();
+		},
+		h() {
+			attr(div0, "class", "section-container content svelte-1yn388l");
+			attr(div1, "class", "section");
+			attr(div2, "class", "section");
+			attr(div2, "id", "section-ef4cc513");
+		},
+		m(target, anchor) {
+			insert_hydration(target, div2, anchor);
+			append_hydration(div2, div1);
+			append_hydration(div1, div0);
+			div0.innerHTML = raw_value;
+		},
+		p(ctx, [dirty]) {
+			if (dirty & /*content*/ 1 && raw_value !== (raw_value = /*content*/ ctx[0].html + "")) div0.innerHTML = raw_value;		},
+		i: noop,
+		o: noop,
+		d(detaching) {
+			if (detaching) detach(div2);
+		}
+	};
+}
+
+function instance$8($$self, $$props, $$invalidate) {
+	let { favicon } = $$props;
+	let { image } = $$props;
+	let { title } = $$props;
+	let { description } = $$props;
+	let { content } = $$props;
+
+	$$self.$$set = $$props => {
+		if ('favicon' in $$props) $$invalidate(1, favicon = $$props.favicon);
+		if ('image' in $$props) $$invalidate(2, image = $$props.image);
+		if ('title' in $$props) $$invalidate(3, title = $$props.title);
+		if ('description' in $$props) $$invalidate(4, description = $$props.description);
+		if ('content' in $$props) $$invalidate(0, content = $$props.content);
+	};
+
+	return [content, favicon, image, title, description];
+}
+
+class Component$8 extends SvelteComponent {
+	constructor(options) {
+		super();
+
+		init(this, options, instance$8, create_fragment$8, safe_not_equal, {
+			favicon: 1,
+			image: 2,
+			title: 3,
+			description: 4,
+			content: 0
+		});
+	}
+}
+
+/* generated by Svelte v3.58.0 */
+
+function create_if_block$4(ctx) {
+	let img;
+	let img_src_value;
+	let img_alt_value;
+
+	return {
+		c() {
+			img = element("img");
+			this.h();
+		},
+		l(nodes) {
+			img = claim_element(nodes, "IMG", {
+				width: true,
+				src: true,
+				alt: true,
+				class: true
+			});
+
+			this.h();
+		},
+		h() {
+			attr(img, "width", "360");
+			if (!src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) attr(img, "src", img_src_value);
+			attr(img, "alt", img_alt_value = /*image*/ ctx[0].alt);
+			attr(img, "class", "svelte-1b2zbzi");
+		},
+		m(target, anchor) {
+			insert_hydration(target, img, anchor);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*image*/ 1 && !src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) {
+				attr(img, "src", img_src_value);
+			}
+
+			if (dirty & /*image*/ 1 && img_alt_value !== (img_alt_value = /*image*/ ctx[0].alt)) {
+				attr(img, "alt", img_alt_value);
+			}
+		},
+		d(detaching) {
+			if (detaching) detach(img);
+		}
+	};
+}
+
+function create_fragment$9(ctx) {
+	let div;
+	let header;
+	let span;
+	let t0;
+	let t1;
+	let h1;
+	let t2;
+	let t3;
+	let if_block = /*image*/ ctx[0].url && create_if_block$4(ctx);
+
+	return {
+		c() {
+			div = element("div");
+			header = element("header");
+			span = element("span");
+			t0 = text(/*superhead*/ ctx[1]);
+			t1 = space();
+			h1 = element("h1");
+			t2 = text(/*heading*/ ctx[2]);
+			t3 = space();
+			if (if_block) if_block.c();
+			this.h();
+		},
+		l(nodes) {
+			div = claim_element(nodes, "DIV", { class: true, id: true });
+			var div_nodes = children(div);
+			header = claim_element(div_nodes, "HEADER", { class: true });
+			var header_nodes = children(header);
+			span = claim_element(header_nodes, "SPAN", { class: true });
+			var span_nodes = children(span);
+			t0 = claim_text(span_nodes, /*superhead*/ ctx[1]);
+			span_nodes.forEach(detach);
+			t1 = claim_space(header_nodes);
+			h1 = claim_element(header_nodes, "H1", { class: true });
+			var h1_nodes = children(h1);
+			t2 = claim_text(h1_nodes, /*heading*/ ctx[2]);
+			h1_nodes.forEach(detach);
+			t3 = claim_space(header_nodes);
+			if (if_block) if_block.l(header_nodes);
+			header_nodes.forEach(detach);
+			div_nodes.forEach(detach);
+			this.h();
+		},
+		h() {
+			attr(span, "class", "superhead svelte-1b2zbzi");
+			attr(h1, "class", "heading svelte-1b2zbzi");
+			attr(header, "class", "section-container svelte-1b2zbzi");
+			attr(div, "class", "section");
+			attr(div, "id", "section-63affe3c");
+		},
+		m(target, anchor) {
+			insert_hydration(target, div, anchor);
+			append_hydration(div, header);
+			append_hydration(header, span);
+			append_hydration(span, t0);
+			append_hydration(header, t1);
+			append_hydration(header, h1);
+			append_hydration(h1, t2);
+			append_hydration(header, t3);
+			if (if_block) if_block.m(header, null);
+		},
+		p(ctx, [dirty]) {
+			if (dirty & /*superhead*/ 2) set_data(t0, /*superhead*/ ctx[1]);
+			if (dirty & /*heading*/ 4) set_data(t2, /*heading*/ ctx[2]);
+
+			if (/*image*/ ctx[0].url) {
+				if (if_block) {
+					if_block.p(ctx, dirty);
+				} else {
+					if_block = create_if_block$4(ctx);
+					if_block.c();
+					if_block.m(header, null);
+				}
+			} else if (if_block) {
+				if_block.d(1);
+				if_block = null;
+			}
+		},
+		i: noop,
+		o: noop,
+		d(detaching) {
+			if (detaching) detach(div);
+			if (if_block) if_block.d();
+		}
+	};
+}
+
+function instance$9($$self, $$props, $$invalidate) {
+	let { favicon } = $$props;
+	let { image } = $$props;
+	let { title } = $$props;
+	let { description } = $$props;
+	let { superhead } = $$props;
+	let { heading } = $$props;
+
+	$$self.$$set = $$props => {
+		if ('favicon' in $$props) $$invalidate(3, favicon = $$props.favicon);
+		if ('image' in $$props) $$invalidate(0, image = $$props.image);
+		if ('title' in $$props) $$invalidate(4, title = $$props.title);
+		if ('description' in $$props) $$invalidate(5, description = $$props.description);
+		if ('superhead' in $$props) $$invalidate(1, superhead = $$props.superhead);
+		if ('heading' in $$props) $$invalidate(2, heading = $$props.heading);
+	};
+
+	return [image, superhead, heading, favicon, title, description];
+}
+
+class Component$9 extends SvelteComponent {
+	constructor(options) {
+		super();
+
+		init(this, options, instance$9, create_fragment$9, safe_not_equal, {
+			favicon: 3,
+			image: 0,
+			title: 4,
+			description: 5,
+			superhead: 1,
+			heading: 2
+		});
+	}
+}
+
+/* generated by Svelte v3.58.0 */
+
 function get_each_context$1(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[9] = list[i];
+	child_ctx[11] = i;
+	return child_ctx;
+}
+
+// (84:6) {#if activeItem === i}
+function create_if_block$5(ctx) {
+	let div;
+	let raw_value = /*item*/ ctx[9].description.html + "";
+	let div_transition;
+	let current;
+
+	return {
+		c() {
+			div = element("div");
+			this.h();
+		},
+		l(nodes) {
+			div = claim_element(nodes, "DIV", { class: true });
+			var div_nodes = children(div);
+			div_nodes.forEach(detach);
+			this.h();
+		},
+		h() {
+			attr(div, "class", "description svelte-1oe3rov");
+		},
+		m(target, anchor) {
+			insert_hydration(target, div, anchor);
+			div.innerHTML = raw_value;
+			current = true;
+		},
+		p(ctx, dirty) {
+			if ((!current || dirty & /*items*/ 2) && raw_value !== (raw_value = /*item*/ ctx[9].description.html + "")) div.innerHTML = raw_value;		},
+		i(local) {
+			if (current) return;
+
+			add_render_callback(() => {
+				if (!current) return;
+				if (!div_transition) div_transition = create_bidirectional_transition(div, slide, {}, true);
+				div_transition.run(1);
+			});
+
+			current = true;
+		},
+		o(local) {
+			if (!div_transition) div_transition = create_bidirectional_transition(div, slide, {}, false);
+			div_transition.run(0);
+			current = false;
+		},
+		d(detaching) {
+			if (detaching) detach(div);
+			if (detaching && div_transition) div_transition.end();
+		}
+	};
+}
+
+// (76:4) {#each items as item, i (i)}
+function create_each_block$1(key_1, ctx) {
+	let div1;
+	let button;
+	let span0;
+	let t0_value = /*item*/ ctx[9].title + "";
+	let t0;
+	let t1;
+	let span1;
+	let icon;
+	let t2;
+	let t3;
+	let t4;
+	let current;
+	let mounted;
+	let dispose;
+	icon = new Component$1({ props: { icon: "ph:caret-down-bold" } });
+
+	function click_handler() {
+		return /*click_handler*/ ctx[8](/*i*/ ctx[11]);
+	}
+
+	let if_block = /*activeItem*/ ctx[2] === /*i*/ ctx[11] && create_if_block$5(ctx);
+
+	return {
+		key: key_1,
+		first: null,
+		c() {
+			div1 = element("div");
+			button = element("button");
+			span0 = element("span");
+			t0 = text(t0_value);
+			t1 = space();
+			span1 = element("span");
+			create_component(icon.$$.fragment);
+			t2 = space();
+			if (if_block) if_block.c();
+			t3 = space();
+			t4 = space();
+			this.h();
+		},
+		l(nodes) {
+			div1 = claim_element(nodes, "DIV", { class: true });
+			var div1_nodes = children(div1);
+			button = claim_element(div1_nodes, "BUTTON", { class: true });
+			var button_nodes = children(button);
+			span0 = claim_element(button_nodes, "SPAN", { class: true });
+			var span0_nodes = children(span0);
+			t0 = claim_text(span0_nodes, t0_value);
+			span0_nodes.forEach(detach);
+			t1 = claim_space(button_nodes);
+			span1 = claim_element(button_nodes, "SPAN", { class: true });
+			var span1_nodes = children(span1);
+			claim_component(icon.$$.fragment, span1_nodes);
+			span1_nodes.forEach(detach);
+			button_nodes.forEach(detach);
+			t2 = claim_space(div1_nodes);
+			if (if_block) if_block.l(div1_nodes);
+			t3 = claim_space(div1_nodes);
+			t4 = claim_space(div1_nodes);
+			div1_nodes.forEach(detach);
+			this.h();
+		},
+		h() {
+			attr(span0, "class", "svelte-1oe3rov");
+			attr(span1, "class", "icon svelte-1oe3rov");
+			attr(button, "class", "svelte-1oe3rov");
+			attr(div1, "class", "item svelte-1oe3rov");
+			toggle_class(div1, "active", /*activeItem*/ ctx[2] === /*i*/ ctx[11]);
+			this.first = div1;
+		},
+		m(target, anchor) {
+			insert_hydration(target, div1, anchor);
+			append_hydration(div1, button);
+			append_hydration(button, span0);
+			append_hydration(span0, t0);
+			append_hydration(button, t1);
+			append_hydration(button, span1);
+			mount_component(icon, span1, null);
+			append_hydration(div1, t2);
+			if (if_block) if_block.m(div1, null);
+			append_hydration(div1, t3);
+			append_hydration(div1, t4);
+			current = true;
+
+			if (!mounted) {
+				dispose = listen(button, "click", click_handler);
+				mounted = true;
+			}
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+			if ((!current || dirty & /*items*/ 2) && t0_value !== (t0_value = /*item*/ ctx[9].title + "")) set_data(t0, t0_value);
+
+			if (/*activeItem*/ ctx[2] === /*i*/ ctx[11]) {
+				if (if_block) {
+					if_block.p(ctx, dirty);
+
+					if (dirty & /*activeItem, items*/ 6) {
+						transition_in(if_block, 1);
+					}
+				} else {
+					if_block = create_if_block$5(ctx);
+					if_block.c();
+					transition_in(if_block, 1);
+					if_block.m(div1, t3);
+				}
+			} else if (if_block) {
+				group_outros();
+
+				transition_out(if_block, 1, 1, () => {
+					if_block = null;
+				});
+
+				check_outros();
+			}
+
+			if (!current || dirty & /*activeItem, items*/ 6) {
+				toggle_class(div1, "active", /*activeItem*/ ctx[2] === /*i*/ ctx[11]);
+			}
+		},
+		i(local) {
+			if (current) return;
+			transition_in(icon.$$.fragment, local);
+			transition_in(if_block);
+			current = true;
+		},
+		o(local) {
+			transition_out(icon.$$.fragment, local);
+			transition_out(if_block);
+			current = false;
+		},
+		d(detaching) {
+			if (detaching) detach(div1);
+			destroy_component(icon);
+			if (if_block) if_block.d();
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+function create_fragment$a(ctx) {
+	let div1;
+	let section;
+	let h2;
+	let t0;
+	let t1;
+	let div0;
+	let each_blocks = [];
+	let each_1_lookup = new Map();
+	let current;
+	let each_value = /*items*/ ctx[1];
+	const get_key = ctx => /*i*/ ctx[11];
+
+	for (let i = 0; i < each_value.length; i += 1) {
+		let child_ctx = get_each_context$1(ctx, each_value, i);
+		let key = get_key(child_ctx);
+		each_1_lookup.set(key, each_blocks[i] = create_each_block$1(key, child_ctx));
+	}
+
+	return {
+		c() {
+			div1 = element("div");
+			section = element("section");
+			h2 = element("h2");
+			t0 = text(/*heading*/ ctx[0]);
+			t1 = space();
+			div0 = element("div");
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			this.h();
+		},
+		l(nodes) {
+			div1 = claim_element(nodes, "DIV", { class: true, id: true });
+			var div1_nodes = children(div1);
+			section = claim_element(div1_nodes, "SECTION", { class: true });
+			var section_nodes = children(section);
+			h2 = claim_element(section_nodes, "H2", { class: true });
+			var h2_nodes = children(h2);
+			t0 = claim_text(h2_nodes, /*heading*/ ctx[0]);
+			h2_nodes.forEach(detach);
+			t1 = claim_space(section_nodes);
+			div0 = claim_element(section_nodes, "DIV", { class: true });
+			var div0_nodes = children(div0);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].l(div0_nodes);
+			}
+
+			div0_nodes.forEach(detach);
+			section_nodes.forEach(detach);
+			div1_nodes.forEach(detach);
+			this.h();
+		},
+		h() {
+			attr(h2, "class", "heading svelte-1oe3rov");
+			attr(div0, "class", "accordion svelte-1oe3rov");
+			attr(section, "class", "section-container svelte-1oe3rov");
+			attr(div1, "class", "section");
+			attr(div1, "id", "section-a8bb4f21");
+		},
+		m(target, anchor) {
+			insert_hydration(target, div1, anchor);
+			append_hydration(div1, section);
+			append_hydration(section, h2);
+			append_hydration(h2, t0);
+			append_hydration(section, t1);
+			append_hydration(section, div0);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(div0, null);
+				}
+			}
+
+			current = true;
+		},
+		p(ctx, [dirty]) {
+			if (!current || dirty & /*heading*/ 1) set_data(t0, /*heading*/ ctx[0]);
+
+			if (dirty & /*activeItem, items, setActiveItem*/ 14) {
+				each_value = /*items*/ ctx[1];
+				group_outros();
+				each_blocks = update_keyed_each(each_blocks, dirty, get_key, 1, ctx, each_value, each_1_lookup, div0, outro_and_destroy_block, create_each_block$1, null, get_each_context$1);
+				check_outros();
+			}
+		},
+		i(local) {
+			if (current) return;
+
+			for (let i = 0; i < each_value.length; i += 1) {
+				transition_in(each_blocks[i]);
+			}
+
+			current = true;
+		},
+		o(local) {
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				transition_out(each_blocks[i]);
+			}
+
+			current = false;
+		},
+		d(detaching) {
+			if (detaching) detach(div1);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].d();
+			}
+		}
+	};
+}
+
+function instance$a($$self, $$props, $$invalidate) {
+	let { favicon } = $$props;
+	let { image } = $$props;
+	let { title } = $$props;
+	let { description } = $$props;
+	let { heading } = $$props;
+	let { items } = $$props;
+	let activeItem = 0;
+
+	function setActiveItem(i) {
+		$$invalidate(2, activeItem = activeItem === i ? null : i);
+	}
+
+	const click_handler = i => setActiveItem(i);
+
+	$$self.$$set = $$props => {
+		if ('favicon' in $$props) $$invalidate(4, favicon = $$props.favicon);
+		if ('image' in $$props) $$invalidate(5, image = $$props.image);
+		if ('title' in $$props) $$invalidate(6, title = $$props.title);
+		if ('description' in $$props) $$invalidate(7, description = $$props.description);
+		if ('heading' in $$props) $$invalidate(0, heading = $$props.heading);
+		if ('items' in $$props) $$invalidate(1, items = $$props.items);
+	};
+
+	return [
+		heading,
+		items,
+		activeItem,
+		setActiveItem,
+		favicon,
+		image,
+		title,
+		description,
+		click_handler
+	];
+}
+
+class Component$a extends SvelteComponent {
+	constructor(options) {
+		super();
+
+		init(this, options, instance$a, create_fragment$a, safe_not_equal, {
+			favicon: 4,
+			image: 5,
+			title: 6,
+			description: 7,
+			heading: 0,
+			items: 1
+		});
+	}
+}
+
+/* generated by Svelte v3.58.0 */
+
+function create_fragment$b(ctx) {
+	let div2;
+	let div1;
+	let div0;
+	let raw_value = /*content*/ ctx[0].html + "";
+
+	return {
+		c() {
+			div2 = element("div");
+			div1 = element("div");
+			div0 = element("div");
+			this.h();
+		},
+		l(nodes) {
+			div2 = claim_element(nodes, "DIV", { class: true, id: true });
+			var div2_nodes = children(div2);
+			div1 = claim_element(div2_nodes, "DIV", { class: true });
+			var div1_nodes = children(div1);
+			div0 = claim_element(div1_nodes, "DIV", { class: true });
+			var div0_nodes = children(div0);
+			div0_nodes.forEach(detach);
+			div1_nodes.forEach(detach);
+			div2_nodes.forEach(detach);
+			this.h();
+		},
+		h() {
+			attr(div0, "class", "section-container content svelte-7037ku");
+			attr(div1, "class", "section");
+			attr(div2, "class", "section");
+			attr(div2, "id", "section-dd53da59");
+		},
+		m(target, anchor) {
+			insert_hydration(target, div2, anchor);
+			append_hydration(div2, div1);
+			append_hydration(div1, div0);
+			div0.innerHTML = raw_value;
+		},
+		p(ctx, [dirty]) {
+			if (dirty & /*content*/ 1 && raw_value !== (raw_value = /*content*/ ctx[0].html + "")) div0.innerHTML = raw_value;		},
+		i: noop,
+		o: noop,
+		d(detaching) {
+			if (detaching) detach(div2);
+		}
+	};
+}
+
+function instance$b($$self, $$props, $$invalidate) {
+	let { favicon } = $$props;
+	let { image } = $$props;
+	let { title } = $$props;
+	let { description } = $$props;
+	let { content } = $$props;
+
+	$$self.$$set = $$props => {
+		if ('favicon' in $$props) $$invalidate(1, favicon = $$props.favicon);
+		if ('image' in $$props) $$invalidate(2, image = $$props.image);
+		if ('title' in $$props) $$invalidate(3, title = $$props.title);
+		if ('description' in $$props) $$invalidate(4, description = $$props.description);
+		if ('content' in $$props) $$invalidate(0, content = $$props.content);
+	};
+
+	return [content, favicon, image, title, description];
+}
+
+class Component$b extends SvelteComponent {
+	constructor(options) {
+		super();
+
+		init(this, options, instance$b, create_fragment$b, safe_not_equal, {
+			favicon: 1,
+			image: 2,
+			title: 3,
+			description: 4,
+			content: 0
+		});
+	}
+}
+
+/* generated by Svelte v3.58.0 */
+
+function create_fragment$c(ctx) {
+	let div2;
+	let div1;
+	let div0;
+	let raw_value = /*content*/ ctx[0].html + "";
+
+	return {
+		c() {
+			div2 = element("div");
+			div1 = element("div");
+			div0 = element("div");
+			this.h();
+		},
+		l(nodes) {
+			div2 = claim_element(nodes, "DIV", { class: true, id: true });
+			var div2_nodes = children(div2);
+			div1 = claim_element(div2_nodes, "DIV", { class: true });
+			var div1_nodes = children(div1);
+			div0 = claim_element(div1_nodes, "DIV", { class: true });
+			var div0_nodes = children(div0);
+			div0_nodes.forEach(detach);
+			div1_nodes.forEach(detach);
+			div2_nodes.forEach(detach);
+			this.h();
+		},
+		h() {
+			attr(div0, "class", "section-container content svelte-7037ku");
+			attr(div1, "class", "section");
+			attr(div2, "class", "section");
+			attr(div2, "id", "section-c035f1a4");
+		},
+		m(target, anchor) {
+			insert_hydration(target, div2, anchor);
+			append_hydration(div2, div1);
+			append_hydration(div1, div0);
+			div0.innerHTML = raw_value;
+		},
+		p(ctx, [dirty]) {
+			if (dirty & /*content*/ 1 && raw_value !== (raw_value = /*content*/ ctx[0].html + "")) div0.innerHTML = raw_value;		},
+		i: noop,
+		o: noop,
+		d(detaching) {
+			if (detaching) detach(div2);
+		}
+	};
+}
+
+function instance$c($$self, $$props, $$invalidate) {
+	let { favicon } = $$props;
+	let { image } = $$props;
+	let { title } = $$props;
+	let { description } = $$props;
+	let { content } = $$props;
+
+	$$self.$$set = $$props => {
+		if ('favicon' in $$props) $$invalidate(1, favicon = $$props.favicon);
+		if ('image' in $$props) $$invalidate(2, image = $$props.image);
+		if ('title' in $$props) $$invalidate(3, title = $$props.title);
+		if ('description' in $$props) $$invalidate(4, description = $$props.description);
+		if ('content' in $$props) $$invalidate(0, content = $$props.content);
+	};
+
+	return [content, favicon, image, title, description];
+}
+
+class Component$c extends SvelteComponent {
+	constructor(options) {
+		super();
+
+		init(this, options, instance$c, create_fragment$c, safe_not_equal, {
+			favicon: 1,
+			image: 2,
+			title: 3,
+			description: 4,
+			content: 0
+		});
+	}
+}
+
+/* generated by Svelte v3.58.0 */
+
+function create_if_block$6(ctx) {
+	let img;
+	let img_src_value;
+	let img_alt_value;
+
+	return {
+		c() {
+			img = element("img");
+			this.h();
+		},
+		l(nodes) {
+			img = claim_element(nodes, "IMG", {
+				width: true,
+				src: true,
+				alt: true,
+				class: true
+			});
+
+			this.h();
+		},
+		h() {
+			attr(img, "width", "360");
+			if (!src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) attr(img, "src", img_src_value);
+			attr(img, "alt", img_alt_value = /*image*/ ctx[0].alt);
+			attr(img, "class", "svelte-1b2zbzi");
+		},
+		m(target, anchor) {
+			insert_hydration(target, img, anchor);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*image*/ 1 && !src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) {
+				attr(img, "src", img_src_value);
+			}
+
+			if (dirty & /*image*/ 1 && img_alt_value !== (img_alt_value = /*image*/ ctx[0].alt)) {
+				attr(img, "alt", img_alt_value);
+			}
+		},
+		d(detaching) {
+			if (detaching) detach(img);
+		}
+	};
+}
+
+function create_fragment$d(ctx) {
+	let div;
+	let header;
+	let span;
+	let t0;
+	let t1;
+	let h1;
+	let t2;
+	let t3;
+	let if_block = /*image*/ ctx[0].url && create_if_block$6(ctx);
+
+	return {
+		c() {
+			div = element("div");
+			header = element("header");
+			span = element("span");
+			t0 = text(/*superhead*/ ctx[1]);
+			t1 = space();
+			h1 = element("h1");
+			t2 = text(/*heading*/ ctx[2]);
+			t3 = space();
+			if (if_block) if_block.c();
+			this.h();
+		},
+		l(nodes) {
+			div = claim_element(nodes, "DIV", { class: true, id: true });
+			var div_nodes = children(div);
+			header = claim_element(div_nodes, "HEADER", { class: true });
+			var header_nodes = children(header);
+			span = claim_element(header_nodes, "SPAN", { class: true });
+			var span_nodes = children(span);
+			t0 = claim_text(span_nodes, /*superhead*/ ctx[1]);
+			span_nodes.forEach(detach);
+			t1 = claim_space(header_nodes);
+			h1 = claim_element(header_nodes, "H1", { class: true });
+			var h1_nodes = children(h1);
+			t2 = claim_text(h1_nodes, /*heading*/ ctx[2]);
+			h1_nodes.forEach(detach);
+			t3 = claim_space(header_nodes);
+			if (if_block) if_block.l(header_nodes);
+			header_nodes.forEach(detach);
+			div_nodes.forEach(detach);
+			this.h();
+		},
+		h() {
+			attr(span, "class", "superhead svelte-1b2zbzi");
+			attr(h1, "class", "heading svelte-1b2zbzi");
+			attr(header, "class", "section-container svelte-1b2zbzi");
+			attr(div, "class", "section");
+			attr(div, "id", "section-41ff85f5");
+		},
+		m(target, anchor) {
+			insert_hydration(target, div, anchor);
+			append_hydration(div, header);
+			append_hydration(header, span);
+			append_hydration(span, t0);
+			append_hydration(header, t1);
+			append_hydration(header, h1);
+			append_hydration(h1, t2);
+			append_hydration(header, t3);
+			if (if_block) if_block.m(header, null);
+		},
+		p(ctx, [dirty]) {
+			if (dirty & /*superhead*/ 2) set_data(t0, /*superhead*/ ctx[1]);
+			if (dirty & /*heading*/ 4) set_data(t2, /*heading*/ ctx[2]);
+
+			if (/*image*/ ctx[0].url) {
+				if (if_block) {
+					if_block.p(ctx, dirty);
+				} else {
+					if_block = create_if_block$6(ctx);
+					if_block.c();
+					if_block.m(header, null);
+				}
+			} else if (if_block) {
+				if_block.d(1);
+				if_block = null;
+			}
+		},
+		i: noop,
+		o: noop,
+		d(detaching) {
+			if (detaching) detach(div);
+			if (if_block) if_block.d();
+		}
+	};
+}
+
+function instance$d($$self, $$props, $$invalidate) {
+	let { favicon } = $$props;
+	let { image } = $$props;
+	let { title } = $$props;
+	let { description } = $$props;
+	let { superhead } = $$props;
+	let { heading } = $$props;
+
+	$$self.$$set = $$props => {
+		if ('favicon' in $$props) $$invalidate(3, favicon = $$props.favicon);
+		if ('image' in $$props) $$invalidate(0, image = $$props.image);
+		if ('title' in $$props) $$invalidate(4, title = $$props.title);
+		if ('description' in $$props) $$invalidate(5, description = $$props.description);
+		if ('superhead' in $$props) $$invalidate(1, superhead = $$props.superhead);
+		if ('heading' in $$props) $$invalidate(2, heading = $$props.heading);
+	};
+
+	return [image, superhead, heading, favicon, title, description];
+}
+
+class Component$d extends SvelteComponent {
+	constructor(options) {
+		super();
+
+		init(this, options, instance$d, create_fragment$d, safe_not_equal, {
+			favicon: 3,
+			image: 0,
+			title: 4,
+			description: 5,
+			superhead: 1,
+			heading: 2
+		});
+	}
+}
+
+/* generated by Svelte v3.58.0 */
+
+function create_fragment$e(ctx) {
+	let div2;
+	let div1;
+	let div0;
+	let raw_value = /*content*/ ctx[0].html + "";
+
+	return {
+		c() {
+			div2 = element("div");
+			div1 = element("div");
+			div0 = element("div");
+			this.h();
+		},
+		l(nodes) {
+			div2 = claim_element(nodes, "DIV", { class: true, id: true });
+			var div2_nodes = children(div2);
+			div1 = claim_element(div2_nodes, "DIV", { class: true });
+			var div1_nodes = children(div1);
+			div0 = claim_element(div1_nodes, "DIV", { class: true });
+			var div0_nodes = children(div0);
+			div0_nodes.forEach(detach);
+			div1_nodes.forEach(detach);
+			div2_nodes.forEach(detach);
+			this.h();
+		},
+		h() {
+			attr(div0, "class", "section-container content svelte-1yn388l");
+			attr(div1, "class", "section");
+			attr(div2, "class", "section");
+			attr(div2, "id", "section-4c75bdc3");
+		},
+		m(target, anchor) {
+			insert_hydration(target, div2, anchor);
+			append_hydration(div2, div1);
+			append_hydration(div1, div0);
+			div0.innerHTML = raw_value;
+		},
+		p(ctx, [dirty]) {
+			if (dirty & /*content*/ 1 && raw_value !== (raw_value = /*content*/ ctx[0].html + "")) div0.innerHTML = raw_value;		},
+		i: noop,
+		o: noop,
+		d(detaching) {
+			if (detaching) detach(div2);
+		}
+	};
+}
+
+function instance$e($$self, $$props, $$invalidate) {
+	let { favicon } = $$props;
+	let { image } = $$props;
+	let { title } = $$props;
+	let { description } = $$props;
+	let { content } = $$props;
+
+	$$self.$$set = $$props => {
+		if ('favicon' in $$props) $$invalidate(1, favicon = $$props.favicon);
+		if ('image' in $$props) $$invalidate(2, image = $$props.image);
+		if ('title' in $$props) $$invalidate(3, title = $$props.title);
+		if ('description' in $$props) $$invalidate(4, description = $$props.description);
+		if ('content' in $$props) $$invalidate(0, content = $$props.content);
+	};
+
+	return [content, favicon, image, title, description];
+}
+
+class Component$e extends SvelteComponent {
+	constructor(options) {
+		super();
+
+		init(this, options, instance$e, create_fragment$e, safe_not_equal, {
+			favicon: 1,
+			image: 2,
+			title: 3,
+			description: 4,
+			content: 0
+		});
+	}
+}
+
+/* generated by Svelte v3.58.0 */
+
+function create_if_block$7(ctx) {
+	let img;
+	let img_src_value;
+	let img_alt_value;
+
+	return {
+		c() {
+			img = element("img");
+			this.h();
+		},
+		l(nodes) {
+			img = claim_element(nodes, "IMG", {
+				width: true,
+				src: true,
+				alt: true,
+				class: true
+			});
+
+			this.h();
+		},
+		h() {
+			attr(img, "width", "360");
+			if (!src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) attr(img, "src", img_src_value);
+			attr(img, "alt", img_alt_value = /*image*/ ctx[0].alt);
+			attr(img, "class", "svelte-1b2zbzi");
+		},
+		m(target, anchor) {
+			insert_hydration(target, img, anchor);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*image*/ 1 && !src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) {
+				attr(img, "src", img_src_value);
+			}
+
+			if (dirty & /*image*/ 1 && img_alt_value !== (img_alt_value = /*image*/ ctx[0].alt)) {
+				attr(img, "alt", img_alt_value);
+			}
+		},
+		d(detaching) {
+			if (detaching) detach(img);
+		}
+	};
+}
+
+function create_fragment$f(ctx) {
+	let div;
+	let header;
+	let span;
+	let t0;
+	let t1;
+	let h1;
+	let t2;
+	let t3;
+	let if_block = /*image*/ ctx[0].url && create_if_block$7(ctx);
+
+	return {
+		c() {
+			div = element("div");
+			header = element("header");
+			span = element("span");
+			t0 = text(/*superhead*/ ctx[1]);
+			t1 = space();
+			h1 = element("h1");
+			t2 = text(/*heading*/ ctx[2]);
+			t3 = space();
+			if (if_block) if_block.c();
+			this.h();
+		},
+		l(nodes) {
+			div = claim_element(nodes, "DIV", { class: true, id: true });
+			var div_nodes = children(div);
+			header = claim_element(div_nodes, "HEADER", { class: true });
+			var header_nodes = children(header);
+			span = claim_element(header_nodes, "SPAN", { class: true });
+			var span_nodes = children(span);
+			t0 = claim_text(span_nodes, /*superhead*/ ctx[1]);
+			span_nodes.forEach(detach);
+			t1 = claim_space(header_nodes);
+			h1 = claim_element(header_nodes, "H1", { class: true });
+			var h1_nodes = children(h1);
+			t2 = claim_text(h1_nodes, /*heading*/ ctx[2]);
+			h1_nodes.forEach(detach);
+			t3 = claim_space(header_nodes);
+			if (if_block) if_block.l(header_nodes);
+			header_nodes.forEach(detach);
+			div_nodes.forEach(detach);
+			this.h();
+		},
+		h() {
+			attr(span, "class", "superhead svelte-1b2zbzi");
+			attr(h1, "class", "heading svelte-1b2zbzi");
+			attr(header, "class", "section-container svelte-1b2zbzi");
+			attr(div, "class", "section");
+			attr(div, "id", "section-268c0cc4");
+		},
+		m(target, anchor) {
+			insert_hydration(target, div, anchor);
+			append_hydration(div, header);
+			append_hydration(header, span);
+			append_hydration(span, t0);
+			append_hydration(header, t1);
+			append_hydration(header, h1);
+			append_hydration(h1, t2);
+			append_hydration(header, t3);
+			if (if_block) if_block.m(header, null);
+		},
+		p(ctx, [dirty]) {
+			if (dirty & /*superhead*/ 2) set_data(t0, /*superhead*/ ctx[1]);
+			if (dirty & /*heading*/ 4) set_data(t2, /*heading*/ ctx[2]);
+
+			if (/*image*/ ctx[0].url) {
+				if (if_block) {
+					if_block.p(ctx, dirty);
+				} else {
+					if_block = create_if_block$7(ctx);
+					if_block.c();
+					if_block.m(header, null);
+				}
+			} else if (if_block) {
+				if_block.d(1);
+				if_block = null;
+			}
+		},
+		i: noop,
+		o: noop,
+		d(detaching) {
+			if (detaching) detach(div);
+			if (if_block) if_block.d();
+		}
+	};
+}
+
+function instance$f($$self, $$props, $$invalidate) {
+	let { favicon } = $$props;
+	let { image } = $$props;
+	let { title } = $$props;
+	let { description } = $$props;
+	let { superhead } = $$props;
+	let { heading } = $$props;
+
+	$$self.$$set = $$props => {
+		if ('favicon' in $$props) $$invalidate(3, favicon = $$props.favicon);
+		if ('image' in $$props) $$invalidate(0, image = $$props.image);
+		if ('title' in $$props) $$invalidate(4, title = $$props.title);
+		if ('description' in $$props) $$invalidate(5, description = $$props.description);
+		if ('superhead' in $$props) $$invalidate(1, superhead = $$props.superhead);
+		if ('heading' in $$props) $$invalidate(2, heading = $$props.heading);
+	};
+
+	return [image, superhead, heading, favicon, title, description];
+}
+
+class Component$f extends SvelteComponent {
+	constructor(options) {
+		super();
+
+		init(this, options, instance$f, create_fragment$f, safe_not_equal, {
+			favicon: 3,
+			image: 0,
+			title: 4,
+			description: 5,
+			superhead: 1,
+			heading: 2
+		});
+	}
+}
+
+/* generated by Svelte v3.58.0 */
+
+function create_fragment$g(ctx) {
+	let div2;
+	let div1;
+	let div0;
+	let raw_value = /*content*/ ctx[0].html + "";
+
+	return {
+		c() {
+			div2 = element("div");
+			div1 = element("div");
+			div0 = element("div");
+			this.h();
+		},
+		l(nodes) {
+			div2 = claim_element(nodes, "DIV", { class: true, id: true });
+			var div2_nodes = children(div2);
+			div1 = claim_element(div2_nodes, "DIV", { class: true });
+			var div1_nodes = children(div1);
+			div0 = claim_element(div1_nodes, "DIV", { class: true });
+			var div0_nodes = children(div0);
+			div0_nodes.forEach(detach);
+			div1_nodes.forEach(detach);
+			div2_nodes.forEach(detach);
+			this.h();
+		},
+		h() {
+			attr(div0, "class", "section-container content svelte-1yn388l");
+			attr(div1, "class", "section");
+			attr(div2, "class", "section");
+			attr(div2, "id", "section-ee20f57c");
+		},
+		m(target, anchor) {
+			insert_hydration(target, div2, anchor);
+			append_hydration(div2, div1);
+			append_hydration(div1, div0);
+			div0.innerHTML = raw_value;
+		},
+		p(ctx, [dirty]) {
+			if (dirty & /*content*/ 1 && raw_value !== (raw_value = /*content*/ ctx[0].html + "")) div0.innerHTML = raw_value;		},
+		i: noop,
+		o: noop,
+		d(detaching) {
+			if (detaching) detach(div2);
+		}
+	};
+}
+
+function instance$g($$self, $$props, $$invalidate) {
+	let { favicon } = $$props;
+	let { image } = $$props;
+	let { title } = $$props;
+	let { description } = $$props;
+	let { content } = $$props;
+
+	$$self.$$set = $$props => {
+		if ('favicon' in $$props) $$invalidate(1, favicon = $$props.favicon);
+		if ('image' in $$props) $$invalidate(2, image = $$props.image);
+		if ('title' in $$props) $$invalidate(3, title = $$props.title);
+		if ('description' in $$props) $$invalidate(4, description = $$props.description);
+		if ('content' in $$props) $$invalidate(0, content = $$props.content);
+	};
+
+	return [content, favicon, image, title, description];
+}
+
+class Component$g extends SvelteComponent {
+	constructor(options) {
+		super();
+
+		init(this, options, instance$g, create_fragment$g, safe_not_equal, {
+			favicon: 1,
+			image: 2,
+			title: 3,
+			description: 4,
+			content: 0
+		});
+	}
+}
+
+/* generated by Svelte v3.58.0 */
+
+function create_if_block$8(ctx) {
+	let img;
+	let img_src_value;
+	let img_alt_value;
+
+	return {
+		c() {
+			img = element("img");
+			this.h();
+		},
+		l(nodes) {
+			img = claim_element(nodes, "IMG", {
+				width: true,
+				src: true,
+				alt: true,
+				class: true
+			});
+
+			this.h();
+		},
+		h() {
+			attr(img, "width", "360");
+			if (!src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) attr(img, "src", img_src_value);
+			attr(img, "alt", img_alt_value = /*image*/ ctx[0].alt);
+			attr(img, "class", "svelte-1b2zbzi");
+		},
+		m(target, anchor) {
+			insert_hydration(target, img, anchor);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*image*/ 1 && !src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) {
+				attr(img, "src", img_src_value);
+			}
+
+			if (dirty & /*image*/ 1 && img_alt_value !== (img_alt_value = /*image*/ ctx[0].alt)) {
+				attr(img, "alt", img_alt_value);
+			}
+		},
+		d(detaching) {
+			if (detaching) detach(img);
+		}
+	};
+}
+
+function create_fragment$h(ctx) {
+	let div;
+	let header;
+	let span;
+	let t0;
+	let t1;
+	let h1;
+	let t2;
+	let t3;
+	let if_block = /*image*/ ctx[0].url && create_if_block$8(ctx);
+
+	return {
+		c() {
+			div = element("div");
+			header = element("header");
+			span = element("span");
+			t0 = text(/*superhead*/ ctx[1]);
+			t1 = space();
+			h1 = element("h1");
+			t2 = text(/*heading*/ ctx[2]);
+			t3 = space();
+			if (if_block) if_block.c();
+			this.h();
+		},
+		l(nodes) {
+			div = claim_element(nodes, "DIV", { class: true, id: true });
+			var div_nodes = children(div);
+			header = claim_element(div_nodes, "HEADER", { class: true });
+			var header_nodes = children(header);
+			span = claim_element(header_nodes, "SPAN", { class: true });
+			var span_nodes = children(span);
+			t0 = claim_text(span_nodes, /*superhead*/ ctx[1]);
+			span_nodes.forEach(detach);
+			t1 = claim_space(header_nodes);
+			h1 = claim_element(header_nodes, "H1", { class: true });
+			var h1_nodes = children(h1);
+			t2 = claim_text(h1_nodes, /*heading*/ ctx[2]);
+			h1_nodes.forEach(detach);
+			t3 = claim_space(header_nodes);
+			if (if_block) if_block.l(header_nodes);
+			header_nodes.forEach(detach);
+			div_nodes.forEach(detach);
+			this.h();
+		},
+		h() {
+			attr(span, "class", "superhead svelte-1b2zbzi");
+			attr(h1, "class", "heading svelte-1b2zbzi");
+			attr(header, "class", "section-container svelte-1b2zbzi");
+			attr(div, "class", "section");
+			attr(div, "id", "section-d953d33a");
+		},
+		m(target, anchor) {
+			insert_hydration(target, div, anchor);
+			append_hydration(div, header);
+			append_hydration(header, span);
+			append_hydration(span, t0);
+			append_hydration(header, t1);
+			append_hydration(header, h1);
+			append_hydration(h1, t2);
+			append_hydration(header, t3);
+			if (if_block) if_block.m(header, null);
+		},
+		p(ctx, [dirty]) {
+			if (dirty & /*superhead*/ 2) set_data(t0, /*superhead*/ ctx[1]);
+			if (dirty & /*heading*/ 4) set_data(t2, /*heading*/ ctx[2]);
+
+			if (/*image*/ ctx[0].url) {
+				if (if_block) {
+					if_block.p(ctx, dirty);
+				} else {
+					if_block = create_if_block$8(ctx);
+					if_block.c();
+					if_block.m(header, null);
+				}
+			} else if (if_block) {
+				if_block.d(1);
+				if_block = null;
+			}
+		},
+		i: noop,
+		o: noop,
+		d(detaching) {
+			if (detaching) detach(div);
+			if (if_block) if_block.d();
+		}
+	};
+}
+
+function instance$h($$self, $$props, $$invalidate) {
+	let { favicon } = $$props;
+	let { image } = $$props;
+	let { title } = $$props;
+	let { description } = $$props;
+	let { superhead } = $$props;
+	let { heading } = $$props;
+
+	$$self.$$set = $$props => {
+		if ('favicon' in $$props) $$invalidate(3, favicon = $$props.favicon);
+		if ('image' in $$props) $$invalidate(0, image = $$props.image);
+		if ('title' in $$props) $$invalidate(4, title = $$props.title);
+		if ('description' in $$props) $$invalidate(5, description = $$props.description);
+		if ('superhead' in $$props) $$invalidate(1, superhead = $$props.superhead);
+		if ('heading' in $$props) $$invalidate(2, heading = $$props.heading);
+	};
+
+	return [image, superhead, heading, favicon, title, description];
+}
+
+class Component$h extends SvelteComponent {
+	constructor(options) {
+		super();
+
+		init(this, options, instance$h, create_fragment$h, safe_not_equal, {
+			favicon: 3,
+			image: 0,
+			title: 4,
+			description: 5,
+			superhead: 1,
+			heading: 2
+		});
+	}
+}
+
+/* generated by Svelte v3.58.0 */
+
+function create_if_block$9(ctx) {
+	let img;
+	let img_src_value;
+	let img_alt_value;
+
+	return {
+		c() {
+			img = element("img");
+			this.h();
+		},
+		l(nodes) {
+			img = claim_element(nodes, "IMG", {
+				width: true,
+				src: true,
+				alt: true,
+				class: true
+			});
+
+			this.h();
+		},
+		h() {
+			attr(img, "width", "360");
+			if (!src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) attr(img, "src", img_src_value);
+			attr(img, "alt", img_alt_value = /*image*/ ctx[0].alt);
+			attr(img, "class", "svelte-1b2zbzi");
+		},
+		m(target, anchor) {
+			insert_hydration(target, img, anchor);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*image*/ 1 && !src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) {
+				attr(img, "src", img_src_value);
+			}
+
+			if (dirty & /*image*/ 1 && img_alt_value !== (img_alt_value = /*image*/ ctx[0].alt)) {
+				attr(img, "alt", img_alt_value);
+			}
+		},
+		d(detaching) {
+			if (detaching) detach(img);
+		}
+	};
+}
+
+function create_fragment$i(ctx) {
+	let div;
+	let header;
+	let span;
+	let t0;
+	let t1;
+	let h1;
+	let t2;
+	let t3;
+	let if_block = /*image*/ ctx[0].url && create_if_block$9(ctx);
+
+	return {
+		c() {
+			div = element("div");
+			header = element("header");
+			span = element("span");
+			t0 = text(/*superhead*/ ctx[1]);
+			t1 = space();
+			h1 = element("h1");
+			t2 = text(/*heading*/ ctx[2]);
+			t3 = space();
+			if (if_block) if_block.c();
+			this.h();
+		},
+		l(nodes) {
+			div = claim_element(nodes, "DIV", { class: true, id: true });
+			var div_nodes = children(div);
+			header = claim_element(div_nodes, "HEADER", { class: true });
+			var header_nodes = children(header);
+			span = claim_element(header_nodes, "SPAN", { class: true });
+			var span_nodes = children(span);
+			t0 = claim_text(span_nodes, /*superhead*/ ctx[1]);
+			span_nodes.forEach(detach);
+			t1 = claim_space(header_nodes);
+			h1 = claim_element(header_nodes, "H1", { class: true });
+			var h1_nodes = children(h1);
+			t2 = claim_text(h1_nodes, /*heading*/ ctx[2]);
+			h1_nodes.forEach(detach);
+			t3 = claim_space(header_nodes);
+			if (if_block) if_block.l(header_nodes);
+			header_nodes.forEach(detach);
+			div_nodes.forEach(detach);
+			this.h();
+		},
+		h() {
+			attr(span, "class", "superhead svelte-1b2zbzi");
+			attr(h1, "class", "heading svelte-1b2zbzi");
+			attr(header, "class", "section-container svelte-1b2zbzi");
+			attr(div, "class", "section");
+			attr(div, "id", "section-b6318518");
+		},
+		m(target, anchor) {
+			insert_hydration(target, div, anchor);
+			append_hydration(div, header);
+			append_hydration(header, span);
+			append_hydration(span, t0);
+			append_hydration(header, t1);
+			append_hydration(header, h1);
+			append_hydration(h1, t2);
+			append_hydration(header, t3);
+			if (if_block) if_block.m(header, null);
+		},
+		p(ctx, [dirty]) {
+			if (dirty & /*superhead*/ 2) set_data(t0, /*superhead*/ ctx[1]);
+			if (dirty & /*heading*/ 4) set_data(t2, /*heading*/ ctx[2]);
+
+			if (/*image*/ ctx[0].url) {
+				if (if_block) {
+					if_block.p(ctx, dirty);
+				} else {
+					if_block = create_if_block$9(ctx);
+					if_block.c();
+					if_block.m(header, null);
+				}
+			} else if (if_block) {
+				if_block.d(1);
+				if_block = null;
+			}
+		},
+		i: noop,
+		o: noop,
+		d(detaching) {
+			if (detaching) detach(div);
+			if (if_block) if_block.d();
+		}
+	};
+}
+
+function instance$i($$self, $$props, $$invalidate) {
+	let { favicon } = $$props;
+	let { image } = $$props;
+	let { title } = $$props;
+	let { description } = $$props;
+	let { superhead } = $$props;
+	let { heading } = $$props;
+
+	$$self.$$set = $$props => {
+		if ('favicon' in $$props) $$invalidate(3, favicon = $$props.favicon);
+		if ('image' in $$props) $$invalidate(0, image = $$props.image);
+		if ('title' in $$props) $$invalidate(4, title = $$props.title);
+		if ('description' in $$props) $$invalidate(5, description = $$props.description);
+		if ('superhead' in $$props) $$invalidate(1, superhead = $$props.superhead);
+		if ('heading' in $$props) $$invalidate(2, heading = $$props.heading);
+	};
+
+	return [image, superhead, heading, favicon, title, description];
+}
+
+class Component$i extends SvelteComponent {
+	constructor(options) {
+		super();
+
+		init(this, options, instance$i, create_fragment$i, safe_not_equal, {
+			favicon: 3,
+			image: 0,
+			title: 4,
+			description: 5,
+			superhead: 1,
+			heading: 2
+		});
+	}
+}
+
+/* generated by Svelte v3.58.0 */
+
+function create_fragment$j(ctx) {
+	let div2;
+	let div1;
+	let div0;
+	let raw_value = /*content*/ ctx[0].html + "";
+
+	return {
+		c() {
+			div2 = element("div");
+			div1 = element("div");
+			div0 = element("div");
+			this.h();
+		},
+		l(nodes) {
+			div2 = claim_element(nodes, "DIV", { class: true, id: true });
+			var div2_nodes = children(div2);
+			div1 = claim_element(div2_nodes, "DIV", { class: true });
+			var div1_nodes = children(div1);
+			div0 = claim_element(div1_nodes, "DIV", { class: true });
+			var div0_nodes = children(div0);
+			div0_nodes.forEach(detach);
+			div1_nodes.forEach(detach);
+			div2_nodes.forEach(detach);
+			this.h();
+		},
+		h() {
+			attr(div0, "class", "section-container content svelte-1yn388l");
+			attr(div1, "class", "section");
+			attr(div2, "class", "section");
+			attr(div2, "id", "section-34b2a723");
+		},
+		m(target, anchor) {
+			insert_hydration(target, div2, anchor);
+			append_hydration(div2, div1);
+			append_hydration(div1, div0);
+			div0.innerHTML = raw_value;
+		},
+		p(ctx, [dirty]) {
+			if (dirty & /*content*/ 1 && raw_value !== (raw_value = /*content*/ ctx[0].html + "")) div0.innerHTML = raw_value;		},
+		i: noop,
+		o: noop,
+		d(detaching) {
+			if (detaching) detach(div2);
+		}
+	};
+}
+
+function instance$j($$self, $$props, $$invalidate) {
+	let { favicon } = $$props;
+	let { image } = $$props;
+	let { title } = $$props;
+	let { description } = $$props;
+	let { content } = $$props;
+
+	$$self.$$set = $$props => {
+		if ('favicon' in $$props) $$invalidate(1, favicon = $$props.favicon);
+		if ('image' in $$props) $$invalidate(2, image = $$props.image);
+		if ('title' in $$props) $$invalidate(3, title = $$props.title);
+		if ('description' in $$props) $$invalidate(4, description = $$props.description);
+		if ('content' in $$props) $$invalidate(0, content = $$props.content);
+	};
+
+	return [content, favicon, image, title, description];
+}
+
+class Component$j extends SvelteComponent {
+	constructor(options) {
+		super();
+
+		init(this, options, instance$j, create_fragment$j, safe_not_equal, {
+			favicon: 1,
+			image: 2,
+			title: 3,
+			description: 4,
+			content: 0
+		});
+	}
+}
+
+/* generated by Svelte v3.58.0 */
+
+function create_if_block$a(ctx) {
+	let img;
+	let img_src_value;
+	let img_alt_value;
+
+	return {
+		c() {
+			img = element("img");
+			this.h();
+		},
+		l(nodes) {
+			img = claim_element(nodes, "IMG", {
+				width: true,
+				src: true,
+				alt: true,
+				class: true
+			});
+
+			this.h();
+		},
+		h() {
+			attr(img, "width", "360");
+			if (!src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) attr(img, "src", img_src_value);
+			attr(img, "alt", img_alt_value = /*image*/ ctx[0].alt);
+			attr(img, "class", "svelte-1b2zbzi");
+		},
+		m(target, anchor) {
+			insert_hydration(target, img, anchor);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*image*/ 1 && !src_url_equal(img.src, img_src_value = /*image*/ ctx[0].url)) {
+				attr(img, "src", img_src_value);
+			}
+
+			if (dirty & /*image*/ 1 && img_alt_value !== (img_alt_value = /*image*/ ctx[0].alt)) {
+				attr(img, "alt", img_alt_value);
+			}
+		},
+		d(detaching) {
+			if (detaching) detach(img);
+		}
+	};
+}
+
+function create_fragment$k(ctx) {
+	let div;
+	let header;
+	let span;
+	let t0;
+	let t1;
+	let h1;
+	let t2;
+	let t3;
+	let if_block = /*image*/ ctx[0].url && create_if_block$a(ctx);
+
+	return {
+		c() {
+			div = element("div");
+			header = element("header");
+			span = element("span");
+			t0 = text(/*superhead*/ ctx[1]);
+			t1 = space();
+			h1 = element("h1");
+			t2 = text(/*heading*/ ctx[2]);
+			t3 = space();
+			if (if_block) if_block.c();
+			this.h();
+		},
+		l(nodes) {
+			div = claim_element(nodes, "DIV", { class: true, id: true });
+			var div_nodes = children(div);
+			header = claim_element(div_nodes, "HEADER", { class: true });
+			var header_nodes = children(header);
+			span = claim_element(header_nodes, "SPAN", { class: true });
+			var span_nodes = children(span);
+			t0 = claim_text(span_nodes, /*superhead*/ ctx[1]);
+			span_nodes.forEach(detach);
+			t1 = claim_space(header_nodes);
+			h1 = claim_element(header_nodes, "H1", { class: true });
+			var h1_nodes = children(h1);
+			t2 = claim_text(h1_nodes, /*heading*/ ctx[2]);
+			h1_nodes.forEach(detach);
+			t3 = claim_space(header_nodes);
+			if (if_block) if_block.l(header_nodes);
+			header_nodes.forEach(detach);
+			div_nodes.forEach(detach);
+			this.h();
+		},
+		h() {
+			attr(span, "class", "superhead svelte-1b2zbzi");
+			attr(h1, "class", "heading svelte-1b2zbzi");
+			attr(header, "class", "section-container svelte-1b2zbzi");
+			attr(div, "class", "section");
+			attr(div, "id", "section-3c117e8b");
+		},
+		m(target, anchor) {
+			insert_hydration(target, div, anchor);
+			append_hydration(div, header);
+			append_hydration(header, span);
+			append_hydration(span, t0);
+			append_hydration(header, t1);
+			append_hydration(header, h1);
+			append_hydration(h1, t2);
+			append_hydration(header, t3);
+			if (if_block) if_block.m(header, null);
+		},
+		p(ctx, [dirty]) {
+			if (dirty & /*superhead*/ 2) set_data(t0, /*superhead*/ ctx[1]);
+			if (dirty & /*heading*/ 4) set_data(t2, /*heading*/ ctx[2]);
+
+			if (/*image*/ ctx[0].url) {
+				if (if_block) {
+					if_block.p(ctx, dirty);
+				} else {
+					if_block = create_if_block$a(ctx);
+					if_block.c();
+					if_block.m(header, null);
+				}
+			} else if (if_block) {
+				if_block.d(1);
+				if_block = null;
+			}
+		},
+		i: noop,
+		o: noop,
+		d(detaching) {
+			if (detaching) detach(div);
+			if (if_block) if_block.d();
+		}
+	};
+}
+
+function instance$k($$self, $$props, $$invalidate) {
+	let { favicon } = $$props;
+	let { image } = $$props;
+	let { title } = $$props;
+	let { description } = $$props;
+	let { superhead } = $$props;
+	let { heading } = $$props;
+
+	$$self.$$set = $$props => {
+		if ('favicon' in $$props) $$invalidate(3, favicon = $$props.favicon);
+		if ('image' in $$props) $$invalidate(0, image = $$props.image);
+		if ('title' in $$props) $$invalidate(4, title = $$props.title);
+		if ('description' in $$props) $$invalidate(5, description = $$props.description);
+		if ('superhead' in $$props) $$invalidate(1, superhead = $$props.superhead);
+		if ('heading' in $$props) $$invalidate(2, heading = $$props.heading);
+	};
+
+	return [image, superhead, heading, favicon, title, description];
+}
+
+class Component$k extends SvelteComponent {
+	constructor(options) {
+		super();
+
+		init(this, options, instance$k, create_fragment$k, safe_not_equal, {
+			favicon: 3,
+			image: 0,
+			title: 4,
+			description: 5,
+			superhead: 1,
+			heading: 2
+		});
+	}
+}
+
+/* generated by Svelte v3.58.0 */
+
+function create_fragment$l(ctx) {
+	let div2;
+	let div1;
+	let div0;
+	let raw_value = /*content*/ ctx[0].html + "";
+
+	return {
+		c() {
+			div2 = element("div");
+			div1 = element("div");
+			div0 = element("div");
+			this.h();
+		},
+		l(nodes) {
+			div2 = claim_element(nodes, "DIV", { class: true, id: true });
+			var div2_nodes = children(div2);
+			div1 = claim_element(div2_nodes, "DIV", { class: true });
+			var div1_nodes = children(div1);
+			div0 = claim_element(div1_nodes, "DIV", { class: true });
+			var div0_nodes = children(div0);
+			div0_nodes.forEach(detach);
+			div1_nodes.forEach(detach);
+			div2_nodes.forEach(detach);
+			this.h();
+		},
+		h() {
+			attr(div0, "class", "section-container content svelte-1yn388l");
+			attr(div1, "class", "section");
+			attr(div2, "class", "section");
+			attr(div2, "id", "section-50569d81");
+		},
+		m(target, anchor) {
+			insert_hydration(target, div2, anchor);
+			append_hydration(div2, div1);
+			append_hydration(div1, div0);
+			div0.innerHTML = raw_value;
+		},
+		p(ctx, [dirty]) {
+			if (dirty & /*content*/ 1 && raw_value !== (raw_value = /*content*/ ctx[0].html + "")) div0.innerHTML = raw_value;		},
+		i: noop,
+		o: noop,
+		d(detaching) {
+			if (detaching) detach(div2);
+		}
+	};
+}
+
+function instance$l($$self, $$props, $$invalidate) {
+	let { favicon } = $$props;
+	let { image } = $$props;
+	let { title } = $$props;
+	let { description } = $$props;
+	let { content } = $$props;
+
+	$$self.$$set = $$props => {
+		if ('favicon' in $$props) $$invalidate(1, favicon = $$props.favicon);
+		if ('image' in $$props) $$invalidate(2, image = $$props.image);
+		if ('title' in $$props) $$invalidate(3, title = $$props.title);
+		if ('description' in $$props) $$invalidate(4, description = $$props.description);
+		if ('content' in $$props) $$invalidate(0, content = $$props.content);
+	};
+
+	return [content, favicon, image, title, description];
+}
+
+class Component$l extends SvelteComponent {
+	constructor(options) {
+		super();
+
+		init(this, options, instance$l, create_fragment$l, safe_not_equal, {
+			favicon: 1,
+			image: 2,
+			title: 3,
+			description: 4,
+			content: 0
+		});
+	}
+}
+
+/* generated by Svelte v3.58.0 */
+
+function get_each_context$2(ctx, list, i) {
 	const child_ctx = ctx.slice();
 	child_ctx[6] = list[i];
 	child_ctx[8] = i;
@@ -3789,7 +6348,7 @@ function get_each_context$1(ctx, list, i) {
 }
 
 // (96:8) {#if item.thumbnail.url}
-function create_if_block$3(ctx) {
+function create_if_block$b(ctx) {
 	let img;
 	let img_data_key_value;
 	let img_src_value;
@@ -3835,7 +6394,7 @@ function create_if_block$3(ctx) {
 }
 
 // (87:4) {#each items as item, i}
-function create_each_block$1(ctx) {
+function create_each_block$2(ctx) {
 	let li;
 	let div1;
 	let a;
@@ -3851,7 +6410,7 @@ function create_each_block$1(ctx) {
 	let t3;
 	let t4;
 	let t5;
-	let if_block = /*item*/ ctx[6].thumbnail.url && create_if_block$3(ctx);
+	let if_block = /*item*/ ctx[6].thumbnail.url && create_if_block$b(ctx);
 
 	return {
 		c() {
@@ -3930,7 +6489,7 @@ function create_each_block$1(ctx) {
 				if (if_block) {
 					if_block.p(ctx, dirty);
 				} else {
-					if_block = create_if_block$3(ctx);
+					if_block = create_if_block$b(ctx);
 					if_block.c();
 					if_block.m(li, t5);
 				}
@@ -3946,7 +6505,7 @@ function create_each_block$1(ctx) {
 	};
 }
 
-function create_fragment$3(ctx) {
+function create_fragment$m(ctx) {
 	let div;
 	let section;
 	let h2;
@@ -3957,7 +6516,7 @@ function create_fragment$3(ctx) {
 	let each_blocks = [];
 
 	for (let i = 0; i < each_value.length; i += 1) {
-		each_blocks[i] = create_each_block$1(get_each_context$1(ctx, each_value, i));
+		each_blocks[i] = create_each_block$2(get_each_context$2(ctx, each_value, i));
 	}
 
 	return {
@@ -4002,7 +6561,7 @@ function create_fragment$3(ctx) {
 			attr(ul, "class", "items svelte-10jylfj");
 			attr(section, "class", "section-container svelte-10jylfj");
 			attr(div, "class", "section");
-			attr(div, "id", "section-9c23c89d");
+			attr(div, "id", "section-7febbc97");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div, anchor);
@@ -4026,12 +6585,12 @@ function create_fragment$3(ctx) {
 				let i;
 
 				for (i = 0; i < each_value.length; i += 1) {
-					const child_ctx = get_each_context$1(ctx, each_value, i);
+					const child_ctx = get_each_context$2(ctx, each_value, i);
 
 					if (each_blocks[i]) {
 						each_blocks[i].p(child_ctx, dirty);
 					} else {
-						each_blocks[i] = create_each_block$1(child_ctx);
+						each_blocks[i] = create_each_block$2(child_ctx);
 						each_blocks[i].c();
 						each_blocks[i].m(ul, null);
 					}
@@ -4053,7 +6612,7 @@ function create_fragment$3(ctx) {
 	};
 }
 
-function instance$3($$self, $$props, $$invalidate) {
+function instance$m($$self, $$props, $$invalidate) {
 	let { favicon } = $$props;
 	let { image } = $$props;
 	let { title } = $$props;
@@ -4073,11 +6632,11 @@ function instance$3($$self, $$props, $$invalidate) {
 	return [heading, items, favicon, image, title, description];
 }
 
-class Component$3 extends SvelteComponent {
+class Component$m extends SvelteComponent {
 	constructor(options) {
 		super();
 
-		init(this, options, instance$3, create_fragment$3, safe_not_equal, {
+		init(this, options, instance$m, create_fragment$m, safe_not_equal, {
 			favicon: 2,
 			image: 3,
 			title: 4,
@@ -4090,7 +6649,7 @@ class Component$3 extends SvelteComponent {
 
 /* generated by Svelte v3.58.0 */
 
-function get_each_context$2(ctx, list, i) {
+function get_each_context$3(ctx, list, i) {
 	const child_ctx = ctx.slice();
 	child_ctx[10] = list[i].link;
 	return child_ctx;
@@ -4271,7 +6830,7 @@ function create_if_block_1$2(ctx) {
 }
 
 // (134:4) {#if mobileNavOpen}
-function create_if_block$4(ctx) {
+function create_if_block$c(ctx) {
 	let nav;
 	let t;
 	let button;
@@ -4284,7 +6843,7 @@ function create_if_block$4(ctx) {
 	let each_blocks = [];
 
 	for (let i = 0; i < each_value.length; i += 1) {
-		each_blocks[i] = create_each_block$2(get_each_context$2(ctx, each_value, i));
+		each_blocks[i] = create_each_block$3(get_each_context$3(ctx, each_value, i));
 	}
 
 	icon = new Component$1({ props: { height: "25", icon: "bi:x-lg" } });
@@ -4356,12 +6915,12 @@ function create_if_block$4(ctx) {
 				let i;
 
 				for (i = 0; i < each_value.length; i += 1) {
-					const child_ctx = get_each_context$2(ctx, each_value, i);
+					const child_ctx = get_each_context$3(ctx, each_value, i);
 
 					if (each_blocks[i]) {
 						each_blocks[i].p(child_ctx, dirty);
 					} else {
-						each_blocks[i] = create_each_block$2(child_ctx);
+						each_blocks[i] = create_each_block$3(child_ctx);
 						each_blocks[i].c();
 						each_blocks[i].m(nav, t);
 					}
@@ -4404,7 +6963,7 @@ function create_if_block$4(ctx) {
 }
 
 // (136:8) {#each site_nav as { link }}
-function create_each_block$2(ctx) {
+function create_each_block$3(ctx) {
 	let a;
 	let t_value = /*link*/ ctx[10].label + "";
 	let t;
@@ -4443,7 +7002,7 @@ function create_each_block$2(ctx) {
 	};
 }
 
-function create_fragment$4(ctx) {
+function create_fragment$n(ctx) {
 	let div2;
 	let header;
 	let div0;
@@ -4487,7 +7046,7 @@ function create_fragment$4(ctx) {
 			props: { height: "30", icon: "eva:menu-outline" }
 		});
 
-	let if_block2 = /*mobileNavOpen*/ ctx[2] && create_if_block$4(ctx);
+	let if_block2 = /*mobileNavOpen*/ ctx[2] && create_if_block$c(ctx);
 
 	return {
 		c() {
@@ -4566,7 +7125,7 @@ function create_fragment$4(ctx) {
 			attr(div1, "class", "mobile-nav svelte-ngjace");
 			attr(header, "class", "section-container svelte-ngjace");
 			attr(div2, "class", "section");
-			attr(div2, "id", "section-5b6278ef");
+			attr(div2, "id", "section-2628d6cf");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
@@ -4655,7 +7214,7 @@ function create_fragment$4(ctx) {
 						transition_in(if_block2, 1);
 					}
 				} else {
-					if_block2 = create_if_block$4(ctx);
+					if_block2 = create_if_block$c(ctx);
 					if_block2.c();
 					transition_in(if_block2, 1);
 					if_block2.m(div1, null);
@@ -4702,7 +7261,7 @@ function create_fragment$4(ctx) {
 	};
 }
 
-function instance$4($$self, $$props, $$invalidate) {
+function instance$n($$self, $$props, $$invalidate) {
 	let { favicon } = $$props;
 	let { image } = $$props;
 	let { title } = $$props;
@@ -4736,11 +7295,11 @@ function instance$4($$self, $$props, $$invalidate) {
 	];
 }
 
-class Component$4 extends SvelteComponent {
+class Component$n extends SvelteComponent {
 	constructor(options) {
 		super();
 
-		init(this, options, instance$4, create_fragment$4, safe_not_equal, {
+		init(this, options, instance$n, create_fragment$n, safe_not_equal, {
 			favicon: 3,
 			image: 4,
 			title: 5,
@@ -4753,7 +7312,7 @@ class Component$4 extends SvelteComponent {
 
 /* generated by Svelte v3.58.0 */
 
-function get_each_context$3(ctx, list, i) {
+function get_each_context$4(ctx, list, i) {
 	const child_ctx = ctx.slice();
 	child_ctx[7] = list[i].link;
 	child_ctx[8] = list[i].icon;
@@ -4761,7 +7320,7 @@ function get_each_context$3(ctx, list, i) {
 }
 
 // (73:8) {#each social_links as {link, icon}}
-function create_each_block$3(ctx) {
+function create_each_block$4(ctx) {
 	let li;
 	let a;
 	let icon;
@@ -4837,7 +7396,7 @@ function create_each_block$3(ctx) {
 	};
 }
 
-function create_fragment$5(ctx) {
+function create_fragment$o(ctx) {
 	let div2;
 	let footer;
 	let div1;
@@ -4856,7 +7415,7 @@ function create_fragment$5(ctx) {
 	let each_blocks = [];
 
 	for (let i = 0; i < each_value.length; i += 1) {
-		each_blocks[i] = create_each_block$3(get_each_context$3(ctx, each_value, i));
+		each_blocks[i] = create_each_block$4(get_each_context$4(ctx, each_value, i));
 	}
 
 	const out = i => transition_out(each_blocks[i], 1, 1, () => {
@@ -4923,7 +7482,7 @@ function create_fragment$5(ctx) {
 			attr(div0, "class", "footer svelte-1excgdw");
 			attr(div1, "class", "section-container svelte-1excgdw");
 			attr(div2, "class", "section");
-			attr(div2, "id", "section-ca491cc2");
+			attr(div2, "id", "section-21fdd2af");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
@@ -4953,13 +7512,13 @@ function create_fragment$5(ctx) {
 				let i;
 
 				for (i = 0; i < each_value.length; i += 1) {
-					const child_ctx = get_each_context$3(ctx, each_value, i);
+					const child_ctx = get_each_context$4(ctx, each_value, i);
 
 					if (each_blocks[i]) {
 						each_blocks[i].p(child_ctx, dirty);
 						transition_in(each_blocks[i], 1);
 					} else {
-						each_blocks[i] = create_each_block$3(child_ctx);
+						each_blocks[i] = create_each_block$4(child_ctx);
 						each_blocks[i].c();
 						transition_in(each_blocks[i], 1);
 						each_blocks[i].m(ul, null);
@@ -5000,7 +7559,7 @@ function create_fragment$5(ctx) {
 	};
 }
 
-function instance$5($$self, $$props, $$invalidate) {
+function instance$o($$self, $$props, $$invalidate) {
 	let { favicon } = $$props;
 	let { image } = $$props;
 	let { title } = $$props;
@@ -5022,11 +7581,11 @@ function instance$5($$self, $$props, $$invalidate) {
 	return [social_links, favicon, image, title, description, heading, email];
 }
 
-class Component$5 extends SvelteComponent {
+class Component$o extends SvelteComponent {
 	constructor(options) {
 		super();
 
-		init(this, options, instance$5, create_fragment$5, safe_not_equal, {
+		init(this, options, instance$o, create_fragment$o, safe_not_equal, {
 			favicon: 1,
 			image: 2,
 			title: 3,
@@ -5040,7 +7599,7 @@ class Component$5 extends SvelteComponent {
 
 /* generated by Svelte v3.58.0 */
 
-function instance$6($$self, $$props, $$invalidate) {
+function instance$p($$self, $$props, $$invalidate) {
 	let { favicon } = $$props;
 	let { image } = $$props;
 	let { title } = $$props;
@@ -5056,11 +7615,11 @@ function instance$6($$self, $$props, $$invalidate) {
 	return [favicon, image, title, description];
 }
 
-class Component$6 extends SvelteComponent {
+class Component$p extends SvelteComponent {
 	constructor(options) {
 		super();
 
-		init(this, options, instance$6, null, safe_not_equal, {
+		init(this, options, instance$p, null, safe_not_equal, {
 			favicon: 0,
 			image: 1,
 			title: 2,
@@ -5071,7 +7630,7 @@ class Component$6 extends SvelteComponent {
 
 /* generated by Svelte v3.58.0 */
 
-function create_fragment$6(ctx) {
+function create_fragment$p(ctx) {
 	let component_0;
 	let t0;
 	let component_1;
@@ -5083,6 +7642,44 @@ function create_fragment$6(ctx) {
 	let component_4;
 	let t4;
 	let component_5;
+	let t5;
+	let component_6;
+	let t6;
+	let component_7;
+	let t7;
+	let component_8;
+	let t8;
+	let component_9;
+	let t9;
+	let component_10;
+	let t10;
+	let component_11;
+	let t11;
+	let component_12;
+	let t12;
+	let component_13;
+	let t13;
+	let component_14;
+	let t14;
+	let component_15;
+	let t15;
+	let component_16;
+	let t16;
+	let component_17;
+	let t17;
+	let component_18;
+	let t18;
+	let component_19;
+	let t19;
+	let component_20;
+	let t20;
+	let component_21;
+	let t21;
+	let component_22;
+	let t22;
+	let component_23;
+	let t23;
+	let component_24;
 	let current;
 
 	component_0 = new Component({
@@ -5094,13 +7691,13 @@ function create_fragment$6(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "wave lengths",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"size": 18
 				},
-				title: "blOgs",
-				description: "These are my blog posts and they are wonderful."
+				title: "light 1",
+				description: "in the aether"
 			}
 		});
 
@@ -5113,13 +7710,13 @@ function create_fragment$6(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "wave lengths",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"size": 18
 				},
-				title: "blOgs",
-				description: "These are my blog posts and they are wonderful.",
+				title: "light 1",
+				description: "in the aether",
 				logo: {
 					"image": {
 						"alt": "stOne",
@@ -5152,81 +7749,13 @@ function create_fragment$6(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "supper signs",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg"
 				},
-				title: "blOgs",
-				description: "These are my blog posts and they are wonderful.",
-				heading: "March 2024",
-				items: [
-					{
-						"date": "2024-02",
-						"link": { "url": "/2024-02", "label": "February" },
-						"thumbnail": {
-							"alt": "february 24",
-							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1708483241175th-534283966.jpg",
-							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1708483241175th-534283966.jpg",
-							"size": 32
-						},
-						"description": {
-							"html": "<p>Last Month</p>",
-							"markdown": "Last Month"
-						}
-					},
-					{
-						"date": "2024-03-03",
-						"link": {
-							"url": "/2024-03/poles",
-							"label": "poles"
-						},
-						"thumbnail": {
-							"alt": "utility poles",
-							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1709527006373th-3033715559.jpeg",
-							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1709527006373th-3033715559.jpeg",
-							"size": 38
-						},
-						"description": {
-							"html": "<h1 id=\"utilitypoles\">utility poles</h1>",
-							"markdown": "# utility poles"
-						}
-					},
-					{
-						"date": "2024-03-11",
-						"link": {
-							"url": "/2024-03/light1",
-							"label": "light 1"
-						},
-						"thumbnail": {
-							"alt": "light rays",
-							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1710142034033th-3824878143.jpeg",
-							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1710142034033th-3824878143.jpeg",
-							"size": 28
-						},
-						"description": {
-							"html": "<h1 id=\"onwardlittleray\">onward little ray</h1>",
-							"markdown": "# onward little ray"
-						}
-					},
-					{
-						"date": "2024-02-24",
-						"link": {
-							"url": "/2023-08/full-moon/snow-moon",
-							"label": "snow moon"
-						},
-						"thumbnail": {
-							"alt": "snow moon",
-							"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/th-1992405010.jpg1708813928496",
-							"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/th-1992405010.jpg1708813928496",
-							"size": null
-						},
-						"description": {
-							"html": "<h1 id=\"micromoon\">micromoon</h1>",
-							"markdown": "# micromoon"
-						}
-					}
-				]
+				title: "light 1",
+				description: "in the aether",
+				superhead: "2024-03-11",
+				heading: "light week 1\n"
 			}
 		});
 
@@ -5239,13 +7768,462 @@ function create_fragment$6(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "wave lengths",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"size": 18
 				},
-				title: "blOgs",
-				description: "These are my blog posts and they are wonderful.",
+				title: "light 1",
+				description: "in the aether",
+				content: {
+					"html": "<h1 id=\"weshallsee\">We shall see</h1>\n<p><a href=\"https://www.stoneskull.me/2023-08/light\"><-- week 0</a></p>\n<p>What is light?</p>\n<p>It's radio. Electro-magnetic radiation.</p>\n<p>The difference between different radio, is their Wave Length and Wave Frequency</p>\n<p>The wave also has an Amplitude which is the intensity, strength, brightness.. of the wave.</p>",
+					"markdown": "# We shall see\n\n<a href=\"https://www.stoneskull.me/2023-08/light\"><-- week 0</a>\n\nWhat is light?\n\nIt's radio. Electro-magnetic radiation.\n\nThe difference between different radio, is their Wave Length and Wave Frequency\n\nThe wave also has an Amplitude which is the intensity, strength, brightness.. of the wave.\n\n\n\n"
+				}
+			}
+		});
+
+	component_4 = new Component$5({
+			props: {
+				favicon: {
+					"alt": "",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"size": 8
+				},
+				image: {
+					"alt": "wave lengths",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"size": 18
+				},
+				title: "light 1",
+				description: "in the aether",
+				content: {
+					"html": "<h1>C</h1><p></p><p>All light travels at the speed of light</p><p>So I suppose there must be a common ratio between frequency and wavelengths. That with an increase in frequency, there should be a decrease in wavelength and vice versa.</p><p>I'm not sure about the amplitude. It seems it should be related to wavelength. </p><p>I wonder if it is amplitude difference that makes the colour we see. </p><p>Or is frequency like film, and the wavelengths are frames, and the movie is the colour?</p><p></p>",
+					"markdown": "# C\n\n\n\nAll light travels at the speed of light\n\nSo I suppose there must be a common ratio between frequency and wavelengths. That with an increase in frequency, there should be a decrease in wavelength and vice versa.\n\nI'm not sure about the amplitude. It seems it should be related to wavelength.\n\nI wonder if it is amplitude difference that makes the colour we see.\n\nOr is frequency like film, and the wavelengths are frames, and the movie is the colour?\n\n\n\n"
+				}
+			}
+		});
+
+	component_5 = new Component$6({
+			props: {
+				favicon: {
+					"alt": "",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"size": 8
+				},
+				image: {
+					"alt": "wave lengths",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"size": 18
+				},
+				title: "light 1",
+				description: "in the aether",
+				content: {
+					"html": "<h1>Wavelengths</h1><p></p><p>All light, from an AM radio signal to an X-Ray, has a wavelength.</p><p>like..</p><p>/\\ -/\\ -/\\ -/\\ -/\\ -/\\ -/\\ -/\\ -/\\<br>.-\\/ -\\/ -\\/ -\\/ -\\/ -\\/ -\\/ -\\/ -\\/</p><p>wave, to and fro...</p><p>In this example above, if you measure the distance from one wavetop to the next wavetop, or from wavebottom to wavebottom, you will have the wavelength.</p><p>The wavelength is the distance between repeating phases, or cycles, of the wave.</p><p></p>",
+					"markdown": "# Wavelengths\n\n\n\nAll light, from an AM radio signal to an X-Ray, has a wavelength.\n\nlike..\n\n/\\ -/\\ -/\\ -/\\ -/\\ -/\\ -/\\ -/\\ -/\\<br>\n\n.-\\/ -\\/ -\\/ -\\/ -\\/ -\\/ -\\/ -\\/ -\\/\n\nwave, to and fro...\n\nIn this example above, if you measure the distance from one wavetop to the next wavetop, or from wavebottom to wavebottom, you will have the wavelength.\n\nThe wavelength is the distance between repeating phases, or cycles, of the wave.\n\n\n\n"
+				}
+			}
+		});
+
+	component_6 = new Component$7({
+			props: {
+				favicon: {
+					"alt": "",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"size": 8
+				},
+				image: {
+					"alt": "wave lengths",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"size": 18
+				},
+				title: "light 1",
+				description: "in the aether",
+				content: {
+					"html": "<h1>Frequency</h1><p></p><p>All light, from an AM radio signal to an X-Ray, has a frequency.</p><p>Frequency is a count of how many wavelengths/cycles/phases there are in a time unit, say a second.</p><p>Cycles per second is called Hertz</p><p>Frequency of FM radio is about 100 million cycles per second or 100 Mega Hertz.</p><p>Frequency of AM radio is about 1 MHz</p><p></p>",
+					"markdown": "# Frequency\n\n\n\nAll light, from an AM radio signal to an X-Ray, has a frequency.\n\nFrequency is a count of how many wavelengths/cycles/phases there are in a time unit, say a second.\n\nCycles per second is called Hertz\n\nFrequency of FM radio is about 100 million cycles per second or 100 Mega Hertz.\n\nFrequency of AM radio is about 1 MHz\n\n\n\n"
+				}
+			}
+		});
+
+	component_7 = new Component$8({
+			props: {
+				favicon: {
+					"alt": "",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"size": 8
+				},
+				image: {
+					"alt": "wave lengths",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"size": 18
+				},
+				title: "light 1",
+				description: "in the aether",
+				content: {
+					"html": "<h1 id=\"amplitude\">Amplitude</h1>\n<p>All light, from an AM radio signal, to an X-Ray, has amplitude.</p>\n<p>like..</p>\n<p>/\\ -/\\ -/\\ -/\\ -/\\ -/\\ -/\\ -/\\ -/\\<br>\n.-\\/ -\\/ -\\/ -\\/ -\\/ -\\/ -\\/ -\\/ -\\/</p>\n<p>wave, to and fro…</p>\n<p>If you vertically measure the distance from the wavetop to the centre of the wave, or from the wavebottom to the centre of the wave, you will have the amplitude.</p>\n<p>It's like the height of wave. Or half the whole distance vertically travelled in one cycle of the wave. A peak.</p>\n<p>Well, it's 'vertical' in that 2D picture…</p>\n<p>And really, there are 2 waves, right? The electric one and the magnetic one?</p>\n<p>Would they both always have the same amplitude as each other?</p>\n<p><i>kinda.. <a href=\"https://physics.stackexchange.com/questions/570995/are-the-amplitudes-of-the-electric-field-and-the-magnetic-field-of-an-electromag\">but it's a bit more complicated</a></i></p>",
+					"markdown": "# Amplitude\n\n\n\nAll light, from an AM radio signal, to an X-Ray, has amplitude.\n\nlike..\n\n/\\ -/\\ -/\\ -/\\ -/\\ -/\\ -/\\ -/\\ -/\\<br>\n.-\\/ -\\/ -\\/ -\\/ -\\/ -\\/ -\\/ -\\/ -\\/\n\nwave, to and fro...\n\nIf you vertically measure the distance from the wavetop to the centre of the wave, or from the wavebottom to the centre of the wave, you will have the amplitude.\n\nIt's like the height of wave. Or half the whole distance vertically travelled in one cycle of the wave. A peak.\n\nWell, it's 'vertical' in that 2D picture...\n\nAnd really, there are 2 waves, right? The electric one and the magnetic one?\n\nWould they both always have the same amplitude as each other?\n\n<i>kinda.. [but it's a bit more complicated](https://physics.stackexchange.com/questions/570995/are-the-amplitudes-of-the-electric-field-and-the-magnetic-field-of-an-electromag)</i>\n\n"
+				}
+			}
+		});
+
+	component_8 = new Component$9({
+			props: {
+				favicon: {
+					"alt": "",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"size": 8
+				},
+				image: {
+					"alt": "amplitude",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/amplitudes.webp1693158322570"
+				},
+				title: "light 1",
+				description: "in the aether",
+				superhead: "amplitude",
+				heading: ""
+			}
+		});
+
+	component_9 = new Component$a({
+			props: {
+				favicon: {
+					"alt": "",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"size": 8
+				},
+				image: {
+					"alt": "wave lengths",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"size": 18
+				},
+				title: "light 1",
+				description: "in the aether",
+				heading: "peak amplitude & semi amplitude",
+				items: [
+					{
+						"title": "What's the difference?",
+						"description": {
+							"html": "<p>For symmetric periodic waves, like sine waves, square waves or triangle waves <i>peak amplitude</i> and <i>semi amplitude</i> are the same. </p>",
+							"markdown": "For symmetric periodic waves, like sine waves, square waves or triangle waves <i>peak amplitude</i> and <i>semi amplitude</i> are the same. "
+						}
+					},
+					{
+						"title": "Peak amplitude",
+						"description": {
+							"html": "<p>In audio system measurements, telecommunications and others where the measurand is a signal that swings above and below a reference value but is not sinusoidal, peak amplitude is often used. If the reference is zero, this is the maximum absolute value of the signal; if the reference is a mean value (DC component), the peak amplitude is the maximum absolute value of the difference from that reference. </p>",
+							"markdown": "In audio system measurements, telecommunications and others where the measurand is a signal that swings above and below a reference value but is not sinusoidal, peak amplitude is often used. If the reference is zero, this is the maximum absolute value of the signal; if the reference is a mean value (DC component), the peak amplitude is the maximum absolute value of the difference from that reference. "
+						}
+					},
+					{
+						"title": "Semi-amplitude",
+						"description": {
+							"html": "<p>Semi-amplitude means half of the peak-to-peak amplitude. The majority of scientific literature employs the term amplitude or peak amplitude to mean semi-amplitude.</p>\n<p>It is the most widely used measure of orbital wobble in astronomy and the measurement of small radial velocity semi-amplitudes of nearby stars is important in the search for exoplanets (see Doppler spectroscopy). </p>",
+							"markdown": "Semi-amplitude means half of the peak-to-peak amplitude. The majority of scientific literature employs the term amplitude or peak amplitude to mean semi-amplitude.\n\nIt is the most widely used measure of orbital wobble in astronomy and the measurement of small radial velocity semi-amplitudes of nearby stars is important in the search for exoplanets (see Doppler spectroscopy). "
+						}
+					}
+				]
+			}
+		});
+
+	component_10 = new Component$b({
+			props: {
+				favicon: {
+					"alt": "",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"size": 8
+				},
+				image: {
+					"alt": "wave lengths",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"size": 18
+				},
+				title: "light 1",
+				description: "in the aether",
+				content: {
+					"html": "<blockquote>\n  <h1 id=\"whatiselectromagneticradiation\">What is Electromagnetic Radiation?</h1>\n  <p><br><em>Field</em> is a physics term for a region that is under the influence of some force that can act on matter\n  within that region. For example, the Sun produces a gravitational field that attracts the planets in\n  the solar system and thus influences their orbits.\n  <br><br>Stationary electric charges produce electric fields, whereas moving electric charges produce both\n  electric and magnetic fields. Regularly repeating changes in these fields produce what we call\n  electromagnetic radiation. Electromagnetic radiation transports energy from point to point. This\n  radiation propagates (moves) through space at 299,792 km per second (about 186,000 miles per\n  second). That is, it travels at the speed of light. Indeed light is just one form of electromagnetic\n  radiation.\n  <br><br>Some other forms of electromagnetic radiation are X-rays, microwaves, infrared radiation, AM\n  and FM radio waves, and ultraviolet radiation. The properties of electromagnetic radiation\n  depend strongly on its frequency. Frequency is the rate at which the radiating electromagnetic\n  field is oscillating. Frequencies of electromagnetic radiation are given in Hertz (Hz), named for\n  Heinrich Hertz (1857-1894), the first person to generate radio waves. One Hertz is one cycle per\n  second.</p>\n</blockquote>",
+					"markdown": "> #What is Electromagnetic Radiation?\n<br>*Field* is a physics term for a region that is under the influence of some force that can act on matter\nwithin that region. For example, the Sun produces a gravitational field that attracts the planets in\nthe solar system and thus influences their orbits.\n<br><br>Stationary electric charges produce electric fields, whereas moving electric charges produce both\nelectric and magnetic fields. Regularly repeating changes in these fields produce what we call\nelectromagnetic radiation. Electromagnetic radiation transports energy from point to point. This\nradiation propagates (moves) through space at 299,792 km per second (about 186,000 miles per\nsecond). That is, it travels at the speed of light. Indeed light is just one form of electromagnetic\nradiation.\n<br><br>Some other forms of electromagnetic radiation are X-rays, microwaves, infrared radiation, AM\nand FM radio waves, and ultraviolet radiation. The properties of electromagnetic radiation\ndepend strongly on its frequency. Frequency is the rate at which the radiating electromagnetic\nfield is oscillating. Frequencies of electromagnetic radiation are given in Hertz (Hz), named for\nHeinrich Hertz (1857-1894), the first person to generate radio waves. One Hertz is one cycle per\nsecond.\n"
+				}
+			}
+		});
+
+	component_11 = new Component$c({
+			props: {
+				favicon: {
+					"alt": "",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"size": 8
+				},
+				image: {
+					"alt": "wave lengths",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"size": 18
+				},
+				title: "light 1",
+				description: "in the aether",
+				content: {
+					"html": "<p><center> </p>\n<blockquote>\n  <p>Since we talk about the frequency of electromagnetic radiation in terms of oscillations per\n  second and the speed of light in terms of distance travelled per second, we can say<br><br>\n  <b>Speed of light = Wavelength x Frequency<br><br>\nWavelength = Speed of light / Frequency<br><br>\nFrequency = Speed of light / Wavelength<br><br>\nor\nc = λ f</b>\n  </center>\n  <center><br><i>https://radiojove.gsfc.nasa.gov/education/educationalcd/RadioAstronomyTutorial/Workbook%20PDF%20Files/Chapter2.pdf</i></center></p>\n</blockquote>",
+					"markdown": "<center> \n> Since we talk about the frequency of electromagnetic radiation in terms of oscillations per\nsecond and the speed of light in terms of distance travelled per second, we can say<br><br>\n<b>Speed of light = Wavelength x Frequency<br><br>\nWavelength = Speed of light / Frequency<br><br>\nFrequency = Speed of light / Wavelength<br><br>\nor\nc = λ f</b>\n</center>\n<center><br><i>https://radiojove.gsfc.nasa.gov/education/educationalcd/RadioAstronomyTutorial/Workbook%20PDF%20Files/Chapter2.pdf</i></center>"
+				}
+			}
+		});
+
+	component_12 = new Component$d({
+			props: {
+				favicon: {
+					"alt": "",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"size": 8
+				},
+				image: {
+					"alt": "phase",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/th-1261280358.jpeg1693026874883"
+				},
+				title: "light 1",
+				description: "in the aether",
+				superhead: "",
+				heading: ""
+			}
+		});
+
+	component_13 = new Component$e({
+			props: {
+				favicon: {
+					"alt": "",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"size": 8
+				},
+				image: {
+					"alt": "wave lengths",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"size": 18
+				},
+				title: "light 1",
+				description: "in the aether",
+				content: {
+					"html": "<h1></h1><p>Wavelengths of visible light are measured in nanometres</p><p>A nanometre is 0.000000001 metres.. a billionth of a metre.</p><p>A centimetre is easy to imagine. It's like the width of a little fingertip. Millimetres aren't too hard. Not so easy to imagine a millionth of a millimetre.</p><p>What is going on there?</p><p>Why this back and forth? This wave?</p><p>Why, when a wave has more energy, are the wavelengths shorter?</p><p>Or.. why when a wave has less energy, are the wavelengths longer?</p>",
+					"markdown": "\n\nWavelengths of visible light are measured in nanometres\n\nA nanometre is 0.000000001 metres.. a billionth of a metre.\n\nA centimetre is easy to imagine. It's like the width of a little fingertip. Millimetres aren't too hard. Not so easy to imagine a millionth of a millimetre.\n\nWhat is going on there?\n\nWhy this back and forth? This wave?\n\nWhy, when a wave has more energy, are the wavelengths shorter?\n\nOr.. why when a wave has less energy, are the wavelengths longer?\n\n"
+				}
+			}
+		});
+
+	component_14 = new Component$f({
+			props: {
+				favicon: {
+					"alt": "",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"size": 8
+				},
+				image: {
+					"alt": "electric and magnetic",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/9b999f75e599f3ed46c0ed16586410ec1e5ffc34.png1693085217547"
+				},
+				title: "light 1",
+				description: "in the aether",
+				superhead: "",
+				heading: ""
+			}
+		});
+
+	component_15 = new Component$g({
+			props: {
+				favicon: {
+					"alt": "",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"size": 8
+				},
+				image: {
+					"alt": "wave lengths",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"size": 18
+				},
+				title: "light 1",
+				description: "in the aether",
+				content: {
+					"html": "<h1>Visible Spectrum</h1><p></p><p>From Red to Violet, a certain range of light frequencies &amp; wavelengths, can be seen with our human eyes. </p><p></p><p></p><p></p>",
+					"markdown": "# Visible Spectrum\n\n\n\nFrom Red to Violet, a certain range of light frequencies & wavelengths, can be seen with our human eyes.\n\n\n\n\n\n\n\n"
+				}
+			}
+		});
+
+	component_16 = new Component$h({
+			props: {
+				favicon: {
+					"alt": "",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"size": 8
+				},
+				image: {
+					"alt": " diagram of spectrum of light seen projected on a wall from a prism, \"prismatic colours\"",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/Newton_prismatic_colours.JPG1693072324135"
+				},
+				title: "light 1",
+				description: "in the aether",
+				superhead: "Newton's prismatic colours",
+				heading: ""
+			}
+		});
+
+	component_17 = new Component$i({
+			props: {
+				favicon: {
+					"alt": "",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"size": 8
+				},
+				image: {
+					"alt": "colour waves",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/visible-1-2.jpg1692956399965"
+				},
+				title: "light 1",
+				description: "in the aether",
+				superhead: "",
+				heading: ""
+			}
+		});
+
+	component_18 = new Component$j({
+			props: {
+				favicon: {
+					"alt": "",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"size": 8
+				},
+				image: {
+					"alt": "wave lengths",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"size": 18
+				},
+				title: "light 1",
+				description: "in the aether",
+				content: {
+					"html": "<ul><li><p>This topic and page is going to take a while, ha.</p></li></ul>",
+					"markdown": "- This topic and page is going to take a while, ha.\n\n\n<!-- -->\n\n"
+				}
+			}
+		});
+
+	component_19 = new Component$k({
+			props: {
+				favicon: {
+					"alt": "",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"size": 8
+				},
+				image: {
+					"alt": "colour waves",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/colour-waves.webp1693072608832"
+				},
+				title: "light 1",
+				description: "in the aether",
+				superhead: "Visible Spectrum",
+				heading: ""
+			}
+		});
+
+	component_20 = new Component$l({
+			props: {
+				favicon: {
+					"alt": "",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"size": 8
+				},
+				image: {
+					"alt": "wave lengths",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"size": 18
+				},
+				title: "light 1",
+				description: "in the aether",
+				content: {
+					"html": "<h1>Violet</h1><p></p><p>380–450 nanometres</p><p></p><p></p>",
+					"markdown": "# Violet\n\n\n\n380–450 nanometres\n\n\n\n\n\n"
+				}
+			}
+		});
+
+	component_21 = new Component$m({
+			props: {
+				favicon: {
+					"alt": "",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"size": 8
+				},
+				image: {
+					"alt": "wave lengths",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"size": 18
+				},
+				title: "light 1",
+				description: "in the aether",
+				heading: "Check it out",
+				items: [
+					{
+						"date": "August 21, 2023",
+						"link": {
+							"url": "https://www.stevens.edu/news/want-to-know-how-light-works-try-asking-a-mechanic",
+							"label": "Want to Know How Light Works? Try Asking a Mechanic"
+						},
+						"thumbnail": {
+							"alt": "",
+							"src": "https://www.stevens.edu/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fmviowpldu823%2F3U0QehhW2sYIjfmnx1xopi%2F6ac9617af6b6aaad170b2102b40740b0%2FHuygens-Theorems-Meet_v3.png%3Fw%3D1200%26h%3D675%26f%3Dcenter%26q%3D80%26fit%3Dfill&w=2400&q=80",
+							"url": "https://www.stevens.edu/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fmviowpldu823%2F3U0QehhW2sYIjfmnx1xopi%2F6ac9617af6b6aaad170b2102b40740b0%2FHuygens-Theorems-Meet_v3.png%3Fw%3D1200%26h%3D675%26f%3Dcenter%26q%3D80%26fit%3Dfill&w=2400&q=80",
+							"size": null
+						},
+						"description": {
+							"html": "<p>Physicists at Stevens Institute of Technology use a 350-year-old theorem that explains the workings of pendulums and planets to reveal new properties of light waves.</p>",
+							"markdown": "Physicists at Stevens Institute of Technology use a 350-year-old theorem that explains the workings of pendulums and planets to reveal new properties of light waves."
+						}
+					}
+				]
+			}
+		});
+
+	component_22 = new Component$n({
+			props: {
+				favicon: {
+					"alt": "",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1689642651373OIP.jpeg",
+					"size": 8
+				},
+				image: {
+					"alt": "wave lengths",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"size": 18
+				},
+				title: "light 1",
+				description: "in the aether",
 				logo: {
 					"image": {
 						"alt": "stOne",
@@ -5269,7 +8247,7 @@ function create_fragment$6(ctx) {
 			}
 		});
 
-	component_4 = new Component$5({
+	component_23 = new Component$o({
 			props: {
 				favicon: {
 					"alt": "",
@@ -5278,13 +8256,13 @@ function create_fragment$6(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "wave lengths",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"size": 18
 				},
-				title: "blOgs",
-				description: "These are my blog posts and they are wonderful.",
+				title: "light 1",
+				description: "in the aether",
 				heading: "",
 				email: "",
 				social_links: [
@@ -5315,7 +8293,7 @@ function create_fragment$6(ctx) {
 			}
 		});
 
-	component_5 = new Component$6({
+	component_24 = new Component$p({
 			props: {
 				favicon: {
 					"alt": "",
@@ -5324,13 +8302,13 @@ function create_fragment$6(ctx) {
 					"size": 8
 				},
 				image: {
-					"alt": "",
-					"src": "https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"url": "https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
-					"size": null
+					"alt": "wave lengths",
+					"src": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"url": "https://ogfrjxqovwgsdzubizan.supabase.co/storage/v1/object/public/images/d6c182e2-29f7-45ec-a001-8b5fa4778f97/1692955846827GettyImages-79252233-0fd22351a7e24bbcb83f32332e4da099.jpg",
+					"size": 18
 				},
-				title: "blOgs",
-				description: "These are my blog posts and they are wonderful."
+				title: "light 1",
+				description: "in the aether"
 			}
 		});
 
@@ -5347,6 +8325,44 @@ function create_fragment$6(ctx) {
 			create_component(component_4.$$.fragment);
 			t4 = space();
 			create_component(component_5.$$.fragment);
+			t5 = space();
+			create_component(component_6.$$.fragment);
+			t6 = space();
+			create_component(component_7.$$.fragment);
+			t7 = space();
+			create_component(component_8.$$.fragment);
+			t8 = space();
+			create_component(component_9.$$.fragment);
+			t9 = space();
+			create_component(component_10.$$.fragment);
+			t10 = space();
+			create_component(component_11.$$.fragment);
+			t11 = space();
+			create_component(component_12.$$.fragment);
+			t12 = space();
+			create_component(component_13.$$.fragment);
+			t13 = space();
+			create_component(component_14.$$.fragment);
+			t14 = space();
+			create_component(component_15.$$.fragment);
+			t15 = space();
+			create_component(component_16.$$.fragment);
+			t16 = space();
+			create_component(component_17.$$.fragment);
+			t17 = space();
+			create_component(component_18.$$.fragment);
+			t18 = space();
+			create_component(component_19.$$.fragment);
+			t19 = space();
+			create_component(component_20.$$.fragment);
+			t20 = space();
+			create_component(component_21.$$.fragment);
+			t21 = space();
+			create_component(component_22.$$.fragment);
+			t22 = space();
+			create_component(component_23.$$.fragment);
+			t23 = space();
+			create_component(component_24.$$.fragment);
 		},
 		l(nodes) {
 			claim_component(component_0.$$.fragment, nodes);
@@ -5360,6 +8376,44 @@ function create_fragment$6(ctx) {
 			claim_component(component_4.$$.fragment, nodes);
 			t4 = claim_space(nodes);
 			claim_component(component_5.$$.fragment, nodes);
+			t5 = claim_space(nodes);
+			claim_component(component_6.$$.fragment, nodes);
+			t6 = claim_space(nodes);
+			claim_component(component_7.$$.fragment, nodes);
+			t7 = claim_space(nodes);
+			claim_component(component_8.$$.fragment, nodes);
+			t8 = claim_space(nodes);
+			claim_component(component_9.$$.fragment, nodes);
+			t9 = claim_space(nodes);
+			claim_component(component_10.$$.fragment, nodes);
+			t10 = claim_space(nodes);
+			claim_component(component_11.$$.fragment, nodes);
+			t11 = claim_space(nodes);
+			claim_component(component_12.$$.fragment, nodes);
+			t12 = claim_space(nodes);
+			claim_component(component_13.$$.fragment, nodes);
+			t13 = claim_space(nodes);
+			claim_component(component_14.$$.fragment, nodes);
+			t14 = claim_space(nodes);
+			claim_component(component_15.$$.fragment, nodes);
+			t15 = claim_space(nodes);
+			claim_component(component_16.$$.fragment, nodes);
+			t16 = claim_space(nodes);
+			claim_component(component_17.$$.fragment, nodes);
+			t17 = claim_space(nodes);
+			claim_component(component_18.$$.fragment, nodes);
+			t18 = claim_space(nodes);
+			claim_component(component_19.$$.fragment, nodes);
+			t19 = claim_space(nodes);
+			claim_component(component_20.$$.fragment, nodes);
+			t20 = claim_space(nodes);
+			claim_component(component_21.$$.fragment, nodes);
+			t21 = claim_space(nodes);
+			claim_component(component_22.$$.fragment, nodes);
+			t22 = claim_space(nodes);
+			claim_component(component_23.$$.fragment, nodes);
+			t23 = claim_space(nodes);
+			claim_component(component_24.$$.fragment, nodes);
 		},
 		m(target, anchor) {
 			mount_component(component_0, target, anchor);
@@ -5373,6 +8427,44 @@ function create_fragment$6(ctx) {
 			mount_component(component_4, target, anchor);
 			insert_hydration(target, t4, anchor);
 			mount_component(component_5, target, anchor);
+			insert_hydration(target, t5, anchor);
+			mount_component(component_6, target, anchor);
+			insert_hydration(target, t6, anchor);
+			mount_component(component_7, target, anchor);
+			insert_hydration(target, t7, anchor);
+			mount_component(component_8, target, anchor);
+			insert_hydration(target, t8, anchor);
+			mount_component(component_9, target, anchor);
+			insert_hydration(target, t9, anchor);
+			mount_component(component_10, target, anchor);
+			insert_hydration(target, t10, anchor);
+			mount_component(component_11, target, anchor);
+			insert_hydration(target, t11, anchor);
+			mount_component(component_12, target, anchor);
+			insert_hydration(target, t12, anchor);
+			mount_component(component_13, target, anchor);
+			insert_hydration(target, t13, anchor);
+			mount_component(component_14, target, anchor);
+			insert_hydration(target, t14, anchor);
+			mount_component(component_15, target, anchor);
+			insert_hydration(target, t15, anchor);
+			mount_component(component_16, target, anchor);
+			insert_hydration(target, t16, anchor);
+			mount_component(component_17, target, anchor);
+			insert_hydration(target, t17, anchor);
+			mount_component(component_18, target, anchor);
+			insert_hydration(target, t18, anchor);
+			mount_component(component_19, target, anchor);
+			insert_hydration(target, t19, anchor);
+			mount_component(component_20, target, anchor);
+			insert_hydration(target, t20, anchor);
+			mount_component(component_21, target, anchor);
+			insert_hydration(target, t21, anchor);
+			mount_component(component_22, target, anchor);
+			insert_hydration(target, t22, anchor);
+			mount_component(component_23, target, anchor);
+			insert_hydration(target, t23, anchor);
+			mount_component(component_24, target, anchor);
 			current = true;
 		},
 		p: noop,
@@ -5384,6 +8476,25 @@ function create_fragment$6(ctx) {
 			transition_in(component_3.$$.fragment, local);
 			transition_in(component_4.$$.fragment, local);
 			transition_in(component_5.$$.fragment, local);
+			transition_in(component_6.$$.fragment, local);
+			transition_in(component_7.$$.fragment, local);
+			transition_in(component_8.$$.fragment, local);
+			transition_in(component_9.$$.fragment, local);
+			transition_in(component_10.$$.fragment, local);
+			transition_in(component_11.$$.fragment, local);
+			transition_in(component_12.$$.fragment, local);
+			transition_in(component_13.$$.fragment, local);
+			transition_in(component_14.$$.fragment, local);
+			transition_in(component_15.$$.fragment, local);
+			transition_in(component_16.$$.fragment, local);
+			transition_in(component_17.$$.fragment, local);
+			transition_in(component_18.$$.fragment, local);
+			transition_in(component_19.$$.fragment, local);
+			transition_in(component_20.$$.fragment, local);
+			transition_in(component_21.$$.fragment, local);
+			transition_in(component_22.$$.fragment, local);
+			transition_in(component_23.$$.fragment, local);
+			transition_in(component_24.$$.fragment, local);
 			current = true;
 		},
 		o(local) {
@@ -5393,6 +8504,25 @@ function create_fragment$6(ctx) {
 			transition_out(component_3.$$.fragment, local);
 			transition_out(component_4.$$.fragment, local);
 			transition_out(component_5.$$.fragment, local);
+			transition_out(component_6.$$.fragment, local);
+			transition_out(component_7.$$.fragment, local);
+			transition_out(component_8.$$.fragment, local);
+			transition_out(component_9.$$.fragment, local);
+			transition_out(component_10.$$.fragment, local);
+			transition_out(component_11.$$.fragment, local);
+			transition_out(component_12.$$.fragment, local);
+			transition_out(component_13.$$.fragment, local);
+			transition_out(component_14.$$.fragment, local);
+			transition_out(component_15.$$.fragment, local);
+			transition_out(component_16.$$.fragment, local);
+			transition_out(component_17.$$.fragment, local);
+			transition_out(component_18.$$.fragment, local);
+			transition_out(component_19.$$.fragment, local);
+			transition_out(component_20.$$.fragment, local);
+			transition_out(component_21.$$.fragment, local);
+			transition_out(component_22.$$.fragment, local);
+			transition_out(component_23.$$.fragment, local);
+			transition_out(component_24.$$.fragment, local);
 			current = false;
 		},
 		d(detaching) {
@@ -5407,15 +8537,53 @@ function create_fragment$6(ctx) {
 			destroy_component(component_4, detaching);
 			if (detaching) detach(t4);
 			destroy_component(component_5, detaching);
+			if (detaching) detach(t5);
+			destroy_component(component_6, detaching);
+			if (detaching) detach(t6);
+			destroy_component(component_7, detaching);
+			if (detaching) detach(t7);
+			destroy_component(component_8, detaching);
+			if (detaching) detach(t8);
+			destroy_component(component_9, detaching);
+			if (detaching) detach(t9);
+			destroy_component(component_10, detaching);
+			if (detaching) detach(t10);
+			destroy_component(component_11, detaching);
+			if (detaching) detach(t11);
+			destroy_component(component_12, detaching);
+			if (detaching) detach(t12);
+			destroy_component(component_13, detaching);
+			if (detaching) detach(t13);
+			destroy_component(component_14, detaching);
+			if (detaching) detach(t14);
+			destroy_component(component_15, detaching);
+			if (detaching) detach(t15);
+			destroy_component(component_16, detaching);
+			if (detaching) detach(t16);
+			destroy_component(component_17, detaching);
+			if (detaching) detach(t17);
+			destroy_component(component_18, detaching);
+			if (detaching) detach(t18);
+			destroy_component(component_19, detaching);
+			if (detaching) detach(t19);
+			destroy_component(component_20, detaching);
+			if (detaching) detach(t20);
+			destroy_component(component_21, detaching);
+			if (detaching) detach(t21);
+			destroy_component(component_22, detaching);
+			if (detaching) detach(t22);
+			destroy_component(component_23, detaching);
+			if (detaching) detach(t23);
+			destroy_component(component_24, detaching);
 		}
 	};
 }
 
-class Component$7 extends SvelteComponent {
+class Component$q extends SvelteComponent {
 	constructor(options) {
 		super();
-		init(this, options, null, create_fragment$6, safe_not_equal, {});
+		init(this, options, null, create_fragment$p, safe_not_equal, {});
 	}
 }
 
-export default Component$7;
+export default Component$q;
