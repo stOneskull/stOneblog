@@ -8121,8 +8121,8 @@ function create_fragment$p(ctx) {
 				title: "light",
 				description: "in the aether",
 				content: {
-					"html": "<ul><li><p>This topic and page is going to take a while, ha.</p></li><li><p>edit: 2024-03-11 - onto a new page.. snipping and gluing..</p></li></ul>",
-					"markdown": "- This topic and page is going to take a while, ha.\n\n- edit: 2024-03-11 - onto a new page.. snipping and gluing..\n\n\n<!-- -->\n\n"
+					"html": "<ul><li><p>This topic and page is going to take a while, ha.</p></li><li><p>edit: 2024-03-11 - onto a new page.. snipping and gluing.. <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link\" href=\"https://www.stoneskull.me/2024-03/light1\">https://www.stoneskull.me/2024-03/light1</a></p></li></ul>",
+					"markdown": "- This topic and page is going to take a while, ha.\n\n- edit: 2024-03-11 - onto a new page.. snipping and gluing.. [https://www.stoneskull.me/2024-03/light1](<https://www.stoneskull.me/2024-03/light1>)\n\n\n<!-- -->\n\n"
 				}
 			}
 		});
